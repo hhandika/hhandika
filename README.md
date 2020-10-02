@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hello... 👋
 
 <!--
 **hhandika/hhandika** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,3 +14,5 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+I am Heru Handika
+I am a self-taught programmer && taxonomist and field biologist by training.
