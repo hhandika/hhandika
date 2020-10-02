@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-I am a self-taught programmer, taxonomist and field biologist by training. I enjoy computer building and tinkering with hardware and software. You will also often find me climbing up a montain in the tropics.
+I am a self-taught programmer, taxonomist and field biologist by training. I enjoy computer building and tinkering with hardware and software. You will also often find me climbing up a mountain in the tropics.
 
 Currently, I am a PhD student in Esselstyn's Lab at the Museum of Natural Science and the Department of Biological Sciences, Louisiana State University, USA. I work mostly on taxonomy and molecular phylogenetic of rodents in Southeast Asia. My current coding projects are largely to support my research.
 
