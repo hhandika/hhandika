@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-I am a self-taught programmer, taxonomist and field evolutionary biologist by training. I enjoy computer building and tinkering with hardware and software. You will also often find me chasing mice and shrews on a mountain in the tropics. Let just say, I am someone who was failed to get into a computer science major, decided to study biology instead, and realized that it was the best decision I had ever made.
+I am a self-taught programmer, taxonomist and field evolutionary biologist by training. I enjoy computer building and tinkering with hardware and software. You will also often find me chasing mice and shrews on a mountain in the tropics. Let just say, I am someone who was failed to get into a computer science major, decided to study biology instead, and realized that it was the best decision I had ever made in my life.
 
 Currently, I am a PhD student in Esselstyn's Lab at the Museum of Natural Science and the Department of Biological Sciences, Louisiana State University, USA. I work on taxonomy and molecular phylogenetics of small mammals in Southeast Asia. My current coding projects are largely to support my research.
 
