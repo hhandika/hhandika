@@ -4,4 +4,4 @@ I am a self-taught programmer, taxonomist and field evolutionary biologist by tr
 
 Currently, I am a PhD student in Esselstyn's Lab at the Museum of Natural Science and the Department of Biological Sciences, Louisiana State University, USA. I work on morphological systematics and molecular phylogenetics of small mammals in Southeast Asia. I revise their taxonomy, describe new species, and study their evolutionary relationships. My current coding projects are mainly to support my research.
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hhandika&hide=CSS,html,Makefile&langs_count=10&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hhandika&hide=CSS,html,Makefile&langs_count=12&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
