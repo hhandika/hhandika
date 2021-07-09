@@ -1,4 +1,4 @@
-# b"Hello" | b"Halo..." 👋
+# b"Hello" || b"Halo..." 👋
 
 I am a self-taught programmer, and a taxonomist and field evolutionary biologist by training. I enjoy computer building and tinkering with computer hardware and software. You also often find me chasing mice and shrews on a mountain in the tropics. I am a PhD student in [Esselstyn's Lab](https://esselstyn.github.io/) at Louisiana State University, USA. 
 
