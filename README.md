@@ -4,4 +4,4 @@ I am a self-taught programmer, and a taxonomist and field evolutionary biologist
 
 My programming projects are centered around developing tools for phylogenomic studies. I use [Rust🦀](https://www.rust-lang.org/) for most projects, especially when performance is critical. I am, however, also familiar with other programming languages. Below is a glimpse of top 7 programming languagues I use. The list is pulled from my public repos (~1/3 of my repos stored on Github). It does not reflect my expertise in a certain language. Nonetheless, it may give some ideas of programming languages that I am familiar with.
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hhandika&hide=CSS,html,Makefile&langs_count=10&theme=tokyonight&layout=compact)]
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hhandika&hide=CSS,html,Makefile&langs_count=10&theme=tokyonight&layout=compact)
