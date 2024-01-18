@@ -6,4 +6,4 @@ In addition to my academic pursuits, I have a keen interest in computer hardware
 
 For more insights into my work and adventures, feel free to visit [my website](https://hhandika.com/)!
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hhandika&hide=CSS,html,Makefile,CMake&langs_count=10&theme=tokyonight&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hhandika&hide=Ruby,CSS,html,Makefile,CMake&langs_count=10&theme=tokyonight&layout=compact)
