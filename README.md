@@ -2,7 +2,7 @@
 
 As an evolutionary biologist and taxonomist, I’ve found a unique intersection between my field of study and my passion for programming. Currently, I’m pursuing my PhD at [Esselstyn's Lab](https://esselstyn.github.io/), Louisiana State University, USA. My programming projects are primarily focused on developing tools that facilitate biological research.
 
-In addition to my academic pursuits, I have a keen interest in computer hardware and software, often spending time building and tinkering with computers. My adventurous side takes me to tropical mountains where I conduct field research, studying mice and shrews in their natural habitats.
+In addition to my academic pursuits, I have a keen interest in computer hardware and software, often spending time building and tinkering with computers. My adventurous side takes me to tropical mountains where I conduct field research, studying rodents and shrews in their natural habitats.
 
 For more insights into my work and adventures, checkout [my website](https://hhandika.com/)!
 
