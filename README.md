@@ -1,6 +1,6 @@
 # b"Hello" | b"Halo..." 👋
 
-I am an evolutionary biologist and taxonomist by training, but I have had a passion for programming since I was a teenager. I’m pursuing my PhD at [Esselstyn's Lab](https://esselstyn.github.io/), Louisiana State University, USA. My programming projects primarily focus on developing tools to improve the accessibility of evolutionary studies.
+You can call me Heru. Some of my Australian friends call me Hez. I’m pursuing my PhD at [Esselstyn's Lab](https://esselstyn.github.io/), Louisiana State University, USA. My programming projects primarily focus on developing tools to improve the accessibility and inclusivity of evolutionary studies. I create tools that scale to many platforms and looking for ways to make software for the field easier to use for users with limited technical knowledge and support.
 
 For more insights into my work and adventures, check out [my website](https://hhandika.com/)!
 
