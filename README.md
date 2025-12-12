@@ -4,5 +4,7 @@ You can call me Heru or Hez. My programming projects primarily focus on developi
 
 For more insights into my work and adventures, visit [my website](https://hhandika.com/)!
 
+## Top Languages
+
 <img src="https://githubcard.com/hhandika.svg?d=UQuLtCnl" width="300" alt="github-stats">
 
