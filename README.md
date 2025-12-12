@@ -4,4 +4,4 @@ You can call me Heru or Hez. My programming projects primarily focus on developi
 
 For more insights into my work and adventures, visit [my website](https://hhandika.com/)!
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hhandika&hide=Batchfile,Ruby,CSS,html,Makefile,CMake&langs_count=10&theme=tokyonight&layout=compact)
+https://githubcard.com/hhandika.svg?d=E2WtC98m
