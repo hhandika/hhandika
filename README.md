@@ -6,6 +6,7 @@ For more insights into my work and adventures, visit [my website](https://hhandi
 
 ## Top Languages
 
-Below is a list of the top 5 programming language I use:
+Below is a list of the top 5 programming languages I use:
+
 <img src="https://githubcard.com/hhandika.svg?d=UQuLtCnl" width="300" alt="github-stats">
 
