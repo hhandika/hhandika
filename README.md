@@ -6,6 +6,6 @@ For more insights into my work and adventures, visit [my website](https://hhandi
 
 ## Top Languages
 
-Below are the top 5 programming languages I use:
+Below are the top 10 programming languages I use:
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hhandika&hide_progress=false&langs_count=6&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hhandika&hide_progress=false&langs_count=10&layout=compact)
