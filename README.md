@@ -4,5 +4,6 @@ You can call me Heru or Hez. My programming projects primarily focus on developi
 
 For more insights into my work and adventures, visit [my website](https://hhandika.com/)!
 
-
+![hhandika's Streak](https://github-readme-streak-stats.herokuapp.com/?user=hhandika&theme=vue-dark&hide_border=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hhandika&hide_progress=false&langs_count=10&layout=compact&hide=html,ruby,cmake,css,mdx&theme=vue-dark)
+![hhandika's Streak](https://github-readme-streak-stats.herokuapp.com/?user=hhandika&theme=vue-dark&hide_border=true)
