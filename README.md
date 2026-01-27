@@ -4,7 +4,7 @@ You can call me Heru or Hez. My programming projects primarily focus on developi
 
 For more insights into my work and adventures, visit [my website](https://hhandika.com/)!
 
-[![Handika's GitHub stats](https://github-readme-stats.vercel.app/api?username=hhandika&theme=vue-dark&card_width=460)](https://github.com/anuraghazra/github-readme-stats)
+[![Handika's GitHub stats](https://github-readme-stats.vercel.app/api?username=hhandika&theme=vue-dark&card_width=400)](https://github.com/anuraghazra/github-readme-stats)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hhandika&hide_progress=false&langs_count=10&layout=compact&hide=html,ruby,cmake,css,mdx&theme=vue-dark&card_width=460)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hhandika&hide_progress=false&langs_count=10&layout=compact&hide=html,ruby,cmake,css,mdx&theme=vue-dark&card_width=400)
 
