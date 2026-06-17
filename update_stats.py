@@ -96,23 +96,31 @@ def main() -> None:
     )
     overview_svg = overview_generator.generate()
 
+    languages_generator = LanguagesDashboardGenerator(languages=languages)
+    languages_svg = languages_generator.generate()
+
     top_repos_generator = TopReposDashboardGenerator(
         top_repos=TOP_REPOS, repos_data=top_repos_data
     )
     top_repos_svg = top_repos_generator.generate()
 
     overview_path = "assets/overview.svg"
+    languages_path = "assets/languages.svg"
     top_repos_path = "assets/top_repos.svg"
 
     with open(overview_path, "w", encoding="utf-8") as f:
         f.write(overview_svg)
     print(f"Generated {overview_path}")
 
+    with open(languages_path, "w", encoding="utf-8") as f:
+        f.write(languages_svg)
+    print(f"Generated {languages_path}")
+
     with open(top_repos_path, "w", encoding="utf-8") as f:
         f.write(top_repos_svg)
     print(f"Generated {top_repos_path}")
 
-    ReadmeUpdater.update(overview_path, top_repos_path)
+    ReadmeUpdater.update(overview_path, languages_path, top_repos_path)
 
 
 if __name__ == "__main__":

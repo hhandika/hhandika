@@ -20,10 +20,18 @@ def xml_escape(text: str) -> str:
 class M3SVGGenerator:
     """Base class for Material 3 SVG generation."""
 
-    def __init__(self, width: int, height: int):
+    def __init__(
+        self,
+        width: int,
+        height: int,
+        title: str = "GitHub Stats",
+        desc: str = "GitHub statistics dashboard",
+    ):
         """Initializes the generator with SVG dimensions."""
         self.width = width
         self.height = height
+        self.title = title
+        self.desc = desc
 
     def generate(self) -> str:
         """Generates the final SVG string. Must be implemented by subclasses."""
@@ -32,18 +40,21 @@ class M3SVGGenerator:
     def _get_svg_header(self) -> str:
         """Returns the SVG root element and styles."""
         return (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
             f'<svg xmlns="http://www.w3.org/2000/svg" width="{self.width}" height="{self.height}" '
-            f'viewBox="0 0 {self.width} {self.height}" fill="none">\\n'
-            f"{M3Tokens.get_style_block()}\\n"
+            f'viewBox="0 0 {self.width} {self.height}" fill="none" role="img" aria-labelledby="titleId descId">\n'
+            f'  <title id="titleId">{xml_escape(self.title)}</title>\n'
+            f'  <desc id="descId">{xml_escape(self.desc)}</desc>\n'
+            f"{M3Tokens.get_style_block()}\n"
         )
 
     def _get_svg_footer(self) -> str:
         """Returns the closing SVG tag."""
-        return "</svg>\\n"
+        return "</svg>\n"
 
     def _get_background_card(self) -> str:
         """Returns the main large container card."""
-        return f'<rect class="m3-container-large" x="0.5" y="0.5" width="{self.width - 1}" height="{self.height - 1}" />\\n'
+        return f'<rect class="m3-container-large" x="0.5" y="0.5" width="{self.width - 1}" height="{self.height - 1}" />\n'
 
 
 class OverviewDashboardGenerator(M3SVGGenerator):
@@ -61,10 +72,9 @@ class OverviewDashboardGenerator(M3SVGGenerator):
         streak: int,
         peak_day: str,
         peak_hours: str,
-        languages: Dict[str, Dict[str, Any]],
     ):
         """Initializes with all overview metrics."""
-        super().__init__(width=600, height=300)
+        super().__init__(width=600, height=240)
         self.total_stars = total_stars
         self.total_contributions = total_contributions
         self.total_repos = total_repos
@@ -75,7 +85,6 @@ class OverviewDashboardGenerator(M3SVGGenerator):
         self.streak = streak
         self.peak_day = peak_day
         self.peak_hours = peak_hours
-        self.languages = languages
 
     def generate(self) -> str:
         """Generates the Overview SVG."""
@@ -83,7 +92,7 @@ class OverviewDashboardGenerator(M3SVGGenerator):
             self._get_svg_header(),
             self._get_background_card(),
             self._get_header_section(),
-            self._get_columns(),
+            self._get_grid(),
             self._get_svg_footer(),
         ]
         return "".join(content)
@@ -91,65 +100,101 @@ class OverviewDashboardGenerator(M3SVGGenerator):
     def _get_header_section(self) -> str:
         """Returns the header text."""
         return (
-            '  <text x="24" y="36" class="m3-headline-small">GitHub Profile Overview</text>\\n'
-            '  <text x="24" y="56" class="m3-body-small">Updated weekly • Public data only</text>\\n'
+            '  <text x="24" y="36" class="m3-headline-small">GitHub Profile Overview</text>\n'
+            '  <text x="24" y="56" class="m3-body-small">Updated weekly • Public data only</text>\n'
         )
 
-    def _get_columns(self) -> str:
-        """Returns the three columns with stats."""
-        # Col 1: Activity
-        col1 = '  <g transform="translate(24, 84)">\\n'
-        col1 += '    <text x="0" y="0" class="m3-title-small">Engineering Activity</text>\\n'
-        col1 += self._get_stat_row(0, 24, "Total Stars", str(self.total_stars))
-        col1 += self._get_stat_row(
-            0, 52, "Contributions", str(self.total_contributions)
+    def _get_grid(self) -> str:
+        """Returns the 3x3 grid with stats."""
+        grid_html = ""
+
+        # Row 1
+        grid_html += self._get_stat_item(
+            24, 84, "stars", "Total Stars", str(self.total_stars)
         )
-        col1 += self._get_stat_row(0, 80, "Merged PRs", str(self.total_prs))
-        col1 += self._get_stat_row(0, 108, "Code Reviews", str(self.total_reviews))
-        col1 += self._get_stat_row(0, 136, "Issues", str(self.total_issues))
-        col1 += "  </g>\\n"
-
-        # Divider 1
-        divider1 = '  <line x1="190" y1="84" x2="190" y2="250" class="m3-divider" />\\n'
-
-        # Col 2: Velocity & Impact
-        col2 = '  <g transform="translate(210, 84)">\\n'
-        col2 += '    <text x="0" y="0" class="m3-title-small">Velocity &amp; Impact</text>\\n'
-        col2 += self._get_stat_row(0, 24, "Code Reuse", f"{self.cri:.1f}x")
-        col2 += self._get_stat_row(0, 52, "Streak", f"{self.streak} Days")
-        col2 += self._get_stat_row(0, 80, "Peak Day", xml_escape(self.peak_day))
-        col2 += self._get_stat_row(0, 108, "Peak Hours", xml_escape(self.peak_hours))
-        col2 += "  </g>\\n"
-
-        # Divider 2
-        divider2 = '  <line x1="390" y1="84" x2="390" y2="250" class="m3-divider" />\\n'
-
-        # Col 3: Languages
-        col3 = '  <g transform="translate(410, 84)">\\n'
-        col3 += (
-            '    <text x="0" y="0" class="m3-title-small">Languages (Core)</text>\\n'
+        grid_html += self._get_stat_item(
+            224, 84, "contributions", "Contributions", str(self.total_contributions)
         )
-        col3 += self._get_language_breakdown()
-        col3 += "  </g>\\n"
+        grid_html += self._get_stat_item(
+            424, 84, "prs", "Merged PRs", str(self.total_prs)
+        )
 
-        return col1 + divider1 + col2 + divider2 + col3
+        # Row 2
+        grid_html += self._get_stat_item(
+            24, 134, "reviews", "Code Reviews", str(self.total_reviews)
+        )
+        grid_html += self._get_stat_item(
+            224, 134, "issues", "Issues", str(self.total_issues)
+        )
+        grid_html += self._get_stat_item(
+            424, 134, "reuse", "Code Reuse", f"{self.cri:.1f}x"
+        )
 
-    def _get_stat_row(self, x: int, y: int, label: str, value: str) -> str:
-        """Returns a single stat row."""
+        # Row 3
+        grid_html += self._get_stat_item(
+            24, 184, "streak", "Streak", f"{self.streak} Days"
+        )
+        grid_html += self._get_stat_item(
+            224, 184, "peak_day", "Peak Day", xml_escape(self.peak_day)
+        )
+        grid_html += self._get_stat_item(
+            424, 184, "peak_hours", "Peak Hours", xml_escape(self.peak_hours)
+        )
+
+        return grid_html
+
+    def _get_stat_item(
+        self, x: int, y: int, icon_name: str, label: str, value: str
+    ) -> str:
+        """Returns a single stat item with an icon."""
+        icon_path = M3Tokens.ICONS.get(icon_name, "")
         return (
-            f'    <g transform="translate({x}, {y})">\\n'
-            f'      <text x="0" y="12" class="m3-body-medium">{label}</text>\\n'
-            f'      <text x="100" y="12" class="m3-label-large">{value}</text>\\n'
-            f"    </g>\\n"
+            f'  <g transform="translate({x}, {y})">\n'
+            f'    <svg x="0" y="-4" width="20" height="20" viewBox="0 0 24 24" fill="var(--md-sys-color-primary)">\n'
+            f'      <path d="{icon_path}"/>\n'
+            f"    </svg>\n"
+            f'    <text x="28" y="12" class="m3-body-medium">{label}</text>\n'
+            f'    <text x="28" y="32" class="m3-label-large">{value}</text>\n'
+            f"  </g>\n"
+        )
+
+
+class LanguagesDashboardGenerator(M3SVGGenerator):
+    """Generates the Languages SVG dashboard."""
+
+    def __init__(
+        self,
+        languages: Dict[str, Dict[str, Any]],
+    ):
+        """Initializes with languages data."""
+        super().__init__(width=600, height=220)
+        self.languages = languages
+
+    def generate(self) -> str:
+        """Generates the Languages SVG."""
+        content = [
+            self._get_svg_header(),
+            self._get_background_card(),
+            self._get_header_section(),
+            self._get_language_breakdown(),
+            self._get_svg_footer(),
+        ]
+        return "".join(content)
+
+    def _get_header_section(self) -> str:
+        """Returns the header text."""
+        return (
+            '  <text x="24" y="36" class="m3-headline-small">Top Languages</text>\n'
+            '  <text x="24" y="56" class="m3-body-small">Based on repository size • Updated weekly</text>\n'
         )
 
     def _get_language_breakdown(self) -> str:
-        """Returns the language bar and legend."""
+        """Returns the language bar and legend in two columns."""
         total_size = sum(lang["size"] for lang in self.languages.values())
         bar_rects = []
         legend_items = []
 
-        total_bar_width = 160.0
+        total_bar_width = 552.0  # Width of the bar across the card (600 - 48)
 
         if total_size > 0:
             sorted_langs = sorted(
@@ -176,18 +221,20 @@ class OverviewDashboardGenerator(M3SVGGenerator):
                 w = (item["pct"] / 100.0) * total_bar_width
                 if w > 0:
                     bar_rects.append(
-                        f'<rect x="{current_x:.2f}" y="0" width="{w:.2f}" height="8" '
+                        f'<rect x="{current_x:.2f}" y="0" width="{w:.2f}" height="12" '
                         f'fill="{item["color"]}" />'
                     )
                     current_x += w
 
             for idx, item in enumerate(legend_data):
-                item_x = 0
-                item_y = 36 + idx * 24
+                col = idx % 2
+                row = idx // 2
+                item_x = 24 + (col * 276)
+                item_y = 120 + (row * 30)
 
                 lang_name = item["name"]
-                if len(lang_name) > 12:
-                    display_name = lang_name[:9] + "..."
+                if len(lang_name) > 20:
+                    display_name = lang_name[:17] + "..."
                 else:
                     display_name = lang_name
 
@@ -195,36 +242,36 @@ class OverviewDashboardGenerator(M3SVGGenerator):
                 pct_text = f"{item['pct']:.1f}%"
 
                 legend_items.append(
-                    f'      <g transform="translate({item_x}, {item_y})">\\n'
-                    f'        <circle cx="5" cy="8" r="4.5" fill="{item["color"]}" />\\n'
-                    f'        <text x="16" y="12" class="m3-body-medium">{escaped_name}</text>\\n'
-                    f'        <text x="120" y="12" class="m3-body-small">{pct_text}</text>\\n'
-                    f"      </g>"
+                    f'  <g transform="translate({item_x}, {item_y})">\n'
+                    f'    <circle cx="6" cy="6" r="6" fill="{item["color"]}" />\n'
+                    f'    <text x="24" y="11" class="m3-body-large">{escaped_name}</text>\n'
+                    f'    <text x="200" y="11" class="m3-label-large">{pct_text}</text>\n'
+                    f"  </g>\n"
                 )
         else:
             bar_rects.append(
-                f'<rect x="0" y="0" width="{total_bar_width}" height="8" class="m3-card-medium" />'
+                f'<rect x="0" y="0" width="{total_bar_width}" height="12" class="m3-card-medium" />'
             )
             legend_items.append(
-                '      <g transform="translate(0, 36)">\\n'
-                '        <circle cx="5" cy="8" r="4.5" fill="var(--md-sys-color-outline-variant)" />\\n'
-                '        <text x="16" y="12" class="m3-body-medium">No data</text>\\n'
-                "      </g>"
+                '  <g transform="translate(24, 120)">\n'
+                '    <circle cx="6" cy="6" r="6" fill="var(--md-sys-color-outline-variant)" />\n'
+                '    <text x="24" y="11" class="m3-body-large">No data</text>\n'
+                "  </g>"
             )
 
-        bar_content = "\\n      ".join(bar_rects)
-        legend_content = "\\n".join(legend_items)
+        bar_content = "\n      ".join(bar_rects)
+        legend_content = "\n".join(legend_items)
 
         # Clip path for rounded bar ends
         return (
-            '    <clipPath id="bar-clip">\\n'
-            f'      <rect width="{total_bar_width}" height="8" rx="4" />\\n'
-            "    </clipPath>\\n"
-            '    <g transform="translate(0, 16)" clip-path="url(#bar-clip)">\\n'
-            f'      <rect width="{total_bar_width}" height="8" fill="var(--md-sys-color-surface-variant)" />\\n'
-            f"      {bar_content}\\n"
-            "    </g>\\n"
-            f"{legend_content}\\n"
+            '  <clipPath id="lang-bar-clip">\n'
+            f'    <rect width="{total_bar_width}" height="12" rx="6" />\n'
+            "  </clipPath>\n"
+            '  <g transform="translate(24, 84)" clip-path="url(#lang-bar-clip)">\n'
+            f'    <rect width="{total_bar_width}" height="12" fill="var(--md-sys-color-surface-variant)" />\n'
+            f"    {bar_content}\n"
+            "  </g>\n"
+            f"{legend_content}\n"
         )
 
 
@@ -239,7 +286,12 @@ class TopReposDashboardGenerator(M3SVGGenerator):
         """Initializes with the repositories data."""
         # Base height for header is ~80px. Each repo takes ~72px.
         height = 80 + len(top_repos) * 72
-        super().__init__(width=600, height=height)
+        super().__init__(
+            width=600,
+            height=height,
+            title="Top Repositories Dashboard",
+            desc="Shows top repositories and their language composition",
+        )
         self.top_repos = top_repos
         self.repos_data = repos_data
 
@@ -257,8 +309,8 @@ class TopReposDashboardGenerator(M3SVGGenerator):
     def _get_header_section(self) -> str:
         """Returns the header text."""
         return (
-            '  <text x="24" y="36" class="m3-headline-small">Top Repositories</text>\\n'
-            '  <text x="24" y="56" class="m3-body-small">Featured projects breakdown • Updated weekly</text>\\n'
+            '  <text x="24" y="36" class="m3-headline-small">Top Repositories</text>\n'
+            '  <text x="24" y="56" class="m3-body-small">Featured projects breakdown • Updated weekly</text>\n'
         )
 
     def _get_repo_list(self) -> str:
@@ -271,9 +323,9 @@ class TopReposDashboardGenerator(M3SVGGenerator):
             if not repo:
                 owner, name = self.top_repos[i]
                 repo_items.append(
-                    f'  <g transform="translate(24, {y})">\\n'
-                    f'    <text x="0" y="16" class="m3-title-medium">{xml_escape(owner)}/{xml_escape(name)}</text>\\n'
-                    f'    <text x="0" y="36" class="m3-body-small" style="fill: var(--md-sys-color-error);">Repository not found or private.</text>\\n'
+                    f'  <g transform="translate(24, {y})">\n'
+                    f'    <text x="0" y="16" class="m3-title-medium">{xml_escape(owner)}/{xml_escape(name)}</text>\n'
+                    f'    <text x="0" y="36" class="m3-body-small" style="fill: var(--md-sys-color-error);">Repository not found or private.</text>\n'
                     f"  </g>"
                 )
                 continue
@@ -287,35 +339,45 @@ class TopReposDashboardGenerator(M3SVGGenerator):
             if len(desc) > 80:
                 desc = desc[:77] + "..."
 
-            stars = repo.get("stargazerCount", 0)
-            forks = repo.get("forkCount", 0)
-            releases = repo.get("releases", {}).get("totalCount", 0)
-            lang = repo.get("primaryLanguage")
+            langs = repo.get("languages", {}).get("edges", [])
+            total_size = sum(edge["size"] for edge in langs)
 
-            lang_name = lang["name"] if lang else "None"
-            lang_color = (
-                lang["color"] if lang else "var(--md-sys-color-outline-variant)"
-            )
+            bar_rects = []
+            if total_size > 0:
+                current_x = 16.0
+                for edge in langs:
+                    size = edge["size"]
+                    color = edge["node"]["color"] or "#8e918f"
+                    w = (size / total_size) * 520.0
+                    if w > 0:
+                        bar_rects.append(
+                            f'<rect x="{current_x:.2f}" y="48" width="{w:.2f}" height="6" fill="{color}" />'
+                        )
+                        current_x += w
+            else:
+                bar_rects.append(
+                    f'<rect x="16" y="48" width="520" height="6" fill="var(--md-sys-color-outline-variant)" />'
+                )
+
+            bar_content = "\n      ".join(bar_rects)
 
             # Draw individual card
-            card_rect = f'    <rect x="0" y="0" width="552" height="64" class="m3-card-medium" />\\n'
+            card_rect = f'    <rect x="0" y="0" width="552" height="64" class="m3-card-medium" />\n'
 
             item = (
-                f'  <g transform="translate(24, {y})">\\n'
+                f'  <g transform="translate(24, {y})">\n'
                 f"{card_rect}"
-                f'    <text x="16" y="24" class="m3-title-medium">{xml_escape(full_name)}</text>\\n'
-                f'    <text x="16" y="44" class="m3-body-small">{xml_escape(desc)}</text>\\n'
-                # Language
-                f'    <circle cx="330" cy="20" r="4.5" fill="{lang_color}" />\\n'
-                f'    <text x="340" y="24" class="m3-label-medium">{xml_escape(lang_name)}</text>\\n'
-                # Stars
-                f'    <text x="420" y="24" class="m3-label-medium">⭐ {stars}</text>\\n'
-                # Forks
-                f'    <text x="470" y="24" class="m3-label-medium">🍴 {forks}</text>\\n'
-                # Releases
-                f'    <text x="520" y="24" class="m3-label-medium">📦 {releases}</text>\\n'
+                f'    <text x="16" y="24" class="m3-title-medium">{xml_escape(full_name)}</text>\n'
+                f'    <text x="16" y="40" class="m3-body-small">{xml_escape(desc)}</text>\n'
+                f'    <clipPath id="repo-bar-clip-{i}">\n'
+                f'      <rect x="16" y="48" width="520" height="6" rx="3" />\n'
+                f"    </clipPath>\n"
+                f'    <g clip-path="url(#repo-bar-clip-{i})">\n'
+                f'      <rect x="16" y="48" width="520" height="6" fill="var(--md-sys-color-surface-variant)" />\n'
+                f"      {bar_content}\n"
+                f"    </g>\n"
                 f"  </g>"
             )
             repo_items.append(item)
 
-        return "\\n".join(repo_items)
+        return "\n".join(repo_items)

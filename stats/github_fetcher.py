@@ -67,14 +67,14 @@ fragment RepoFields on Repository {
     login
   }
   description
-  stargazerCount
-  forkCount
-  primaryLanguage {
-    name
-    color
-  }
-  releases {
-    totalCount
+  languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+    edges {
+      size
+      node {
+        name
+        color
+      }
+    }
   }
 }
 """

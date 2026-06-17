@@ -4,6 +4,7 @@ import tempfile
 from stats.svg_generator import (
     xml_escape,
     OverviewDashboardGenerator,
+    LanguagesDashboardGenerator,
     TopReposDashboardGenerator,
 )
 from stats.data_processor import DataProcessor
@@ -27,6 +28,7 @@ def test_parse_languages():
                 "edges": [
                     {"size": 1000, "node": {"name": "Python", "color": "#ff0000"}},
                     {"size": 500, "node": {"name": "Rust", "color": "#00ff00"}},
+                    {"size": 300, "node": {"name": "HTML", "color": "#e34c26"}},
                 ]
             },
         },
@@ -58,13 +60,10 @@ def test_parse_languages():
     assert "C++" in langs
     assert langs["C++"]["size"] == 1000
 
+    assert "HTML" not in langs
+
 
 def test_generate_overview_svg():
-    mock_langs = {
-        "Python": {"size": 70, "color": "#3572A5"},
-        "Rust": {"size": 30, "color": "#dea584"},
-    }
-
     generator = OverviewDashboardGenerator(
         total_stars=123,
         total_contributions=456,
@@ -76,7 +75,6 @@ def test_generate_overview_svg():
         streak=5,
         peak_day="Wednesday (20%)",
         peak_hours="Afternoon (12-16)",
-        languages=mock_langs,
     )
     svg = generator.generate()
 
@@ -86,13 +84,27 @@ def test_generate_overview_svg():
     assert "123" in svg
     assert "Contributions" in svg
     assert "456" in svg
+    assert "Code Reuse" in svg
+
+    # Test media query stylesheet exists
+    assert "@media (prefers-color-scheme: dark)" in svg
+
+
+def test_generate_languages_svg():
+    mock_langs = {
+        "Python": {"size": 70, "color": "#3572A5"},
+        "Rust": {"size": 30, "color": "#dea584"},
+    }
+    generator = LanguagesDashboardGenerator(languages=mock_langs)
+    svg = generator.generate()
+
+    assert "<svg" in svg
+    assert "</svg>" in svg
+    assert "Top Languages" in svg
     assert "Python" in svg
     assert "Rust" in svg
     assert "70.0%" in svg
     assert "30.0%" in svg
-
-    # Test media query stylesheet exists
-    assert "@media (prefers-color-scheme: dark)" in svg
 
 
 def test_generate_top_repos_svg():
@@ -101,20 +113,18 @@ def test_generate_top_repos_svg():
             "name": "segul",
             "owner": {"login": "hhandika"},
             "description": "Genomic CLI tool",
-            "stargazerCount": 50,
-            "forkCount": 10,
-            "releases": {"totalCount": 2},
-            "primaryLanguage": {"name": "Rust", "color": "#dea584"},
+            "languages": {
+                "edges": [{"size": 1000, "node": {"name": "Rust", "color": "#dea584"}}]
+            },
         },
         None,  # simulate one missing repo
         {
             "name": "nahpu",
             "owner": {"login": "nahpu"},
             "description": "Biodiversity field data management app",
-            "stargazerCount": 20,
-            "forkCount": 5,
-            "releases": {"totalCount": 1},
-            "primaryLanguage": {"name": "Dart", "color": "#00B4AB"},
+            "languages": {
+                "edges": [{"size": 2000, "node": {"name": "Dart", "color": "#00B4AB"}}]
+            },
         },
     ]
 
@@ -132,15 +142,22 @@ def test_generate_top_repos_svg():
     assert "<svg" in svg
     assert "hhandika/segul" in svg
     assert "Genomic CLI tool" in svg
-    assert "50" in svg  # stars
-    assert "10" in svg  # forks
-    assert "Rust" in svg
+    assert "#dea584" in svg  # Rust color in bar chart
 
     assert "nahpu/nahpu" in svg
     assert "Biodiversity field data" in svg
+    assert "#00B4AB" in svg  # Dart color in bar chart
 
     # Missing repo message should be handled without crashing
     assert "Repository not found or private." in svg
+
+    # Test accessibility tags
+    assert 'role="img"' in svg
+    assert '<title id="titleId">Top Repositories Dashboard</title>' in svg
+    assert (
+        '<desc id="descId">Shows top repositories and their language composition</desc>'
+        in svg
+    )
 
 
 def test_update_readme():
@@ -163,6 +180,7 @@ Some footer.
         updater = ReadmeUpdater()
         updater.update(
             overview_svg_path="assets/overview.svg",
+            languages_svg_path="assets/languages.svg",
             top_repos_svg_path="assets/top_repos.svg",
             readme_path=temp_path,
         )
@@ -173,6 +191,7 @@ Some footer.
         assert "<!-- START_SECTION:github-stats -->" in updated_content
         assert "<!-- END_SECTION:github-stats -->" in updated_content
         assert 'src="assets/overview.svg"' in updated_content
+        assert 'src="assets/languages.svg"' in updated_content
         assert 'src="assets/top_repos.svg"' in updated_content
         assert "*Stats reflect public repositories only" in updated_content
         assert "github-readme-stats.vercel.app" not in updated_content

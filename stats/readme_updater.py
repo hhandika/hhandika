@@ -9,7 +9,10 @@ class ReadmeUpdater:
 
     @staticmethod
     def update(
-        overview_svg_path: str, top_repos_svg_path: str, readme_path: str = "README.md"
+        overview_svg_path: str,
+        languages_svg_path: str,
+        top_repos_svg_path: str,
+        readme_path: str = "README.md",
     ) -> None:
         """Replaces content between placeholders in README.md with generated SVG images."""
         if not os.path.exists(readme_path):
@@ -23,6 +26,7 @@ class ReadmeUpdater:
             "<!-- START_SECTION:github-stats -->\n"
             '<p align="left">\n'
             f'  <img src="{overview_svg_path}" alt="GitHub Stats" width="600" />\n'
+            f'  <img src="{languages_svg_path}" alt="Top Languages" width="600" />\n'
             f'  <img src="{top_repos_svg_path}" alt="Top Repositories" width="600" />\n'
             "</p>\n"
             '<p align="left"><sub>*Stats reflect public repositories only. Updated weekly.</sub></p>\n'
