@@ -8,7 +8,11 @@ from typing import List, Tuple
 from stats.github_fetcher import GitHubDataFetcher
 from stats.data_processor import DataProcessor
 from stats.readme_updater import ReadmeUpdater
-from stats.svg_generator import OverviewDashboardGenerator, TopReposDashboardGenerator
+from stats.svg_generator import (
+    OverviewDashboardGenerator,
+    TopReposDashboardGenerator,
+    LanguagesDashboardGenerator,
+)
 
 # Owner/Repo names for top repository stats breakdown
 TOP_REPOS: List[Tuple[str, str]] = [
@@ -92,7 +96,6 @@ def main() -> None:
         streak=streak,
         peak_day=peak_day,
         peak_hours=peak_hours,
-        languages=languages,
     )
     overview_svg = overview_generator.generate()
 
