@@ -265,7 +265,7 @@ class LanguagesDashboardGenerator(M3SVGGenerator):
         # Clip path for rounded bar ends
         return (
             '  <clipPath id="lang-bar-clip">\n'
-            f'    <rect width="{total_bar_width}" height="12" rx="6" />\n'
+            f'    <rect width="{total_bar_width}" height="12" rx="3" />\n'
             "  </clipPath>\n"
             '  <g transform="translate(24, 84)" clip-path="url(#lang-bar-clip)">\n'
             f'    <rect width="{total_bar_width}" height="12" fill="var(--md-sys-color-surface-variant)" />\n'
@@ -276,7 +276,7 @@ class LanguagesDashboardGenerator(M3SVGGenerator):
 
 
 class TopReposDashboardGenerator(M3SVGGenerator):
-    """Generates the Top Repositories SVG dashboard."""
+    """Generates the Selected Repositories SVG dashboard."""
 
     def __init__(
         self,
@@ -289,14 +289,14 @@ class TopReposDashboardGenerator(M3SVGGenerator):
         super().__init__(
             width=600,
             height=height,
-            title="Top Repositories Dashboard",
-            desc="Shows top repositories and their language composition",
+            title="Selected Repositories Dashboard",
+            desc="Shows selected repositories and their language composition",
         )
         self.top_repos = top_repos
         self.repos_data = repos_data
 
     def generate(self) -> str:
-        """Generates the Top Repositories SVG."""
+        """Generates the Selected Repositories SVG."""
         content = [
             self._get_svg_header(),
             self._get_background_card(),
@@ -309,7 +309,7 @@ class TopReposDashboardGenerator(M3SVGGenerator):
     def _get_header_section(self) -> str:
         """Returns the header text."""
         return (
-            '  <text x="24" y="36" class="m3-headline-small">Top Repositories</text>\n'
+            '  <text x="24" y="36" class="m3-headline-small">Selected Repositories</text>\n'
             '  <text x="24" y="56" class="m3-body-small">Featured projects breakdown</text>\n'
         )
 
@@ -385,7 +385,7 @@ class TopReposDashboardGenerator(M3SVGGenerator):
                 f'    <text x="16" y="24" class="m3-title-medium">{xml_escape(full_name)}</text>\n'
                 f'    <text x="16" y="40" class="m3-body-small">{xml_escape(desc)}</text>\n'
                 f'    <clipPath id="repo-bar-clip-{i}">\n'
-                f'      <rect x="16" y="48" width="520" height="6" rx="3" />\n'
+                f'      <rect x="16" y="48" width="520" height="6" rx="1.5" />\n'
                 f"    </clipPath>\n"
                 f'    <g clip-path="url(#repo-bar-clip-{i})">\n'
                 f'      <rect x="16" y="48" width="520" height="6" fill="var(--md-sys-color-surface-variant)" />\n'

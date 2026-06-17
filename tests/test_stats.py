@@ -151,9 +151,9 @@ def test_generate_top_repos_svg():
 
     # Test accessibility tags
     assert 'role="img"' in svg
-    assert '<title id="titleId">Top Repositories Dashboard</title>' in svg
+    assert '<title id="titleId">Selected Repositories Dashboard</title>' in svg
     assert (
-        '<desc id="descId">Shows top repositories and their language composition</desc>'
+        '<desc id="descId">Shows selected repositories and their language composition</desc>'
         in svg
     )
 

@@ -30,7 +30,7 @@ class ReadmeUpdater:
             '<p align="left">\n'
             f'  <img src="{overview_svg_path}" alt="GitHub Stats" width="600" />\n'
             f'  <img src="{languages_svg_path}" alt="Top Languages" width="600" />\n'
-            f'  <img src="{top_repos_svg_path}" alt="Top Repositories" width="600" />\n'
+            f'  <img src="{top_repos_svg_path}" alt="Selected Repositories" width="600" />\n'
             "</p>\n"
             f'<p align="left"><sub>*Stats reflect public repositories only. Latest update: {today_str}</sub></p>\n'
             "<!-- END_SECTION:github-stats -->"
