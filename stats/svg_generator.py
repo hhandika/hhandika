@@ -53,7 +53,7 @@ class M3SVGGenerator:
         return "</svg>\n"
 
     def _get_background_card(self) -> str:
-        """Returns the main large container card."""
+        """Returns the main large container card. Subclasses override this for custom shapes."""
         return f'<rect class="m3-container-large" x="0.5" y="0.5" width="{self.width - 1}" height="{self.height - 1}" />\n'
 
 
@@ -94,6 +94,20 @@ class OverviewDashboardGenerator(M3SVGGenerator):
             self._get_svg_footer(),
         ]
         return "".join(content)
+
+    def _get_background_card(self) -> str:
+        """Returns the main large container card with top rounded corners."""
+        w = self.width - 0.5
+        h = self.height - 0.5
+        r = 12
+        return (
+            f'<path class="m3-container-large" d="'
+            f"M 0.5 {h} L 0.5 {0.5 + r} "
+            f"A {r} {r} 0 0 1 {0.5 + r} 0.5 "
+            f"L {w - r} 0.5 "
+            f"A {r} {r} 0 0 1 {w} {0.5 + r} "
+            f'L {w} {h} Z" />\n'
+        )
 
     def _get_header_section(self) -> str:
         """Returns the header text."""
@@ -180,6 +194,10 @@ class LanguagesDashboardGenerator(M3SVGGenerator):
             self._get_svg_footer(),
         ]
         return "".join(content)
+
+    def _get_background_card(self) -> str:
+        """Returns the main large container card with square corners."""
+        return f'<rect class="m3-container-large" x="0.5" y="0.5" width="{self.width - 1}" height="{self.height - 1}" style="rx: 0px;" />\n'
 
     def _get_header_section(self) -> str:
         """Returns the header text."""
@@ -305,6 +323,19 @@ class TopReposDashboardGenerator(M3SVGGenerator):
             self._get_svg_footer(),
         ]
         return "".join(content)
+
+    def _get_background_card(self) -> str:
+        """Returns the main large container card with bottom rounded corners."""
+        w = self.width - 0.5
+        h = self.height - 0.5
+        r = 12
+        return (
+            f'<path class="m3-container-large" d="'
+            f"M 0.5 0.5 L {w} 0.5 L {w} {h - r} "
+            f"A {r} {r} 0 0 1 {w - r} {h} "
+            f"L {0.5 + r} {h} "
+            f'A {r} {r} 0 0 1 0.5 {h - r} Z" />\n'
+        )
 
     def _get_header_section(self) -> str:
         """Returns the header text."""
