@@ -13,10 +13,24 @@ This repository features an automated workflow that updates profile stats cards 
 2. **Python Script** (`update_stats.py`):
    - Queries the GitHub GraphQL API for public user metrics and details for specific repositories (`nahpu/nahpu`, `hhandika/segul`, `hhandika/segui`, `hhandika/ullar`, and `mammaldiversity/mdd_app`).
    - Computes overall stars, contributions, repository counts, and aggregates language usage.
-   - Generates two SVGs in the `stats/` directory:
-     - `overview.svg`: Public overview stats and a language usage legend + horizontal bar chart.
-     - `top_repos.svg`: Public repository metrics (stars, forks, description, and primary language) for featured repos.
+   - Generates three SVGs in the `stats/` directory:
+     - `overview.svg`: Public overview stats (Stars, Contributions, CRI, etc.).
+     - `languages.svg`: Top programming languages bar chart and percentage breakdown based on repository sizes.
+     - `top_repos.svg`: Featured repository descriptions and their individual language composition bar charts.
    - Updates `README.md` by replacing the content between HTML placeholder comments.
+
+---
+
+## Statistics Descriptions
+
+- **Total Stars**: The total number of stargazers across all of the user's public repositories.
+- **Contributions**: The total number of GitHub contributions made in the last 365 days, sourced from the contribution calendar.
+- **Merged PRs**: The total number of Pull Requests the user has created or contributed to.
+- **Code Reviews**: The total number of Pull Request reviews submitted by the user.
+- **Issues**: The total number of issues opened by the user.
+- **Streak**: The longest consecutive number of days with at least one contribution in the current calendar year.
+- **Peak Day**: The day of the week with the highest average number of contributions.
+- **Peak Hours**: The time of day with the most commit activity, derived from analyzing commit timestamps.
 
 ---
 

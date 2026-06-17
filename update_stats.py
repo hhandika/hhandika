@@ -57,8 +57,6 @@ def main() -> None:
     repos_nodes = user_data.get("repositories", {}).get("nodes", [])
     total_repos = len(repos_nodes)
     total_stars = sum(repo.get("stargazerCount", 0) for repo in repos_nodes)
-    total_forks = sum(repo.get("forkCount", 0) for repo in repos_nodes)
-    cri = total_forks / total_repos if total_repos > 0 else 0.0
 
     processor = DataProcessor()
     streak, peak_day = processor.calculate_calendar_metrics(calendar)
@@ -92,7 +90,6 @@ def main() -> None:
         total_prs=total_prs,
         total_reviews=total_reviews,
         total_issues=total_issues,
-        cri=cri,
         streak=streak,
         peak_day=peak_day,
         peak_hours=peak_hours,

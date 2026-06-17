@@ -68,7 +68,6 @@ class OverviewDashboardGenerator(M3SVGGenerator):
         total_prs: int,
         total_reviews: int,
         total_issues: int,
-        cri: float,
         streak: int,
         peak_day: str,
         peak_hours: str,
@@ -81,7 +80,6 @@ class OverviewDashboardGenerator(M3SVGGenerator):
         self.total_prs = total_prs
         self.total_reviews = total_reviews
         self.total_issues = total_issues
-        self.cri = cri
         self.streak = streak
         self.peak_day = peak_day
         self.peak_hours = peak_hours
@@ -101,7 +99,7 @@ class OverviewDashboardGenerator(M3SVGGenerator):
         """Returns the header text."""
         return (
             '  <text x="24" y="36" class="m3-headline-small">GitHub Profile Overview</text>\n'
-            '  <text x="24" y="56" class="m3-body-small">Updated weekly • Public data only</text>\n'
+            '  <text x="24" y="56" class="m3-body-small">Public data only</text>\n'
         )
 
     def _get_grid(self) -> str:
@@ -127,18 +125,15 @@ class OverviewDashboardGenerator(M3SVGGenerator):
             224, 134, "issues", "Issues", str(self.total_issues)
         )
         grid_html += self._get_stat_item(
-            424, 134, "reuse", "Code Reuse", f"{self.cri:.1f}x"
+            424, 134, "streak", "Streak", f"{self.streak} Days"
         )
 
         # Row 3
         grid_html += self._get_stat_item(
-            24, 184, "streak", "Streak", f"{self.streak} Days"
+            24, 184, "peak_day", "Peak Day", xml_escape(self.peak_day)
         )
         grid_html += self._get_stat_item(
-            224, 184, "peak_day", "Peak Day", xml_escape(self.peak_day)
-        )
-        grid_html += self._get_stat_item(
-            424, 184, "peak_hours", "Peak Hours", xml_escape(self.peak_hours)
+            224, 184, "peak_hours", "Peak Hours", xml_escape(self.peak_hours)
         )
 
         return grid_html
@@ -167,7 +162,12 @@ class LanguagesDashboardGenerator(M3SVGGenerator):
         languages: Dict[str, Dict[str, Any]],
     ):
         """Initializes with languages data."""
-        super().__init__(width=600, height=220)
+        super().__init__(
+            width=600,
+            height=260,
+            title="Top Languages Dashboard",
+            desc="Shows a bar chart of top programming languages used",
+        )
         self.languages = languages
 
     def generate(self) -> str:
@@ -185,7 +185,7 @@ class LanguagesDashboardGenerator(M3SVGGenerator):
         """Returns the header text."""
         return (
             '  <text x="24" y="36" class="m3-headline-small">Top Languages</text>\n'
-            '  <text x="24" y="56" class="m3-body-small">Based on repository size • Updated weekly</text>\n'
+            '  <text x="24" y="56" class="m3-body-small">Based on repository size</text>\n'
         )
 
     def _get_language_breakdown(self) -> str:
@@ -284,8 +284,8 @@ class TopReposDashboardGenerator(M3SVGGenerator):
         repos_data: List[Optional[Dict[str, Any]]],
     ):
         """Initializes with the repositories data."""
-        # Base height for header is ~80px. Each repo takes ~72px.
-        height = 80 + len(top_repos) * 72
+        # Base height for header is ~80px. Each repo takes ~96px.
+        height = 80 + len(top_repos) * 96
         super().__init__(
             width=600,
             height=height,
@@ -310,7 +310,7 @@ class TopReposDashboardGenerator(M3SVGGenerator):
         """Returns the header text."""
         return (
             '  <text x="24" y="36" class="m3-headline-small">Top Repositories</text>\n'
-            '  <text x="24" y="56" class="m3-body-small">Featured projects breakdown • Updated weekly</text>\n'
+            '  <text x="24" y="56" class="m3-body-small">Featured projects breakdown</text>\n'
         )
 
     def _get_repo_list(self) -> str:
@@ -318,7 +318,7 @@ class TopReposDashboardGenerator(M3SVGGenerator):
         repo_items = []
 
         for i, repo in enumerate(self.repos_data):
-            y = 76 + i * 72
+            y = 76 + i * 96
 
             if not repo:
                 owner, name = self.top_repos[i]
@@ -343,9 +343,11 @@ class TopReposDashboardGenerator(M3SVGGenerator):
             total_size = sum(edge["size"] for edge in langs)
 
             bar_rects = []
+            legend_rects = []
             if total_size > 0:
                 current_x = 16.0
-                for edge in langs:
+                legend_x = 16.0
+                for j, edge in enumerate(langs):
                     size = edge["size"]
                     color = edge["node"]["color"] or "#8e918f"
                     w = (size / total_size) * 520.0
@@ -354,15 +356,28 @@ class TopReposDashboardGenerator(M3SVGGenerator):
                             f'<rect x="{current_x:.2f}" y="48" width="{w:.2f}" height="6" fill="{color}" />'
                         )
                         current_x += w
+
+                    if j < 4:  # Show max 4 items in legend
+                        pct = (size / total_size) * 100
+                        lang_name = xml_escape(edge["node"]["name"])
+                        legend_rects.append(
+                            f'      <circle cx="{legend_x + 4}" cy="72" r="4" fill="{color}" />\n'
+                            f'      <text x="{legend_x + 12}" y="76" class="m3-label-medium">{lang_name} {pct:.1f}%</text>'
+                        )
+                        legend_x += 16 + len(lang_name) * 7 + 40
             else:
                 bar_rects.append(
                     f'<rect x="16" y="48" width="520" height="6" fill="var(--md-sys-color-outline-variant)" />'
                 )
+                legend_rects.append(
+                    f'      <text x="16" y="76" class="m3-label-medium">No language data</text>'
+                )
 
             bar_content = "\n      ".join(bar_rects)
+            legend_content = "\n".join(legend_rects)
 
             # Draw individual card
-            card_rect = f'    <rect x="0" y="0" width="552" height="64" class="m3-card-medium" />\n'
+            card_rect = f'    <rect x="0" y="0" width="552" height="88" class="m3-card-medium" />\n'
 
             item = (
                 f'  <g transform="translate(24, {y})">\n'
@@ -376,6 +391,7 @@ class TopReposDashboardGenerator(M3SVGGenerator):
                 f'      <rect x="16" y="48" width="520" height="6" fill="var(--md-sys-color-surface-variant)" />\n'
                 f"      {bar_content}\n"
                 f"    </g>\n"
+                f"      {legend_content}\n"
                 f"  </g>"
             )
             repo_items.append(item)

@@ -71,7 +71,6 @@ def test_generate_overview_svg():
         total_prs=10,
         total_reviews=5,
         total_issues=20,
-        cri=1.5,
         streak=5,
         peak_day="Wednesday (20%)",
         peak_hours="Afternoon (12-16)",
@@ -84,7 +83,6 @@ def test_generate_overview_svg():
     assert "123" in svg
     assert "Contributions" in svg
     assert "456" in svg
-    assert "Code Reuse" in svg
 
     # Test media query stylesheet exists
     assert "@media (prefers-color-scheme: dark)" in svg

@@ -151,19 +151,19 @@ class M3Tokens:
 
     SHAPES = """
     .m3-container-large {
-      rx: 24px;
+      rx: 12px;
       fill: var(--md-sys-color-surface);
       stroke: var(--md-sys-color-outline-variant);
       stroke-width: 1px;
     }
     .m3-card-medium {
-      rx: 16px;
+      rx: 8px;
       fill: var(--md-sys-color-surface-container);
       stroke: var(--md-sys-color-outline-variant);
       stroke-width: 0.5px;
     }
     .m3-bar-chart {
-      rx: 4px;
+      rx: 2px;
     }
     .m3-divider {
       stroke: var(--md-sys-color-outline-variant);

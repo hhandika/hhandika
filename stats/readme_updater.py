@@ -2,6 +2,7 @@
 
 import os
 import re
+from datetime import datetime
 
 
 class ReadmeUpdater:
@@ -22,6 +23,8 @@ class ReadmeUpdater:
         with open(readme_path, "r", encoding="utf-8") as f:
             content = f.read()
 
+        today_str = datetime.now().strftime("%B %d, %Y")
+
         new_stats_content = (
             "<!-- START_SECTION:github-stats -->\n"
             '<p align="left">\n'
@@ -29,7 +32,7 @@ class ReadmeUpdater:
             f'  <img src="{languages_svg_path}" alt="Top Languages" width="600" />\n'
             f'  <img src="{top_repos_svg_path}" alt="Top Repositories" width="600" />\n'
             "</p>\n"
-            '<p align="left"><sub>*Stats reflect public repositories only. Updated weekly.</sub></p>\n'
+            f'<p align="left"><sub>*Stats reflect public repositories only. Latest update: {today_str}</sub></p>\n'
             "<!-- END_SECTION:github-stats -->"
         )
 
