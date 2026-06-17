@@ -6,8 +6,8 @@ For more insights into my work and adventures, visit [my website](https://hhandi
 
 <!-- START_SECTION:github-stats -->
 <p align="left">
-  <img src="stats/overview.svg" alt="GitHub Stats" width="490" />
-  <img src="stats/top_repos.svg" alt="Top Repositories" width="490" />
+  <img src="assets/overview.svg" alt="GitHub Stats" width="600" />
+  <img src="assets/top_repos.svg" alt="Top Repositories" width="600" />
 </p>
 <p align="left"><sub>*Stats reflect public repositories only. Updated weekly.</sub></p>
 <!-- END_SECTION:github-stats -->
