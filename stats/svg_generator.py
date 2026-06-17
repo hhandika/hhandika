@@ -364,7 +364,7 @@ class TopReposDashboardGenerator(M3SVGGenerator):
                             f'      <circle cx="{legend_x + 4}" cy="72" r="4" fill="{color}" />\n'
                             f'      <text x="{legend_x + 12}" y="76" class="m3-label-medium">{lang_name} {pct:.1f}%</text>'
                         )
-                        legend_x += 16 + len(lang_name) * 7 + 40
+                        legend_x += 75 + len(lang_name) * 8
             else:
                 bar_rects.append(
                     f'<rect x="16" y="48" width="520" height="6" fill="var(--md-sys-color-outline-variant)" />'
