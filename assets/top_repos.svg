@@ -170,12 +170,12 @@
     </g>
             <circle cx="20.0" cy="72" r="4" fill="#00B4AB" />
       <text x="28.0" y="76" class="m3-label-medium">Dart 93.1%</text>
-      <circle cx="104.0" cy="72" r="4" fill="#dea584" />
-      <text x="112.0" y="76" class="m3-label-medium">Rust 1.7%</text>
-      <circle cx="188.0" cy="72" r="4" fill="#f34b7d" />
-      <text x="196.0" y="76" class="m3-label-medium">C++ 1.6%</text>
-      <circle cx="265.0" cy="72" r="4" fill="#DA3434" />
-      <text x="273.0" y="76" class="m3-label-medium">CMake 1.5%</text>
+      <circle cx="127.0" cy="72" r="4" fill="#dea584" />
+      <text x="135.0" y="76" class="m3-label-medium">Rust 1.7%</text>
+      <circle cx="234.0" cy="72" r="4" fill="#f34b7d" />
+      <text x="242.0" y="76" class="m3-label-medium">C++ 1.6%</text>
+      <circle cx="333.0" cy="72" r="4" fill="#DA3434" />
+      <text x="341.0" y="76" class="m3-label-medium">CMake 1.5%</text>
   </g>
   <g transform="translate(24, 172)">
     <rect x="0" y="0" width="552" height="88" class="m3-card-medium" />
@@ -191,8 +191,8 @@
     </g>
             <circle cx="20.0" cy="72" r="4" fill="#dea584" />
       <text x="28.0" y="76" class="m3-label-medium">Rust 99.9%</text>
-      <circle cx="104.0" cy="72" r="4" fill="#89e051" />
-      <text x="112.0" y="76" class="m3-label-medium">Shell 0.1%</text>
+      <circle cx="127.0" cy="72" r="4" fill="#89e051" />
+      <text x="135.0" y="76" class="m3-label-medium">Shell 0.1%</text>
   </g>
   <g transform="translate(24, 268)">
     <rect x="0" y="0" width="552" height="88" class="m3-card-medium" />
@@ -216,12 +216,12 @@
     </g>
             <circle cx="20.0" cy="72" r="4" fill="#00B4AB" />
       <text x="28.0" y="76" class="m3-label-medium">Dart 66.8%</text>
-      <circle cx="104.0" cy="72" r="4" fill="#dea584" />
-      <text x="112.0" y="76" class="m3-label-medium">Rust 18.7%</text>
-      <circle cx="188.0" cy="72" r="4" fill="#DA3434" />
-      <text x="196.0" y="76" class="m3-label-medium">CMake 3.2%</text>
-      <circle cx="279.0" cy="72" r="4" fill="#f34b7d" />
-      <text x="287.0" y="76" class="m3-label-medium">C++ 3.1%</text>
+      <circle cx="127.0" cy="72" r="4" fill="#dea584" />
+      <text x="135.0" y="76" class="m3-label-medium">Rust 18.7%</text>
+      <circle cx="234.0" cy="72" r="4" fill="#DA3434" />
+      <text x="242.0" y="76" class="m3-label-medium">CMake 3.2%</text>
+      <circle cx="349.0" cy="72" r="4" fill="#f34b7d" />
+      <text x="357.0" y="76" class="m3-label-medium">C++ 3.1%</text>
   </g>
   <g transform="translate(24, 364)">
     <rect x="0" y="0" width="552" height="88" class="m3-card-medium" />
@@ -238,10 +238,10 @@
     </g>
             <circle cx="20.0" cy="72" r="4" fill="#dea584" />
       <text x="28.0" y="76" class="m3-label-medium">Rust 100.0%</text>
-      <circle cx="104.0" cy="72" r="4" fill="#3572A5" />
-      <text x="112.0" y="76" class="m3-label-medium">Python 0.0%</text>
-      <circle cx="202.0" cy="72" r="4" fill="#8e918f" />
-      <text x="210.0" y="76" class="m3-label-medium">RenderScript 0.0%</text>
+      <circle cx="127.0" cy="72" r="4" fill="#3572A5" />
+      <text x="135.0" y="76" class="m3-label-medium">Python 0.0%</text>
+      <circle cx="250.0" cy="72" r="4" fill="#8e918f" />
+      <text x="258.0" y="76" class="m3-label-medium">RenderScript 0.0%</text>
   </g>
   <g transform="translate(24, 460)">
     <rect x="0" y="0" width="552" height="88" class="m3-card-medium" />
@@ -265,10 +265,10 @@
     </g>
             <circle cx="20.0" cy="72" r="4" fill="#00B4AB" />
       <text x="28.0" y="76" class="m3-label-medium">Dart 74.7%</text>
-      <circle cx="104.0" cy="72" r="4" fill="#dea584" />
-      <text x="112.0" y="76" class="m3-label-medium">Rust 8.6%</text>
-      <circle cx="188.0" cy="72" r="4" fill="#DA3434" />
-      <text x="196.0" y="76" class="m3-label-medium">CMake 4.6%</text>
-      <circle cx="279.0" cy="72" r="4" fill="#f34b7d" />
-      <text x="287.0" y="76" class="m3-label-medium">C++ 4.6%</text>
+      <circle cx="127.0" cy="72" r="4" fill="#dea584" />
+      <text x="135.0" y="76" class="m3-label-medium">Rust 8.6%</text>
+      <circle cx="234.0" cy="72" r="4" fill="#DA3434" />
+      <text x="242.0" y="76" class="m3-label-medium">CMake 4.6%</text>
+      <circle cx="349.0" cy="72" r="4" fill="#f34b7d" />
+      <text x="357.0" y="76" class="m3-label-medium">C++ 4.6%</text>
   </g></svg>
