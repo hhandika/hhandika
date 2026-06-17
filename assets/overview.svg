@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" fill="none">\n<style>\n
+    :root {
+      /* Light Theme (Chetwode & Porsche) */
+      --md-sys-color-surface: #fcfcfc;
+      --md-sys-color-on-surface: #1a1c1e;
+      --md-sys-color-surface-variant: #e1e2e8;
+      --md-sys-color-on-surface-variant: #44474e;
+      --md-sys-color-surface-container: #f0f5fd; /* Chetwode 50 */
+      
+      --md-sys-color-primary: #5a67d1; /* Chetwode 600 */
+      --md-sys-color-on-primary: #ffffff;
+      --md-sys-color-primary-container: #e4edfb; /* Chetwode 100 */
+      --md-sys-color-on-primary-container: #384077; /* Chetwode 900 */
+      
+      --md-sys-color-tertiary: #c46f32; /* Porsche 600 */
+      --md-sys-color-on-tertiary: #ffffff;
+      --md-sys-color-tertiary-container: #f8eedc; /* Porsche 100 */
+      --md-sys-color-on-tertiary-container: #6a3b24; /* Porsche 900 */
+      
+      --md-sys-color-outline: #74777f;
+      --md-sys-color-outline-variant: #c4c7c5;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      :root {
+        /* Dark Theme (Chetwode & Porsche) */
+        --md-sys-color-surface: #1a1c1e;
+        --md-sys-color-on-surface: #e2e2e6;
+        --md-sys-color-surface-variant: #44474e;
+        --md-sys-color-on-surface-variant: #c4c6d0;
+        --md-sys-color-surface-container: #212545; /* Chetwode 950 */
+        
+        --md-sys-color-primary: #b0c6f1; /* Chetwode 300 */
+        --md-sys-color-on-primary: #3e4795; /* Chetwode 800 */
+        --md-sys-color-primary-container: #4a54b8; /* Chetwode 700 */
+        --md-sys-color-on-primary-container: #e4edfb; /* Chetwode 100 */
+        
+        --md-sys-color-tertiary: #e5bf8c; /* Porsche 300 */
+        --md-sys-color-on-tertiary: #82462a; /* Porsche 800 */
+        --md-sys-color-tertiary-container: #a2572c; /* Porsche 700 */
+        --md-sys-color-on-tertiary-container: #f8eedc; /* Porsche 100 */
+        
+        --md-sys-color-outline: #8e9099;
+        --md-sys-color-outline-variant: #444746;
+      }
+    }
+    \n
+    .m3-headline-small {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      fill: var(--md-sys-color-on-surface);
+    }
+    .m3-title-medium {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+      fill: var(--md-sys-color-on-surface);
+    }
+    .m3-title-small {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+      fill: var(--md-sys-color-on-surface);
+    }
+    .m3-body-large {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      fill: var(--md-sys-color-on-surface-variant);
+    }
+    .m3-body-medium {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      fill: var(--md-sys-color-on-surface-variant);
+    }
+    .m3-body-small {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+      fill: var(--md-sys-color-on-surface-variant);
+    }
+    .m3-label-large {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+      fill: var(--md-sys-color-primary);
+    }
+    .m3-label-medium {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      fill: var(--md-sys-color-on-surface-variant);
+    }
+    .m3-display-small {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 44px;
+      fill: var(--md-sys-color-on-surface);
+    }
+    \n
+    .m3-container-large {
+      rx: 24px;
+      fill: var(--md-sys-color-surface);
+      stroke: var(--md-sys-color-outline-variant);
+      stroke-width: 1px;
+    }
+    .m3-card-medium {
+      rx: 16px;
+      fill: var(--md-sys-color-surface-container);
+      stroke: var(--md-sys-color-outline-variant);
+      stroke-width: 0.5px;
+    }
+    .m3-bar-chart {
+      rx: 4px;
+    }
+    .m3-divider {
+      stroke: var(--md-sys-color-outline-variant);
+      stroke-width: 1px;
+      opacity: 0.5;
+    }
+    \n</style>\n<rect class="m3-container-large" x="0.5" y="0.5" width="599" height="299" />\n  <text x="24" y="36" class="m3-headline-small">GitHub Profile Overview</text>\n  <text x="24" y="56" class="m3-body-small">Updated weekly • Public data only</text>\n  <g transform="translate(24, 84)">\n    <text x="0" y="0" class="m3-title-small">Engineering Activity</text>\n    <g transform="translate(0, 24)">\n      <text x="0" y="12" class="m3-body-medium">Total Stars</text>\n      <text x="100" y="12" class="m3-label-large">45</text>\n    </g>\n    <g transform="translate(0, 52)">\n      <text x="0" y="12" class="m3-body-medium">Contributions</text>\n      <text x="100" y="12" class="m3-label-large">2642</text>\n    </g>\n    <g transform="translate(0, 80)">\n      <text x="0" y="12" class="m3-body-medium">Merged PRs</text>\n      <text x="100" y="12" class="m3-label-large">51</text>\n    </g>\n    <g transform="translate(0, 108)">\n      <text x="0" y="12" class="m3-body-medium">Code Reviews</text>\n      <text x="100" y="12" class="m3-label-large">21</text>\n    </g>\n    <g transform="translate(0, 136)">\n      <text x="0" y="12" class="m3-body-medium">Issues</text>\n      <text x="100" y="12" class="m3-label-large">32</text>\n    </g>\n  </g>\n  <line x1="190" y1="84" x2="190" y2="250" class="m3-divider" />\n  <g transform="translate(210, 84)">\n    <text x="0" y="0" class="m3-title-small">Velocity &amp; Impact</text>\n    <g transform="translate(0, 24)">\n      <text x="0" y="12" class="m3-body-medium">Code Reuse</text>\n      <text x="100" y="12" class="m3-label-large">0.0x</text>\n    </g>\n    <g transform="translate(0, 52)">\n      <text x="0" y="12" class="m3-body-medium">Streak</text>\n      <text x="100" y="12" class="m3-label-large">10 Days</text>\n    </g>\n    <g transform="translate(0, 80)">\n      <text x="0" y="12" class="m3-body-medium">Peak Day</text>\n      <text x="100" y="12" class="m3-label-large">Saturday (17%)</text>\n    </g>\n    <g transform="translate(0, 108)">\n      <text x="0" y="12" class="m3-body-medium">Peak Hours</text>\n      <text x="100" y="12" class="m3-label-large">Evening</text>\n    </g>\n  </g>\n  <line x1="390" y1="84" x2="390" y2="250" class="m3-divider" />\n  <g transform="translate(410, 84)">\n    <text x="0" y="0" class="m3-title-small">Languages (Core)</text>\n    <clipPath id="bar-clip">\n      <rect width="160.0" height="8" rx="4" />\n    </clipPath>\n    <g transform="translate(0, 16)" clip-path="url(#bar-clip)">\n      <rect width="160.0" height="8" fill="var(--md-sys-color-surface-variant)" />\n      <rect x="0.00" y="0" width="104.02" height="8" fill="#dea584" />\n      <rect x="104.02" y="0" width="28.96" height="8" fill="#00B4AB" />\n      <rect x="132.98" y="0" width="7.31" height="8" fill="#3572A5" />\n      <rect x="140.29" y="0" width="5.52" height="8" fill="#89e051" />\n      <rect x="145.80" y="0" width="4.26" height="8" fill="#f34b7d" />\n      <rect x="150.06" y="0" width="3.80" height="8" fill="#ff5a03" />\n      <rect x="153.86" y="0" width="6.14" height="8" fill="#8e918f" />\n    </g>\n      <g transform="translate(0, 36)">\n        <circle cx="5" cy="8" r="4.5" fill="#dea584" />\n        <text x="16" y="12" class="m3-body-medium">Rust</text>\n        <text x="120" y="12" class="m3-body-small">65.0%</text>\n      </g>\n      <g transform="translate(0, 60)">\n        <circle cx="5" cy="8" r="4.5" fill="#00B4AB" />\n        <text x="16" y="12" class="m3-body-medium">Dart</text>\n        <text x="120" y="12" class="m3-body-small">18.1%</text>\n      </g>\n      <g transform="translate(0, 84)">\n        <circle cx="5" cy="8" r="4.5" fill="#3572A5" />\n        <text x="16" y="12" class="m3-body-medium">Python</text>\n        <text x="120" y="12" class="m3-body-small">4.6%</text>\n      </g>\n      <g transform="translate(0, 108)">\n        <circle cx="5" cy="8" r="4.5" fill="#89e051" />\n        <text x="16" y="12" class="m3-body-medium">Shell</text>\n        <text x="120" y="12" class="m3-body-small">3.4%</text>\n      </g>\n      <g transform="translate(0, 132)">\n        <circle cx="5" cy="8" r="4.5" fill="#f34b7d" />\n        <text x="16" y="12" class="m3-body-medium">C++</text>\n        <text x="120" y="12" class="m3-body-small">2.7%</text>\n      </g>\n      <g transform="translate(0, 156)">\n        <circle cx="5" cy="8" r="4.5" fill="#ff5a03" />\n        <text x="16" y="12" class="m3-body-medium">Astro</text>\n        <text x="120" y="12" class="m3-body-small">2.4%</text>\n      </g>\n      <g transform="translate(0, 180)">\n        <circle cx="5" cy="8" r="4.5" fill="#8e918f" />\n        <text x="16" y="12" class="m3-body-medium">Other</text>\n        <text x="120" y="12" class="m3-body-small">3.8%</text>\n      </g>\n  </g>\n</svg>\n

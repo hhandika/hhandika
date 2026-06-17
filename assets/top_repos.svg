@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="440" viewBox="0 0 600 440" fill="none">\n<style>\n
+    :root {
+      /* Light Theme (Chetwode & Porsche) */
+      --md-sys-color-surface: #fcfcfc;
+      --md-sys-color-on-surface: #1a1c1e;
+      --md-sys-color-surface-variant: #e1e2e8;
+      --md-sys-color-on-surface-variant: #44474e;
+      --md-sys-color-surface-container: #f0f5fd; /* Chetwode 50 */
+      
+      --md-sys-color-primary: #5a67d1; /* Chetwode 600 */
+      --md-sys-color-on-primary: #ffffff;
+      --md-sys-color-primary-container: #e4edfb; /* Chetwode 100 */
+      --md-sys-color-on-primary-container: #384077; /* Chetwode 900 */
+      
+      --md-sys-color-tertiary: #c46f32; /* Porsche 600 */
+      --md-sys-color-on-tertiary: #ffffff;
+      --md-sys-color-tertiary-container: #f8eedc; /* Porsche 100 */
+      --md-sys-color-on-tertiary-container: #6a3b24; /* Porsche 900 */
+      
+      --md-sys-color-outline: #74777f;
+      --md-sys-color-outline-variant: #c4c7c5;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      :root {
+        /* Dark Theme (Chetwode & Porsche) */
+        --md-sys-color-surface: #1a1c1e;
+        --md-sys-color-on-surface: #e2e2e6;
+        --md-sys-color-surface-variant: #44474e;
+        --md-sys-color-on-surface-variant: #c4c6d0;
+        --md-sys-color-surface-container: #212545; /* Chetwode 950 */
+        
+        --md-sys-color-primary: #b0c6f1; /* Chetwode 300 */
+        --md-sys-color-on-primary: #3e4795; /* Chetwode 800 */
+        --md-sys-color-primary-container: #4a54b8; /* Chetwode 700 */
+        --md-sys-color-on-primary-container: #e4edfb; /* Chetwode 100 */
+        
+        --md-sys-color-tertiary: #e5bf8c; /* Porsche 300 */
+        --md-sys-color-on-tertiary: #82462a; /* Porsche 800 */
+        --md-sys-color-tertiary-container: #a2572c; /* Porsche 700 */
+        --md-sys-color-on-tertiary-container: #f8eedc; /* Porsche 100 */
+        
+        --md-sys-color-outline: #8e9099;
+        --md-sys-color-outline-variant: #444746;
+      }
+    }
+    \n
+    .m3-headline-small {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      fill: var(--md-sys-color-on-surface);
+    }
+    .m3-title-medium {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+      fill: var(--md-sys-color-on-surface);
+    }
+    .m3-title-small {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+      fill: var(--md-sys-color-on-surface);
+    }
+    .m3-body-large {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      fill: var(--md-sys-color-on-surface-variant);
+    }
+    .m3-body-medium {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      fill: var(--md-sys-color-on-surface-variant);
+    }
+    .m3-body-small {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+      fill: var(--md-sys-color-on-surface-variant);
+    }
+    .m3-label-large {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+      fill: var(--md-sys-color-primary);
+    }
+    .m3-label-medium {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      fill: var(--md-sys-color-on-surface-variant);
+    }
+    .m3-display-small {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 44px;
+      fill: var(--md-sys-color-on-surface);
+    }
+    \n
+    .m3-container-large {
+      rx: 24px;
+      fill: var(--md-sys-color-surface);
+      stroke: var(--md-sys-color-outline-variant);
+      stroke-width: 1px;
+    }
+    .m3-card-medium {
+      rx: 16px;
+      fill: var(--md-sys-color-surface-container);
+      stroke: var(--md-sys-color-outline-variant);
+      stroke-width: 0.5px;
+    }
+    .m3-bar-chart {
+      rx: 4px;
+    }
+    .m3-divider {
+      stroke: var(--md-sys-color-outline-variant);
+      stroke-width: 1px;
+      opacity: 0.5;
+    }
+    \n</style>\n<rect class="m3-container-large" x="0.5" y="0.5" width="599" height="439" />\n  <text x="24" y="36" class="m3-headline-small">Top Repositories</text>\n  <text x="24" y="56" class="m3-body-small">Featured projects breakdown • Updated weekly</text>\n  <g transform="translate(24, 76)">\n    <rect x="0" y="0" width="552" height="64" class="m3-card-medium" />\n    <text x="16" y="24" class="m3-title-medium">nahpu/nahpu</text>\n    <text x="16" y="44" class="m3-body-small">A cross-platform (mobile and desktop) digital catalog app for natural history...</text>\n    <circle cx="330" cy="20" r="4.5" fill="#00B4AB" />\n    <text x="340" y="24" class="m3-label-medium">Dart</text>\n    <text x="420" y="24" class="m3-label-medium">⭐ 14</text>\n    <text x="470" y="24" class="m3-label-medium">🍴 7</text>\n    <text x="520" y="24" class="m3-label-medium">📦 10</text>\n  </g>\n  <g transform="translate(24, 148)">\n    <rect x="0" y="0" width="552" height="64" class="m3-card-medium" />\n    <text x="16" y="24" class="m3-title-medium">hhandika/segul</text>\n    <text x="16" y="44" class="m3-body-small">An ultrafast and memory efficient tool for phylogenomics</text>\n    <circle cx="330" cy="20" r="4.5" fill="#dea584" />\n    <text x="340" y="24" class="m3-label-medium">Rust</text>\n    <text x="420" y="24" class="m3-label-medium">⭐ 26</text>\n    <text x="470" y="24" class="m3-label-medium">🍴 2</text>\n    <text x="520" y="24" class="m3-label-medium">📦 69</text>\n  </g>\n  <g transform="translate(24, 220)">\n    <rect x="0" y="0" width="552" height="64" class="m3-card-medium" />\n    <text x="16" y="24" class="m3-title-medium">hhandika/segui</text>\n    <text x="16" y="44" class="m3-body-small">A GUI version of the SEGUL phylogenomic tool</text>\n    <circle cx="330" cy="20" r="4.5" fill="#00B4AB" />\n    <text x="340" y="24" class="m3-label-medium">Dart</text>\n    <text x="420" y="24" class="m3-label-medium">⭐ 2</text>\n    <text x="470" y="24" class="m3-label-medium">🍴 1</text>\n    <text x="520" y="24" class="m3-label-medium">📦 12</text>\n  </g>\n  <g transform="translate(24, 292)">\n    <rect x="0" y="0" width="552" height="64" class="m3-card-medium" />\n    <text x="16" y="24" class="m3-title-medium">hhandika/ullar</text>\n    <text x="16" y="44" class="m3-body-small">A lightweight phylo and population genomic pipeline designed from the ground ...</text>\n    <circle cx="330" cy="20" r="4.5" fill="#dea584" />\n    <text x="340" y="24" class="m3-label-medium">Rust</text>\n    <text x="420" y="24" class="m3-label-medium">⭐ 0</text>\n    <text x="470" y="24" class="m3-label-medium">🍴 0</text>\n    <text x="520" y="24" class="m3-label-medium">📦 7</text>\n  </g>\n  <g transform="translate(24, 364)">\n    <rect x="0" y="0" width="552" height="64" class="m3-card-medium" />\n    <text x="16" y="24" class="m3-title-medium">mammaldiversity/mdd_app</text>\n    <text x="16" y="44" class="m3-body-small">An app for viewing mammal diversity database</text>\n    <circle cx="330" cy="20" r="4.5" fill="#00B4AB" />\n    <text x="340" y="24" class="m3-label-medium">Dart</text>\n    <text x="420" y="24" class="m3-label-medium">⭐ 2</text>\n    <text x="470" y="24" class="m3-label-medium">🍴 0</text>\n    <text x="520" y="24" class="m3-label-medium">📦 14</text>\n  </g></svg>\n
