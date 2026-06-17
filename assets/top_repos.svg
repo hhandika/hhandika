@@ -145,7 +145,7 @@
     }
     
 </style>
-<rect class="m3-container-large" x="0.5" y="0.5" width="599" height="559" />
+<path class="m3-container-large" d="M 0.5 0.5 L 599.5 0.5 L 599.5 547.5 A 12 12 0 0 1 587.5 559.5 L 12.5 559.5 A 12 12 0 0 1 0.5 547.5 Z" />
   <text x="24" y="36" class="m3-headline-small">Selected Repositories</text>
   <text x="24" y="56" class="m3-body-small">Featured projects breakdown</text>
   <g transform="translate(24, 76)">
