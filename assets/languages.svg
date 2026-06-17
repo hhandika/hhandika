@@ -153,19 +153,54 @@
   </clipPath>
   <g transform="translate(24, 84)" clip-path="url(#lang-bar-clip)">
     <rect width="552.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-    <rect x="0.00" y="0" width="386.40" height="12" fill="#3572A5" />
-      <rect x="386.40" y="0" width="165.60" height="12" fill="#dea584" />
+    <rect x="0.00" y="0" width="358.43" height="12" fill="#dea584" />
+      <rect x="358.43" y="0" width="99.79" height="12" fill="#00B4AB" />
+      <rect x="458.22" y="0" width="25.84" height="12" fill="#3572A5" />
+      <rect x="484.07" y="0" width="19.01" height="12" fill="#89e051" />
+      <rect x="503.07" y="0" width="14.66" height="12" fill="#f34b7d" />
+      <rect x="517.74" y="0" width="13.10" height="12" fill="#ff5a03" />
+      <rect x="530.84" y="0" width="21.16" height="12" fill="#8e918f" />
   </g>
   <g transform="translate(24, 120)">
-    <circle cx="6" cy="6" r="6" fill="#3572A5" />
-    <text x="24" y="11" class="m3-body-large">Python</text>
-    <text x="200" y="11" class="m3-label-large">70.0%</text>
+    <circle cx="6" cy="6" r="6" fill="#dea584" />
+    <text x="24" y="11" class="m3-body-large">Rust</text>
+    <text x="200" y="11" class="m3-label-large">64.9%</text>
   </g>
 
   <g transform="translate(300, 120)">
-    <circle cx="6" cy="6" r="6" fill="#dea584" />
-    <text x="24" y="11" class="m3-body-large">Rust</text>
-    <text x="200" y="11" class="m3-label-large">30.0%</text>
+    <circle cx="6" cy="6" r="6" fill="#00B4AB" />
+    <text x="24" y="11" class="m3-body-large">Dart</text>
+    <text x="200" y="11" class="m3-label-large">18.1%</text>
+  </g>
+
+  <g transform="translate(24, 150)">
+    <circle cx="6" cy="6" r="6" fill="#3572A5" />
+    <text x="24" y="11" class="m3-body-large">Python</text>
+    <text x="200" y="11" class="m3-label-large">4.7%</text>
+  </g>
+
+  <g transform="translate(300, 150)">
+    <circle cx="6" cy="6" r="6" fill="#89e051" />
+    <text x="24" y="11" class="m3-body-large">Shell</text>
+    <text x="200" y="11" class="m3-label-large">3.4%</text>
+  </g>
+
+  <g transform="translate(24, 180)">
+    <circle cx="6" cy="6" r="6" fill="#f34b7d" />
+    <text x="24" y="11" class="m3-body-large">C++</text>
+    <text x="200" y="11" class="m3-label-large">2.7%</text>
+  </g>
+
+  <g transform="translate(300, 180)">
+    <circle cx="6" cy="6" r="6" fill="#ff5a03" />
+    <text x="24" y="11" class="m3-body-large">Astro</text>
+    <text x="200" y="11" class="m3-label-large">2.4%</text>
+  </g>
+
+  <g transform="translate(24, 210)">
+    <circle cx="6" cy="6" r="6" fill="#8e918f" />
+    <text x="24" y="11" class="m3-body-large">Other</text>
+    <text x="200" y="11" class="m3-label-large">3.8%</text>
   </g>
 
 </svg>

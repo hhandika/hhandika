@@ -7,6 +7,7 @@ For more insights into my work and adventures, visit [my website](https://hhandi
 <!-- START_SECTION:github-stats -->
 <p align="left">
   <img src="assets/overview.svg" alt="GitHub Stats" width="600" />
+  <img src="assets/languages.svg" alt="Top Languages" width="600" />
   <img src="assets/top_repos.svg" alt="Top Repositories" width="600" />
 </p>
 <p align="left"><sub>*Stats reflect public repositories only. Updated weekly.</sub></p>
