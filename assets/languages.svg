@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="220" viewBox="0 0 600 220" fill="none" role="img" aria-labelledby="titleId descId">
-  <title id="titleId">GitHub Stats</title>
-  <desc id="descId">GitHub statistics dashboard</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="260" viewBox="0 0 600 260" fill="none" role="img" aria-labelledby="titleId descId">
+  <title id="titleId">Top Languages Dashboard</title>
+  <desc id="descId">Shows a bar chart of top programming languages used</desc>
 <style>
 
     :root {
@@ -124,19 +124,19 @@
     
 
     .m3-container-large {
-      rx: 24px;
+      rx: 12px;
       fill: var(--md-sys-color-surface);
       stroke: var(--md-sys-color-outline-variant);
       stroke-width: 1px;
     }
     .m3-card-medium {
-      rx: 16px;
+      rx: 8px;
       fill: var(--md-sys-color-surface-container);
       stroke: var(--md-sys-color-outline-variant);
       stroke-width: 0.5px;
     }
     .m3-bar-chart {
-      rx: 4px;
+      rx: 2px;
     }
     .m3-divider {
       stroke: var(--md-sys-color-outline-variant);
@@ -145,19 +145,19 @@
     }
     
 </style>
-<rect class="m3-container-large" x="0.5" y="0.5" width="599" height="219" />
+<rect class="m3-container-large" x="0.5" y="0.5" width="599" height="259" />
   <text x="24" y="36" class="m3-headline-small">Top Languages</text>
-  <text x="24" y="56" class="m3-body-small">Based on repository size • Updated weekly</text>
+  <text x="24" y="56" class="m3-body-small">Based on repository size</text>
   <clipPath id="lang-bar-clip">
-    <rect width="552.0" height="12" rx="6" />
+    <rect width="552.0" height="12" rx="3" />
   </clipPath>
   <g transform="translate(24, 84)" clip-path="url(#lang-bar-clip)">
     <rect width="552.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-    <rect x="0.00" y="0" width="358.43" height="12" fill="#dea584" />
-      <rect x="358.43" y="0" width="99.79" height="12" fill="#00B4AB" />
-      <rect x="458.22" y="0" width="25.84" height="12" fill="#3572A5" />
-      <rect x="484.07" y="0" width="19.01" height="12" fill="#89e051" />
-      <rect x="503.07" y="0" width="14.66" height="12" fill="#f34b7d" />
+    <rect x="0.00" y="0" width="358.38" height="12" fill="#dea584" />
+      <rect x="358.38" y="0" width="99.77" height="12" fill="#00B4AB" />
+      <rect x="458.15" y="0" width="25.92" height="12" fill="#3572A5" />
+      <rect x="484.08" y="0" width="19.00" height="12" fill="#89e051" />
+      <rect x="503.08" y="0" width="14.66" height="12" fill="#f34b7d" />
       <rect x="517.74" y="0" width="13.10" height="12" fill="#ff5a03" />
       <rect x="530.84" y="0" width="21.16" height="12" fill="#8e918f" />
   </g>
