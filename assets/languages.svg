@@ -153,9 +153,9 @@
   </clipPath>
   <g transform="translate(24, 84)" clip-path="url(#lang-bar-clip)">
     <rect width="552.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-    <rect x="0.00" y="0" width="358.29" height="12" fill="#dea584" />
-      <rect x="358.29" y="0" width="99.75" height="12" fill="#00B4AB" />
-      <rect x="458.04" y="0" width="26.06" height="12" fill="#3572A5" />
+    <rect x="0.00" y="0" width="358.28" height="12" fill="#dea584" />
+      <rect x="358.28" y="0" width="99.74" height="12" fill="#00B4AB" />
+      <rect x="458.03" y="0" width="26.07" height="12" fill="#3572A5" />
       <rect x="484.09" y="0" width="19.00" height="12" fill="#89e051" />
       <rect x="503.09" y="0" width="14.66" height="12" fill="#f34b7d" />
       <rect x="517.75" y="0" width="13.10" height="12" fill="#ff5a03" />
