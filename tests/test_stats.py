@@ -74,6 +74,7 @@ def test_generate_overview_svg():
         streak=5,
         peak_day="Wednesday (20%)",
         peak_hours="Afternoon (12-16)",
+        total_loc="45k",
     )
     svg = generator.generate()
 
