@@ -71,12 +71,11 @@ class OverviewDashboardGenerator(M3SVGGenerator):
         streak: int,
         peak_day: str,
         peak_hours: str,
+        total_loc: str,
     ):
         """Initializes with all overview metrics."""
         super().__init__(
-            width=600, 
-            height=240,
-            desc="GitHub statistics dashboard. Updates weekly."
+            width=600, height=240, desc="GitHub statistics dashboard. Updates weekly."
         )
         self.total_stars = total_stars
         self.total_contributions = total_contributions
@@ -87,6 +86,7 @@ class OverviewDashboardGenerator(M3SVGGenerator):
         self.streak = streak
         self.peak_day = peak_day
         self.peak_hours = peak_hours
+        self.total_loc = total_loc
 
     def generate(self) -> str:
         """Generates the Overview SVG."""
@@ -132,18 +132,18 @@ class OverviewDashboardGenerator(M3SVGGenerator):
             224, 84, "contributions", "Contributions", str(self.total_contributions)
         )
         grid_html += self._get_stat_item(
-            424, 84, "prs", "Merged PRs", str(self.total_prs)
+            424, 84, "code", "Total Lines of Code", self.total_loc
         )
 
         # Row 2
         grid_html += self._get_stat_item(
-            24, 134, "reviews", "Code Reviews", str(self.total_reviews)
+            24, 134, "prs", "Merged PRs", str(self.total_prs)
         )
         grid_html += self._get_stat_item(
-            224, 134, "issues", "Issues", str(self.total_issues)
+            224, 134, "reviews", "Code Reviews", str(self.total_reviews)
         )
         grid_html += self._get_stat_item(
-            424, 134, "streak", "Streak", f"{self.streak} Days"
+            424, 134, "issues", "Issues", str(self.total_issues)
         )
 
         # Row 3
@@ -152,6 +152,9 @@ class OverviewDashboardGenerator(M3SVGGenerator):
         )
         grid_html += self._get_stat_item(
             224, 184, "peak_hours", "Peak Hours", xml_escape(self.peak_hours)
+        )
+        grid_html += self._get_stat_item(
+            424, 184, "streak", "Streak", f"{self.streak} Days"
         )
 
         return grid_html

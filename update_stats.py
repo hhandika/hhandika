@@ -65,6 +65,7 @@ def main() -> None:
     peak_hours = fetcher.fetch_peak_hours(username)
 
     languages = processor.parse_languages(repos_nodes)
+    total_loc = processor.estimate_lines_of_code(languages)
 
     top_repos_data = []
     for owner, name in TOP_REPOS:
@@ -93,6 +94,7 @@ def main() -> None:
         streak=streak,
         peak_day=peak_day,
         peak_hours=peak_hours,
+        total_loc=total_loc,
     )
     overview_svg = overview_generator.generate()
 

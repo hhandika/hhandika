@@ -51,6 +51,17 @@ class DataProcessor:
         return languages
 
     @staticmethod
+    def estimate_lines_of_code(languages: Dict[str, Dict[str, Any]]) -> str:
+        """Estimates total lines of code and formats it as a string."""
+        total_bytes = sum(lang_data.get("size", 0) for lang_data in languages.values())
+        lines = total_bytes // 30
+        if lines >= 1_000_000:
+            return f"{lines / 1_000_000:.1f}M"
+        if lines >= 1_000:
+            return f"{lines / 1_000:.1f}k"
+        return str(lines)
+
+    @staticmethod
     def calculate_calendar_metrics(calendar_data: Dict[str, Any]) -> Tuple[int, str]:
         """Calculates active streak and peak contribution day from calendar data."""
         weeks = calendar_data.get("weeks", [])
