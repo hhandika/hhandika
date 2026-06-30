@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="240" viewBox="0 0 600 240" fill="none" role="img" aria-labelledby="titleId descId">
   <title id="titleId">GitHub Stats</title>
-  <desc id="descId">GitHub statistics dashboard. Updates weekly.</desc>
+  <desc id="descId">GitHub statistics dashboard. Updates daily.</desc>
 <style>
 
     :root {
@@ -147,7 +147,7 @@
 </style>
 <path class="m3-container-large" d="M 0.5 239.5 L 0.5 12.5 A 12 12 0 0 1 12.5 0.5 L 587.5 0.5 A 12 12 0 0 1 599.5 12.5 L 599.5 239.5 Z" />
   <text x="24" y="36" class="m3-headline-small">GitHub Profile Overview</text>
-  <text x="24" y="56" class="m3-body-small">Public data only • Updates weekly</text>
+  <text x="24" y="56" class="m3-body-small">Public data only • Updates daily</text>
   <g transform="translate(24, 84)">
     <svg x="0" y="-4" width="20" height="20" viewBox="0 0 24 24" fill="var(--md-sys-color-primary)">
       <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>

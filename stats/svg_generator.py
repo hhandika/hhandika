@@ -75,7 +75,7 @@ class OverviewDashboardGenerator(M3SVGGenerator):
     ):
         """Initializes with all overview metrics."""
         super().__init__(
-            width=600, height=240, desc="GitHub statistics dashboard. Updates weekly."
+            width=600, height=240, desc="GitHub statistics dashboard. Updates daily."
         )
         self.total_stars = total_stars
         self.total_contributions = total_contributions
@@ -117,7 +117,7 @@ class OverviewDashboardGenerator(M3SVGGenerator):
         """Returns the header text."""
         return (
             '  <text x="24" y="36" class="m3-headline-small">GitHub Profile Overview</text>\n'
-            '  <text x="24" y="56" class="m3-body-small">Public data only • Updates weekly</text>\n'
+            '  <text x="24" y="56" class="m3-body-small">Public data only • Updates daily</text>\n'
         )
 
     def _get_grid(self) -> str:
