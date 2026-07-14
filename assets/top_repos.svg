@@ -157,10 +157,10 @@
     </clipPath>
     <g clip-path="url(#repo-bar-clip-0)">
       <rect x="16" y="48" width="520" height="6" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="16.00" y="48" width="480.91" height="6" fill="#00B4AB" />
-      <rect x="496.91" y="48" width="24.62" height="6" fill="#dea584" />
-      <rect x="521.53" y="48" width="4.20" height="6" fill="#DA3434" />
-      <rect x="525.72" y="48" width="3.92" height="6" fill="#f34b7d" />
+      <rect x="16.00" y="48" width="480.93" height="6" fill="#00B4AB" />
+      <rect x="496.93" y="48" width="24.61" height="6" fill="#dea584" />
+      <rect x="521.54" y="48" width="4.19" height="6" fill="#DA3434" />
+      <rect x="525.73" y="48" width="3.92" height="6" fill="#f34b7d" />
       <rect x="529.65" y="48" width="2.70" height="6" fill="#3572A5" />
       <rect x="532.35" y="48" width="1.27" height="6" fill="#89e051" />
       <rect x="533.62" y="48" width="1.09" height="6" fill="#701516" />
