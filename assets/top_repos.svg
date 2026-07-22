@@ -252,23 +252,23 @@
     </clipPath>
     <g clip-path="url(#repo-bar-clip-4)">
       <rect x="16" y="48" width="520" height="6" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="16.00" y="48" width="391.90" height="6" fill="#00B4AB" />
-      <rect x="407.90" y="48" width="43.89" height="6" fill="#dea584" />
-      <rect x="451.79" y="48" width="23.17" height="6" fill="#DA3434" />
-      <rect x="474.97" y="48" width="22.70" height="6" fill="#f34b7d" />
-      <rect x="497.66" y="48" width="19.90" height="6" fill="#3572A5" />
-      <rect x="517.56" y="48" width="6.36" height="6" fill="#89e051" />
-      <rect x="523.92" y="48" width="6.08" height="6" fill="#701516" />
-      <rect x="530.00" y="48" width="2.34" height="6" fill="#F05138" />
-      <rect x="532.34" y="48" width="2.23" height="6" fill="#C1F12E" />
-      <rect x="534.57" y="48" width="1.43" height="6" fill="#555555" />
+      <rect x="16.00" y="48" width="390.91" height="6" fill="#00B4AB" />
+      <rect x="406.91" y="48" width="49.33" height="6" fill="#dea584" />
+      <rect x="456.24" y="48" width="21.91" height="6" fill="#DA3434" />
+      <rect x="478.15" y="48" width="21.46" height="6" fill="#f34b7d" />
+      <rect x="499.61" y="48" width="18.70" height="6" fill="#3572A5" />
+      <rect x="518.32" y="48" width="6.26" height="6" fill="#89e051" />
+      <rect x="524.57" y="48" width="5.75" height="6" fill="#701516" />
+      <rect x="530.32" y="48" width="2.22" height="6" fill="#F05138" />
+      <rect x="532.54" y="48" width="2.11" height="6" fill="#C1F12E" />
+      <rect x="534.65" y="48" width="1.35" height="6" fill="#555555" />
     </g>
             <circle cx="20.0" cy="72" r="4" fill="#00B4AB" />
-      <text x="28.0" y="76" class="m3-label-medium">Dart 75.4%</text>
+      <text x="28.0" y="76" class="m3-label-medium">Dart 75.2%</text>
       <circle cx="127.0" cy="72" r="4" fill="#dea584" />
-      <text x="135.0" y="76" class="m3-label-medium">Rust 8.4%</text>
+      <text x="135.0" y="76" class="m3-label-medium">Rust 9.5%</text>
       <circle cx="234.0" cy="72" r="4" fill="#DA3434" />
-      <text x="242.0" y="76" class="m3-label-medium">CMake 4.5%</text>
+      <text x="242.0" y="76" class="m3-label-medium">CMake 4.2%</text>
       <circle cx="349.0" cy="72" r="4" fill="#f34b7d" />
-      <text x="357.0" y="76" class="m3-label-medium">C++ 4.4%</text>
+      <text x="357.0" y="76" class="m3-label-medium">C++ 4.1%</text>
   </g></svg>
