@@ -157,21 +157,21 @@
     </clipPath>
     <g clip-path="url(#repo-bar-clip-0)">
       <rect x="16" y="48" width="520" height="6" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="16.00" y="48" width="482.57" height="6" fill="#00B4AB" />
-      <rect x="498.57" y="48" width="26.40" height="6" fill="#dea584" />
-      <rect x="524.97" y="48" width="3.19" height="6" fill="#DA3434" />
-      <rect x="528.16" y="48" width="3.01" height="6" fill="#f34b7d" />
-      <rect x="531.16" y="48" width="2.05" height="6" fill="#3572A5" />
-      <rect x="533.21" y="48" width="0.97" height="6" fill="#89e051" />
-      <rect x="534.18" y="48" width="0.83" height="6" fill="#701516" />
-      <rect x="535.00" y="48" width="0.39" height="6" fill="#F05138" />
+      <rect x="16.00" y="48" width="483.01" height="6" fill="#00B4AB" />
+      <rect x="499.01" y="48" width="26.09" height="6" fill="#dea584" />
+      <rect x="525.10" y="48" width="3.15" height="6" fill="#DA3434" />
+      <rect x="528.25" y="48" width="2.97" height="6" fill="#f34b7d" />
+      <rect x="531.22" y="48" width="2.02" height="6" fill="#3572A5" />
+      <rect x="533.24" y="48" width="0.96" height="6" fill="#89e051" />
+      <rect x="534.20" y="48" width="0.82" height="6" fill="#701516" />
+      <rect x="535.02" y="48" width="0.39" height="6" fill="#F05138" />
       <rect x="535.40" y="48" width="0.30" height="6" fill="#C1F12E" />
       <rect x="535.70" y="48" width="0.30" height="6" fill="#012456" />
     </g>
             <circle cx="20.0" cy="72" r="4" fill="#00B4AB" />
-      <text x="28.0" y="76" class="m3-label-medium">Dart 92.8%</text>
+      <text x="28.0" y="76" class="m3-label-medium">Dart 92.9%</text>
       <circle cx="127.0" cy="72" r="4" fill="#dea584" />
-      <text x="135.0" y="76" class="m3-label-medium">Rust 5.1%</text>
+      <text x="135.0" y="76" class="m3-label-medium">Rust 5.0%</text>
       <circle cx="234.0" cy="72" r="4" fill="#DA3434" />
       <text x="242.0" y="76" class="m3-label-medium">CMake 0.6%</text>
       <circle cx="349.0" cy="72" r="4" fill="#f34b7d" />
