@@ -157,13 +157,13 @@
     </clipPath>
     <g clip-path="url(#repo-bar-clip-0)">
       <rect x="16" y="48" width="520" height="6" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="16.00" y="48" width="486.10" height="6" fill="#00B4AB" />
-      <rect x="502.10" y="48" width="25.23" height="6" fill="#dea584" />
-      <rect x="527.33" y="48" width="2.49" height="6" fill="#DA3434" />
-      <rect x="529.82" y="48" width="2.38" height="6" fill="#f34b7d" />
+      <rect x="16.00" y="48" width="486.14" height="6" fill="#00B4AB" />
+      <rect x="502.14" y="48" width="25.20" height="6" fill="#dea584" />
+      <rect x="527.34" y="48" width="2.49" height="6" fill="#DA3434" />
+      <rect x="529.83" y="48" width="2.38" height="6" fill="#f34b7d" />
       <rect x="532.20" y="48" width="1.60" height="6" fill="#3572A5" />
       <rect x="533.80" y="48" width="0.76" height="6" fill="#89e051" />
-      <rect x="534.56" y="48" width="0.65" height="6" fill="#701516" />
+      <rect x="534.56" y="48" width="0.64" height="6" fill="#701516" />
       <rect x="535.20" y="48" width="0.33" height="6" fill="#F05138" />
       <rect x="535.53" y="48" width="0.24" height="6" fill="#C1F12E" />
       <rect x="535.77" y="48" width="0.23" height="6" fill="#012456" />
@@ -171,7 +171,7 @@
             <circle cx="20.0" cy="72" r="4" fill="#00B4AB" />
       <text x="28.0" y="76" class="m3-label-medium">Dart 93.5%</text>
       <circle cx="127.0" cy="72" r="4" fill="#dea584" />
-      <text x="135.0" y="76" class="m3-label-medium">Rust 4.9%</text>
+      <text x="135.0" y="76" class="m3-label-medium">Rust 4.8%</text>
       <circle cx="234.0" cy="72" r="4" fill="#DA3434" />
       <text x="242.0" y="76" class="m3-label-medium">CMake 0.5%</text>
       <circle cx="349.0" cy="72" r="4" fill="#f34b7d" />
