@@ -153,30 +153,30 @@
   </clipPath>
   <g transform="translate(24, 84)" clip-path="url(#lang-bar-clip)">
     <rect width="432.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-    <rect x="0.00" y="0" width="280.37" height="12" fill="#dea584" />
-      <rect x="280.37" y="0" width="78.19" height="12" fill="#00B4AB" />
-      <rect x="358.56" y="0" width="20.30" height="12" fill="#3572A5" />
-      <rect x="378.86" y="0" width="14.69" height="12" fill="#89e051" />
-      <rect x="393.55" y="0" width="11.66" height="12" fill="#f34b7d" />
-      <rect x="405.22" y="0" width="10.37" height="12" fill="#ff5a03" />
-      <rect x="415.58" y="0" width="16.42" height="12" fill="#8e918f" />
+    <rect x="0.00" y="0" width="279.34" height="12" fill="#dea584" />
+      <rect x="279.34" y="0" width="77.77" height="12" fill="#00B4AB" />
+      <rect x="357.10" y="0" width="21.95" height="12" fill="#3572A5" />
+      <rect x="379.06" y="0" width="14.81" height="12" fill="#89e051" />
+      <rect x="393.87" y="0" width="11.43" height="12" fill="#f34b7d" />
+      <rect x="405.30" y="0" width="10.21" height="12" fill="#ff5a03" />
+      <rect x="415.51" y="0" width="16.49" height="12" fill="#8e918f" />
   </g>
   <g transform="translate(24, 120)">
     <circle cx="6" cy="6" r="6" fill="#dea584" />
     <text x="20" y="11" class="m3-body-medium">Rust</text>
-    <text x="166" y="11" class="m3-label-medium">64.9%</text>
+    <text x="166" y="11" class="m3-label-medium">64.7%</text>
   </g>
 
   <g transform="translate(240, 120)">
     <circle cx="6" cy="6" r="6" fill="#00B4AB" />
     <text x="20" y="11" class="m3-body-medium">Dart</text>
-    <text x="166" y="11" class="m3-label-medium">18.1%</text>
+    <text x="166" y="11" class="m3-label-medium">18.0%</text>
   </g>
 
   <g transform="translate(24, 150)">
     <circle cx="6" cy="6" r="6" fill="#3572A5" />
     <text x="20" y="11" class="m3-body-medium">Python</text>
-    <text x="166" y="11" class="m3-label-medium">4.7%</text>
+    <text x="166" y="11" class="m3-label-medium">5.1%</text>
   </g>
 
   <g transform="translate(240, 150)">
@@ -188,7 +188,7 @@
   <g transform="translate(24, 180)">
     <circle cx="6" cy="6" r="6" fill="#f34b7d" />
     <text x="20" y="11" class="m3-body-medium">C++</text>
-    <text x="166" y="11" class="m3-label-medium">2.7%</text>
+    <text x="166" y="11" class="m3-label-medium">2.6%</text>
   </g>
 
   <g transform="translate(240, 180)">

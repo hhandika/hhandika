@@ -1,0 +1,2706 @@
+{
+  "featured_repositories": [
+    {
+      "available": true,
+      "description": "A cross-platform (mobile and desktop) digital catalog app for natural history collections",
+      "languages": [
+        {
+          "bytes": 4991165,
+          "color": "#00B4AB",
+          "name": "Dart",
+          "percentage": 93.49
+        },
+        {
+          "bytes": 258698,
+          "color": "#dea584",
+          "name": "Rust",
+          "percentage": 4.85
+        },
+        {
+          "bytes": 25551,
+          "color": "#DA3434",
+          "name": "CMake",
+          "percentage": 0.48
+        },
+        {
+          "bytes": 24409,
+          "color": "#f34b7d",
+          "name": "C++",
+          "percentage": 0.46
+        },
+        {
+          "bytes": 16404,
+          "color": "#3572A5",
+          "name": "Python",
+          "percentage": 0.31
+        },
+        {
+          "bytes": 7779,
+          "color": "#89e051",
+          "name": "Shell",
+          "percentage": 0.15
+        },
+        {
+          "bytes": 6616,
+          "color": "#701516",
+          "name": "Ruby",
+          "percentage": 0.12
+        },
+        {
+          "bytes": 3340,
+          "color": "#F05138",
+          "name": "Swift",
+          "percentage": 0.06
+        },
+        {
+          "bytes": 2441,
+          "color": "#C1F12E",
+          "name": "Batchfile",
+          "percentage": 0.05
+        },
+        {
+          "bytes": 2399,
+          "color": "#012456",
+          "name": "PowerShell",
+          "percentage": 0.04
+        }
+      ],
+      "name_with_owner": "nahpu/nahpu"
+    },
+    {
+      "available": true,
+      "description": "An ultrafast and memory efficient tool for phylogenomics",
+      "languages": [
+        {
+          "bytes": 526542,
+          "color": "#dea584",
+          "name": "Rust",
+          "percentage": 99.91
+        },
+        {
+          "bytes": 491,
+          "color": "#89e051",
+          "name": "Shell",
+          "percentage": 0.09
+        }
+      ],
+      "name_with_owner": "hhandika/segul"
+    },
+    {
+      "available": true,
+      "description": "A GUI version of the SEGUL phylogenomic tool",
+      "languages": [
+        {
+          "bytes": 539640,
+          "color": "#00B4AB",
+          "name": "Dart",
+          "percentage": 66.78
+        },
+        {
+          "bytes": 150974,
+          "color": "#dea584",
+          "name": "Rust",
+          "percentage": 18.68
+        },
+        {
+          "bytes": 25499,
+          "color": "#DA3434",
+          "name": "CMake",
+          "percentage": 3.16
+        },
+        {
+          "bytes": 25139,
+          "color": "#f34b7d",
+          "name": "C++",
+          "percentage": 3.11
+        },
+        {
+          "bytes": 18841,
+          "color": "#3572A5",
+          "name": "Python",
+          "percentage": 2.33
+        },
+        {
+          "bytes": 15763,
+          "color": "#fcb32c",
+          "name": "MDX",
+          "percentage": 1.95
+        },
+        {
+          "bytes": 15330,
+          "color": "#3178c6",
+          "name": "TypeScript",
+          "percentage": 1.9
+        },
+        {
+          "bytes": 7522,
+          "color": "#89e051",
+          "name": "Shell",
+          "percentage": 0.93
+        },
+        {
+          "bytes": 6620,
+          "color": "#701516",
+          "name": "Ruby",
+          "percentage": 0.82
+        },
+        {
+          "bytes": 2777,
+          "color": "#012456",
+          "name": "PowerShell",
+          "percentage": 0.34
+        }
+      ],
+      "name_with_owner": "hhandika/segui"
+    },
+    {
+      "available": true,
+      "description": "A lightweight phylo and population genomic pipeline designed from the ground up for efficiency and ease of use",
+      "languages": [
+        {
+          "bytes": 616015,
+          "color": "#dea584",
+          "name": "Rust",
+          "percentage": 99.99
+        },
+        {
+          "bytes": 80,
+          "color": "#3572A5",
+          "name": "Python",
+          "percentage": 0.01
+        },
+        {
+          "bytes": 3,
+          "color": null,
+          "name": "RenderScript",
+          "percentage": 0.0
+        }
+      ],
+      "name_with_owner": "hhandika/ullar"
+    },
+    {
+      "available": true,
+      "description": "An app for viewing mammal diversity database",
+      "languages": [
+        {
+          "bytes": 527959,
+          "color": "#00B4AB",
+          "name": "Dart",
+          "percentage": 78.23
+        },
+        {
+          "bytes": 60122,
+          "color": "#dea584",
+          "name": "Rust",
+          "percentage": 8.91
+        },
+        {
+          "bytes": 25324,
+          "color": "#DA3434",
+          "name": "CMake",
+          "percentage": 3.75
+        },
+        {
+          "bytes": 24803,
+          "color": "#f34b7d",
+          "name": "C++",
+          "percentage": 3.67
+        },
+        {
+          "bytes": 16270,
+          "color": "#3572A5",
+          "name": "Python",
+          "percentage": 2.41
+        },
+        {
+          "bytes": 7230,
+          "color": "#89e051",
+          "name": "Shell",
+          "percentage": 1.07
+        },
+        {
+          "bytes": 6642,
+          "color": "#701516",
+          "name": "Ruby",
+          "percentage": 0.98
+        },
+        {
+          "bytes": 2562,
+          "color": "#F05138",
+          "name": "Swift",
+          "percentage": 0.38
+        },
+        {
+          "bytes": 2441,
+          "color": "#C1F12E",
+          "name": "Batchfile",
+          "percentage": 0.36
+        },
+        {
+          "bytes": 1559,
+          "color": "#555555",
+          "name": "C",
+          "percentage": 0.23
+        }
+      ],
+      "name_with_owner": "mammaldiversity/mdd_app"
+    }
+  ],
+  "generated_at": "2026-08-05T00:57:05.679089+00:00",
+  "language_statistics": {
+    "languages": {
+      "Astro": {
+        "bytes": 116346,
+        "color": "#ff5a03",
+        "percentage": 2.36
+      },
+      "Batchfile": {
+        "bytes": 7285,
+        "color": "#C1F12E",
+        "percentage": 0.15
+      },
+      "C": {
+        "bytes": 46880,
+        "color": "#555555",
+        "percentage": 0.95
+      },
+      "C++": {
+        "bytes": 130216,
+        "color": "#f34b7d",
+        "percentage": 2.65
+      },
+      "Dart": {
+        "bytes": 886105,
+        "color": "#00B4AB",
+        "percentage": 18.0
+      },
+      "Go": {
+        "bytes": 2249,
+        "color": "#00ADD8",
+        "percentage": 0.05
+      },
+      "Java": {
+        "bytes": 172,
+        "color": "#b07219",
+        "percentage": 0.0
+      },
+      "JavaScript": {
+        "bytes": 6329,
+        "color": "#f1e05a",
+        "percentage": 0.13
+      },
+      "Julia": {
+        "bytes": 480,
+        "color": "#a270ba",
+        "percentage": 0.01
+      },
+      "Kotlin": {
+        "bytes": 121,
+        "color": "#A97BFF",
+        "percentage": 0.0
+      },
+      "MDX": {
+        "bytes": 18871,
+        "color": "#fcb32c",
+        "percentage": 0.38
+      },
+      "Objective-C": {
+        "bytes": 38,
+        "color": "#438eff",
+        "percentage": 0.0
+      },
+      "PowerShell": {
+        "bytes": 5554,
+        "color": "#012456",
+        "percentage": 0.11
+      },
+      "Python": {
+        "bytes": 250136,
+        "color": "#3572A5",
+        "percentage": 5.08
+      },
+      "R": {
+        "bytes": 7798,
+        "color": "#198CE7",
+        "percentage": 0.16
+      },
+      "RenderScript": {
+        "bytes": 3,
+        "color": null,
+        "percentage": 0.0
+      },
+      "Ruby": {
+        "bytes": 29325,
+        "color": "#701516",
+        "percentage": 0.6
+      },
+      "Rust": {
+        "bytes": 3182876,
+        "color": "#dea584",
+        "percentage": 64.66
+      },
+      "Shell": {
+        "bytes": 168779,
+        "color": "#89e051",
+        "percentage": 3.43
+      },
+      "Swift": {
+        "bytes": 16122,
+        "color": "#F05138",
+        "percentage": 0.33
+      },
+      "TypeScript": {
+        "bytes": 46682,
+        "color": "#3178c6",
+        "percentage": 0.95
+      }
+    },
+    "total": 4922367,
+    "unit": "bytes"
+  },
+  "overview": {
+    "formatted_lines_of_code": "127.4k",
+    "peak_day": "Saturday (17%)",
+    "peak_hours": "Evening",
+    "streak_days": 1,
+    "total_contributions": 3248,
+    "total_issues": 48,
+    "total_lines_of_code": 127390,
+    "total_pull_requests": 72,
+    "total_repositories": 82,
+    "total_reviews": 35,
+    "total_stars": 45
+  },
+  "profile": {
+    "public_only": true,
+    "username": "hhandika"
+  },
+  "schema_version": 1,
+  "source_line_count": {
+    "counter": {
+      "name": "cloc",
+      "version": "1.98"
+    },
+    "failures": [],
+    "languages": {
+      "Bourne Again Shell": {
+        "blank": 20,
+        "code": 45,
+        "comment": 0,
+        "files": 8
+      },
+      "Bourne Shell": {
+        "blank": 1685,
+        "code": 4508,
+        "comment": 616,
+        "files": 100
+      },
+      "C": {
+        "blank": 220,
+        "code": 1204,
+        "comment": 136,
+        "files": 24
+      },
+      "C++": {
+        "blank": 690,
+        "code": 2548,
+        "comment": 328,
+        "files": 47
+      },
+      "C/C++ Header": {
+        "blank": 312,
+        "code": 686,
+        "comment": 338,
+        "files": 51
+      },
+      "DOS Batch": {
+        "blank": 68,
+        "code": 262,
+        "comment": 32,
+        "files": 4
+      },
+      "Dart": {
+        "blank": 3847,
+        "code": 27465,
+        "comment": 1479,
+        "files": 227
+      },
+      "Go": {
+        "blank": 30,
+        "code": 104,
+        "comment": 10,
+        "files": 4
+      },
+      "Gradle": {
+        "blank": 300,
+        "code": 1205,
+        "comment": 85,
+        "files": 30
+      },
+      "Java": {
+        "blank": 0,
+        "code": 7,
+        "comment": 0,
+        "files": 1
+      },
+      "JavaScript": {
+        "blank": 8,
+        "code": 236,
+        "comment": 30,
+        "files": 16
+      },
+      "Julia": {
+        "blank": 5,
+        "code": 18,
+        "comment": 5,
+        "files": 1
+      },
+      "Kotlin": {
+        "blank": 12,
+        "code": 22,
+        "comment": 0,
+        "files": 6
+      },
+      "PowerShell": {
+        "blank": 38,
+        "code": 223,
+        "comment": 9,
+        "files": 18
+      },
+      "Properties": {
+        "blank": 0,
+        "code": 48,
+        "comment": 1,
+        "files": 12
+      },
+      "Python": {
+        "blank": 1110,
+        "code": 4902,
+        "comment": 1283,
+        "files": 76
+      },
+      "R": {
+        "blank": 95,
+        "code": 242,
+        "comment": 42,
+        "files": 11
+      },
+      "Rmd": {
+        "blank": 194,
+        "code": 479,
+        "comment": 185,
+        "files": 8
+      },
+      "Ruby": {
+        "blank": 24,
+        "code": 232,
+        "comment": 100,
+        "files": 8
+      },
+      "Rust": {
+        "blank": 6422,
+        "code": 76764,
+        "comment": 3180,
+        "files": 470
+      },
+      "SVG": {
+        "blank": 189,
+        "code": 4065,
+        "comment": 5,
+        "files": 55
+      },
+      "Swift": {
+        "blank": 123,
+        "code": 471,
+        "comment": 113,
+        "files": 38
+      },
+      "TypeScript": {
+        "blank": 129,
+        "code": 1309,
+        "comment": 248,
+        "files": 33
+      },
+      "Windows Resource File": {
+        "blank": 115,
+        "code": 345,
+        "comment": 145,
+        "files": 5
+      }
+    },
+    "repositories": [
+      {
+        "languages": {
+          "Bourne Again Shell": {
+            "blank": 10,
+            "code": 23,
+            "comment": 0,
+            "files": 4
+          },
+          "Rust": {
+            "blank": 1757,
+            "code": 13345,
+            "comment": 1396,
+            "files": 105
+          }
+        },
+        "name_with_owner": "hhandika/segul",
+        "totals": {
+          "blank": 1767,
+          "code": 13368,
+          "comment": 1396,
+          "files": 109
+        },
+        "url": "https://github.com/hhandika/segul"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 124,
+            "code": 867,
+            "comment": 5,
+            "files": 5
+          }
+        },
+        "name_with_owner": "hhandika/myte",
+        "totals": {
+          "blank": 124,
+          "code": 867,
+          "comment": 5,
+          "files": 5
+        },
+        "url": "https://github.com/hhandika/myte"
+      },
+      {
+        "languages": {
+          "JavaScript": {
+            "blank": 0,
+            "code": 6,
+            "comment": 1,
+            "files": 2
+          },
+          "SVG": {
+            "blank": 0,
+            "code": 38,
+            "comment": 0,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/resume",
+        "totals": {
+          "blank": 0,
+          "code": 44,
+          "comment": 1,
+          "files": 3
+        },
+        "url": "https://github.com/hhandika/resume"
+      },
+      {
+        "languages": {
+          "Bourne Shell": {
+            "blank": 62,
+            "code": 213,
+            "comment": 24,
+            "files": 10
+          },
+          "C": {
+            "blank": 0,
+            "code": 0,
+            "comment": 1,
+            "files": 1
+          },
+          "C++": {
+            "blank": 115,
+            "code": 452,
+            "comment": 56,
+            "files": 8
+          },
+          "C/C++ Header": {
+            "blank": 51,
+            "code": 103,
+            "comment": 65,
+            "files": 8
+          },
+          "DOS Batch": {
+            "blank": 17,
+            "code": 65,
+            "comment": 8,
+            "files": 1
+          },
+          "Dart": {
+            "blank": 2316,
+            "code": 18058,
+            "comment": 636,
+            "files": 100
+          },
+          "Gradle": {
+            "blank": 61,
+            "code": 235,
+            "comment": 20,
+            "files": 6
+          },
+          "JavaScript": {
+            "blank": 0,
+            "code": 3,
+            "comment": 0,
+            "files": 1
+          },
+          "Kotlin": {
+            "blank": 2,
+            "code": 3,
+            "comment": 0,
+            "files": 1
+          },
+          "PowerShell": {
+            "blank": 15,
+            "code": 78,
+            "comment": 3,
+            "files": 7
+          },
+          "Properties": {
+            "blank": 0,
+            "code": 8,
+            "comment": 0,
+            "files": 2
+          },
+          "Python": {
+            "blank": 65,
+            "code": 403,
+            "comment": 51,
+            "files": 1
+          },
+          "Ruby": {
+            "blank": 6,
+            "code": 58,
+            "comment": 25,
+            "files": 2
+          },
+          "Rust": {
+            "blank": 208,
+            "code": 3599,
+            "comment": 141,
+            "files": 11
+          },
+          "SVG": {
+            "blank": 42,
+            "code": 1094,
+            "comment": 3,
+            "files": 16
+          },
+          "Swift": {
+            "blank": 15,
+            "code": 67,
+            "comment": 7,
+            "files": 6
+          },
+          "TypeScript": {
+            "blank": 39,
+            "code": 457,
+            "comment": 37,
+            "files": 9
+          },
+          "Windows Resource File": {
+            "blank": 23,
+            "code": 69,
+            "comment": 29,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/segui",
+        "totals": {
+          "blank": 3037,
+          "code": 24965,
+          "comment": 1106,
+          "files": 191
+        },
+        "url": "https://github.com/hhandika/segui"
+      },
+      {
+        "languages": {
+          "C": {
+            "blank": 120,
+            "code": 549,
+            "comment": 85,
+            "files": 10
+          },
+          "C++": {
+            "blank": 51,
+            "code": 165,
+            "comment": 15,
+            "files": 3
+          },
+          "C/C++ Header": {
+            "blank": 39,
+            "code": 116,
+            "comment": 6,
+            "files": 5
+          },
+          "Go": {
+            "blank": 28,
+            "code": 95,
+            "comment": 10,
+            "files": 3
+          },
+          "JavaScript": {
+            "blank": 0,
+            "code": 105,
+            "comment": 20,
+            "files": 3
+          },
+          "Julia": {
+            "blank": 5,
+            "code": 18,
+            "comment": 5,
+            "files": 1
+          },
+          "Python": {
+            "blank": 27,
+            "code": 71,
+            "comment": 21,
+            "files": 3
+          },
+          "R": {
+            "blank": 16,
+            "code": 28,
+            "comment": 18,
+            "files": 2
+          },
+          "Rust": {
+            "blank": 94,
+            "code": 352,
+            "comment": 35,
+            "files": 11
+          },
+          "TypeScript": {
+            "blank": 16,
+            "code": 105,
+            "comment": 21,
+            "files": 3
+          }
+        },
+        "name_with_owner": "hhandika/stats-from-scratch",
+        "totals": {
+          "blank": 396,
+          "code": 1604,
+          "comment": 236,
+          "files": 44
+        },
+        "url": "https://github.com/hhandika/stats-from-scratch"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 328,
+            "code": 1224,
+            "comment": 531,
+            "files": 11
+          }
+        },
+        "name_with_owner": "hhandika/mil-kit",
+        "totals": {
+          "blank": 328,
+          "code": 1224,
+          "comment": 531,
+          "files": 11
+        },
+        "url": "https://github.com/hhandika/mil-kit"
+      },
+      {
+        "languages": {
+          "Bourne Shell": {
+            "blank": 63,
+            "code": 217,
+            "comment": 25,
+            "files": 10
+          },
+          "C": {
+            "blank": 0,
+            "code": 0,
+            "comment": 1,
+            "files": 1
+          },
+          "C++": {
+            "blank": 121,
+            "code": 443,
+            "comment": 62,
+            "files": 8
+          },
+          "C/C++ Header": {
+            "blank": 51,
+            "code": 103,
+            "comment": 65,
+            "files": 8
+          },
+          "DOS Batch": {
+            "blank": 17,
+            "code": 66,
+            "comment": 8,
+            "files": 1
+          },
+          "Dart": {
+            "blank": 518,
+            "code": 3351,
+            "comment": 204,
+            "files": 47
+          },
+          "Gradle": {
+            "blank": 66,
+            "code": 258,
+            "comment": 19,
+            "files": 6
+          },
+          "Kotlin": {
+            "blank": 2,
+            "code": 3,
+            "comment": 0,
+            "files": 1
+          },
+          "PowerShell": {
+            "blank": 15,
+            "code": 78,
+            "comment": 3,
+            "files": 7
+          },
+          "Properties": {
+            "blank": 0,
+            "code": 8,
+            "comment": 0,
+            "files": 2
+          },
+          "Python": {
+            "blank": 54,
+            "code": 358,
+            "comment": 0,
+            "files": 1
+          },
+          "Ruby": {
+            "blank": 6,
+            "code": 58,
+            "comment": 25,
+            "files": 2
+          },
+          "Rust": {
+            "blank": 39,
+            "code": 221,
+            "comment": 35,
+            "files": 7
+          },
+          "Swift": {
+            "blank": 14,
+            "code": 54,
+            "comment": 7,
+            "files": 6
+          },
+          "Windows Resource File": {
+            "blank": 23,
+            "code": 69,
+            "comment": 29,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/rinja",
+        "totals": {
+          "blank": 989,
+          "code": 5287,
+          "comment": 483,
+          "files": 108
+        },
+        "url": "https://github.com/hhandika/rinja"
+      },
+      {
+        "languages": {
+          "Bourne Shell": {
+            "blank": 39,
+            "code": 83,
+            "comment": 24,
+            "files": 2
+          },
+          "C": {
+            "blank": 0,
+            "code": 0,
+            "comment": 1,
+            "files": 1
+          },
+          "C++": {
+            "blank": 115,
+            "code": 428,
+            "comment": 56,
+            "files": 8
+          },
+          "C/C++ Header": {
+            "blank": 51,
+            "code": 103,
+            "comment": 65,
+            "files": 8
+          },
+          "DOS Batch": {
+            "blank": 17,
+            "code": 66,
+            "comment": 8,
+            "files": 1
+          },
+          "Dart": {
+            "blank": 447,
+            "code": 2479,
+            "comment": 283,
+            "files": 28
+          },
+          "Gradle": {
+            "blank": 68,
+            "code": 265,
+            "comment": 19,
+            "files": 6
+          },
+          "Kotlin": {
+            "blank": 2,
+            "code": 4,
+            "comment": 0,
+            "files": 1
+          },
+          "PowerShell": {
+            "blank": 3,
+            "code": 24,
+            "comment": 0,
+            "files": 1
+          },
+          "Properties": {
+            "blank": 0,
+            "code": 8,
+            "comment": 0,
+            "files": 2
+          },
+          "Ruby": {
+            "blank": 6,
+            "code": 58,
+            "comment": 25,
+            "files": 2
+          },
+          "Rust": {
+            "blank": 44,
+            "code": 276,
+            "comment": 21,
+            "files": 6
+          },
+          "Swift": {
+            "blank": 14,
+            "code": 50,
+            "comment": 7,
+            "files": 6
+          },
+          "Windows Resource File": {
+            "blank": 23,
+            "code": 69,
+            "comment": 29,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/cuskus",
+        "totals": {
+          "blank": 829,
+          "code": 3913,
+          "comment": 538,
+          "files": 73
+        },
+        "url": "https://github.com/hhandika/cuskus"
+      },
+      {
+        "languages": {
+          "C++": {
+            "blank": 30,
+            "code": 113,
+            "comment": 17,
+            "files": 1
+          },
+          "R": {
+            "blank": 30,
+            "code": 115,
+            "comment": 3,
+            "files": 2
+          },
+          "Rmd": {
+            "blank": 14,
+            "code": 31,
+            "comment": 11,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/R-cpp-ffi",
+        "totals": {
+          "blank": 74,
+          "code": 259,
+          "comment": 31,
+          "files": 4
+        },
+        "url": "https://github.com/hhandika/R-cpp-ffi"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 53,
+            "code": 345,
+            "comment": 23,
+            "files": 5
+          }
+        },
+        "name_with_owner": "hhandika/gene-extractor",
+        "totals": {
+          "blank": 53,
+          "code": 345,
+          "comment": 23,
+          "files": 5
+        },
+        "url": "https://github.com/hhandika/gene-extractor"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 180,
+            "code": 871,
+            "comment": 3,
+            "files": 8
+          }
+        },
+        "name_with_owner": "hhandika/spades-runner",
+        "totals": {
+          "blank": 180,
+          "code": 871,
+          "comment": 3,
+          "files": 8
+        },
+        "url": "https://github.com/hhandika/spades-runner"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 318,
+            "code": 1351,
+            "comment": 18,
+            "files": 9
+          }
+        },
+        "name_with_owner": "hhandika/simple-qc",
+        "totals": {
+          "blank": 318,
+          "code": 1351,
+          "comment": 18,
+          "files": 9
+        },
+        "url": "https://github.com/hhandika/simple-qc"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 17,
+            "code": 114,
+            "comment": 7,
+            "files": 2
+          }
+        },
+        "name_with_owner": "hhandika/gc-counter",
+        "totals": {
+          "blank": 17,
+          "code": 114,
+          "comment": 7,
+          "files": 2
+        },
+        "url": "https://github.com/hhandika/gc-counter"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 30,
+            "code": 138,
+            "comment": 9,
+            "files": 6
+          }
+        },
+        "name_with_owner": "hhandika/journal-unlocker",
+        "totals": {
+          "blank": 30,
+          "code": 138,
+          "comment": 9,
+          "files": 6
+        },
+        "url": "https://github.com/hhandika/journal-unlocker"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 62,
+            "code": 257,
+            "comment": 4,
+            "files": 9
+          }
+        },
+        "name_with_owner": "hhandika/appstore-mockup",
+        "totals": {
+          "blank": 62,
+          "code": 257,
+          "comment": 4,
+          "files": 9
+        },
+        "url": "https://github.com/hhandika/appstore-mockup"
+      },
+      {
+        "languages": {
+          "Bourne Shell": {
+            "blank": 13,
+            "code": 28,
+            "comment": 22,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/gb-utils",
+        "totals": {
+          "blank": 13,
+          "code": 28,
+          "comment": 22,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/gb-utils"
+      },
+      {
+        "languages": {},
+        "name_with_owner": "hhandika/handika-gh-stats",
+        "totals": {
+          "blank": 0,
+          "code": 0,
+          "comment": 0,
+          "files": 0
+        },
+        "url": "https://github.com/hhandika/handika-gh-stats"
+      },
+      {
+        "languages": {
+          "JavaScript": {
+            "blank": 2,
+            "code": 37,
+            "comment": 4,
+            "files": 1
+          },
+          "SVG": {
+            "blank": 0,
+            "code": 1,
+            "comment": 0,
+            "files": 1
+          },
+          "TypeScript": {
+            "blank": 1,
+            "code": 6,
+            "comment": 0,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/nahpu-docs",
+        "totals": {
+          "blank": 3,
+          "code": 44,
+          "comment": 4,
+          "files": 3
+        },
+        "url": "https://github.com/hhandika/nahpu-docs"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 16,
+            "code": 42,
+            "comment": 16,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/spades-restructure",
+        "totals": {
+          "blank": 16,
+          "code": 42,
+          "comment": 16,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/spades-restructure"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 6,
+            "code": 28,
+            "comment": 0,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/gbfast",
+        "totals": {
+          "blank": 6,
+          "code": 28,
+          "comment": 0,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/gbfast"
+      },
+      {
+        "languages": {
+          "JavaScript": {
+            "blank": 5,
+            "code": 58,
+            "comment": 3,
+            "files": 3
+          },
+          "SVG": {
+            "blank": 15,
+            "code": 542,
+            "comment": 2,
+            "files": 24
+          },
+          "TypeScript": {
+            "blank": 7,
+            "code": 29,
+            "comment": 14,
+            "files": 2
+          }
+        },
+        "name_with_owner": "hhandika/hhandika-com",
+        "totals": {
+          "blank": 27,
+          "code": 629,
+          "comment": 19,
+          "files": 29
+        },
+        "url": "https://github.com/hhandika/hhandika-com"
+      },
+      {
+        "languages": {},
+        "name_with_owner": "hhandika/florust",
+        "totals": {
+          "blank": 0,
+          "code": 0,
+          "comment": 0,
+          "files": 0
+        },
+        "url": "https://github.com/hhandika/florust"
+      },
+      {
+        "languages": {},
+        "name_with_owner": "hhandika/test-repo",
+        "totals": {
+          "blank": 0,
+          "code": 0,
+          "comment": 0,
+          "files": 0
+        },
+        "url": "https://github.com/hhandika/test-repo"
+      },
+      {
+        "languages": {
+          "Bourne Shell": {
+            "blank": 1,
+            "code": 3,
+            "comment": 0,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/segul-bioconda",
+        "totals": {
+          "blank": 1,
+          "code": 3,
+          "comment": 0,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/segul-bioconda"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 8,
+            "code": 15,
+            "comment": 4,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/utils",
+        "totals": {
+          "blank": 8,
+          "code": 15,
+          "comment": 4,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/utils"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 1,
+            "code": 3,
+            "comment": 0,
+            "files": 1
+          },
+          "Rust": {
+            "blank": 2017,
+            "code": 15753,
+            "comment": 1236,
+            "files": 171
+          }
+        },
+        "name_with_owner": "hhandika/ullar",
+        "totals": {
+          "blank": 2018,
+          "code": 15756,
+          "comment": 1236,
+          "files": 172
+        },
+        "url": "https://github.com/hhandika/ullar"
+      },
+      {
+        "languages": {
+          "JavaScript": {
+            "blank": 0,
+            "code": 3,
+            "comment": 0,
+            "files": 1
+          },
+          "SVG": {
+            "blank": 86,
+            "code": 641,
+            "comment": 0,
+            "files": 1
+          },
+          "TypeScript": {
+            "blank": 17,
+            "code": 143,
+            "comment": 35,
+            "files": 3
+          }
+        },
+        "name_with_owner": "hhandika/hhandika-docs",
+        "totals": {
+          "blank": 103,
+          "code": 787,
+          "comment": 35,
+          "files": 5
+        },
+        "url": "https://github.com/hhandika/hhandika-docs"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 1,
+            "code": 13,
+            "comment": 0,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/mapping-test",
+        "totals": {
+          "blank": 1,
+          "code": 13,
+          "comment": 0,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/mapping-test"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 0,
+            "code": 3,
+            "comment": 0,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/wruang",
+        "totals": {
+          "blank": 0,
+          "code": 3,
+          "comment": 0,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/wruang"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 15,
+            "code": 92,
+            "comment": 0,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/chunker",
+        "totals": {
+          "blank": 15,
+          "code": 92,
+          "comment": 0,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/chunker"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 13,
+            "code": 65,
+            "comment": 11,
+            "files": 7
+          }
+        },
+        "name_with_owner": "hhandika/trapir-api",
+        "totals": {
+          "blank": 13,
+          "code": 65,
+          "comment": 11,
+          "files": 7
+        },
+        "url": "https://github.com/hhandika/trapir-api"
+      },
+      {
+        "languages": {
+          "Bourne Shell": {
+            "blank": 39,
+            "code": 83,
+            "comment": 24,
+            "files": 2
+          },
+          "C": {
+            "blank": 0,
+            "code": 0,
+            "comment": 1,
+            "files": 1
+          },
+          "C++": {
+            "blank": 115,
+            "code": 428,
+            "comment": 56,
+            "files": 8
+          },
+          "C/C++ Header": {
+            "blank": 51,
+            "code": 103,
+            "comment": 65,
+            "files": 8
+          },
+          "DOS Batch": {
+            "blank": 17,
+            "code": 65,
+            "comment": 8,
+            "files": 1
+          },
+          "Dart": {
+            "blank": 445,
+            "code": 2473,
+            "comment": 278,
+            "files": 27
+          },
+          "Gradle": {
+            "blank": 68,
+            "code": 265,
+            "comment": 19,
+            "files": 6
+          },
+          "JavaScript": {
+            "blank": 0,
+            "code": 3,
+            "comment": 0,
+            "files": 1
+          },
+          "Kotlin": {
+            "blank": 2,
+            "code": 4,
+            "comment": 0,
+            "files": 1
+          },
+          "PowerShell": {
+            "blank": 3,
+            "code": 24,
+            "comment": 0,
+            "files": 1
+          },
+          "Properties": {
+            "blank": 0,
+            "code": 8,
+            "comment": 0,
+            "files": 2
+          },
+          "Ruby": {
+            "blank": 6,
+            "code": 58,
+            "comment": 25,
+            "files": 2
+          },
+          "Rust": {
+            "blank": 44,
+            "code": 276,
+            "comment": 21,
+            "files": 6
+          },
+          "SVG": {
+            "blank": 0,
+            "code": 382,
+            "comment": 0,
+            "files": 4
+          },
+          "Swift": {
+            "blank": 14,
+            "code": 50,
+            "comment": 7,
+            "files": 6
+          },
+          "TypeScript": {
+            "blank": 20,
+            "code": 182,
+            "comment": 76,
+            "files": 4
+          },
+          "Windows Resource File": {
+            "blank": 23,
+            "code": 69,
+            "comment": 29,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/trapir",
+        "totals": {
+          "blank": 847,
+          "code": 4473,
+          "comment": 609,
+          "files": 81
+        },
+        "url": "https://github.com/hhandika/trapir"
+      },
+      {
+        "languages": {
+          "Bourne Shell": {
+            "blank": 10,
+            "code": 101,
+            "comment": 4,
+            "files": 6
+          },
+          "C++": {
+            "blank": 115,
+            "code": 435,
+            "comment": 56,
+            "files": 8
+          },
+          "C/C++ Header": {
+            "blank": 51,
+            "code": 103,
+            "comment": 65,
+            "files": 8
+          },
+          "Dart": {
+            "blank": 105,
+            "code": 1028,
+            "comment": 22,
+            "files": 22
+          },
+          "Gradle": {
+            "blank": 20,
+            "code": 101,
+            "comment": 5,
+            "files": 3
+          },
+          "JavaScript": {
+            "blank": 0,
+            "code": 3,
+            "comment": 0,
+            "files": 1
+          },
+          "Kotlin": {
+            "blank": 2,
+            "code": 4,
+            "comment": 0,
+            "files": 1
+          },
+          "PowerShell": {
+            "blank": 2,
+            "code": 19,
+            "comment": 3,
+            "files": 2
+          },
+          "Properties": {
+            "blank": 0,
+            "code": 8,
+            "comment": 0,
+            "files": 2
+          },
+          "SVG": {
+            "blank": 0,
+            "code": 721,
+            "comment": 0,
+            "files": 4
+          },
+          "Swift": {
+            "blank": 14,
+            "code": 54,
+            "comment": 7,
+            "files": 6
+          },
+          "TypeScript": {
+            "blank": 20,
+            "code": 190,
+            "comment": 61,
+            "files": 4
+          },
+          "Windows Resource File": {
+            "blank": 23,
+            "code": 69,
+            "comment": 29,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/awnoa",
+        "totals": {
+          "blank": 362,
+          "code": 2836,
+          "comment": 252,
+          "files": 68
+        },
+        "url": "https://github.com/hhandika/awnoa"
+      },
+      {
+        "languages": {
+          "Rmd": {
+            "blank": 10,
+            "code": 11,
+            "comment": 10,
+            "files": 1
+          },
+          "Rust": {
+            "blank": 24,
+            "code": 147,
+            "comment": 2,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/sliding-windows",
+        "totals": {
+          "blank": 34,
+          "code": 158,
+          "comment": 12,
+          "files": 2
+        },
+        "url": "https://github.com/hhandika/sliding-windows"
+      },
+      {
+        "languages": {
+          "R": {
+            "blank": 10,
+            "code": 21,
+            "comment": 4,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/github-workshop",
+        "totals": {
+          "blank": 10,
+          "code": 21,
+          "comment": 4,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/github-workshop"
+      },
+      {
+        "languages": {},
+        "name_with_owner": "hhandika/evo",
+        "totals": {
+          "blank": 0,
+          "code": 0,
+          "comment": 0,
+          "files": 0
+        },
+        "url": "https://github.com/hhandika/evo"
+      },
+      {
+        "languages": {},
+        "name_with_owner": "hhandika/esselstyn-lab",
+        "totals": {
+          "blank": 0,
+          "code": 0,
+          "comment": 0,
+          "files": 0
+        },
+        "url": "https://github.com/hhandika/esselstyn-lab"
+      },
+      {
+        "languages": {},
+        "name_with_owner": "hhandika/segul-ffi",
+        "totals": {
+          "blank": 0,
+          "code": 0,
+          "comment": 0,
+          "files": 0
+        },
+        "url": "https://github.com/hhandika/segul-ffi"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 28,
+            "code": 284,
+            "comment": 15,
+            "files": 12
+          },
+          "Rust": {
+            "blank": 121,
+            "code": 868,
+            "comment": 42,
+            "files": 19
+          }
+        },
+        "name_with_owner": "hhandika/pysegul",
+        "totals": {
+          "blank": 149,
+          "code": 1152,
+          "comment": 57,
+          "files": 31
+        },
+        "url": "https://github.com/hhandika/pysegul"
+      },
+      {
+        "languages": {},
+        "name_with_owner": "hhandika/segul-docs",
+        "totals": {
+          "blank": 0,
+          "code": 0,
+          "comment": 0,
+          "files": 0
+        },
+        "url": "https://github.com/hhandika/segul-docs"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 10,
+            "code": 41,
+            "comment": 0,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/taxigen",
+        "totals": {
+          "blank": 10,
+          "code": 41,
+          "comment": 0,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/taxigen"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 13,
+            "code": 30078,
+            "comment": 0,
+            "files": 2
+          }
+        },
+        "name_with_owner": "hhandika/colornames-rs",
+        "totals": {
+          "blank": 13,
+          "code": 30078,
+          "comment": 0,
+          "files": 2
+        },
+        "url": "https://github.com/hhandika/colornames-rs"
+      },
+      {
+        "languages": {},
+        "name_with_owner": "hhandika/move",
+        "totals": {
+          "blank": 0,
+          "code": 0,
+          "comment": 0,
+          "files": 0
+        },
+        "url": "https://github.com/hhandika/move"
+      },
+      {
+        "languages": {
+          "JavaScript": {
+            "blank": 1,
+            "code": 18,
+            "comment": 2,
+            "files": 3
+          },
+          "SVG": {
+            "blank": 0,
+            "code": 4,
+            "comment": 0,
+            "files": 1
+          },
+          "TypeScript": {
+            "blank": 9,
+            "code": 194,
+            "comment": 3,
+            "files": 6
+          }
+        },
+        "name_with_owner": "hhandika/hhandika-cv",
+        "totals": {
+          "blank": 10,
+          "code": 216,
+          "comment": 5,
+          "files": 10
+        },
+        "url": "https://github.com/hhandika/hhandika-cv"
+      },
+      {
+        "languages": {
+          "Bourne Shell": {
+            "blank": 12,
+            "code": 17,
+            "comment": 10,
+            "files": 1
+          },
+          "C": {
+            "blank": 1,
+            "code": 9,
+            "comment": 0,
+            "files": 1
+          },
+          "C++": {
+            "blank": 1,
+            "code": 8,
+            "comment": 0,
+            "files": 1
+          },
+          "Dart": {
+            "blank": 0,
+            "code": 5,
+            "comment": 0,
+            "files": 1
+          },
+          "Go": {
+            "blank": 2,
+            "code": 9,
+            "comment": 0,
+            "files": 1
+          },
+          "Java": {
+            "blank": 0,
+            "code": 7,
+            "comment": 0,
+            "files": 1
+          },
+          "Python": {
+            "blank": 1,
+            "code": 5,
+            "comment": 0,
+            "files": 1
+          },
+          "Rust": {
+            "blank": 0,
+            "code": 5,
+            "comment": 0,
+            "files": 1
+          },
+          "TypeScript": {
+            "blank": 0,
+            "code": 3,
+            "comment": 1,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/lang-bench",
+        "totals": {
+          "blank": 17,
+          "code": 68,
+          "comment": 11,
+          "files": 9
+        },
+        "url": "https://github.com/hhandika/lang-bench"
+      },
+      {
+        "languages": {},
+        "name_with_owner": "hhandika/rust-ffi",
+        "totals": {
+          "blank": 0,
+          "code": 0,
+          "comment": 0,
+          "files": 0
+        },
+        "url": "https://github.com/hhandika/rust-ffi"
+      },
+      {
+        "languages": {
+          "C": {
+            "blank": 18,
+            "code": 121,
+            "comment": 16,
+            "files": 1
+          },
+          "C++": {
+            "blank": 19,
+            "code": 44,
+            "comment": 10,
+            "files": 1
+          },
+          "C/C++ Header": {
+            "blank": 5,
+            "code": 24,
+            "comment": 1,
+            "files": 1
+          },
+          "Python": {
+            "blank": 10,
+            "code": 18,
+            "comment": 5,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/c-ffi",
+        "totals": {
+          "blank": 52,
+          "code": 207,
+          "comment": 32,
+          "files": 4
+        },
+        "url": "https://github.com/hhandika/c-ffi"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 79,
+            "code": 706,
+            "comment": 2,
+            "files": 4
+          }
+        },
+        "name_with_owner": "hhandika/bench-parser",
+        "totals": {
+          "blank": 79,
+          "code": 706,
+          "comment": 2,
+          "files": 4
+        },
+        "url": "https://github.com/hhandika/bench-parser"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 35,
+            "code": 255,
+            "comment": 21,
+            "files": 4
+          }
+        },
+        "name_with_owner": "hhandika/crowl",
+        "totals": {
+          "blank": 35,
+          "code": 255,
+          "comment": 21,
+          "files": 4
+        },
+        "url": "https://github.com/hhandika/crowl"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 48,
+            "code": 330,
+            "comment": 4,
+            "files": 5
+          }
+        },
+        "name_with_owner": "hhandika/candentia",
+        "totals": {
+          "blank": 48,
+          "code": 330,
+          "comment": 4,
+          "files": 5
+        },
+        "url": "https://github.com/hhandika/candentia"
+      },
+      {
+        "languages": {},
+        "name_with_owner": "hhandika/resume-tailwind",
+        "totals": {
+          "blank": 0,
+          "code": 0,
+          "comment": 0,
+          "files": 0
+        },
+        "url": "https://github.com/hhandika/resume-tailwind"
+      },
+      {
+        "languages": {
+          "C": {
+            "blank": 2,
+            "code": 4,
+            "comment": 2,
+            "files": 1
+          },
+          "R": {
+            "blank": 6,
+            "code": 2,
+            "comment": 11,
+            "files": 1
+          },
+          "Rmd": {
+            "blank": 15,
+            "code": 13,
+            "comment": 13,
+            "files": 1
+          },
+          "Rust": {
+            "blank": 4,
+            "code": 12,
+            "comment": 6,
+            "files": 2
+          }
+        },
+        "name_with_owner": "hhandika/rsegul",
+        "totals": {
+          "blank": 27,
+          "code": 31,
+          "comment": 32,
+          "files": 5
+        },
+        "url": "https://github.com/hhandika/rsegul"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 65,
+            "code": 489,
+            "comment": 30,
+            "files": 10
+          }
+        },
+        "name_with_owner": "hhandika/trapir-cli",
+        "totals": {
+          "blank": 65,
+          "code": 489,
+          "comment": 30,
+          "files": 10
+        },
+        "url": "https://github.com/hhandika/trapir-cli"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 7,
+            "code": 57,
+            "comment": 0,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/charset-extractor",
+        "totals": {
+          "blank": 7,
+          "code": 57,
+          "comment": 0,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/charset-extractor"
+      },
+      {
+        "languages": {
+          "Bourne Shell": {
+            "blank": 1425,
+            "code": 3718,
+            "comment": 483,
+            "files": 55
+          },
+          "Python": {
+            "blank": 12,
+            "code": 82,
+            "comment": 0,
+            "files": 2
+          },
+          "R": {
+            "blank": 11,
+            "code": 13,
+            "comment": 2,
+            "files": 1
+          },
+          "Rmd": {
+            "blank": 125,
+            "code": 362,
+            "comment": 114,
+            "files": 3
+          }
+        },
+        "name_with_owner": "hhandika/segul-bench",
+        "totals": {
+          "blank": 1573,
+          "code": 4175,
+          "comment": 599,
+          "files": 61
+        },
+        "url": "https://github.com/hhandika/segul-bench"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 21,
+            "code": 146,
+            "comment": 1,
+            "files": 2
+          }
+        },
+        "name_with_owner": "hhandika/rs-io-bench",
+        "totals": {
+          "blank": 21,
+          "code": 146,
+          "comment": 1,
+          "files": 2
+        },
+        "url": "https://github.com/hhandika/rs-io-bench"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 12,
+            "code": 100,
+            "comment": 0,
+            "files": 2
+          }
+        },
+        "name_with_owner": "hhandika/ezp",
+        "totals": {
+          "blank": 12,
+          "code": 100,
+          "comment": 0,
+          "files": 2
+        },
+        "url": "https://github.com/hhandika/ezp"
+      },
+      {
+        "languages": {
+          "R": {
+            "blank": 5,
+            "code": 12,
+            "comment": 2,
+            "files": 1
+          },
+          "Rust": {
+            "blank": 2,
+            "code": 8,
+            "comment": 0,
+            "files": 2
+          }
+        },
+        "name_with_owner": "hhandika/R-rust-ffi",
+        "totals": {
+          "blank": 7,
+          "code": 20,
+          "comment": 2,
+          "files": 3
+        },
+        "url": "https://github.com/hhandika/R-rust-ffi"
+      },
+      {
+        "languages": {
+          "Swift": {
+            "blank": 51,
+            "code": 184,
+            "comment": 78,
+            "files": 7
+          }
+        },
+        "name_with_owner": "hhandika/kanchil",
+        "totals": {
+          "blank": 51,
+          "code": 184,
+          "comment": 78,
+          "files": 7
+        },
+        "url": "https://github.com/hhandika/kanchil"
+      },
+      {
+        "languages": {
+          "Rmd": {
+            "blank": 16,
+            "code": 27,
+            "comment": 19,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/genetic-distance",
+        "totals": {
+          "blank": 16,
+          "code": 27,
+          "comment": 19,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/genetic-distance"
+      },
+      {
+        "languages": {},
+        "name_with_owner": "hhandika/little-web",
+        "totals": {
+          "blank": 0,
+          "code": 0,
+          "comment": 0,
+          "files": 0
+        },
+        "url": "https://github.com/hhandika/little-web"
+      },
+      {
+        "languages": {
+          "Bourne Again Shell": {
+            "blank": 10,
+            "code": 22,
+            "comment": 0,
+            "files": 4
+          },
+          "Bourne Shell": {
+            "blank": 9,
+            "code": 16,
+            "comment": 0,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/coding-tools",
+        "totals": {
+          "blank": 19,
+          "code": 38,
+          "comment": 0,
+          "files": 5
+        },
+        "url": "https://github.com/hhandika/coding-tools"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 3,
+            "code": 17,
+            "comment": 0,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/release-test",
+        "totals": {
+          "blank": 3,
+          "code": 17,
+          "comment": 0,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/release-test"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 84,
+            "code": 551,
+            "comment": 0,
+            "files": 5
+          }
+        },
+        "name_with_owner": "hhandika/cafq",
+        "totals": {
+          "blank": 84,
+          "code": 551,
+          "comment": 0,
+          "files": 5
+        },
+        "url": "https://github.com/hhandika/cafq"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 165,
+            "code": 1217,
+            "comment": 22,
+            "files": 9
+          }
+        },
+        "name_with_owner": "hhandika/sandie",
+        "totals": {
+          "blank": 165,
+          "code": 1217,
+          "comment": 22,
+          "files": 9
+        },
+        "url": "https://github.com/hhandika/sandie"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 10,
+            "code": 58,
+            "comment": 1,
+            "files": 2
+          }
+        },
+        "name_with_owner": "hhandika/contig-symlink-fixer",
+        "totals": {
+          "blank": 10,
+          "code": 58,
+          "comment": 1,
+          "files": 2
+        },
+        "url": "https://github.com/hhandika/contig-symlink-fixer"
+      },
+      {
+        "languages": {
+          "C/C++ Header": {
+            "blank": 0,
+            "code": 1,
+            "comment": 0,
+            "files": 1
+          },
+          "Dart": {
+            "blank": 16,
+            "code": 71,
+            "comment": 56,
+            "files": 2
+          },
+          "Gradle": {
+            "blank": 17,
+            "code": 81,
+            "comment": 3,
+            "files": 3
+          },
+          "Kotlin": {
+            "blank": 2,
+            "code": 4,
+            "comment": 0,
+            "files": 1
+          },
+          "Properties": {
+            "blank": 0,
+            "code": 8,
+            "comment": 1,
+            "files": 2
+          },
+          "Swift": {
+            "blank": 1,
+            "code": 12,
+            "comment": 0,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/napu",
+        "totals": {
+          "blank": 36,
+          "code": 177,
+          "comment": 60,
+          "files": 10
+        },
+        "url": "https://github.com/hhandika/napu"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 34,
+            "code": 202,
+            "comment": 0,
+            "files": 3
+          }
+        },
+        "name_with_owner": "hhandika/seq-finder",
+        "totals": {
+          "blank": 34,
+          "code": 202,
+          "comment": 0,
+          "files": 3
+        },
+        "url": "https://github.com/hhandika/seq-finder"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 17,
+            "code": 69,
+            "comment": 0,
+            "files": 2
+          }
+        },
+        "name_with_owner": "hhandika/pretty-header",
+        "totals": {
+          "blank": 17,
+          "code": 69,
+          "comment": 0,
+          "files": 2
+        },
+        "url": "https://github.com/hhandika/pretty-header"
+      },
+      {
+        "languages": {
+          "R": {
+            "blank": 17,
+            "code": 51,
+            "comment": 2,
+            "files": 3
+          },
+          "Rmd": {
+            "blank": 14,
+            "code": 35,
+            "comment": 18,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/r-data-analyses",
+        "totals": {
+          "blank": 31,
+          "code": 86,
+          "comment": 20,
+          "files": 4
+        },
+        "url": "https://github.com/hhandika/r-data-analyses"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 8,
+            "code": 32,
+            "comment": 4,
+            "files": 3
+          }
+        },
+        "name_with_owner": "hhandika/excel-csv-converter",
+        "totals": {
+          "blank": 8,
+          "code": 32,
+          "comment": 4,
+          "files": 3
+        },
+        "url": "https://github.com/hhandika/excel-csv-converter"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 220,
+            "code": 967,
+            "comment": 14,
+            "files": 7
+          }
+        },
+        "name_with_owner": "hhandika/fastp-runner",
+        "totals": {
+          "blank": 220,
+          "code": 967,
+          "comment": 14,
+          "files": 7
+        },
+        "url": "https://github.com/hhandika/fastp-runner"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 4,
+            "code": 17,
+            "comment": 1,
+            "files": 2
+          }
+        },
+        "name_with_owner": "hhandika/py-seq",
+        "totals": {
+          "blank": 4,
+          "code": 17,
+          "comment": 1,
+          "files": 2
+        },
+        "url": "https://github.com/hhandika/py-seq"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 76,
+            "code": 161,
+            "comment": 133,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/py-data-wrangling",
+        "totals": {
+          "blank": 76,
+          "code": 161,
+          "comment": 133,
+          "files": 1
+        },
+        "url": "https://github.com/hhandika/py-data-wrangling"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 158,
+            "code": 682,
+            "comment": 8,
+            "files": 7
+          }
+        },
+        "name_with_owner": "hhandika/renamer",
+        "totals": {
+          "blank": 158,
+          "code": 682,
+          "comment": 8,
+          "files": 7
+        },
+        "url": "https://github.com/hhandika/renamer"
+      },
+      {
+        "languages": {
+          "Rust": {
+            "blank": 359,
+            "code": 2185,
+            "comment": 70,
+            "files": 20
+          }
+        },
+        "name_with_owner": "hhandika/yap",
+        "totals": {
+          "blank": 359,
+          "code": 2185,
+          "comment": 70,
+          "files": 20
+        },
+        "url": "https://github.com/hhandika/yap"
+      },
+      {
+        "languages": {
+          "Bourne Shell": {
+            "blank": 12,
+            "code": 29,
+            "comment": 0,
+            "files": 11
+          },
+          "Python": {
+            "blank": 16,
+            "code": 64,
+            "comment": 34,
+            "files": 1
+          }
+        },
+        "name_with_owner": "hhandika/genomic-code-snippets",
+        "totals": {
+          "blank": 28,
+          "code": 93,
+          "comment": 34,
+          "files": 12
+        },
+        "url": "https://github.com/hhandika/genomic-code-snippets"
+      },
+      {
+        "languages": {
+          "C": {
+            "blank": 11,
+            "code": 36,
+            "comment": 6,
+            "files": 1
+          },
+          "C++": {
+            "blank": 8,
+            "code": 32,
+            "comment": 0,
+            "files": 1
+          },
+          "Python": {
+            "blank": 19,
+            "code": 43,
+            "comment": 7,
+            "files": 3
+          },
+          "Rust": {
+            "blank": 7,
+            "code": 31,
+            "comment": 5,
+            "files": 2
+          }
+        },
+        "name_with_owner": "hhandika/mathness",
+        "totals": {
+          "blank": 45,
+          "code": 142,
+          "comment": 18,
+          "files": 7
+        },
+        "url": "https://github.com/hhandika/mathness"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 224,
+            "code": 1281,
+            "comment": 282,
+            "files": 10
+          },
+          "SVG": {
+            "blank": 46,
+            "code": 642,
+            "comment": 0,
+            "files": 3
+          }
+        },
+        "name_with_owner": "hhandika/hhandika",
+        "totals": {
+          "blank": 270,
+          "code": 1923,
+          "comment": 282,
+          "files": 13
+        },
+        "url": "https://github.com/hhandika/hhandika"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 21,
+            "code": 84,
+            "comment": 17,
+            "files": 2
+          }
+        },
+        "name_with_owner": "hhandika/py-genbank",
+        "totals": {
+          "blank": 21,
+          "code": 84,
+          "comment": 17,
+          "files": 2
+        },
+        "url": "https://github.com/hhandika/py-genbank"
+      },
+      {
+        "languages": {
+          "C": {
+            "blank": 68,
+            "code": 485,
+            "comment": 23,
+            "files": 6
+          },
+          "C/C++ Header": {
+            "blank": 13,
+            "code": 30,
+            "comment": 6,
+            "files": 4
+          }
+        },
+        "name_with_owner": "hhandika/uce-master-race",
+        "totals": {
+          "blank": 81,
+          "code": 515,
+          "comment": 29,
+          "files": 10
+        },
+        "url": "https://github.com/hhandika/uce-master-race"
+      },
+      {
+        "languages": {
+          "Python": {
+            "blank": 94,
+            "code": 292,
+            "comment": 149,
+            "files": 3
+          }
+        },
+        "name_with_owner": "hhandika/clicov",
+        "totals": {
+          "blank": 94,
+          "code": 292,
+          "comment": 149,
+          "files": 3
+        },
+        "url": "https://github.com/hhandika/clicov"
+      }
+    ],
+    "repositories_counted": 82,
+    "repositories_failed": 0,
+    "repositories_total": 82,
+    "status": "complete",
+    "totals": {
+      "blank": 15636,
+      "code": 127390,
+      "comment": 8370,
+      "files": 1253
+    }
+  },
+  "status": "complete"
+}
