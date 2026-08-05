@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="260" viewBox="0 0 600 260" fill="none" role="img" aria-labelledby="titleId descId">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="260" viewBox="0 0 480 260" fill="none" role="img" aria-labelledby="titleId descId">
   <title id="titleId">Top Languages Dashboard</title>
   <desc id="descId">Shows a bar chart of top programming languages used</desc>
 <style>
@@ -145,62 +145,62 @@
     }
     
 </style>
-<rect class="m3-container-large" x="0.5" y="0.5" width="599" height="259" style="rx: 0px;" />
+<rect class="m3-container-large" x="0.5" y="0.5" width="479" height="259" style="rx: 0px;" />
   <text x="24" y="36" class="m3-headline-small">Top Languages</text>
   <text x="24" y="56" class="m3-body-small">Based on repository size</text>
   <clipPath id="lang-bar-clip">
-    <rect width="552.0" height="12" rx="3" />
+    <rect width="432.0" height="12" rx="3" />
   </clipPath>
   <g transform="translate(24, 84)" clip-path="url(#lang-bar-clip)">
-    <rect width="552.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-    <rect x="0.00" y="0" width="358.22" height="12" fill="#dea584" />
-      <rect x="358.22" y="0" width="99.73" height="12" fill="#00B4AB" />
-      <rect x="457.95" y="0" width="26.16" height="12" fill="#3572A5" />
-      <rect x="484.11" y="0" width="19.00" height="12" fill="#89e051" />
-      <rect x="503.10" y="0" width="14.66" height="12" fill="#f34b7d" />
-      <rect x="517.76" y="0" width="13.09" height="12" fill="#ff5a03" />
-      <rect x="530.85" y="0" width="21.15" height="12" fill="#8e918f" />
+    <rect width="432.0" height="12" fill="var(--md-sys-color-surface-variant)" />
+    <rect x="0.00" y="0" width="280.37" height="12" fill="#dea584" />
+      <rect x="280.37" y="0" width="78.19" height="12" fill="#00B4AB" />
+      <rect x="358.56" y="0" width="20.30" height="12" fill="#3572A5" />
+      <rect x="378.86" y="0" width="14.69" height="12" fill="#89e051" />
+      <rect x="393.55" y="0" width="11.66" height="12" fill="#f34b7d" />
+      <rect x="405.22" y="0" width="10.37" height="12" fill="#ff5a03" />
+      <rect x="415.58" y="0" width="16.42" height="12" fill="#8e918f" />
   </g>
   <g transform="translate(24, 120)">
     <circle cx="6" cy="6" r="6" fill="#dea584" />
-    <text x="24" y="11" class="m3-body-large">Rust</text>
-    <text x="200" y="11" class="m3-label-large">64.9%</text>
+    <text x="20" y="11" class="m3-body-medium">Rust</text>
+    <text x="166" y="11" class="m3-label-medium">64.9%</text>
   </g>
 
-  <g transform="translate(300, 120)">
+  <g transform="translate(240, 120)">
     <circle cx="6" cy="6" r="6" fill="#00B4AB" />
-    <text x="24" y="11" class="m3-body-large">Dart</text>
-    <text x="200" y="11" class="m3-label-large">18.1%</text>
+    <text x="20" y="11" class="m3-body-medium">Dart</text>
+    <text x="166" y="11" class="m3-label-medium">18.1%</text>
   </g>
 
   <g transform="translate(24, 150)">
     <circle cx="6" cy="6" r="6" fill="#3572A5" />
-    <text x="24" y="11" class="m3-body-large">Python</text>
-    <text x="200" y="11" class="m3-label-large">4.7%</text>
+    <text x="20" y="11" class="m3-body-medium">Python</text>
+    <text x="166" y="11" class="m3-label-medium">4.7%</text>
   </g>
 
-  <g transform="translate(300, 150)">
+  <g transform="translate(240, 150)">
     <circle cx="6" cy="6" r="6" fill="#89e051" />
-    <text x="24" y="11" class="m3-body-large">Shell</text>
-    <text x="200" y="11" class="m3-label-large">3.4%</text>
+    <text x="20" y="11" class="m3-body-medium">Shell</text>
+    <text x="166" y="11" class="m3-label-medium">3.4%</text>
   </g>
 
   <g transform="translate(24, 180)">
     <circle cx="6" cy="6" r="6" fill="#f34b7d" />
-    <text x="24" y="11" class="m3-body-large">C++</text>
-    <text x="200" y="11" class="m3-label-large">2.7%</text>
+    <text x="20" y="11" class="m3-body-medium">C++</text>
+    <text x="166" y="11" class="m3-label-medium">2.7%</text>
   </g>
 
-  <g transform="translate(300, 180)">
+  <g transform="translate(240, 180)">
     <circle cx="6" cy="6" r="6" fill="#ff5a03" />
-    <text x="24" y="11" class="m3-body-large">Astro</text>
-    <text x="200" y="11" class="m3-label-large">2.4%</text>
+    <text x="20" y="11" class="m3-body-medium">Astro</text>
+    <text x="166" y="11" class="m3-label-medium">2.4%</text>
   </g>
 
   <g transform="translate(24, 210)">
     <circle cx="6" cy="6" r="6" fill="#8e918f" />
-    <text x="24" y="11" class="m3-body-large">Other</text>
-    <text x="200" y="11" class="m3-label-large">3.8%</text>
+    <text x="20" y="11" class="m3-body-medium">Other</text>
+    <text x="166" y="11" class="m3-label-medium">3.8%</text>
   </g>
 
 </svg>

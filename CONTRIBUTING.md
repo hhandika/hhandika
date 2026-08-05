@@ -12,11 +12,12 @@ This repository features an automated workflow that updates profile stats cards 
    - Can be triggered manually via `workflow_dispatch` in the Actions tab.
 2. **Python Script** (`update_stats.py`):
    - Queries the GitHub GraphQL API for public user metrics and details for specific repositories (`nahpu/nahpu`, `hhandika/segul`, `hhandika/segui`, `hhandika/ullar`, and `mammaldiversity/mdd_app`).
-   - Computes overall stars, contributions, repository counts, and aggregates language usage.
-   - Generates three SVGs in the `stats/` directory:
+   - Computes overall stars, contributions, repository counts, aggregates language usage, and uses `cloc` to count code lines in every public, owned, non-fork repository.
+   - Generates three 480-pixel-wide SVGs in the `assets/` directory:
      - `overview.svg`: Public overview stats (Stars, Contributions, CRI, etc.).
      - `languages.svg`: Top programming languages bar chart and percentage breakdown based on repository sizes.
      - `top_repos.svg`: Featured repository descriptions and their individual language composition bar charts.
+   - Writes the complete generated dataset to `data/stats.json`, including overview metrics, language bytes, exact code/comment/blank counts, per-repository breakdowns, and repository failures.
    - Updates `README.md` by replacing the content between HTML placeholder comments.
 
 ---
@@ -39,6 +40,7 @@ This repository features an automated workflow that updates profile stats cards 
 ### Prerequisites
 - Python 3.9+
 - [uv](https://github.com/astral-sh/uv) (fast Python package manager)
+- [cloc](https://github.com/AlDanial/cloc) (source line counter)
 
 ### Installation
 Sync dependencies and set up the local virtual environment:
@@ -60,7 +62,11 @@ To run the script locally and generate the stats:
 export GITHUB_TOKEN="your_personal_access_token"
 uv run python update_stats.py
 ```
-This will fetch live public stats, regenerate the SVGs in `stats/`, and update your local `README.md`.
+This will fetch live public stats, regenerate the SVGs in `assets/`, write
+`data/stats.json`, and update your local `README.md`.
+Repository checkouts used for line counting are shallow and temporary. If an
+individual repository cannot be counted, the published total is marked with an
+asterisk and the failure is recorded in `data/stats.json`.
 
 ---
 

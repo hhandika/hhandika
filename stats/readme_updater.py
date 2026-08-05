@@ -14,6 +14,8 @@ class ReadmeUpdater:
         languages_svg_path: str,
         top_repos_svg_path: str,
         readme_path: str = "README.md",
+        line_count_partial: bool = False,
+        summary_path: str = "data/stats.json",
     ) -> None:
         """Replaces content between placeholders in README.md with generated SVG images."""
         if not os.path.exists(readme_path):
@@ -25,14 +27,22 @@ class ReadmeUpdater:
 
         today_str = datetime.now().strftime("%B %d, %Y")
 
+        partial_footnote = ""
+        if line_count_partial:
+            partial_footnote = (
+                '<p align="left"><sub>*Line count is partial; omitted repositories '
+                f'are listed in <a href="{summary_path}">{summary_path}</a>.</sub></p>\n'
+            )
+
         new_stats_content = (
             "<!-- START_SECTION:github-stats -->\n"
             '<p align="left">\n'
-            f'  <img src="{overview_svg_path}" alt="GitHub Stats" width="600" />\n'
-            f'  <img src="{languages_svg_path}" alt="Top Languages" width="600" />\n'
-            f'  <img src="{top_repos_svg_path}" alt="Selected Repositories" width="600" />\n'
+            f'  <img src="{overview_svg_path}" alt="GitHub Stats" width="480" />\n'
+            f'  <img src="{languages_svg_path}" alt="Top Languages" width="480" />\n'
+            f'  <img src="{top_repos_svg_path}" alt="Selected Repositories" width="480" />\n'
             "</p>\n"
-            f'<p align="left"><sub>*Stats reflect public repositories only. Updates daily • Latest update: {today_str}</sub></p>\n'
+            f"{partial_footnote}"
+            f'<p align="left"><sub>Stats reflect public repositories only. Updates daily • Latest update: {today_str}</sub></p>\n'
             "<!-- END_SECTION:github-stats -->"
         )
 

@@ -75,7 +75,7 @@ class OverviewDashboardGenerator(M3SVGGenerator):
     ):
         """Initializes with all overview metrics."""
         super().__init__(
-            width=600, height=240, desc="GitHub statistics dashboard. Updates daily."
+            width=480, height=240, desc="GitHub statistics dashboard. Updates daily."
         )
         self.total_stars = total_stars
         self.total_contributions = total_contributions
@@ -129,10 +129,10 @@ class OverviewDashboardGenerator(M3SVGGenerator):
             24, 84, "stars", "Total Stars", str(self.total_stars)
         )
         grid_html += self._get_stat_item(
-            224, 84, "contributions", "Contributions", str(self.total_contributions)
+            168, 84, "contributions", "Contributions", str(self.total_contributions)
         )
         grid_html += self._get_stat_item(
-            424, 84, "code", "Total Lines of Code", self.total_loc
+            312, 84, "code", "Total Lines of Code", self.total_loc
         )
 
         # Row 2
@@ -140,10 +140,10 @@ class OverviewDashboardGenerator(M3SVGGenerator):
             24, 134, "prs", "Merged PRs", str(self.total_prs)
         )
         grid_html += self._get_stat_item(
-            224, 134, "reviews", "Code Reviews", str(self.total_reviews)
+            168, 134, "reviews", "Code Reviews", str(self.total_reviews)
         )
         grid_html += self._get_stat_item(
-            424, 134, "issues", "Issues", str(self.total_issues)
+            312, 134, "issues", "Issues", str(self.total_issues)
         )
 
         # Row 3
@@ -151,10 +151,10 @@ class OverviewDashboardGenerator(M3SVGGenerator):
             24, 184, "peak_day", "Peak Day", xml_escape(self.peak_day)
         )
         grid_html += self._get_stat_item(
-            224, 184, "peak_hours", "Peak Hours", xml_escape(self.peak_hours)
+            168, 184, "peak_hours", "Peak Hours", xml_escape(self.peak_hours)
         )
         grid_html += self._get_stat_item(
-            424, 184, "streak", "Streak", f"{self.streak} Days"
+            312, 184, "streak", "Streak", f"{self.streak} Days"
         )
 
         return grid_html
@@ -166,11 +166,11 @@ class OverviewDashboardGenerator(M3SVGGenerator):
         icon_path = M3Tokens.ICONS.get(icon_name, "")
         return (
             f'  <g transform="translate({x}, {y})">\n'
-            f'    <svg x="0" y="-4" width="20" height="20" viewBox="0 0 24 24" fill="var(--md-sys-color-primary)">\n'
+            f'    <svg x="0" y="-3" width="18" height="18" viewBox="0 0 24 24" fill="var(--md-sys-color-primary)">\n'
             f'      <path d="{icon_path}"/>\n'
             f"    </svg>\n"
-            f'    <text x="28" y="12" class="m3-body-medium">{label}</text>\n'
-            f'    <text x="28" y="32" class="m3-label-large">{value}</text>\n'
+            f'    <text x="24" y="11" class="m3-body-small">{label}</text>\n'
+            f'    <text x="24" y="31" class="m3-label-large">{value}</text>\n'
             f"  </g>\n"
         )
 
@@ -184,7 +184,7 @@ class LanguagesDashboardGenerator(M3SVGGenerator):
     ):
         """Initializes with languages data."""
         super().__init__(
-            width=600,
+            width=480,
             height=260,
             title="Top Languages Dashboard",
             desc="Shows a bar chart of top programming languages used",
@@ -219,7 +219,7 @@ class LanguagesDashboardGenerator(M3SVGGenerator):
         bar_rects = []
         legend_items = []
 
-        total_bar_width = 552.0  # Width of the bar across the card (600 - 48)
+        total_bar_width = 432.0
 
         if total_size > 0:
             sorted_langs = sorted(
@@ -254,12 +254,12 @@ class LanguagesDashboardGenerator(M3SVGGenerator):
             for idx, item in enumerate(legend_data):
                 col = idx % 2
                 row = idx // 2
-                item_x = 24 + (col * 276)
+                item_x = 24 + (col * 216)
                 item_y = 120 + (row * 30)
 
                 lang_name = item["name"]
-                if len(lang_name) > 20:
-                    display_name = lang_name[:17] + "..."
+                if len(lang_name) > 15:
+                    display_name = lang_name[:12] + "..."
                 else:
                     display_name = lang_name
 
@@ -269,8 +269,8 @@ class LanguagesDashboardGenerator(M3SVGGenerator):
                 legend_items.append(
                     f'  <g transform="translate({item_x}, {item_y})">\n'
                     f'    <circle cx="6" cy="6" r="6" fill="{item["color"]}" />\n'
-                    f'    <text x="24" y="11" class="m3-body-large">{escaped_name}</text>\n'
-                    f'    <text x="200" y="11" class="m3-label-large">{pct_text}</text>\n'
+                    f'    <text x="20" y="11" class="m3-body-medium">{escaped_name}</text>\n'
+                    f'    <text x="166" y="11" class="m3-label-medium">{pct_text}</text>\n'
                     f"  </g>\n"
                 )
         else:
@@ -312,7 +312,7 @@ class TopReposDashboardGenerator(M3SVGGenerator):
         # Base height for header is ~80px. Each repo takes ~96px.
         height = 80 + len(top_repos) * 96
         super().__init__(
-            width=600,
+            width=480,
             height=height,
             title="Selected Repositories Dashboard",
             desc="Shows selected repositories and their language composition",
@@ -374,8 +374,8 @@ class TopReposDashboardGenerator(M3SVGGenerator):
 
             # Truncate description more aggressively if needed
             desc = repo.get("description") or "No description provided."
-            if len(desc) > 80:
-                desc = desc[:77] + "..."
+            if len(desc) > 58:
+                desc = desc[:55] + "..."
 
             langs = repo.get("languages", {}).get("edges", [])
             total_size = sum(edge["size"] for edge in langs)
@@ -388,24 +388,27 @@ class TopReposDashboardGenerator(M3SVGGenerator):
                 for j, edge in enumerate(langs):
                     size = edge["size"]
                     color = edge["node"]["color"] or "#8e918f"
-                    w = (size / total_size) * 520.0
+                    w = (size / total_size) * 400.0
                     if w > 0:
                         bar_rects.append(
                             f'<rect x="{current_x:.2f}" y="48" width="{w:.2f}" height="6" fill="{color}" />'
                         )
                         current_x += w
 
-                    if j < 4:  # Show max 4 items in legend
+                    if j < 3:
                         pct = (size / total_size) * 100
-                        lang_name = xml_escape(edge["node"]["name"])
+                        raw_lang_name = edge["node"]["name"]
+                        if len(raw_lang_name) > 10:
+                            raw_lang_name = raw_lang_name[:8] + "…"
+                        lang_name = xml_escape(raw_lang_name)
                         legend_rects.append(
                             f'      <circle cx="{legend_x + 4}" cy="72" r="4" fill="{color}" />\n'
                             f'      <text x="{legend_x + 12}" y="76" class="m3-label-medium">{lang_name} {pct:.1f}%</text>'
                         )
-                        legend_x += 75 + len(lang_name) * 8
+                        legend_x += 132
             else:
                 bar_rects.append(
-                    f'<rect x="16" y="48" width="520" height="6" fill="var(--md-sys-color-outline-variant)" />'
+                    f'<rect x="16" y="48" width="400" height="6" fill="var(--md-sys-color-outline-variant)" />'
                 )
                 legend_rects.append(
                     f'      <text x="16" y="76" class="m3-label-medium">No language data</text>'
@@ -415,7 +418,7 @@ class TopReposDashboardGenerator(M3SVGGenerator):
             legend_content = "\n".join(legend_rects)
 
             # Draw individual card
-            card_rect = f'    <rect x="0" y="0" width="552" height="88" class="m3-card-medium" />\n'
+            card_rect = f'    <rect x="0" y="0" width="432" height="88" class="m3-card-medium" />\n'
 
             item = (
                 f'  <g transform="translate(24, {y})">\n'
@@ -423,10 +426,10 @@ class TopReposDashboardGenerator(M3SVGGenerator):
                 f'    <text x="16" y="24" class="m3-title-medium">{xml_escape(full_name)}</text>\n'
                 f'    <text x="16" y="40" class="m3-body-small">{xml_escape(desc)}</text>\n'
                 f'    <clipPath id="repo-bar-clip-{i}">\n'
-                f'      <rect x="16" y="48" width="520" height="6" rx="1.5" />\n'
+                f'      <rect x="16" y="48" width="400" height="6" rx="1.5" />\n'
                 f"    </clipPath>\n"
                 f'    <g clip-path="url(#repo-bar-clip-{i})">\n'
-                f'      <rect x="16" y="48" width="520" height="6" fill="var(--md-sys-color-surface-variant)" />\n'
+                f'      <rect x="16" y="48" width="400" height="6" fill="var(--md-sys-color-surface-variant)" />\n'
                 f"      {bar_content}\n"
                 f"    </g>\n"
                 f"      {legend_content}\n"

@@ -8,6 +8,8 @@ from typing import List, Tuple
 from stats.github_fetcher import GitHubDataFetcher
 from stats.data_processor import DataProcessor
 from stats.readme_updater import ReadmeUpdater
+from stats.source_line_counter import SourceLineCounter
+from stats.summary_writer import build_summary, write_summary
 from stats.svg_generator import (
     OverviewDashboardGenerator,
     TopReposDashboardGenerator,
@@ -65,7 +67,11 @@ def main() -> None:
     peak_hours = fetcher.fetch_peak_hours(username)
 
     languages = processor.parse_languages(repos_nodes)
-    total_loc = processor.estimate_lines_of_code(languages)
+    print("Counting source lines in public repositories...")
+    line_count = SourceLineCounter().count_repositories(repos_nodes)
+    total_loc = processor.format_lines_of_code(line_count["totals"]["code"])
+    if line_count["status"] == "partial":
+        total_loc += "*"
 
     top_repos_data = []
     for owner, name in TOP_REPOS:
@@ -81,6 +87,28 @@ def main() -> None:
                     repo_info = v
                     break
         top_repos_data.append(repo_info)
+
+    overview_data = {
+        "total_stars": total_stars,
+        "total_contributions": total_contributions,
+        "total_repositories": total_repos,
+        "total_pull_requests": total_prs,
+        "total_reviews": total_reviews,
+        "total_issues": total_issues,
+        "streak_days": streak,
+        "peak_day": peak_day,
+        "peak_hours": peak_hours,
+        "total_lines_of_code": line_count["totals"]["code"],
+        "formatted_lines_of_code": total_loc,
+    }
+    summary = build_summary(
+        username=username,
+        overview=overview_data,
+        languages=languages,
+        top_repos=TOP_REPOS,
+        repos_data=top_repos_data,
+        line_count=line_count,
+    )
 
     os.makedirs("assets", exist_ok=True)
 
@@ -122,7 +150,17 @@ def main() -> None:
         f.write(top_repos_svg)
     print(f"Generated {top_repos_path}")
 
-    ReadmeUpdater.update(overview_path, languages_path, top_repos_path)
+    summary_path = "data/stats.json"
+    write_summary(summary, summary_path)
+    print(f"Generated {summary_path}")
+
+    ReadmeUpdater.update(
+        overview_path,
+        languages_path,
+        top_repos_path,
+        line_count_partial=line_count["status"] == "partial",
+        summary_path=summary_path,
+    )
 
 
 if __name__ == "__main__":

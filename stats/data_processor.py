@@ -9,6 +9,7 @@ EXCLUDED_LANGUAGES = {
     "markdown",
     "dockerfile",
     "makefile",
+    "make",
     "tex",
     "scss",
     "sass",
@@ -51,10 +52,8 @@ class DataProcessor:
         return languages
 
     @staticmethod
-    def estimate_lines_of_code(languages: Dict[str, Dict[str, Any]]) -> str:
-        """Estimates total lines of code and formats it as a string."""
-        total_bytes = sum(lang_data.get("size", 0) for lang_data in languages.values())
-        lines = total_bytes // 30
+    def format_lines_of_code(lines: int) -> str:
+        """Formats an exact source line count for the overview dashboard."""
         if lines >= 1_000_000:
             return f"{lines / 1_000_000:.1f}M"
         if lines >= 1_000:

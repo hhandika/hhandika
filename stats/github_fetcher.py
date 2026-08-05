@@ -7,7 +7,7 @@ import urllib.request
 from typing import Dict, Any
 
 GRAPHQL_QUERY = """
-query {
+query($repositoriesCursor: String) {
   user(login: "hhandika") {
     name
     login
@@ -27,9 +27,11 @@ query {
         }
       }
     }
-    repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, orderBy: {field: STARGAZERS, direction: DESC}) {
+    repositories(first: 100, after: $repositoriesCursor, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, orderBy: {field: STARGAZERS, direction: DESC}) {
       nodes {
         name
+        nameWithOwner
+        url
         stargazerCount
         forkCount
         languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
@@ -41,6 +43,10 @@ query {
             }
           }
         }
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
       }
     }
   }
@@ -94,26 +100,48 @@ class GitHubDataFetcher:
             "Authorization": f"Bearer {self.token}",
             "User-Agent": "hhandika-stats-updater",
         }
-        payload = json.dumps({"query": GRAPHQL_QUERY}).encode("utf-8")
-        req = urllib.request.Request(url, data=payload, headers=headers, method="POST")
+        cursor = None
+        merged_data = None
 
-        try:
-            with urllib.request.urlopen(req) as res:
-                response_data = json.loads(res.read().decode("utf-8"))
-                if "errors" in response_data:
-                    print(
-                        f"GraphQL Errors: {json.dumps(response_data['errors'], indent=2)}",
-                        file=sys.stderr,
-                    )
-                    raise RuntimeError("GitHub API returned errors.")
-                return response_data["data"]
-        except urllib.error.HTTPError as e:
-            error_body = e.read().decode("utf-8") if e else ""
-            print(
-                f"HTTP Error {e.code}: {e.reason}\nResponse: {error_body}",
-                file=sys.stderr,
+        while True:
+            payload = json.dumps(
+                {"query": GRAPHQL_QUERY, "variables": {"repositoriesCursor": cursor}}
+            ).encode("utf-8")
+            req = urllib.request.Request(
+                url, data=payload, headers=headers, method="POST"
             )
-            raise
+
+            try:
+                with urllib.request.urlopen(req) as res:
+                    response_data = json.loads(res.read().decode("utf-8"))
+            except urllib.error.HTTPError as e:
+                error_body = e.read().decode("utf-8") if e else ""
+                print(
+                    f"HTTP Error {e.code}: {e.reason}\nResponse: {error_body}",
+                    file=sys.stderr,
+                )
+                raise
+
+            if "errors" in response_data:
+                print(
+                    f"GraphQL Errors: {json.dumps(response_data['errors'], indent=2)}",
+                    file=sys.stderr,
+                )
+                raise RuntimeError("GitHub API returned errors.")
+
+            page_data = response_data["data"]
+            if merged_data is None:
+                merged_data = page_data
+            else:
+                merged_repositories = merged_data["user"]["repositories"]
+                page_repositories = page_data["user"]["repositories"]
+                merged_repositories["nodes"].extend(page_repositories["nodes"])
+                merged_repositories["pageInfo"] = page_repositories["pageInfo"]
+
+            page_info = page_data["user"]["repositories"]["pageInfo"]
+            if not page_info["hasNextPage"]:
+                return merged_data or {}
+            cursor = page_info["endCursor"]
 
     def fetch_peak_hours(self, username: str) -> str:
         """Fetches user events and calculates peak engineering hours in ET timezone."""
