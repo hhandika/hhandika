@@ -5,49 +5,49 @@
       "description": "A cross-platform (mobile and desktop) digital catalog app for natural history collections",
       "languages": [
         {
-          "bytes": 4991165,
+          "bytes": 5863285,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 93.49
+          "percentage": 94.16
         },
         {
-          "bytes": 258698,
+          "bytes": 274033,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 4.85
+          "percentage": 4.4
         },
         {
-          "bytes": 25551,
+          "bytes": 25583,
           "color": "#DA3434",
           "name": "CMake",
-          "percentage": 0.48
+          "percentage": 0.41
         },
         {
-          "bytes": 24409,
+          "bytes": 24835,
           "color": "#f34b7d",
           "name": "C++",
-          "percentage": 0.46
+          "percentage": 0.4
         },
         {
           "bytes": 16404,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 0.31
+          "percentage": 0.26
         },
         {
           "bytes": 7779,
           "color": "#89e051",
           "name": "Shell",
-          "percentage": 0.15
+          "percentage": 0.12
         },
         {
           "bytes": 6616,
           "color": "#701516",
           "name": "Ruby",
-          "percentage": 0.12
+          "percentage": 0.11
         },
         {
-          "bytes": 3340,
+          "bytes": 3447,
           "color": "#F05138",
           "name": "Swift",
           "percentage": 0.06
@@ -56,7 +56,7 @@
           "bytes": 2441,
           "color": "#C1F12E",
           "name": "Batchfile",
-          "percentage": 0.05
+          "percentage": 0.04
         },
         {
           "bytes": 2399,
@@ -246,7 +246,7 @@
       "name_with_owner": "mammaldiversity/mdd_app"
     }
   ],
-  "generated_at": "2026-08-11T01:29:55.034628+00:00",
+  "generated_at": "2026-08-12T01:48:23.970906+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
@@ -362,8 +362,8 @@
     "formatted_lines_of_code": "127.4k",
     "peak_day": "Saturday (17%)",
     "peak_hours": "Afternoon",
-    "streak_days": 2,
-    "total_contributions": 3264,
+    "streak_days": 22,
+    "total_contributions": 3315,
     "total_issues": 48,
     "total_lines_of_code": 127390,
     "total_pull_requests": 74,
