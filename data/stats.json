@@ -246,7 +246,7 @@
       "name_with_owner": "mammaldiversity/mdd_app"
     }
   ],
-  "generated_at": "2026-08-26T01:11:57.518702+00:00",
+  "generated_at": "2026-08-27T07:22:22.501341+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
@@ -361,7 +361,7 @@
   "overview": {
     "formatted_lines_of_code": "127.4k",
     "peak_day": "Saturday (17%)",
-    "peak_hours": "Evening",
+    "peak_hours": "Late Afternoon",
     "streak_days": 2,
     "total_contributions": 3305,
     "total_issues": 48,
