@@ -5,64 +5,64 @@
       "description": "A cross-platform (mobile and desktop) digital catalog app for natural history collections",
       "languages": [
         {
-          "bytes": 5863285,
+          "bytes": 8096862,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 94.16
+          "percentage": 94.33
         },
         {
-          "bytes": 274033,
+          "bytes": 309535,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 4.4
+          "percentage": 3.61
         },
         {
-          "bytes": 25583,
-          "color": "#DA3434",
-          "name": "CMake",
-          "percentage": 0.41
+          "bytes": 87441,
+          "color": "#ecdebe",
+          "name": "Roff",
+          "percentage": 1.02
         },
         {
-          "bytes": 24835,
+          "bytes": 27198,
           "color": "#f34b7d",
           "name": "C++",
-          "percentage": 0.4
+          "percentage": 0.32
+        },
+        {
+          "bytes": 25890,
+          "color": "#DA3434",
+          "name": "CMake",
+          "percentage": 0.3
         },
         {
           "bytes": 16404,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 0.26
+          "percentage": 0.19
         },
         {
           "bytes": 7779,
           "color": "#89e051",
           "name": "Shell",
-          "percentage": 0.12
+          "percentage": 0.09
         },
         {
-          "bytes": 6616,
+          "bytes": 6615,
           "color": "#701516",
           "name": "Ruby",
-          "percentage": 0.11
+          "percentage": 0.08
         },
         {
-          "bytes": 3447,
+          "bytes": 3454,
           "color": "#F05138",
           "name": "Swift",
-          "percentage": 0.06
+          "percentage": 0.04
         },
         {
           "bytes": 2441,
           "color": "#C1F12E",
           "name": "Batchfile",
-          "percentage": 0.04
-        },
-        {
-          "bytes": 2399,
-          "color": "#012456",
-          "name": "PowerShell",
-          "percentage": 0.04
+          "percentage": 0.03
         }
       ],
       "name_with_owner": "nahpu/nahpu"
@@ -246,7 +246,7 @@
       "name_with_owner": "mammaldiversity/mdd_app"
     }
   ],
-  "generated_at": "2026-08-27T07:22:22.501341+00:00",
+  "generated_at": "2026-08-28T09:37:12.817871+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
@@ -361,9 +361,9 @@
   "overview": {
     "formatted_lines_of_code": "127.4k",
     "peak_day": "Saturday (17%)",
-    "peak_hours": "Late Afternoon",
-    "streak_days": 2,
-    "total_contributions": 3305,
+    "peak_hours": "Evening",
+    "streak_days": 3,
+    "total_contributions": 3415,
     "total_issues": 48,
     "total_lines_of_code": 127390,
     "total_pull_requests": 76,
