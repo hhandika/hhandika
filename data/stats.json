@@ -5,40 +5,40 @@
       "description": "A cross-platform (mobile and desktop) digital catalog app for natural history collections",
       "languages": [
         {
-          "bytes": 8109965,
+          "bytes": 8498384,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 94.33
+          "percentage": 93.08
         },
         {
-          "bytes": 309831,
+          "bytes": 334352,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 3.6
+          "percentage": 3.66
         },
         {
-          "bytes": 87441,
+          "bytes": 207671,
           "color": "#ecdebe",
           "name": "Roff",
-          "percentage": 1.02
+          "percentage": 2.27
         },
         {
           "bytes": 27198,
           "color": "#f34b7d",
           "name": "C++",
-          "percentage": 0.32
+          "percentage": 0.3
         },
         {
           "bytes": 25890,
           "color": "#DA3434",
           "name": "CMake",
-          "percentage": 0.3
+          "percentage": 0.28
         },
         {
           "bytes": 16404,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 0.19
+          "percentage": 0.18
         },
         {
           "bytes": 7779,
@@ -50,7 +50,7 @@
           "bytes": 6615,
           "color": "#701516",
           "name": "Ruby",
-          "percentage": 0.08
+          "percentage": 0.07
         },
         {
           "bytes": 3454,
@@ -246,7 +246,7 @@
       "name_with_owner": "mammaldiversity/mdd_app"
     }
   ],
-  "generated_at": "2026-08-30T03:43:09.387994+00:00",
+  "generated_at": "2026-08-31T03:43:38.479652+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
@@ -360,16 +360,16 @@
   },
   "overview": {
     "formatted_lines_of_code": "127.4k",
-    "peak_day": "Saturday (18%)",
+    "peak_day": "Saturday (17%)",
     "peak_hours": "Late Afternoon",
-    "streak_days": 1,
-    "total_contributions": 3439,
+    "streak_days": 2,
+    "total_contributions": 3381,
     "total_issues": 48,
     "total_lines_of_code": 127390,
     "total_pull_requests": 76,
     "total_repositories": 82,
     "total_reviews": 36,
-    "total_stars": 48
+    "total_stars": 49
   },
   "profile": {
     "public_only": true,
