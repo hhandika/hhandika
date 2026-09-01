@@ -91,64 +91,64 @@
       "description": "A GUI version of the SEGUL phylogenomic tool",
       "languages": [
         {
-          "bytes": 539640,
+          "bytes": 530724,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 66.78
+          "percentage": 66.19
         },
         {
-          "bytes": 150974,
+          "bytes": 150155,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 18.68
+          "percentage": 18.73
         },
         {
-          "bytes": 25499,
-          "color": "#DA3434",
-          "name": "CMake",
-          "percentage": 3.16
-        },
-        {
-          "bytes": 25139,
+          "bytes": 26880,
           "color": "#f34b7d",
           "name": "C++",
-          "percentage": 3.11
+          "percentage": 3.35
         },
         {
-          "bytes": 18841,
+          "bytes": 25811,
+          "color": "#DA3434",
+          "name": "CMake",
+          "percentage": 3.22
+        },
+        {
+          "bytes": 19269,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 2.33
+          "percentage": 2.4
         },
         {
-          "bytes": 15763,
+          "bytes": 16313,
           "color": "#fcb32c",
           "name": "MDX",
-          "percentage": 1.95
+          "percentage": 2.03
         },
         {
-          "bytes": 15330,
+          "bytes": 15432,
           "color": "#3178c6",
           "name": "TypeScript",
-          "percentage": 1.9
+          "percentage": 1.92
         },
         {
-          "bytes": 7522,
+          "bytes": 7537,
           "color": "#89e051",
           "name": "Shell",
-          "percentage": 0.93
+          "percentage": 0.94
         },
         {
-          "bytes": 6620,
+          "bytes": 6735,
           "color": "#701516",
           "name": "Ruby",
-          "percentage": 0.82
+          "percentage": 0.84
         },
         {
-          "bytes": 2777,
+          "bytes": 2986,
           "color": "#012456",
           "name": "PowerShell",
-          "percentage": 0.34
+          "percentage": 0.37
         }
       ],
       "name_with_owner": "hhandika/segui"
@@ -246,13 +246,13 @@
       "name_with_owner": "mammaldiversity/mdd_app"
     }
   ],
-  "generated_at": "2026-08-31T03:43:38.479652+00:00",
+  "generated_at": "2026-09-01T03:39:00.706186+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
         "bytes": 116346,
         "color": "#ff5a03",
-        "percentage": 2.36
+        "percentage": 2.37
       },
       "Batchfile": {
         "bytes": 7285,
@@ -265,14 +265,14 @@
         "percentage": 0.95
       },
       "C++": {
-        "bytes": 130216,
+        "bytes": 131957,
         "color": "#f34b7d",
-        "percentage": 2.65
+        "percentage": 2.68
       },
       "Dart": {
-        "bytes": 886105,
+        "bytes": 877189,
         "color": "#00B4AB",
-        "percentage": 18.0
+        "percentage": 17.84
       },
       "Go": {
         "bytes": 2249,
@@ -300,9 +300,9 @@
         "percentage": 0.0
       },
       "MDX": {
-        "bytes": 18871,
+        "bytes": 19421,
         "color": "#fcb32c",
-        "percentage": 0.38
+        "percentage": 0.4
       },
       "Objective-C": {
         "bytes": 38,
@@ -310,14 +310,14 @@
         "percentage": 0.0
       },
       "PowerShell": {
-        "bytes": 5554,
+        "bytes": 5763,
         "color": "#012456",
-        "percentage": 0.11
+        "percentage": 0.12
       },
       "Python": {
-        "bytes": 250136,
+        "bytes": 250564,
         "color": "#3572A5",
-        "percentage": 5.08
+        "percentage": 5.1
       },
       "R": {
         "bytes": 7798,
@@ -330,17 +330,17 @@
         "percentage": 0.0
       },
       "Ruby": {
-        "bytes": 29325,
+        "bytes": 29440,
         "color": "#701516",
         "percentage": 0.6
       },
       "Rust": {
-        "bytes": 3182876,
+        "bytes": 3182057,
         "color": "#dea584",
-        "percentage": 64.66
+        "percentage": 64.73
       },
       "Shell": {
-        "bytes": 168779,
+        "bytes": 168794,
         "color": "#89e051",
         "percentage": 3.43
       },
@@ -350,22 +350,22 @@
         "percentage": 0.33
       },
       "TypeScript": {
-        "bytes": 46682,
+        "bytes": 46784,
         "color": "#3178c6",
         "percentage": 0.95
       }
     },
-    "total": 4922367,
+    "total": 4915792,
     "unit": "bytes"
   },
   "overview": {
-    "formatted_lines_of_code": "127.4k",
+    "formatted_lines_of_code": "127.2k",
     "peak_day": "Saturday (17%)",
-    "peak_hours": "Late Afternoon",
-    "streak_days": 2,
-    "total_contributions": 3381,
+    "peak_hours": "Evening",
+    "streak_days": 3,
+    "total_contributions": 3385,
     "total_issues": 48,
-    "total_lines_of_code": 127390,
+    "total_lines_of_code": 127186,
     "total_pull_requests": 76,
     "total_repositories": 82,
     "total_reviews": 36,
@@ -391,7 +391,7 @@
       },
       "Bourne Shell": {
         "blank": 1685,
-        "code": 4508,
+        "code": 4509,
         "comment": 616,
         "files": 100
       },
@@ -402,14 +402,14 @@
         "files": 24
       },
       "C++": {
-        "blank": 690,
-        "code": 2548,
-        "comment": 328,
+        "blank": 699,
+        "code": 2568,
+        "comment": 343,
         "files": 47
       },
       "C/C++ Header": {
         "blank": 312,
-        "code": 686,
+        "code": 689,
         "comment": 338,
         "files": 51
       },
@@ -420,10 +420,10 @@
         "files": 4
       },
       "Dart": {
-        "blank": 3847,
-        "code": 27465,
-        "comment": 1479,
-        "files": 227
+        "blank": 3718,
+        "code": 27228,
+        "comment": 1475,
+        "files": 228
       },
       "Go": {
         "blank": 30,
@@ -432,9 +432,9 @@
         "files": 4
       },
       "Gradle": {
-        "blank": 300,
-        "code": 1205,
-        "comment": 85,
+        "blank": 302,
+        "code": 1217,
+        "comment": 76,
         "files": 30
       },
       "Java": {
@@ -463,19 +463,19 @@
       },
       "PowerShell": {
         "blank": 38,
-        "code": 223,
+        "code": 227,
         "comment": 9,
         "files": 18
       },
       "Properties": {
         "blank": 0,
-        "code": 48,
-        "comment": 1,
+        "code": 50,
+        "comment": 3,
         "files": 12
       },
       "Python": {
         "blank": 1110,
-        "code": 4902,
+        "code": 4911,
         "comment": 1283,
         "files": 76
       },
@@ -493,15 +493,15 @@
       },
       "Ruby": {
         "blank": 24,
-        "code": 232,
-        "comment": 100,
+        "code": 234,
+        "comment": 102,
         "files": 8
       },
       "Rust": {
-        "blank": 6422,
-        "code": 76764,
-        "comment": 3180,
-        "files": 470
+        "blank": 6413,
+        "code": 76737,
+        "comment": 3172,
+        "files": 469
       },
       "SVG": {
         "blank": 189,
@@ -510,14 +510,14 @@
         "files": 55
       },
       "Swift": {
-        "blank": 123,
-        "code": 471,
+        "blank": 125,
+        "code": 475,
         "comment": 113,
-        "files": 38
+        "files": 39
       },
       "TypeScript": {
         "blank": 129,
-        "code": 1309,
+        "code": 1312,
         "comment": 248,
         "files": 33
       },
@@ -623,7 +623,7 @@
         "languages": {
           "Bourne Shell": {
             "blank": 62,
-            "code": 213,
+            "code": 214,
             "comment": 24,
             "files": 10
           },
@@ -634,14 +634,14 @@
             "files": 1
           },
           "C++": {
-            "blank": 115,
-            "code": 452,
-            "comment": 56,
+            "blank": 124,
+            "code": 472,
+            "comment": 71,
             "files": 8
           },
           "C/C++ Header": {
             "blank": 51,
-            "code": 103,
+            "code": 106,
             "comment": 65,
             "files": 8
           },
@@ -652,15 +652,15 @@
             "files": 1
           },
           "Dart": {
-            "blank": 2316,
-            "code": 18058,
-            "comment": 636,
-            "files": 100
+            "blank": 2187,
+            "code": 17821,
+            "comment": 632,
+            "files": 101
           },
           "Gradle": {
-            "blank": 61,
-            "code": 235,
-            "comment": 20,
+            "blank": 63,
+            "code": 247,
+            "comment": 11,
             "files": 6
           },
           "JavaScript": {
@@ -677,33 +677,33 @@
           },
           "PowerShell": {
             "blank": 15,
-            "code": 78,
+            "code": 82,
             "comment": 3,
             "files": 7
           },
           "Properties": {
             "blank": 0,
-            "code": 8,
-            "comment": 0,
+            "code": 10,
+            "comment": 2,
             "files": 2
           },
           "Python": {
             "blank": 65,
-            "code": 403,
+            "code": 412,
             "comment": 51,
             "files": 1
           },
           "Ruby": {
             "blank": 6,
-            "code": 58,
-            "comment": 25,
+            "code": 60,
+            "comment": 27,
             "files": 2
           },
           "Rust": {
-            "blank": 208,
-            "code": 3599,
-            "comment": 141,
-            "files": 11
+            "blank": 199,
+            "code": 3572,
+            "comment": 133,
+            "files": 10
           },
           "SVG": {
             "blank": 42,
@@ -712,14 +712,14 @@
             "files": 16
           },
           "Swift": {
-            "blank": 15,
-            "code": 67,
+            "blank": 17,
+            "code": 71,
             "comment": 7,
-            "files": 6
+            "files": 7
           },
           "TypeScript": {
             "blank": 39,
-            "code": 457,
+            "code": 460,
             "comment": 37,
             "files": 9
           },
@@ -732,10 +732,10 @@
         },
         "name_with_owner": "hhandika/segui",
         "totals": {
-          "blank": 3037,
-          "code": 24965,
-          "comment": 1106,
-          "files": 191
+          "blank": 2912,
+          "code": 24761,
+          "comment": 1104,
+          "files": 192
         },
         "url": "https://github.com/hhandika/segui"
       },
@@ -2696,10 +2696,10 @@
     "repositories_total": 82,
     "status": "complete",
     "totals": {
-      "blank": 15636,
-      "code": 127390,
-      "comment": 8370,
-      "files": 1253
+      "blank": 15511,
+      "code": 127186,
+      "comment": 8368,
+      "files": 1254
     }
   },
   "status": "complete"
