@@ -5,28 +5,28 @@
       "description": "A cross-platform (mobile and desktop) digital catalog app for natural history collections",
       "languages": [
         {
-          "bytes": 8498384,
+          "bytes": 8681553,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 93.08
+          "percentage": 92.94
         },
         {
           "bytes": 334352,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 3.66
+          "percentage": 3.58
         },
         {
-          "bytes": 207671,
+          "bytes": 235183,
           "color": "#ecdebe",
           "name": "Roff",
-          "percentage": 2.27
+          "percentage": 2.52
         },
         {
           "bytes": 27198,
           "color": "#f34b7d",
           "name": "C++",
-          "percentage": 0.3
+          "percentage": 0.29
         },
         {
           "bytes": 25890,
@@ -44,7 +44,7 @@
           "bytes": 7779,
           "color": "#89e051",
           "name": "Shell",
-          "percentage": 0.09
+          "percentage": 0.08
         },
         {
           "bytes": 6615,
@@ -246,7 +246,7 @@
       "name_with_owner": "mammaldiversity/mdd_app"
     }
   ],
-  "generated_at": "2026-09-01T03:39:00.706186+00:00",
+  "generated_at": "2026-09-02T02:57:08.748633+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
@@ -362,8 +362,8 @@
     "formatted_lines_of_code": "127.2k",
     "peak_day": "Saturday (17%)",
     "peak_hours": "Evening",
-    "streak_days": 3,
-    "total_contributions": 3385,
+    "streak_days": 4,
+    "total_contributions": 3460,
     "total_issues": 48,
     "total_lines_of_code": 127186,
     "total_pull_requests": 76,
