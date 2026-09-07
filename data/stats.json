@@ -5,22 +5,22 @@
       "description": "A cross-platform (mobile and desktop) digital catalog app for natural history collections",
       "languages": [
         {
-          "bytes": 8730050,
+          "bytes": 8653085,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 92.95
+          "percentage": 93.05
         },
         {
           "bytes": 334352,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 3.56
+          "percentage": 3.6
         },
         {
           "bytes": 238311,
           "color": "#ecdebe",
           "name": "Roff",
-          "percentage": 2.54
+          "percentage": 2.56
         },
         {
           "bytes": 27198,
@@ -29,28 +29,22 @@
           "percentage": 0.29
         },
         {
-          "bytes": 25781,
+          "bytes": 19952,
           "color": "#DA3434",
           "name": "CMake",
-          "percentage": 0.27
+          "percentage": 0.21
         },
         {
-          "bytes": 16404,
+          "bytes": 16522,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 0.17
+          "percentage": 0.18
         },
         {
-          "bytes": 7779,
+          "bytes": 3554,
           "color": "#89e051",
           "name": "Shell",
-          "percentage": 0.08
-        },
-        {
-          "bytes": 6615,
-          "color": "#701516",
-          "name": "Ruby",
-          "percentage": 0.07
+          "percentage": 0.04
         },
         {
           "bytes": 3454,
@@ -59,10 +53,16 @@
           "percentage": 0.04
         },
         {
-          "bytes": 2441,
-          "color": "#C1F12E",
-          "name": "Batchfile",
-          "percentage": 0.03
+          "bytes": 1704,
+          "color": "#012456",
+          "name": "PowerShell",
+          "percentage": 0.02
+        },
+        {
+          "bytes": 1488,
+          "color": "#555555",
+          "name": "C",
+          "percentage": 0.02
         }
       ],
       "name_with_owner": "nahpu/nahpu"
@@ -246,7 +246,7 @@
       "name_with_owner": "mammaldiversity/mdd_app"
     }
   ],
-  "generated_at": "2026-09-06T03:00:14.554427+00:00",
+  "generated_at": "2026-09-07T02:58:12.071512+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
@@ -363,10 +363,10 @@
     "peak_day": "Saturday (18%)",
     "peak_hours": "Evening",
     "streak_days": 8,
-    "total_contributions": 3489,
+    "total_contributions": 3454,
     "total_issues": 48,
     "total_lines_of_code": 127186,
-    "total_pull_requests": 79,
+    "total_pull_requests": 78,
     "total_repositories": 82,
     "total_reviews": 36,
     "total_stars": 49
