@@ -248,14 +248,14 @@
     </clipPath>
     <g clip-path="url(#repo-bar-clip-4)">
       <rect x="16" y="48" width="400" height="6" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="16.00" y="48" width="329.83" height="6" fill="#00B4AB" />
-      <rect x="345.83" y="48" width="31.73" height="6" fill="#dea584" />
-      <rect x="377.56" y="48" width="13.91" height="6" fill="#f34b7d" />
-      <rect x="391.47" y="48" width="10.65" height="6" fill="#DA3434" />
-      <rect x="402.12" y="48" width="8.11" height="6" fill="#3572A5" />
-      <rect x="410.23" y="48" width="2.08" height="6" fill="#012456" />
-      <rect x="412.31" y="48" width="1.46" height="6" fill="#89e051" />
-      <rect x="413.78" y="48" width="1.42" height="6" fill="#F05138" />
+      <rect x="16.00" y="48" width="330.18" height="6" fill="#00B4AB" />
+      <rect x="346.18" y="48" width="31.57" height="6" fill="#dea584" />
+      <rect x="377.75" y="48" width="13.84" height="6" fill="#f34b7d" />
+      <rect x="391.59" y="48" width="10.60" height="6" fill="#DA3434" />
+      <rect x="402.19" y="48" width="8.07" height="6" fill="#3572A5" />
+      <rect x="410.26" y="48" width="2.07" height="6" fill="#012456" />
+      <rect x="412.33" y="48" width="1.46" height="6" fill="#89e051" />
+      <rect x="413.79" y="48" width="1.41" height="6" fill="#F05138" />
       <rect x="415.20" y="48" width="0.78" height="6" fill="#555555" />
       <rect x="415.98" y="48" width="0.02" height="6" fill="#438eff" />
     </g>
