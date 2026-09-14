@@ -246,13 +246,13 @@
       "name_with_owner": "mammaldiversity/mdd_app"
     }
   ],
-  "generated_at": "2026-09-13T03:14:54.430818+00:00",
+  "generated_at": "2026-09-14T03:27:02.046803+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
         "bytes": 116346,
         "color": "#ff5a03",
-        "percentage": 2.36
+        "percentage": 2.34
       },
       "Batchfile": {
         "bytes": 7285,
@@ -262,17 +262,17 @@
       "C": {
         "bytes": 46880,
         "color": "#555555",
-        "percentage": 0.95
+        "percentage": 0.94
       },
       "C++": {
         "bytes": 131957,
         "color": "#f34b7d",
-        "percentage": 2.68
+        "percentage": 2.65
       },
       "Dart": {
         "bytes": 877189,
         "color": "#00B4AB",
-        "percentage": 17.81
+        "percentage": 17.65
       },
       "Go": {
         "bytes": 2249,
@@ -285,9 +285,9 @@
         "percentage": 0.0
       },
       "JavaScript": {
-        "bytes": 6329,
+        "bytes": 12468,
         "color": "#f1e05a",
-        "percentage": 0.13
+        "percentage": 0.25
       },
       "Julia": {
         "bytes": 480,
@@ -315,9 +315,9 @@
         "percentage": 0.12
       },
       "Python": {
-        "bytes": 261209,
+        "bytes": 299785,
         "color": "#3572A5",
-        "percentage": 5.3
+        "percentage": 6.03
       },
       "R": {
         "bytes": 7798,
@@ -332,40 +332,40 @@
       "Ruby": {
         "bytes": 29440,
         "color": "#701516",
-        "percentage": 0.6
+        "percentage": 0.59
       },
       "Rust": {
         "bytes": 3182057,
         "color": "#dea584",
-        "percentage": 64.59
+        "percentage": 64.01
       },
       "Shell": {
         "bytes": 168794,
         "color": "#89e051",
-        "percentage": 3.43
+        "percentage": 3.4
       },
       "Swift": {
         "bytes": 16122,
         "color": "#F05138",
-        "percentage": 0.33
+        "percentage": 0.32
       },
       "TypeScript": {
         "bytes": 46784,
         "color": "#3178c6",
-        "percentage": 0.95
+        "percentage": 0.94
       }
     },
-    "total": 4926437,
+    "total": 4971152,
     "unit": "bytes"
   },
   "overview": {
-    "formatted_lines_of_code": "127.5k",
+    "formatted_lines_of_code": "128.6k",
     "peak_day": "Saturday (18%)",
     "peak_hours": "Late Afternoon",
-    "streak_days": 15,
-    "total_contributions": 3514,
+    "streak_days": 16,
+    "total_contributions": 3491,
     "total_issues": 48,
-    "total_lines_of_code": 127541,
+    "total_lines_of_code": 128559,
     "total_pull_requests": 79,
     "total_repositories": 82,
     "total_reviews": 37,
@@ -437,6 +437,12 @@
         "comment": 76,
         "files": 30
       },
+      "JSX": {
+        "blank": 20,
+        "code": 200,
+        "comment": 6,
+        "files": 1
+      },
       "Java": {
         "blank": 0,
         "code": 7,
@@ -474,10 +480,10 @@
         "files": 12
       },
       "Python": {
-        "blank": 1148,
-        "code": 5266,
-        "comment": 1254,
-        "files": 78
+        "blank": 1290,
+        "code": 6084,
+        "comment": 1303,
+        "files": 82
       },
       "R": {
         "blank": 95,
@@ -1149,19 +1155,25 @@
       },
       {
         "languages": {
+          "JSX": {
+            "blank": 20,
+            "code": 200,
+            "comment": 6,
+            "files": 1
+          },
           "Python": {
-            "blank": 62,
-            "code": 257,
-            "comment": 4,
-            "files": 9
+            "blank": 204,
+            "code": 1075,
+            "comment": 53,
+            "files": 13
           }
         },
         "name_with_owner": "hhandika/appstore-mockup",
         "totals": {
-          "blank": 62,
-          "code": 257,
-          "comment": 4,
-          "files": 9
+          "blank": 224,
+          "code": 1275,
+          "comment": 59,
+          "files": 14
         },
         "url": "https://github.com/hhandika/appstore-mockup"
       },
@@ -2696,10 +2708,10 @@
     "repositories_total": 82,
     "status": "complete",
     "totals": {
-      "blank": 15549,
-      "code": 127541,
-      "comment": 8339,
-      "files": 1256
+      "blank": 15711,
+      "code": 128559,
+      "comment": 8394,
+      "files": 1261
     }
   },
   "status": "complete"
