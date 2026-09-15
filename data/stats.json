@@ -5,34 +5,34 @@
       "description": "A cross-platform (mobile and desktop) digital catalog app for natural history collections",
       "languages": [
         {
-          "bytes": 8878179,
+          "bytes": 9241828,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 93.43
+          "percentage": 93.62
         },
         {
-          "bytes": 340613,
+          "bytes": 341038,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 3.58
+          "percentage": 3.45
         },
         {
-          "bytes": 209643,
+          "bytes": 215415,
           "color": "#ecdebe",
           "name": "Roff",
-          "percentage": 2.21
+          "percentage": 2.18
         },
         {
           "bytes": 27198,
           "color": "#f34b7d",
           "name": "C++",
-          "percentage": 0.29
+          "percentage": 0.28
         },
         {
           "bytes": 19952,
           "color": "#DA3434",
           "name": "CMake",
-          "percentage": 0.21
+          "percentage": 0.2
         },
         {
           "bytes": 16522,
@@ -50,7 +50,7 @@
           "bytes": 3454,
           "color": "#F05138",
           "name": "Swift",
-          "percentage": 0.04
+          "percentage": 0.03
         },
         {
           "bytes": 1704,
@@ -246,7 +246,7 @@
       "name_with_owner": "mammaldiversity/mdd_app"
     }
   ],
-  "generated_at": "2026-09-14T03:27:02.046803+00:00",
+  "generated_at": "2026-09-15T03:28:36.386169+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
@@ -362,13 +362,13 @@
     "formatted_lines_of_code": "128.6k",
     "peak_day": "Saturday (18%)",
     "peak_hours": "Late Afternoon",
-    "streak_days": 16,
-    "total_contributions": 3491,
+    "streak_days": 17,
+    "total_contributions": 3538,
     "total_issues": 48,
     "total_lines_of_code": 128559,
     "total_pull_requests": 79,
     "total_repositories": 82,
-    "total_reviews": 37,
+    "total_reviews": 38,
     "total_stars": 49
   },
   "profile": {
