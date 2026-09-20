@@ -28,11 +28,6 @@ jobs:
         with:
           python-version-file: "pyproject.toml"
 
-      - name: Install source line counter
-        run: |
-          sudo apt-get update
-          sudo apt-get install --yes cloc
-
       - name: Run unit tests
         run: uv run pytest
 

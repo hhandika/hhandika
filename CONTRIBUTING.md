@@ -12,12 +12,12 @@ This repository features an automated workflow that updates profile stats cards 
    - Can be triggered manually via `workflow_dispatch` in the Actions tab.
 2. **Python Script** (`update_stats.py`):
    - Queries the GitHub GraphQL API for public user metrics and details for specific repositories (`nahpu/nahpu`, `hhandika/segul`, `hhandika/segui`, `hhandika/ullar`, and `mammaldiversity/mdd_app`).
-   - Computes overall stars, contributions, repository counts, aggregates language usage, and uses `cloc` to count code lines in every public, owned, non-fork repository.
+   - Computes overall stars, contributions, repository counts, aggregates language usage, and sums the profile owner's additions and deletions from GitHub contributor statistics for every public, owned, non-fork repository.
    - Generates three 480-pixel-wide SVGs in the `assets/` directory:
      - `overview.svg`: Public overview stats (Stars, Contributions, CRI, etc.).
      - `languages.svg`: Top programming languages bar chart and percentage breakdown based on repository sizes.
      - `top_repos.svg`: Featured repository descriptions and their individual language composition bar charts.
-   - Writes the complete generated dataset to `data/stats.json`, including overview metrics, language bytes, exact code/comment/blank counts, per-repository breakdowns, and repository failures.
+   - Writes the complete generated dataset to `data/stats.json`, including overview metrics, language bytes, exact addition/deletion counts, per-repository breakdowns, and repository failures.
    - Updates `README.md` by replacing the content between HTML placeholder comments.
 
 ---
@@ -26,6 +26,7 @@ This repository features an automated workflow that updates profile stats cards 
 
 - **Total Stars**: The total number of stargazers across all of the user's public repositories.
 - **Contributions**: The total number of GitHub contributions made in the last 365 days, sourced from the contribution calendar.
+- **Code Changes**: All-time additions and deletions attributed to the user on the default branches of public, owned, non-fork repositories, sourced from GitHub contributor statistics. GitHub reports zero additions and deletions for repositories with 10,000 or more commits.
 - **Merged PRs**: The total number of Pull Requests the user has created or contributed to.
 - **Code Reviews**: The total number of Pull Request reviews submitted by the user.
 - **Issues**: The total number of issues opened by the user.
@@ -40,7 +41,6 @@ This repository features an automated workflow that updates profile stats cards 
 ### Prerequisites
 - Python 3.9+
 - [uv](https://github.com/astral-sh/uv) (fast Python package manager)
-- [cloc](https://github.com/AlDanial/cloc) (source line counter)
 
 ### Installation
 Sync dependencies and set up the local virtual environment:
@@ -64,9 +64,9 @@ uv run python update_stats.py
 ```
 This will fetch live public stats, regenerate the SVGs in `assets/`, write
 `data/stats.json`, and update your local `README.md`.
-Repository checkouts used for line counting are shallow and temporary. If an
-individual repository cannot be counted, the published total is marked with an
-asterisk and the failure is recorded in `data/stats.json`.
+If contributor statistics for an individual repository are unavailable, the
+published total is marked with an asterisk and the failure is recorded in
+`data/stats.json`.
 
 ---
 

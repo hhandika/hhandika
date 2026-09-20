@@ -71,7 +71,7 @@ class OverviewDashboardGenerator(M3SVGGenerator):
         streak: int,
         peak_day: str,
         peak_hours: str,
-        total_loc: str,
+        code_changes: str,
     ):
         """Initializes with all overview metrics."""
         super().__init__(
@@ -86,7 +86,7 @@ class OverviewDashboardGenerator(M3SVGGenerator):
         self.streak = streak
         self.peak_day = peak_day
         self.peak_hours = peak_hours
-        self.total_loc = total_loc
+        self.code_changes = code_changes
 
     def generate(self) -> str:
         """Generates the Overview SVG."""
@@ -132,7 +132,7 @@ class OverviewDashboardGenerator(M3SVGGenerator):
             168, 84, "contributions", "Contributions", str(self.total_contributions)
         )
         grid_html += self._get_stat_item(
-            312, 84, "code", "Total Lines of Code", self.total_loc
+            312, 84, "code", "Code Changes", self.code_changes
         )
 
         # Row 2

@@ -12,7 +12,7 @@ def build_summary(
     languages: Dict[str, Dict[str, Any]],
     top_repos: List[Tuple[str, str]],
     repos_data: List[Optional[Dict[str, Any]]],
-    line_count: Dict[str, Any],
+    code_changes: Dict[str, Any],
 ) -> Dict[str, Any]:
     """Create the versioned public data representation of generated statistics."""
     total_language_bytes = sum(item.get("size", 0) for item in languages.values())
@@ -60,9 +60,9 @@ def build_summary(
         )
 
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "status": line_count["status"],
+        "status": code_changes["status"],
         "profile": {"username": username, "public_only": True},
         "overview": overview,
         "language_statistics": {
@@ -70,7 +70,7 @@ def build_summary(
             "total": total_language_bytes,
             "languages": language_summary,
         },
-        "source_line_count": line_count,
+        "code_changes": code_changes,
         "featured_repositories": featured_repositories,
     }
 

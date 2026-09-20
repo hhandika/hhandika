@@ -8,7 +8,6 @@ from typing import List, Tuple
 from stats.github_fetcher import GitHubDataFetcher
 from stats.data_processor import DataProcessor
 from stats.readme_updater import ReadmeUpdater
-from stats.source_line_counter import SourceLineCounter
 from stats.summary_writer import build_summary, write_summary
 from stats.svg_generator import (
     OverviewDashboardGenerator,
@@ -67,11 +66,16 @@ def main() -> None:
     peak_hours = fetcher.fetch_peak_hours(username)
 
     languages = processor.parse_languages(repos_nodes)
-    print("Counting source lines in public repositories...")
-    line_count = SourceLineCounter().count_repositories(repos_nodes)
-    total_loc = processor.format_lines_of_code(line_count["totals"]["code"])
-    if line_count["status"] == "partial":
-        total_loc += "*"
+    print("Fetching attributed code additions and deletions...")
+    code_changes = fetcher.fetch_code_changes(username, repos_nodes)
+    additions = code_changes["totals"]["additions"]
+    deletions = code_changes["totals"]["deletions"]
+    formatted_code_changes = (
+        f"+{processor.format_count(additions)} "
+        f"(-{processor.format_count(deletions)})"
+    )
+    if code_changes["status"] == "partial":
+        formatted_code_changes += "*"
 
     top_repos_data = []
     for owner, name in TOP_REPOS:
@@ -98,8 +102,9 @@ def main() -> None:
         "streak_days": streak,
         "peak_day": peak_day,
         "peak_hours": peak_hours,
-        "total_lines_of_code": line_count["totals"]["code"],
-        "formatted_lines_of_code": total_loc,
+        "code_additions": additions,
+        "code_deletions": deletions,
+        "formatted_code_changes": formatted_code_changes,
     }
     summary = build_summary(
         username=username,
@@ -107,7 +112,7 @@ def main() -> None:
         languages=languages,
         top_repos=TOP_REPOS,
         repos_data=top_repos_data,
-        line_count=line_count,
+        code_changes=code_changes,
     )
 
     os.makedirs("assets", exist_ok=True)
@@ -122,7 +127,7 @@ def main() -> None:
         streak=streak,
         peak_day=peak_day,
         peak_hours=peak_hours,
-        total_loc=total_loc,
+        code_changes=formatted_code_changes,
     )
     overview_svg = overview_generator.generate()
 
@@ -158,7 +163,7 @@ def main() -> None:
         overview_path,
         languages_path,
         top_repos_path,
-        line_count_partial=line_count["status"] == "partial",
+        code_changes_partial=code_changes["status"] == "partial",
         summary_path=summary_path,
     )
 

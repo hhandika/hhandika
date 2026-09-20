@@ -52,13 +52,13 @@ class DataProcessor:
         return languages
 
     @staticmethod
-    def format_lines_of_code(lines: int) -> str:
-        """Formats an exact source line count for the overview dashboard."""
-        if lines >= 1_000_000:
-            return f"{lines / 1_000_000:.1f}M"
-        if lines >= 1_000:
-            return f"{lines / 1_000:.1f}k"
-        return str(lines)
+    def format_count(value: int) -> str:
+        """Format a count compactly enough to fit in a dashboard stat cell."""
+        if value >= 1_000_000:
+            return f"{value / 1_000_000:.1f}M"
+        if value >= 1_000:
+            return f"{value / 1_000:.1f}k"
+        return str(value)
 
     @staticmethod
     def calculate_calendar_metrics(calendar_data: Dict[str, Any]) -> Tuple[int, str]:

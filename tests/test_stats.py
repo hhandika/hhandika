@@ -1,8 +1,8 @@
 import json
 import os
 import tempfile
+import urllib.error
 import xml.etree.ElementTree as ET
-from subprocess import CalledProcessError, CompletedProcess
 from unittest.mock import patch
 
 from stats.svg_generator import (
@@ -14,7 +14,6 @@ from stats.svg_generator import (
 from stats.data_processor import DataProcessor
 from stats.github_fetcher import GitHubDataFetcher
 from stats.readme_updater import ReadmeUpdater
-from stats.source_line_counter import SourceLineCounter
 from stats.summary_writer import build_summary, write_summary
 
 
@@ -70,63 +69,83 @@ def test_parse_languages():
     assert "HTML" not in langs
 
 
-def test_format_lines_of_code():
-    assert DataProcessor.format_lines_of_code(999) == "999"
-    assert DataProcessor.format_lines_of_code(12_345) == "12.3k"
-    assert DataProcessor.format_lines_of_code(1_250_000) == "1.2M"
+def test_format_count():
+    assert DataProcessor.format_count(999) == "999"
+    assert DataProcessor.format_count(12_345) == "12.3k"
+    assert DataProcessor.format_count(1_250_000) == "1.2M"
 
 
-def test_parse_cloc_output_uses_code_lines_and_excludes_markup():
-    result = SourceLineCounter._parse_cloc_output(
-        json.dumps(
-            {
-                "header": {"cloc_url": "example"},
-                "Python": {"nFiles": 2, "blank": 5, "comment": 7, "code": 41},
-                "Rust": {"nFiles": 1, "blank": 2, "comment": 3, "code": 29},
-                "Markdown": {"nFiles": 3, "blank": 1, "comment": 0, "code": 100},
-                "SUM": {"nFiles": 6, "blank": 8, "comment": 10, "code": 170},
-            }
-        )
-    )
-
-    assert result["totals"] == {
-        "files": 3,
-        "blank": 7,
-        "comment": 10,
-        "code": 70,
-    }
-    assert set(result["languages"]) == {"Python", "Rust"}
-
-
-def test_source_line_counter_publishes_partial_results():
+def test_code_changes_are_attributed_to_requested_user():
     repositories = [
-        {"nameWithOwner": "hhandika/good", "url": "https://github.com/hhandika/good"},
-        {"nameWithOwner": "hhandika/broken", "url": "https://github.com/hhandika/broken"},
-    ]
-    cloc_output = json.dumps(
-        {
-            "Python": {"nFiles": 2, "blank": 5, "comment": 3, "code": 40},
-            "SUM": {"nFiles": 2, "blank": 5, "comment": 3, "code": 40},
-        }
-    )
-    process_results = [
-        CompletedProcess(["cloc", "--version"], 0, "2.02", ""),
-        CompletedProcess(["git", "clone"], 0, "", ""),
-        CompletedProcess(["cloc"], 0, cloc_output, ""),
-        CalledProcessError(128, ["git", "clone"], stderr="not found"),
+        {"nameWithOwner": "hhandika/good"},
+        {"nameWithOwner": "hhandika/broken"},
     ]
 
-    with patch("stats.source_line_counter.shutil.which", return_value="/usr/bin/cloc"):
-        with patch(
-            "stats.source_line_counter.subprocess.run", side_effect=process_results
-        ):
-            result = SourceLineCounter().count_repositories(repositories)
+    class FakeResponse:
+        status = 200
+
+        def read(self):
+            return json.dumps(
+                [
+                    {
+                        "author": {"login": "someone-else"},
+                        "weeks": [{"a": 900, "d": 800, "c": 7}],
+                    },
+                    {
+                        "author": {"login": "HHANDIKA"},
+                        "weeks": [
+                            {"a": 40, "d": 12, "c": 2},
+                            {"a": 5, "d": 3, "c": 1},
+                        ],
+                    },
+                ]
+            ).encode("utf-8")
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_args):
+            return False
+
+    with patch(
+        "urllib.request.urlopen",
+        side_effect=[FakeResponse(), urllib.error.URLError("not found")],
+    ):
+        result = GitHubDataFetcher("token").fetch_code_changes(
+            "hhandika", repositories
+        )
 
     assert result["status"] == "partial"
-    assert result["totals"]["code"] == 40
+    assert result["totals"] == {"additions": 45, "deletions": 15, "commits": 3}
     assert result["repositories_counted"] == 1
     assert result["repositories_failed"] == 1
     assert result["failures"][0]["name_with_owner"] == "hhandika/broken"
+
+
+def test_contributor_stats_retries_accepted_response():
+    class FakeResponse:
+        def __init__(self, status, payload=b""):
+            self.status = status
+            self.payload = payload
+
+        def read(self):
+            return self.payload
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_args):
+            return False
+
+    with patch(
+        "urllib.request.urlopen",
+        side_effect=[FakeResponse(202), FakeResponse(200, b"[]")],
+    ), patch("stats.github_fetcher.time.sleep"):
+        result = GitHubDataFetcher._fetch_contributor_stats(
+            "https://example.test", {}, max_attempts=2
+        )
+
+    assert result == []
 
 
 def test_github_repository_pagination():
@@ -189,7 +208,7 @@ def test_generate_overview_svg():
         streak=5,
         peak_day="Wednesday (20%)",
         peak_hours="Afternoon (12-16)",
-        total_loc="45k",
+        code_changes="+45k (-12k)",
     )
     svg = generator.generate()
 
@@ -201,6 +220,8 @@ def test_generate_overview_svg():
     assert "123" in svg
     assert "Contributions" in svg
     assert "456" in svg
+    assert "Code Changes" in svg
+    assert "+45k (-12k)" in svg
 
     # Test media query stylesheet exists
     assert "@media (prefers-color-scheme: dark)" in svg
@@ -305,7 +326,7 @@ Some footer.
             languages_svg_path="assets/languages.svg",
             top_repos_svg_path="assets/top_repos.svg",
             readme_path=temp_path,
-            line_count_partial=True,
+            code_changes_partial=True,
         )
 
         with open(temp_path, "r", encoding="utf-8") as f:
@@ -317,7 +338,7 @@ Some footer.
         assert 'src="assets/languages.svg"' in updated_content
         assert 'src="assets/top_repos.svg"' in updated_content
         assert 'width="480"' in updated_content
-        assert "*Line count is partial" in updated_content
+        assert "*Code changes are partial" in updated_content
         assert "data/stats.json" in updated_content
         assert "Stats reflect public repositories only" in updated_content
         assert "github-readme-stats.vercel.app" not in updated_content
@@ -326,16 +347,13 @@ Some footer.
 
 
 def test_write_complete_stats_summary():
-    line_count = {
+    code_changes = {
         "status": "complete",
-        "counter": {"name": "cloc", "version": "2.02"},
+        "source": "github_contributor_statistics",
         "repositories_total": 1,
         "repositories_counted": 1,
         "repositories_failed": 0,
-        "totals": {"files": 2, "blank": 5, "comment": 3, "code": 40},
-        "languages": {
-            "Python": {"files": 2, "blank": 5, "comment": 3, "code": 40}
-        },
+        "totals": {"additions": 40, "deletions": 12, "commits": 3},
         "repositories": [],
         "failures": [],
     }
@@ -349,11 +367,11 @@ def test_write_complete_stats_summary():
     }
     summary = build_summary(
         username="hhandika",
-        overview={"total_stars": 3, "total_lines_of_code": 40},
+        overview={"total_stars": 3, "code_additions": 40, "code_deletions": 12},
         languages={"Python": {"size": 75, "color": "#3572A5"}},
         top_repos=[("hhandika", "example")],
         repos_data=[repository],
-        line_count=line_count,
+        code_changes=code_changes,
     )
 
     with tempfile.TemporaryDirectory() as temp_dir:
@@ -362,8 +380,9 @@ def test_write_complete_stats_summary():
         with open(output_path, encoding="utf-8") as summary_file:
             written = json.load(summary_file)
 
-    assert written["schema_version"] == 1
-    assert written["overview"]["total_lines_of_code"] == 40
-    assert written["source_line_count"]["totals"]["code"] == 40
+    assert written["schema_version"] == 2
+    assert written["overview"]["code_additions"] == 40
+    assert written["overview"]["code_deletions"] == 12
+    assert written["code_changes"]["totals"]["additions"] == 40
     assert written["language_statistics"]["languages"]["Python"]["percentage"] == 100.0
     assert written["featured_repositories"][0]["name_with_owner"] == "hhandika/example"

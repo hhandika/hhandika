@@ -14,7 +14,7 @@ class ReadmeUpdater:
         languages_svg_path: str,
         top_repos_svg_path: str,
         readme_path: str = "README.md",
-        line_count_partial: bool = False,
+        code_changes_partial: bool = False,
         summary_path: str = "data/stats.json",
     ) -> None:
         """Replaces content between placeholders in README.md with generated SVG images."""
@@ -28,9 +28,9 @@ class ReadmeUpdater:
         today_str = datetime.now().strftime("%B %d, %Y")
 
         partial_footnote = ""
-        if line_count_partial:
+        if code_changes_partial:
             partial_footnote = (
-                '<p align="left"><sub>*Line count is partial; omitted repositories '
+                '<p align="left"><sub>*Code changes are partial; omitted repositories '
                 f'are listed in <a href="{summary_path}">{summary_path}</a>.</sub></p>\n'
             )
 
