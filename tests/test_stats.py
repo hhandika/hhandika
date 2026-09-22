@@ -227,6 +227,47 @@ def test_generate_overview_svg():
     assert "@media (prefers-color-scheme: dark)" in svg
 
 
+def test_overview_highlights_streak_at_twenty_days():
+    generator = OverviewDashboardGenerator(
+        total_stars=123,
+        total_contributions=456,
+        total_repos=10,
+        total_prs=10,
+        total_reviews=5,
+        total_issues=20,
+        streak=20,
+        peak_day="Wednesday (20%)",
+        peak_hours="Afternoon (12-16)",
+        code_changes="+45k (-12k)",
+    )
+
+    svg = generator.generate()
+
+    assert 'fill="var(--md-sys-color-tertiary)"' in svg
+    assert 'class="m3-label-large m3-streak-highlight">20 Days</text>' in svg
+
+
+def test_overview_does_not_highlight_streak_below_twenty_days():
+    generator = OverviewDashboardGenerator(
+        total_stars=123,
+        total_contributions=456,
+        total_repos=10,
+        total_prs=10,
+        total_reviews=5,
+        total_issues=20,
+        streak=19,
+        peak_day="Wednesday (20%)",
+        peak_hours="Afternoon (12-16)",
+        code_changes="+45k (-12k)",
+    )
+
+    svg = generator.generate()
+
+    assert 'class="m3-label-large">19 Days</text>' in svg
+    assert 'class="m3-label-large m3-streak-highlight">19 Days</text>' not in svg
+    assert 'fill="var(--md-sys-color-tertiary)"' not in svg
+
+
 def test_generate_languages_svg():
     mock_langs = {
         "Python": {"size": 70, "color": "#3572A5"},

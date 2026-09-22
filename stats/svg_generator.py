@@ -154,23 +154,44 @@ class OverviewDashboardGenerator(M3SVGGenerator):
             168, 184, "peak_hours", "Peak Hours", xml_escape(self.peak_hours)
         )
         grid_html += self._get_stat_item(
-            312, 184, "streak", "Streak", f"{self.streak} Days"
+            312,
+            184,
+            "streak",
+            "Streak",
+            f"{self.streak} Days",
+            highlight=self.streak >= 20,
         )
 
         return grid_html
 
     def _get_stat_item(
-        self, x: int, y: int, icon_name: str, label: str, value: str
+        self,
+        x: int,
+        y: int,
+        icon_name: str,
+        label: str,
+        value: str,
+        highlight: bool = False,
     ) -> str:
         """Returns a single stat item with an icon."""
         icon_path = M3Tokens.ICONS.get(icon_name, "")
+        icon_fill = (
+            "var(--md-sys-color-tertiary)"
+            if highlight
+            else "var(--md-sys-color-primary)"
+        )
+        value_class = (
+            "m3-label-large m3-streak-highlight"
+            if highlight
+            else "m3-label-large"
+        )
         return (
             f'  <g transform="translate({x}, {y})">\n'
-            f'    <svg x="0" y="-3" width="18" height="18" viewBox="0 0 24 24" fill="var(--md-sys-color-primary)">\n'
+            f'    <svg x="0" y="-3" width="18" height="18" viewBox="0 0 24 24" fill="{icon_fill}">\n'
             f'      <path d="{icon_path}"/>\n'
             f"    </svg>\n"
             f'    <text x="24" y="11" class="m3-body-small">{label}</text>\n'
-            f'    <text x="24" y="31" class="m3-label-large">{value}</text>\n'
+            f'    <text x="24" y="31" class="{value_class}">{value}</text>\n'
             f"  </g>\n"
         )
 
