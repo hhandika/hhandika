@@ -153,12 +153,12 @@
   </clipPath>
   <g transform="translate(24, 84)" clip-path="url(#lang-bar-clip)">
     <rect width="432.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-    <rect x="0.00" y="0" width="276.53" height="12" fill="#dea584" />
-      <rect x="276.53" y="0" width="76.23" height="12" fill="#00B4AB" />
-      <rect x="352.75" y="0" width="26.05" height="12" fill="#3572A5" />
-      <rect x="378.81" y="0" width="14.67" height="12" fill="#89e051" />
-      <rect x="393.47" y="0" width="11.47" height="12" fill="#f34b7d" />
-      <rect x="404.94" y="0" width="10.11" height="12" fill="#ff5a03" />
+    <rect x="0.00" y="0" width="276.63" height="12" fill="#dea584" />
+      <rect x="276.63" y="0" width="76.26" height="12" fill="#00B4AB" />
+      <rect x="352.89" y="0" width="25.89" height="12" fill="#3572A5" />
+      <rect x="378.78" y="0" width="14.67" height="12" fill="#89e051" />
+      <rect x="393.46" y="0" width="11.47" height="12" fill="#f34b7d" />
+      <rect x="404.93" y="0" width="10.11" height="12" fill="#ff5a03" />
       <rect x="415.05" y="0" width="16.95" height="12" fill="#8e918f" />
   </g>
   <g transform="translate(24, 120)">
@@ -170,7 +170,7 @@
   <g transform="translate(240, 120)">
     <circle cx="6" cy="6" r="6" fill="#00B4AB" />
     <text x="20" y="11" class="m3-body-medium">Dart</text>
-    <text x="166" y="11" class="m3-label-medium">17.6%</text>
+    <text x="166" y="11" class="m3-label-medium">17.7%</text>
   </g>
 
   <g transform="translate(24, 150)">
