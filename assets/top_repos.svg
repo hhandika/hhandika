@@ -106,6 +106,9 @@
       letter-spacing: 0.1px;
       fill: var(--md-sys-color-primary);
     }
+    .m3-streak-highlight {
+      fill: var(--md-sys-color-tertiary);
+    }
     .m3-label-medium {
       font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
       font-size: 12px;

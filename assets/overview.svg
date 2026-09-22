@@ -11,21 +11,21 @@
       --md-sys-color-surface-variant: #e1e2e8;
       --md-sys-color-on-surface-variant: #44474e;
       --md-sys-color-surface-container: #f0f5fd; /* Chetwode 50 */
-
+      
       --md-sys-color-primary: #5a67d1; /* Chetwode 600 */
       --md-sys-color-on-primary: #ffffff;
       --md-sys-color-primary-container: #e4edfb; /* Chetwode 100 */
       --md-sys-color-on-primary-container: #384077; /* Chetwode 900 */
-
+      
       --md-sys-color-tertiary: #c46f32; /* Porsche 600 */
       --md-sys-color-on-tertiary: #ffffff;
       --md-sys-color-tertiary-container: #f8eedc; /* Porsche 100 */
       --md-sys-color-on-tertiary-container: #6a3b24; /* Porsche 900 */
-
+      
       --md-sys-color-outline: #74777f;
       --md-sys-color-outline-variant: #c4c7c5;
     }
-
+    
     @media (prefers-color-scheme: dark) {
       :root {
         /* Dark Theme (Chetwode and Porsche) */
@@ -34,22 +34,22 @@
         --md-sys-color-surface-variant: #44474e;
         --md-sys-color-on-surface-variant: #c4c6d0;
         --md-sys-color-surface-container: #212545; /* Chetwode 950 */
-
+        
         --md-sys-color-primary: #b0c6f1; /* Chetwode 300 */
         --md-sys-color-on-primary: #3e4795; /* Chetwode 800 */
         --md-sys-color-primary-container: #4a54b8; /* Chetwode 700 */
         --md-sys-color-on-primary-container: #e4edfb; /* Chetwode 100 */
-
+        
         --md-sys-color-tertiary: #e5bf8c; /* Porsche 300 */
         --md-sys-color-on-tertiary: #82462a; /* Porsche 800 */
         --md-sys-color-tertiary-container: #a2572c; /* Porsche 700 */
         --md-sys-color-on-tertiary-container: #f8eedc; /* Porsche 100 */
-
+        
         --md-sys-color-outline: #8e9099;
         --md-sys-color-outline-variant: #444746;
       }
     }
-
+    
 
     .m3-headline-small {
       font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
@@ -124,7 +124,7 @@
       line-height: 44px;
       fill: var(--md-sys-color-on-surface);
     }
-
+    
 
     .m3-container-large {
       rx: 12px;
@@ -146,7 +146,7 @@
       stroke-width: 1px;
       opacity: 0.5;
     }
-
+    
 </style>
 <path class="m3-container-large" d="M 0.5 239.5 L 0.5 12.5 A 12 12 0 0 1 12.5 0.5 L 467.5 0.5 A 12 12 0 0 1 479.5 12.5 L 479.5 239.5 Z" />
   <text x="24" y="36" class="m3-headline-small">GitHub Profile Overview</text>
@@ -205,13 +205,13 @@
       <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
     </svg>
     <text x="24" y="11" class="m3-body-small">Peak Hours</text>
-    <text x="24" y="31" class="m3-label-large">Late Afternoon</text>
+    <text x="24" y="31" class="m3-label-large">Evening</text>
   </g>
   <g transform="translate(312, 184)">
     <svg x="0" y="-3" width="18" height="18" viewBox="0 0 24 24" fill="var(--md-sys-color-tertiary)">
       <path d="M11.71 2.53C11.52 2.19 11 2.37 11 2.76c0 .88-.36 3.65-2.52 5.81-1.99 1.99-2.52 3.63-2.52 5.09 0 3.32 2.68 6 6 6s6-2.68 6-6c0-1.46-.53-3.1-2.52-5.09-2.16-2.16-2.52-4.93-2.52-5.81 0-.39-.52-.57-.71-.23-.88 1.53-3.37 5.06-1.5 8.01-1.39-1.22-1.98-3.03-1.5-4.63zM12 17c-1.66 0-3-1.34-3-3 0-1.34 1.34-3.34 3-5.02 1.66 1.68 3 3.68 3 5.02 0 1.66-1.34 3-3 3z"/>
     </svg>
     <text x="24" y="11" class="m3-body-small">Streak</text>
-    <text x="24" y="31" class="m3-label-large m3-streak-highlight">22 Days</text>
+    <text x="24" y="31" class="m3-label-large m3-streak-highlight">24 Days</text>
   </g>
 </svg>
