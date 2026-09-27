@@ -1,6 +1,6 @@
 # b"Hello" | b"Halo..." 👋
 
-You can call me Heru or Hez. My programming projects primarily focus on developing tools to improve the efficiency and accessibility of biodiversity research. I specialize in developing high-performance, memory-efficient tools that can scale from mobile devices and personal computers to [HPC clusters](https://en.wikipedia.org/wiki/High-performance_computing). My approach emphasizes developing software that’s user-friendly and cost-effective to develop and maintain.
+You can call me Heru or Hez. I am an evolutionary biologist working with deep computational work. I develop evolutionary biology software that works like the day-to-day tools people already know. This means it must install in a single click through the official App Store. I work on finding solutions to develop high-performance, memory-efficient tools that can scale from mobile devices and personal computers to [HPC clusters](https://en.wikipedia.org/wiki/High-performance_computing). I also use my own software.
 
 For more insights into my work and adventures, visit [my website](https://hhandika.com/)!
 
