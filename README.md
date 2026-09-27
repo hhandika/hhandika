@@ -1,6 +1,6 @@
 # b"Hello" | b"Halo..." 👋
 
-You can call me Heru or Hez. I am an evolutionary biologist working on the intersection of field biology, genomics, phenomics, and software. I work on high-performance, memory-efficient tools that scale from mobile devices and personal computers to [HPC clusters](https://en.wikipedia.org/wiki/High-performance_computing). I believe biology is complex enough, so we shouldn't make our work more complex by forcing people to deal with software that requires multiple installation steps. Instead, I focus on developing software that resembles day-to-day apps. This means it must install in a single click through the official App Store, while still offering single-command installation for the command-line experts.
+You can call me Heru or Hez. I am an evolutionary biologist working on the intersection of field biology, genomics, phenomics, and software. I work on high-performance, memory-efficient tools that scale from mobile devices and personal computers to [HPC clusters](https://en.wikipedia.org/wiki/High-performance_computing). I believe biology is complex enough, so we shouldn't make our work more complex by forcing ourselves to deal with software that requires multiple installation steps. Instead, I focus on developing software that resembles day-to-day apps. This means it must install in a single click through the official App Store, while still offering single-command installation for the command-line experts.
 
 For more insights into my work and adventures, visit [my website](https://hhandika.com/)!
 
