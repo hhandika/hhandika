@@ -3,6 +3,7 @@
 import os
 import re
 from datetime import datetime
+from typing import Optional
 
 
 class ReadmeUpdater:
@@ -16,6 +17,8 @@ class ReadmeUpdater:
         readme_path: str = "README.md",
         code_changes_partial: bool = False,
         summary_path: str = "data/stats.json",
+        total_repos: Optional[int] = None,
+        counted_repos: Optional[int] = None,
     ) -> None:
         """Replaces content between placeholders in README.md with generated SVG images."""
         if not os.path.exists(readme_path):
@@ -34,6 +37,14 @@ class ReadmeUpdater:
                 f'are listed in <a href="{summary_path}">{summary_path}</a>.</sub></p>\n'
             )
 
+        repos_note = ""
+        if total_repos is not None:
+            label = "repository" if total_repos == 1 else "repositories"
+            if counted_repos is None:
+                repos_note = f" ({total_repos} {label} counted)"
+            else:
+                repos_note = f" ({counted_repos} of {total_repos} {label} counted)"
+
         new_stats_content = (
             "<!-- START_SECTION:github-stats -->\n"
             '<p align="left">\n'
@@ -42,7 +53,7 @@ class ReadmeUpdater:
             f'  <img src="{top_repos_svg_path}" alt="Selected Repositories" width="480" />\n'
             "</p>\n"
             f"{partial_footnote}"
-            f'<p align="left"><sub>Stats reflect public repositories only. Updates daily • Latest update: {today_str}</sub></p>\n'
+            f'<p align="left"><sub>Stats reflect public repositories only{repos_note}. Updates daily • Latest update: {today_str}</sub></p>\n'
             "<!-- END_SECTION:github-stats -->"
         )
 

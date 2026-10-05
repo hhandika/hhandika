@@ -368,6 +368,8 @@ Some footer.
             top_repos_svg_path="assets/top_repos.svg",
             readme_path=temp_path,
             code_changes_partial=True,
+            total_repos=42,
+            counted_repos=40,
         )
 
         with open(temp_path, "r", encoding="utf-8") as f:
@@ -381,7 +383,7 @@ Some footer.
         assert 'width="480"' in updated_content
         assert "*Code changes are partial" in updated_content
         assert "data/stats.json" in updated_content
-        assert "Stats reflect public repositories only" in updated_content
+        assert "Stats reflect public repositories only (40 of 42 repositories counted)." in updated_content
         assert "github-readme-stats.vercel.app" not in updated_content
     finally:
         os.remove(temp_path)

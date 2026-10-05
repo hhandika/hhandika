@@ -165,6 +165,8 @@ def main() -> None:
         top_repos_path,
         code_changes_partial=code_changes["status"] == "partial",
         summary_path=summary_path,
+        total_repos=code_changes["repositories_total"],
+        counted_repos=code_changes["repositories_counted"],
     )
 
 
