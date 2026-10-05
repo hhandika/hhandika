@@ -156,11 +156,11 @@
   </clipPath>
   <g transform="translate(24, 84)" clip-path="url(#lang-bar-clip)">
     <rect width="432.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-    <rect x="0.00" y="0" width="276.54" height="12" fill="#dea584" />
-      <rect x="276.54" y="0" width="76.23" height="12" fill="#00B4AB" />
-      <rect x="352.77" y="0" width="26.03" height="12" fill="#3572A5" />
-      <rect x="378.80" y="0" width="14.67" height="12" fill="#89e051" />
-      <rect x="393.47" y="0" width="11.47" height="12" fill="#f34b7d" />
+    <rect x="0.00" y="0" width="276.50" height="12" fill="#dea584" />
+      <rect x="276.50" y="0" width="76.22" height="12" fill="#00B4AB" />
+      <rect x="352.73" y="0" width="26.09" height="12" fill="#3572A5" />
+      <rect x="378.81" y="0" width="14.67" height="12" fill="#89e051" />
+      <rect x="393.48" y="0" width="11.47" height="12" fill="#f34b7d" />
       <rect x="404.94" y="0" width="10.11" height="12" fill="#ff5a03" />
       <rect x="415.05" y="0" width="16.95" height="12" fill="#8e918f" />
   </g>
