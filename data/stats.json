@@ -129,9 +129,9 @@
         "name_with_owner": "hhandika/gbfast"
       },
       {
-        "additions": 30071,
-        "commits": 174,
-        "deletions": 19569,
+        "additions": 49204,
+        "commits": 209,
+        "deletions": 31065,
         "name_with_owner": "hhandika/hhandika-com"
       },
       {
@@ -501,9 +501,9 @@
     "source": "github_contributor_statistics",
     "status": "complete",
     "totals": {
-      "additions": 1072523,
-      "commits": 6736,
-      "deletions": 493542
+      "additions": 1091656,
+      "commits": 6771,
+      "deletions": 505038
     }
   },
   "featured_repositories": [
@@ -753,38 +753,38 @@
       "name_with_owner": "mammaldiversity/mdd_app"
     }
   ],
-  "generated_at": "2026-10-06T04:56:24.364766+00:00",
+  "generated_at": "2026-10-07T04:23:09.774350+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
-        "bytes": 116346,
+        "bytes": 359692,
         "color": "#ff5a03",
-        "percentage": 2.34
+        "percentage": 6.74
       },
       "Batchfile": {
         "bytes": 7285,
         "color": "#C1F12E",
-        "percentage": 0.15
+        "percentage": 0.14
       },
       "C": {
         "bytes": 46880,
         "color": "#555555",
-        "percentage": 0.94
+        "percentage": 0.88
       },
       "C++": {
         "bytes": 131957,
         "color": "#f34b7d",
-        "percentage": 2.65
+        "percentage": 2.47
       },
       "Dart": {
         "bytes": 877189,
         "color": "#00B4AB",
-        "percentage": 17.64
+        "percentage": 16.44
       },
       "Go": {
         "bytes": 2249,
         "color": "#00ADD8",
-        "percentage": 0.05
+        "percentage": 0.04
       },
       "Java": {
         "bytes": 172,
@@ -792,9 +792,9 @@
         "percentage": 0.0
       },
       "JavaScript": {
-        "bytes": 12468,
+        "bytes": 27285,
         "color": "#f1e05a",
-        "percentage": 0.25
+        "percentage": 0.51
       },
       "Julia": {
         "bytes": 480,
@@ -809,7 +809,7 @@
       "MDX": {
         "bytes": 19421,
         "color": "#fcb32c",
-        "percentage": 0.39
+        "percentage": 0.36
       },
       "Objective-C": {
         "bytes": 38,
@@ -819,17 +819,17 @@
       "PowerShell": {
         "bytes": 5763,
         "color": "#012456",
-        "percentage": 0.12
+        "percentage": 0.11
       },
       "Python": {
         "bytes": 300194,
         "color": "#3572A5",
-        "percentage": 6.04
+        "percentage": 5.63
       },
       "R": {
-        "bytes": 7798,
+        "bytes": 18594,
         "color": "#198CE7",
-        "percentage": 0.16
+        "percentage": 0.35
       },
       "RenderScript": {
         "bytes": 3,
@@ -839,40 +839,40 @@
       "Ruby": {
         "bytes": 29440,
         "color": "#701516",
-        "percentage": 0.59
+        "percentage": 0.55
       },
       "Rust": {
         "bytes": 3182057,
         "color": "#dea584",
-        "percentage": 64.01
+        "percentage": 59.63
       },
       "Shell": {
         "bytes": 168794,
         "color": "#89e051",
-        "percentage": 3.4
+        "percentage": 3.16
       },
       "Swift": {
         "bytes": 16122,
         "color": "#F05138",
-        "percentage": 0.32
+        "percentage": 0.3
       },
       "TypeScript": {
-        "bytes": 46784,
+        "bytes": 143045,
         "color": "#3178c6",
-        "percentage": 0.94
+        "percentage": 2.68
       }
     },
-    "total": 4971561,
+    "total": 5336781,
     "unit": "bytes"
   },
   "overview": {
-    "code_additions": 1072523,
-    "code_deletions": 493542,
-    "formatted_code_changes": "+1.1M (-493.5k)",
+    "code_additions": 1091656,
+    "code_deletions": 505038,
+    "formatted_code_changes": "+1.1M (-505.0k)",
     "peak_day": "Saturday (18%)",
     "peak_hours": "Evening",
-    "streak_days": 38,
-    "total_contributions": 3558,
+    "streak_days": 40,
+    "total_contributions": 3648,
     "total_issues": 43,
     "total_pull_requests": 123,
     "total_repositories": 82,
