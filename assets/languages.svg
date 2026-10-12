@@ -156,18 +156,18 @@
   </clipPath>
   <g transform="translate(24, 84)" clip-path="url(#lang-bar-clip)">
     <rect width="432.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-    <rect x="0.00" y="0" width="254.97" height="12" fill="#dea584" />
-      <rect x="254.97" y="0" width="70.29" height="12" fill="#00B4AB" />
-      <rect x="325.25" y="0" width="33.50" height="12" fill="#ff5a03" />
-      <rect x="358.75" y="0" width="24.05" height="12" fill="#3572A5" />
-      <rect x="382.80" y="0" width="13.52" height="12" fill="#89e051" />
-      <rect x="396.33" y="0" width="11.42" height="12" fill="#3178c6" />
-      <rect x="407.74" y="0" width="24.26" height="12" fill="#8e918f" />
+    <rect x="0.00" y="0" width="254.64" height="12" fill="#dea584" />
+      <rect x="254.64" y="0" width="70.39" height="12" fill="#00B4AB" />
+      <rect x="325.02" y="0" width="33.82" height="12" fill="#ff5a03" />
+      <rect x="358.84" y="0" width="24.02" height="12" fill="#3572A5" />
+      <rect x="382.87" y="0" width="13.51" height="12" fill="#89e051" />
+      <rect x="396.37" y="0" width="11.40" height="12" fill="#3178c6" />
+      <rect x="407.78" y="0" width="24.22" height="12" fill="#8e918f" />
   </g>
   <g transform="translate(24, 120)">
     <circle cx="6" cy="6" r="6" fill="#dea584" />
     <text x="20" y="11" class="m3-body-medium">Rust</text>
-    <text x="166" y="11" class="m3-label-medium">59.0%</text>
+    <text x="166" y="11" class="m3-label-medium">58.9%</text>
   </g>
 
   <g transform="translate(240, 120)">
