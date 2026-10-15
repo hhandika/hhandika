@@ -3,17 +3,29 @@
 import os
 import re
 from datetime import datetime
-from typing import Optional
+from typing import List, Optional, Tuple
+
+# (path without "-light.svg"/"-dark.svg" suffix, alt text, width attribute)
+Card = Tuple[str, str, str]
 
 
 class ReadmeUpdater:
     """Handles updating the README.md file with the newly generated SVGs."""
 
     @staticmethod
+    def picture(card: Card) -> str:
+        """Returns a <picture> that follows the viewer's GitHub color theme."""
+        base_path, alt, width = card
+        return (
+            "  <picture>\n"
+            f'    <source media="(prefers-color-scheme: dark)" srcset="{base_path}-dark.svg" />\n'
+            f'    <img src="{base_path}-light.svg" alt="{alt}" width="{width}" />\n'
+            "  </picture>\n"
+        )
+
+    @staticmethod
     def update(
-        overview_svg_path: str,
-        languages_svg_path: str,
-        top_repos_svg_path: str,
+        card_rows: List[List[Card]],
         readme_path: str = "README.md",
         code_changes_partial: bool = False,
         summary_path: str = "data/stats.json",
@@ -45,13 +57,16 @@ class ReadmeUpdater:
             else:
                 repos_note = f" ({counted_repos} of {total_repos} {label} counted)"
 
+        rows_html = "".join(
+            '<p align="left">\n'
+            + "".join(ReadmeUpdater.picture(card) for card in row)
+            + "</p>\n"
+            for row in card_rows
+        )
+
         new_stats_content = (
             "<!-- START_SECTION:github-stats -->\n"
-            '<p align="left">\n'
-            f'  <img src="{overview_svg_path}" alt="GitHub Stats" width="480" />\n'
-            f'  <img src="{languages_svg_path}" alt="Top Languages" width="480" />\n'
-            f'  <img src="{top_repos_svg_path}" alt="Selected Repositories" width="480" />\n'
-            "</p>\n"
+            f"{rows_html}"
             f"{partial_footnote}"
             f'<p align="left"><sub>Stats reflect public repositories only{repos_note}. Updates daily • Latest update: {today_str}</sub></p>\n'
             "<!-- END_SECTION:github-stats -->"

@@ -1,55 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="260" viewBox="0 0 480 260" fill="none" role="img" aria-labelledby="titleId descId">
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240" fill="none" role="img" aria-labelledby="titleId descId">
   <title id="titleId">Top Languages Dashboard</title>
   <desc id="descId">Shows a bar chart of top programming languages used</desc>
 <style>
 
     :root {
-      /* Light Theme (Chetwode and Porsche) */
       --md-sys-color-surface: #fcfcfc;
       --md-sys-color-on-surface: #1a1c1e;
       --md-sys-color-surface-variant: #e1e2e8;
       --md-sys-color-on-surface-variant: #44474e;
       --md-sys-color-surface-container: #f0f5fd; /* Chetwode 50 */
-      
+
       --md-sys-color-primary: #5a67d1; /* Chetwode 600 */
       --md-sys-color-on-primary: #ffffff;
       --md-sys-color-primary-container: #e4edfb; /* Chetwode 100 */
       --md-sys-color-on-primary-container: #384077; /* Chetwode 900 */
-      
+
       --md-sys-color-tertiary: #c46f32; /* Porsche 600 */
       --md-sys-color-on-tertiary: #ffffff;
       --md-sys-color-tertiary-container: #f8eedc; /* Porsche 100 */
       --md-sys-color-on-tertiary-container: #6a3b24; /* Porsche 900 */
-      
+
       --md-sys-color-outline: #74777f;
       --md-sys-color-outline-variant: #c4c7c5;
+
+      --stats-color-additions: #1a7f37;
+      --stats-color-deletions: #cf222e;
     }
-    
-    @media (prefers-color-scheme: dark) {
-      :root {
-        /* Dark Theme (Chetwode and Porsche) */
-        --md-sys-color-surface: #1a1c1e;
-        --md-sys-color-on-surface: #e2e2e6;
-        --md-sys-color-surface-variant: #44474e;
-        --md-sys-color-on-surface-variant: #c4c6d0;
-        --md-sys-color-surface-container: #212545; /* Chetwode 950 */
-        
-        --md-sys-color-primary: #b0c6f1; /* Chetwode 300 */
-        --md-sys-color-on-primary: #3e4795; /* Chetwode 800 */
-        --md-sys-color-primary-container: #4a54b8; /* Chetwode 700 */
-        --md-sys-color-on-primary-container: #e4edfb; /* Chetwode 100 */
-        
-        --md-sys-color-tertiary: #e5bf8c; /* Porsche 300 */
-        --md-sys-color-on-tertiary: #82462a; /* Porsche 800 */
-        --md-sys-color-tertiary-container: #a2572c; /* Porsche 700 */
-        --md-sys-color-on-tertiary-container: #f8eedc; /* Porsche 100 */
-        
-        --md-sys-color-outline: #8e9099;
-        --md-sys-color-outline-variant: #444746;
-      }
-    }
-    
+
 
     .m3-headline-small {
       font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
@@ -148,62 +126,55 @@
     }
     
 </style>
-<rect class="m3-container-large" x="0.5" y="0.5" width="479" height="259" style="rx: 0px;" />
+<rect class="m3-container-large" x="0.5" y="0.5" width="399" height="239" />
   <text x="24" y="36" class="m3-headline-small">Top Languages</text>
   <text x="24" y="56" class="m3-body-small">Based on repository size</text>
   <clipPath id="lang-bar-clip">
-    <rect width="432.0" height="12" rx="3" />
+    <rect x="24" y="84" width="352.0" height="12" rx="3" />
   </clipPath>
-  <g transform="translate(24, 84)" clip-path="url(#lang-bar-clip)">
-    <rect width="432.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-    <rect x="0.00" y="0" width="249.34" height="12" fill="#dea584" />
-      <rect x="249.34" y="0" width="77.94" height="12" fill="#00B4AB" />
-      <rect x="327.28" y="0" width="33.12" height="12" fill="#ff5a03" />
-      <rect x="360.40" y="0" width="23.52" height="12" fill="#3572A5" />
-      <rect x="383.92" y="0" width="13.23" height="12" fill="#89e051" />
-      <rect x="397.15" y="0" width="11.17" height="12" fill="#3178c6" />
-      <rect x="408.31" y="0" width="23.69" height="12" fill="#8e918f" />
+  <g clip-path="url(#lang-bar-clip)">
+    <rect x="24" y="84" width="352.0" height="12" fill="var(--md-sys-color-surface-variant)" />
+      <rect x="24.00" y="84" width="201.17" height="12" fill="#dea584" />
+      <rect x="227.17" y="84" width="61.50" height="12" fill="#00B4AB" />
+      <rect x="290.67" y="84" width="24.99" height="12" fill="#ff5a03" />
+      <rect x="317.66" y="84" width="17.17" height="12" fill="#3572A5" />
+      <rect x="336.82" y="84" width="8.78" height="12" fill="#89e051" />
+      <rect x="347.60" y="84" width="7.10" height="12" fill="#3178c6" />
+      <rect x="356.70" y="84" width="19.30" height="12" fill="#8e918f" />
   </g>
-  <g transform="translate(24, 120)">
-    <circle cx="6" cy="6" r="6" fill="#dea584" />
+  <g transform="translate(24, 116)">
+    <circle cx="6" cy="6" r="5.5" fill="#dea584" stroke="var(--md-sys-color-outline)" stroke-width="1" />
     <text x="20" y="11" class="m3-body-medium">Rust</text>
-    <text x="166" y="11" class="m3-label-medium">57.7%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">57.7%</text>
   </g>
-
-  <g transform="translate(240, 120)">
-    <circle cx="6" cy="6" r="6" fill="#00B4AB" />
+  <g transform="translate(212, 116)">
+    <circle cx="6" cy="6" r="5.5" fill="#00B4AB" />
     <text x="20" y="11" class="m3-body-medium">Dart</text>
-    <text x="166" y="11" class="m3-label-medium">18.0%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">18.0%</text>
   </g>
-
-  <g transform="translate(24, 150)">
-    <circle cx="6" cy="6" r="6" fill="#ff5a03" />
+  <g transform="translate(24, 144)">
+    <circle cx="6" cy="6" r="5.5" fill="#ff5a03" />
     <text x="20" y="11" class="m3-body-medium">Astro</text>
-    <text x="166" y="11" class="m3-label-medium">7.7%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">7.7%</text>
   </g>
-
-  <g transform="translate(240, 150)">
-    <circle cx="6" cy="6" r="6" fill="#3572A5" />
+  <g transform="translate(212, 144)">
+    <circle cx="6" cy="6" r="5.5" fill="#3572A5" />
     <text x="20" y="11" class="m3-body-medium">Python</text>
-    <text x="166" y="11" class="m3-label-medium">5.4%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">5.4%</text>
   </g>
-
-  <g transform="translate(24, 180)">
-    <circle cx="6" cy="6" r="6" fill="#89e051" />
+  <g transform="translate(24, 172)">
+    <circle cx="6" cy="6" r="5.5" fill="#89e051" stroke="var(--md-sys-color-outline)" stroke-width="1" />
     <text x="20" y="11" class="m3-body-medium">Shell</text>
-    <text x="166" y="11" class="m3-label-medium">3.1%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">3.1%</text>
   </g>
-
-  <g transform="translate(240, 180)">
-    <circle cx="6" cy="6" r="6" fill="#3178c6" />
+  <g transform="translate(212, 172)">
+    <circle cx="6" cy="6" r="5.5" fill="#3178c6" />
     <text x="20" y="11" class="m3-body-medium">TypeScript</text>
-    <text x="166" y="11" class="m3-label-medium">2.6%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">2.6%</text>
   </g>
-
-  <g transform="translate(24, 210)">
-    <circle cx="6" cy="6" r="6" fill="#8e918f" />
+  <g transform="translate(24, 200)">
+    <circle cx="6" cy="6" r="5.5" fill="#8e918f" />
     <text x="20" y="11" class="m3-body-medium">Other</text>
-    <text x="166" y="11" class="m3-label-medium">5.5%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">5.5%</text>
   </g>
-
 </svg>

@@ -5,8 +5,12 @@ import urllib.error
 import xml.etree.ElementTree as ET
 from unittest.mock import patch
 
+from datetime import datetime, timezone
+
 from stats.svg_generator import (
     xml_escape,
+    relative_age,
+    ActivityDashboardGenerator,
     OverviewDashboardGenerator,
     LanguagesDashboardGenerator,
     TopReposDashboardGenerator,
@@ -200,31 +204,55 @@ def test_github_repository_pagination():
 def test_generate_overview_svg():
     generator = OverviewDashboardGenerator(
         total_stars=123,
-        total_contributions=456,
+        total_contributions=4567,
         total_repos=10,
         total_prs=10,
         total_reviews=5,
         total_issues=20,
         streak=5,
-        peak_day="Wednesday (20%)",
-        peak_hours="Afternoon (12-16)",
-        code_changes="+45k (-12k)",
+        code_additions=45_000,
+        code_deletions=12_000,
     )
     svg = generator.generate()
 
     assert "<svg" in svg
     assert "</svg>" in svg
-    assert 'width="480"' in svg
+    assert 'width="400"' in svg
     ET.fromstring(svg)
     assert "Total Stars" in svg
     assert "123" in svg
     assert "Contributions" in svg
-    assert "456" in svg
-    assert "Code Changes" in svg
-    assert "+45k (-12k)" in svg
+    assert "4,567" in svg
+    assert "Code Changes<" in svg
+    assert "+45.0k" in svg
+    assert "−12.0k" in svg
+    assert "var(--stats-color-additions)" in svg
 
-    # Test media query stylesheet exists
-    assert "@media (prefers-color-scheme: dark)" in svg
+    # Fixed light theme, no OS media query
+    assert "#fcfcfc" in svg
+    assert "@media (prefers-color-scheme: dark)" not in svg
+
+
+def test_overview_dark_theme_and_partial_marker():
+    generator = OverviewDashboardGenerator(
+        total_stars=1,
+        total_contributions=2,
+        total_repos=3,
+        total_prs=4,
+        total_reviews=5,
+        total_issues=6,
+        streak=7,
+        code_additions=10,
+        code_deletions=0,
+        code_changes_partial=True,
+        theme="dark",
+    )
+    svg = generator.generate()
+
+    ET.fromstring(svg)
+    assert "--md-sys-color-surface: #1a1c1e;" in svg
+    assert "#fcfcfc" not in svg
+    assert "Code Changes*" in svg
 
 
 def test_overview_highlights_streak_at_twenty_days():
@@ -236,9 +264,8 @@ def test_overview_highlights_streak_at_twenty_days():
         total_reviews=5,
         total_issues=20,
         streak=20,
-        peak_day="Wednesday (20%)",
-        peak_hours="Afternoon (12-16)",
-        code_changes="+45k (-12k)",
+        code_additions=45_000,
+        code_deletions=12_000,
     )
 
     svg = generator.generate()
@@ -256,9 +283,8 @@ def test_overview_does_not_highlight_streak_below_twenty_days():
         total_reviews=5,
         total_issues=20,
         streak=19,
-        peak_day="Wednesday (20%)",
-        peak_hours="Afternoon (12-16)",
-        code_changes="+45k (-12k)",
+        code_additions=45_000,
+        code_deletions=12_000,
     )
 
     svg = generator.generate()
@@ -278,8 +304,8 @@ def test_generate_languages_svg():
 
     assert "<svg" in svg
     assert "</svg>" in svg
-    assert 'width="480"' in svg
-    assert 'width="432.0"' in svg
+    assert 'width="400"' in svg
+    assert 'width="352.0"' in svg
     ET.fromstring(svg)
     assert "Top Languages" in svg
     assert "Python" in svg
@@ -294,8 +320,13 @@ def test_generate_top_repos_svg():
             "name": "segul",
             "owner": {"login": "hhandika"},
             "description": "Genomic CLI tool",
+            "stargazerCount": 1234,
+            "pushedAt": "2026-10-12T08:00:00Z",
             "languages": {
-                "edges": [{"size": 1000, "node": {"name": "Rust", "color": "#dea584"}}]
+                "edges": [
+                    {"size": 1000, "node": {"name": "Rust", "color": "#dea584"}},
+                    {"size": 1, "node": {"name": "Python", "color": "#3572A5"}},
+                ]
             },
         },
         None,  # simulate one missing repo
@@ -316,17 +347,24 @@ def test_generate_top_repos_svg():
     ]
 
     generator = TopReposDashboardGenerator(
-        top_repos=top_repos_config, repos_data=mock_repos_data
+        top_repos=top_repos_config,
+        repos_data=mock_repos_data,
+        now=datetime(2026, 10, 15, 12, tzinfo=timezone.utc),
     )
     svg = generator.generate()
 
     assert "<svg" in svg
-    assert 'width="480"' in svg
-    assert 'width="432"' in svg
+    assert 'width="816"' in svg
+    assert 'width="376"' in svg
     ET.fromstring(svg)
     assert "hhandika/segul" in svg
     assert "Genomic CLI tool" in svg
     assert "#dea584" in svg  # Rust color in bar chart
+    assert "★ 1,234 · updated 3d ago" in svg
+    # Languages under 1% stay in the bar but are left out of the legend
+    assert "Python 0.1%" not in svg
+    # Light swatches get an outline in the light theme
+    assert 'fill="#dea584" stroke="var(--md-sys-color-outline)"' in svg
 
     assert "nahpu/nahpu" in svg
     assert "Biodiversity field data" in svg
@@ -363,9 +401,13 @@ Some footer.
     try:
         updater = ReadmeUpdater()
         updater.update(
-            overview_svg_path="assets/overview.svg",
-            languages_svg_path="assets/languages.svg",
-            top_repos_svg_path="assets/top_repos.svg",
+            [
+                [
+                    ("assets/overview", "GitHub Stats", "49%"),
+                    ("assets/languages", "Top Languages", "49%"),
+                ],
+                [("assets/top_repos", "Selected Repositories", "98%")],
+            ],
             readme_path=temp_path,
             code_changes_partial=True,
             total_repos=42,
@@ -377,10 +419,13 @@ Some footer.
 
         assert "<!-- START_SECTION:github-stats -->" in updated_content
         assert "<!-- END_SECTION:github-stats -->" in updated_content
-        assert 'src="assets/overview.svg"' in updated_content
-        assert 'src="assets/languages.svg"' in updated_content
-        assert 'src="assets/top_repos.svg"' in updated_content
-        assert 'width="480"' in updated_content
+        assert 'src="assets/overview-light.svg"' in updated_content
+        assert 'srcset="assets/overview-dark.svg"' in updated_content
+        assert 'src="assets/languages-light.svg"' in updated_content
+        assert 'src="assets/top_repos-light.svg"' in updated_content
+        assert '<source media="(prefers-color-scheme: dark)"' in updated_content
+        assert 'width="49%"' in updated_content
+        assert updated_content.count('<p align="left">\n  <picture>') == 2
         assert "*Code changes are partial" in updated_content
         assert "data/stats.json" in updated_content
         assert "Stats reflect public repositories only (40 of 42 repositories counted)." in updated_content
@@ -429,3 +474,64 @@ def test_write_complete_stats_summary():
     assert written["code_changes"]["totals"]["additions"] == 40
     assert written["language_statistics"]["languages"]["Python"]["percentage"] == 100.0
     assert written["featured_repositories"][0]["name_with_owner"] == "hhandika/example"
+
+
+def test_weekday_totals_and_peak_hour_window():
+    calendar = {
+        "weeks": [
+            {
+                "contributionDays": [
+                    {"contributionCount": 2, "date": "2026-01-04", "weekday": 0},
+                    {"contributionCount": 5, "date": "2026-01-10", "weekday": 6},
+                ]
+            },
+            {
+                "contributionDays": [
+                    {"contributionCount": 1, "date": "2026-01-17", "weekday": 6},
+                ]
+            },
+        ]
+    }
+    assert DataProcessor.weekday_totals(calendar) == [2, 0, 0, 0, 0, 0, 6]
+
+    hours = [0] * 24
+    hours[13] = 4
+    hours[21] = 2
+    assert DataProcessor.peak_hour_window(hours) == (12, 16, "Afternoon")
+    assert DataProcessor.peak_hour_window([0] * 24) is None
+
+
+def test_generate_activity_svg():
+    hours = [0] * 24
+    hours[14] = 3
+    hours[9] = 1
+    generator = ActivityDashboardGenerator(
+        weekday_counts=[10, 20, 20, 20, 20, 20, 40], hour_counts=hours
+    )
+    svg = generator.generate()
+
+    ET.fromstring(svg)
+    assert 'width="816"' in svg
+    assert "Peak: Saturday (27%)" in svg
+    assert "Peak: Afternoon" in svg
+    assert svg.index(">Mon<") < svg.index(">Sun<")
+    assert "var(--md-sys-color-tertiary)" in svg
+
+
+def test_generate_activity_svg_without_data():
+    svg = ActivityDashboardGenerator(
+        weekday_counts=[0] * 7, hour_counts=[0] * 24, theme="dark"
+    ).generate()
+
+    ET.fromstring(svg)
+    assert "No contributions yet" in svg
+    assert "No recent event data" in svg
+
+
+def test_relative_age():
+    now = datetime(2026, 10, 15, 12, tzinfo=timezone.utc)
+    assert relative_age("2026-10-15T08:00:00Z", now) == "today"
+    assert relative_age("2026-10-05T12:00:00Z", now) == "10d ago"
+    assert relative_age("2026-06-15T12:00:00Z", now) == "4mo ago"
+    assert relative_age("2024-10-01T12:00:00Z", now) == "2y ago"
+    assert relative_age(None, now) == ""

@@ -7,54 +7,66 @@ class M3Tokens:
     # Fonts
     FONTS = "font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;"
 
-    # CSS variables definition
-    CSS_VARIABLES = """
-    :root {
-      /* Light Theme (Chetwode and Porsche) */
+    # Light Theme (Chetwode and Porsche)
+    LIGHT_VARIABLES = """
       --md-sys-color-surface: #fcfcfc;
       --md-sys-color-on-surface: #1a1c1e;
       --md-sys-color-surface-variant: #e1e2e8;
       --md-sys-color-on-surface-variant: #44474e;
       --md-sys-color-surface-container: #f0f5fd; /* Chetwode 50 */
-      
+
       --md-sys-color-primary: #5a67d1; /* Chetwode 600 */
       --md-sys-color-on-primary: #ffffff;
       --md-sys-color-primary-container: #e4edfb; /* Chetwode 100 */
       --md-sys-color-on-primary-container: #384077; /* Chetwode 900 */
-      
+
       --md-sys-color-tertiary: #c46f32; /* Porsche 600 */
       --md-sys-color-on-tertiary: #ffffff;
       --md-sys-color-tertiary-container: #f8eedc; /* Porsche 100 */
       --md-sys-color-on-tertiary-container: #6a3b24; /* Porsche 900 */
-      
+
       --md-sys-color-outline: #74777f;
       --md-sys-color-outline-variant: #c4c7c5;
-    }
-    
-    @media (prefers-color-scheme: dark) {
-      :root {
-        /* Dark Theme (Chetwode and Porsche) */
-        --md-sys-color-surface: #1a1c1e;
-        --md-sys-color-on-surface: #e2e2e6;
-        --md-sys-color-surface-variant: #44474e;
-        --md-sys-color-on-surface-variant: #c4c6d0;
-        --md-sys-color-surface-container: #212545; /* Chetwode 950 */
-        
-        --md-sys-color-primary: #b0c6f1; /* Chetwode 300 */
-        --md-sys-color-on-primary: #3e4795; /* Chetwode 800 */
-        --md-sys-color-primary-container: #4a54b8; /* Chetwode 700 */
-        --md-sys-color-on-primary-container: #e4edfb; /* Chetwode 100 */
-        
-        --md-sys-color-tertiary: #e5bf8c; /* Porsche 300 */
-        --md-sys-color-on-tertiary: #82462a; /* Porsche 800 */
-        --md-sys-color-tertiary-container: #a2572c; /* Porsche 700 */
-        --md-sys-color-on-tertiary-container: #f8eedc; /* Porsche 100 */
-        
-        --md-sys-color-outline: #8e9099;
-        --md-sys-color-outline-variant: #444746;
-      }
-    }
+
+      --stats-color-additions: #1a7f37;
+      --stats-color-deletions: #cf222e;
     """
+
+    # Dark Theme (Chetwode and Porsche)
+    DARK_VARIABLES = """
+      --md-sys-color-surface: #1a1c1e;
+      --md-sys-color-on-surface: #e2e2e6;
+      --md-sys-color-surface-variant: #44474e;
+      --md-sys-color-on-surface-variant: #c4c6d0;
+      --md-sys-color-surface-container: #212545; /* Chetwode 950 */
+
+      --md-sys-color-primary: #b0c6f1; /* Chetwode 300 */
+      --md-sys-color-on-primary: #3e4795; /* Chetwode 800 */
+      --md-sys-color-primary-container: #4a54b8; /* Chetwode 700 */
+      --md-sys-color-on-primary-container: #e4edfb; /* Chetwode 100 */
+
+      --md-sys-color-tertiary: #e5bf8c; /* Porsche 300 */
+      --md-sys-color-on-tertiary: #82462a; /* Porsche 800 */
+      --md-sys-color-tertiary-container: #a2572c; /* Porsche 700 */
+      --md-sys-color-on-tertiary-container: #f8eedc; /* Porsche 100 */
+
+      --md-sys-color-outline: #8e9099;
+      --md-sys-color-outline-variant: #444746;
+
+      --stats-color-additions: #3fb950;
+      --stats-color-deletions: #f85149;
+    """
+
+    # Follows the viewer's OS color scheme
+    CSS_VARIABLES = (
+        "\n    :root {"
+        + LIGHT_VARIABLES
+        + "}\n\n    @media (prefers-color-scheme: dark) {\n      :root {"
+        + DARK_VARIABLES
+        + "}\n    }\n"
+    )
+
+    THEMES = ("auto", "light", "dark")
 
     TYPOGRAPHY = (
         """
@@ -189,6 +201,20 @@ class M3Tokens:
     }
 
     @classmethod
-    def get_style_block(cls) -> str:
+    def get_css_variables(cls, theme: str = "auto") -> str:
+        """Returns the color variables for a fixed theme, or both for "auto"."""
+        if theme == "light":
+            return f"\n    :root {{{cls.LIGHT_VARIABLES}}}\n"
+        if theme == "dark":
+            return f"\n    :root {{{cls.DARK_VARIABLES}}}\n"
+        if theme == "auto":
+            return cls.CSS_VARIABLES
+        raise ValueError(f"Unknown theme: {theme}")
+
+    @classmethod
+    def get_style_block(cls, theme: str = "auto") -> str:
         """Returns the full style block for the SVG."""
-        return f"<style>\n{cls.CSS_VARIABLES}\n{cls.TYPOGRAPHY}\n{cls.SHAPES}\n</style>"
+        return (
+            f"<style>\n{cls.get_css_variables(theme)}\n{cls.TYPOGRAPHY}\n"
+            f"{cls.SHAPES}\n</style>"
+        )

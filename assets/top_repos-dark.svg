@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="816" height="388" viewBox="0 0 816 388" fill="none" role="img" aria-labelledby="titleId descId">
+  <title id="titleId">Selected Repositories Dashboard</title>
+  <desc id="descId">Shows selected repositories and their language composition</desc>
+<style>
+
+    :root {
+      --md-sys-color-surface: #1a1c1e;
+      --md-sys-color-on-surface: #e2e2e6;
+      --md-sys-color-surface-variant: #44474e;
+      --md-sys-color-on-surface-variant: #c4c6d0;
+      --md-sys-color-surface-container: #212545; /* Chetwode 950 */
+
+      --md-sys-color-primary: #b0c6f1; /* Chetwode 300 */
+      --md-sys-color-on-primary: #3e4795; /* Chetwode 800 */
+      --md-sys-color-primary-container: #4a54b8; /* Chetwode 700 */
+      --md-sys-color-on-primary-container: #e4edfb; /* Chetwode 100 */
+
+      --md-sys-color-tertiary: #e5bf8c; /* Porsche 300 */
+      --md-sys-color-on-tertiary: #82462a; /* Porsche 800 */
+      --md-sys-color-tertiary-container: #a2572c; /* Porsche 700 */
+      --md-sys-color-on-tertiary-container: #f8eedc; /* Porsche 100 */
+
+      --md-sys-color-outline: #8e9099;
+      --md-sys-color-outline-variant: #444746;
+
+      --stats-color-additions: #3fb950;
+      --stats-color-deletions: #f85149;
+    }
+
+
+    .m3-headline-small {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      fill: var(--md-sys-color-on-surface);
+    }
+    .m3-title-medium {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+      fill: var(--md-sys-color-on-surface);
+    }
+    .m3-title-small {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+      fill: var(--md-sys-color-on-surface);
+    }
+    .m3-body-large {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      fill: var(--md-sys-color-on-surface-variant);
+    }
+    .m3-body-medium {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      fill: var(--md-sys-color-on-surface-variant);
+    }
+    .m3-body-small {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+      fill: var(--md-sys-color-on-surface-variant);
+    }
+    .m3-label-large {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+      fill: var(--md-sys-color-primary);
+    }
+    .m3-streak-highlight {
+      fill: var(--md-sys-color-tertiary);
+    }
+    .m3-label-medium {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      fill: var(--md-sys-color-on-surface-variant);
+    }
+    .m3-display-small {
+      font-family: 'Roboto', 'Google Sans', system-ui, sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 44px;
+      fill: var(--md-sys-color-on-surface);
+    }
+    
+
+    .m3-container-large {
+      rx: 12px;
+      fill: var(--md-sys-color-surface);
+      stroke: var(--md-sys-color-outline-variant);
+      stroke-width: 1px;
+    }
+    .m3-card-medium {
+      rx: 8px;
+      fill: var(--md-sys-color-surface-container);
+      stroke: var(--md-sys-color-outline-variant);
+      stroke-width: 0.5px;
+    }
+    .m3-bar-chart {
+      rx: 2px;
+    }
+    .m3-divider {
+      stroke: var(--md-sys-color-outline-variant);
+      stroke-width: 1px;
+      opacity: 0.5;
+    }
+    
+</style>
+<rect class="m3-container-large" x="0.5" y="0.5" width="815" height="387" />
+  <text x="24" y="36" class="m3-headline-small">Selected Repositories</text>
+  <text x="24" y="56" class="m3-body-small">Featured projects breakdown</text>
+  <g transform="translate(24, 76)">
+    <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
+    <text x="16" y="24" class="m3-title-medium">nahpu/nahpu</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 17 · updated 4d ago</text>
+    <text x="16" y="42" class="m3-body-small">A cross-platform (mobile and desktop) digital cat…</text>
+  <clipPath id="repo-bar-clip-0">
+    <rect x="16" y="50" width="344" height="6" rx="1.5" />
+  </clipPath>
+  <g clip-path="url(#repo-bar-clip-0)">
+    <rect x="16" y="50" width="344" height="6" fill="var(--md-sys-color-surface-variant)" />
+      <rect x="16.00" y="50" width="320.01" height="6" fill="#00B4AB" />
+      <rect x="338.01" y="50" width="9.87" height="6" fill="#dea584" />
+      <rect x="349.88" y="50" width="5.50" height="6" fill="#ecdebe" />
+      <rect x="357.38" y="50" width="0.50" height="6" fill="#f34b7d" />
+      <rect x="358.33" y="50" width="0.50" height="6" fill="#DA3434" />
+      <rect x="359.05" y="50" width="0.54" height="6" fill="#3572A5" />
+  </g>
+      <circle cx="20.0" cy="72" r="4" fill="#00B4AB" />
+      <text x="28.0" y="76" class="m3-label-medium">Dart 93.6%</text>
+      <circle cx="132.0" cy="72" r="4" fill="#dea584" />
+      <text x="140.0" y="76" class="m3-label-medium">Rust 3.5%</text>
+      <circle cx="244.0" cy="72" r="4" fill="#ecdebe" />
+      <text x="252.0" y="76" class="m3-label-medium">Roff 2.2%</text>
+  </g>
+  <g transform="translate(416, 76)">
+    <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
+    <text x="16" y="24" class="m3-title-medium">hhandika/segul</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 27 · updated 6mo ago</text>
+    <text x="16" y="42" class="m3-body-small">An ultrafast and memory efficient tool for phylog…</text>
+  <clipPath id="repo-bar-clip-1">
+    <rect x="16" y="50" width="344" height="6" rx="1.5" />
+  </clipPath>
+  <g clip-path="url(#repo-bar-clip-1)">
+    <rect x="16" y="50" width="344" height="6" fill="var(--md-sys-color-surface-variant)" />
+      <rect x="16.00" y="50" width="343.68" height="6" fill="#dea584" />
+  </g>
+      <circle cx="20.0" cy="72" r="4" fill="#dea584" />
+      <text x="28.0" y="76" class="m3-label-medium">Rust 99.9%</text>
+  </g>
+  <g transform="translate(24, 176)">
+    <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
+    <text x="16" y="24" class="m3-title-medium">hhandika/segui</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 2 · updated today</text>
+    <text x="16" y="42" class="m3-body-small">A GUI version of the SEGUL phylogenomic tool</text>
+  <clipPath id="repo-bar-clip-2">
+    <rect x="16" y="50" width="344" height="6" rx="1.5" />
+  </clipPath>
+  <g clip-path="url(#repo-bar-clip-2)">
+    <rect x="16" y="50" width="344" height="6" fill="var(--md-sys-color-surface-variant)" />
+      <rect x="16.00" y="50" width="210.57" height="6" fill="#00B4AB" />
+      <rect x="228.57" y="50" width="47.24" height="6" fill="#dea584" />
+      <rect x="277.81" y="50" width="41.65" height="6" fill="#e34c26" />
+      <rect x="321.46" y="50" width="6.68" height="6" fill="#f34b7d" />
+      <rect x="330.13" y="50" width="6.45" height="6" fill="#DA3434" />
+      <rect x="338.59" y="50" width="4.32" height="6" fill="#3572A5" />
+      <rect x="344.91" y="50" width="3.35" height="6" fill="#fcb32c" />
+      <rect x="350.26" y="50" width="3.06" height="6" fill="#3178c6" />
+      <rect x="355.32" y="50" width="0.50" height="6" fill="#89e051" />
+      <rect x="357.79" y="50" width="2.21" height="6" fill="#701516" />
+  </g>
+      <circle cx="20.0" cy="72" r="4" fill="#00B4AB" />
+      <text x="28.0" y="76" class="m3-label-medium">Dart 61.8%</text>
+      <circle cx="132.0" cy="72" r="4" fill="#dea584" />
+      <text x="140.0" y="76" class="m3-label-medium">Rust 14.3%</text>
+      <circle cx="244.0" cy="72" r="4" fill="#e34c26" />
+      <text x="252.0" y="76" class="m3-label-medium">HTML 12.7%</text>
+  </g>
+  <g transform="translate(416, 176)">
+    <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
+    <text x="16" y="24" class="m3-title-medium">hhandika/ullar</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 3 · updated 6mo ago</text>
+    <text x="16" y="42" class="m3-body-small">A lightweight phylo and population genomic pipeli…</text>
+  <clipPath id="repo-bar-clip-3">
+    <rect x="16" y="50" width="344" height="6" rx="1.5" />
+  </clipPath>
+  <g clip-path="url(#repo-bar-clip-3)">
+    <rect x="16" y="50" width="344" height="6" fill="var(--md-sys-color-surface-variant)" />
+      <rect x="16.00" y="50" width="343.95" height="6" fill="#dea584" />
+  </g>
+      <circle cx="20.0" cy="72" r="4" fill="#dea584" />
+      <text x="28.0" y="76" class="m3-label-medium">Rust 100.0%</text>
+  </g>
+  <g transform="translate(24, 276)">
+    <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
+    <text x="16" y="24" class="m3-title-medium">mammaldiversity/mdd_app</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 2 · updated 7d ago</text>
+    <text x="16" y="42" class="m3-body-small">An app for viewing mammal diversity database</text>
+  <clipPath id="repo-bar-clip-4">
+    <rect x="16" y="50" width="344" height="6" rx="1.5" />
+  </clipPath>
+  <g clip-path="url(#repo-bar-clip-4)">
+    <rect x="16" y="50" width="344" height="6" fill="var(--md-sys-color-surface-variant)" />
+      <rect x="16.00" y="50" width="290.94" height="6" fill="#00B4AB" />
+      <rect x="308.94" y="50" width="21.09" height="6" fill="#dea584" />
+      <rect x="332.03" y="50" width="8.12" height="6" fill="#f34b7d" />
+      <rect x="342.15" y="50" width="5.75" height="6" fill="#DA3434" />
+      <rect x="349.90" y="50" width="3.90" height="6" fill="#3572A5" />
+      <rect x="355.80" y="50" width="0.50" height="6" fill="#012456" />
+      <rect x="357.32" y="50" width="0.50" height="6" fill="#89e051" />
+      <rect x="358.38" y="50" width="0.50" height="6" fill="#F05138" />
+      <rect x="359.42" y="50" width="0.57" height="6" fill="#555555" />
+  </g>
+      <circle cx="20.0" cy="72" r="4" fill="#00B4AB" />
+      <text x="28.0" y="76" class="m3-label-medium">Dart 85.2%</text>
+      <circle cx="132.0" cy="72" r="4" fill="#dea584" />
+      <text x="140.0" y="76" class="m3-label-medium">Rust 6.7%</text>
+      <circle cx="244.0" cy="72" r="4" fill="#f34b7d" />
+      <text x="252.0" y="76" class="m3-label-medium">C++ 2.9%</text>
+  </g></svg>

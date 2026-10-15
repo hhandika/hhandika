@@ -1,6 +1,6 @@
 """Processes raw GitHub API data into statistical metrics."""
 
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List, Optional, Tuple
 
 EXCLUDED_LANGUAGES = {
     "html",
@@ -25,6 +25,16 @@ EXCLUDED_LANGUAGES = {
     "gitattributes",
     "gitignore",
 }
+
+# Four-hour windows used to describe when activity peaks (Eastern Time)
+PEAK_HOUR_WINDOWS = [
+    (0, 4, "Late Night"),
+    (4, 8, "Early Morning"),
+    (8, 12, "Morning"),
+    (12, 16, "Afternoon"),
+    (16, 20, "Late Afternoon"),
+    (20, 24, "Evening"),
+]
 
 
 class DataProcessor:
@@ -107,3 +117,22 @@ class DataProcessor:
             peak_day_str = "None"
 
         return current_streak, peak_day_str
+
+    @staticmethod
+    def weekday_totals(calendar_data: Dict[str, Any]) -> List[int]:
+        """Sums contributions per weekday, indexed Sunday (0) to Saturday (6)."""
+        totals = [0] * 7
+        for week in calendar_data.get("weeks", []):
+            for day in week.get("contributionDays", []):
+                totals[day.get("weekday", 0)] += day.get("contributionCount", 0)
+        return totals
+
+    @staticmethod
+    def peak_hour_window(hour_counts: List[int]) -> Optional[Tuple[int, int, str]]:
+        """Returns the busiest four-hour window, or None when there is no activity."""
+        if sum(hour_counts) == 0:
+            return None
+        return max(
+            PEAK_HOUR_WINDOWS,
+            key=lambda window: sum(hour_counts[h] for h in range(window[0], window[1])),
+        )

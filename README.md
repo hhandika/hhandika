@@ -6,10 +6,26 @@ For more insights into my work and adventures, visit [my website](https://hhandi
 
 <!-- START_SECTION:github-stats -->
 <p align="left">
-  <img src="assets/overview.svg" alt="GitHub Stats" width="480" />
-  <img src="assets/languages.svg" alt="Top Languages" width="480" />
-  <img src="assets/top_repos.svg" alt="Selected Repositories" width="480" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/overview-dark.svg" />
+    <img src="assets/overview-light.svg" alt="GitHub Stats" width="49%" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg" />
+    <img src="assets/languages-light.svg" alt="Top Languages" width="49%" />
+  </picture>
 </p>
-<p align="left"><sub>*Code changes are partial; omitted repositories are listed in <a href="data/stats.json">data/stats.json</a>.</sub></p>
-<p align="left"><sub>Stats reflect public repositories only (81 of 82 repositories counted). Updates daily • Latest update: October 15, 2026</sub></p>
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg" />
+    <img src="assets/activity-light.svg" alt="Activity Rhythm" width="98%" />
+  </picture>
+</p>
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/top_repos-dark.svg" />
+    <img src="assets/top_repos-light.svg" alt="Selected Repositories" width="98%" />
+  </picture>
+</p>
+<p align="left"><sub>Stats reflect public repositories only (82 of 82 repositories counted). Updates daily • Latest update: October 15, 2026</sub></p>
 <!-- END_SECTION:github-stats -->
