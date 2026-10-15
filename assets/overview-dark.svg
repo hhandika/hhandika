@@ -176,7 +176,7 @@
       <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
     </svg>
     <text x="24" y="11" class="m3-body-small">Code Changes</text>
-    <text x="352" y="12" text-anchor="end" class="m3-label-large"><tspan style="fill: var(--stats-color-additions);">+1.1M</tspan><tspan dx="8" style="fill: var(--stats-color-deletions);">−541.5k</tspan></text>
+    <text x="352" y="12" text-anchor="end" class="m3-label-large"><tspan style="fill: var(--stats-color-additions);">+1.1M</tspan><tspan dx="8" style="fill: var(--stats-color-deletions);">−542.6k</tspan></text>
   </g>
   <clipPath id="code-changes-clip">
     <rect x="24" y="208" width="352" height="6" rx="1.5" />
