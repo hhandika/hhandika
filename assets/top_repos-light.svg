@@ -237,4 +237,9 @@
       <text x="140.0" y="76" class="m3-label-medium">Rust 6.7%</text>
       <circle cx="244.0" cy="72" r="4" fill="#f34b7d" />
       <text x="252.0" y="76" class="m3-label-medium">C++ 2.9%</text>
+  </g>
+  <g transform="translate(416, 276)">
+    <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
+    <text x="16" y="24" class="m3-title-medium">BioVisionLab/BioCosmos</text>
+    <text x="16" y="44" class="m3-body-small" style="fill: var(--md-sys-color-error);">Repository not found or private.</text>
   </g></svg>
