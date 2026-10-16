@@ -241,5 +241,22 @@
   <g transform="translate(416, 276)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">BioVisionLab/BioCosmos</text>
-    <text x="16" y="44" class="m3-body-small" style="fill: var(--md-sys-color-error);">Repository not found or private.</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 4 · updated 1d ago</text>
+    <text x="16" y="42" class="m3-body-small">No description provided.</text>
+  <clipPath id="repo-bar-clip-5">
+    <rect x="16" y="50" width="344" height="6" rx="1.5" />
+  </clipPath>
+  <g clip-path="url(#repo-bar-clip-5)">
+    <rect x="16" y="50" width="344" height="6" fill="var(--md-sys-color-surface-variant)" />
+      <rect x="16.00" y="50" width="157.14" height="6" fill="#3572A5" />
+      <rect x="175.14" y="50" width="98.73" height="6" fill="#DA5B0B" />
+      <rect x="275.86" y="50" width="79.66" height="6" fill="#3178c6" />
+      <rect x="357.53" y="50" width="2.09" height="6" fill="#663399" />
+  </g>
+      <circle cx="20.0" cy="72" r="4" fill="#3572A5" />
+      <text x="28.0" y="76" class="m3-label-medium">Python 46.3%</text>
+      <circle cx="132.0" cy="72" r="4" fill="#DA5B0B" />
+      <text x="140.0" y="76" class="m3-label-medium">Jupyter … 29.3%</text>
+      <circle cx="244.0" cy="72" r="4" fill="#3178c6" />
+      <text x="252.0" y="76" class="m3-label-medium">TypeScript 23.7%</text>
   </g></svg>
