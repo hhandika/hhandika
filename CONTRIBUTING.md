@@ -31,6 +31,7 @@ This repository features an automated workflow that updates profile stats cards 
 - **Code Reviews**: The total number of Pull Request reviews submitted by the user.
 - **Issues**: The total number of issues opened by the user.
 - **Streak**: The longest consecutive number of days with at least one contribution in the current calendar year.
+- **Contribution Calendar**: Daily contribution counts for the last 365 days (`overview.contribution_calendar` in `data/stats.json`), used for activity heatmaps.
 - **Peak Day**: The day of the week with the highest average number of contributions.
 - **Peak Hours**: The time of day with the most commit activity, derived from analyzing commit timestamps.
 

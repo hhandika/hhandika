@@ -110,6 +110,7 @@ def main() -> None:
             zip(["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], weekday_counts)
         ),
         "hourly_events_et": hour_counts,
+        "contribution_calendar": processor.calendar_days(calendar),
         "code_additions": additions,
         "code_deletions": deletions,
         "formatted_code_changes": formatted_code_changes,

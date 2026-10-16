@@ -128,6 +128,16 @@ class DataProcessor:
         return totals
 
     @staticmethod
+    def calendar_days(calendar_data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Flattens the contribution calendar into date-sorted {date, count} days."""
+        days = [
+            {"date": day["date"], "count": day.get("contributionCount", 0)}
+            for week in calendar_data.get("weeks", [])
+            for day in week.get("contributionDays", [])
+        ]
+        return sorted(days, key=lambda day: day["date"])
+
+    @staticmethod
     def peak_hour_window(hour_counts: List[int]) -> Optional[Tuple[int, int, str]]:
         """Returns the busiest four-hour window, or None when there is no activity."""
         if sum(hour_counts) == 0:

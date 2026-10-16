@@ -493,6 +493,11 @@ def test_weekday_totals_and_peak_hour_window():
         ]
     }
     assert DataProcessor.weekday_totals(calendar) == [2, 0, 0, 0, 0, 0, 6]
+    assert DataProcessor.calendar_days(calendar) == [
+        {"date": "2026-01-04", "count": 2},
+        {"date": "2026-01-10", "count": 5},
+        {"date": "2026-01-17", "count": 1},
+    ]
 
     hours = [0] * 24
     hours[13] = 4
