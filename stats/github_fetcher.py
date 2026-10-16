@@ -69,6 +69,9 @@ query($repositoriesCursor: String) {
   mdd_app: repository(owner: "mammaldiversity", name: "mdd_app") {
     ...RepoFields
   }
+  BioCosmos: repository(owner: "BioVisionLab", name: "BioCosmos") {
+    ...RepoFields
+  }
 }
 
 fragment RepoFields on Repository {
