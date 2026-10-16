@@ -164,17 +164,17 @@
   <rect x="542.67" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
   <rect x="557.33" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
   <rect x="572.00" y="163.00" width="11.67" height="3.00" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="586.67" y="153.62" width="11.67" height="12.38" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="586.67" y="151.14" width="11.67" height="14.86" rx="2" fill="var(--md-sys-color-primary)" />
   <rect x="601.33" y="131.33" width="11.67" height="34.67" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="616.00" y="141.24" width="11.67" height="24.76" rx="2" fill="var(--md-sys-color-tertiary)" />
+  <rect x="616.00" y="143.71" width="11.67" height="22.29" rx="2" fill="var(--md-sys-color-tertiary)" />
   <rect x="630.67" y="114.00" width="11.67" height="52.00" rx="2" fill="var(--md-sys-color-tertiary)" />
   <rect x="645.33" y="156.10" width="11.67" height="9.90" rx="2" fill="var(--md-sys-color-tertiary)" />
-  <rect x="660.00" y="133.81" width="11.67" height="32.19" rx="2" fill="var(--md-sys-color-tertiary)" />
-  <rect x="674.67" y="158.57" width="11.67" height="7.43" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="660.00" y="136.29" width="11.67" height="29.71" rx="2" fill="var(--md-sys-color-tertiary)" />
+  <rect x="674.67" y="156.10" width="11.67" height="9.90" rx="2" fill="var(--md-sys-color-primary)" />
   <rect x="689.33" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
   <rect x="704.00" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
   <rect x="718.67" y="161.05" width="11.67" height="4.95" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="733.33" y="141.24" width="11.67" height="24.76" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="733.33" y="143.71" width="11.67" height="22.29" rx="2" fill="var(--md-sys-color-primary)" />
   <rect x="748.00" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
   <rect x="762.67" y="158.57" width="11.67" height="7.43" rx="2" fill="var(--md-sys-color-primary)" />
   <rect x="777.33" y="148.67" width="11.67" height="17.33" rx="2" fill="var(--md-sys-color-primary)" />
