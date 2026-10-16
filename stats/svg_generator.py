@@ -7,6 +7,12 @@ from stats.m3_design_system import M3Tokens
 
 FALLBACK_COLOR = "#8e918f"
 
+# Approximate advance of one m3-label-medium character (12px, 0.5px tracking)
+LABEL_CHAR_WIDTH = 7.2
+
+# Shorter legend names for languages whose full name crowds the repo cards
+LANGUAGE_ALIASES = {"Jupyter Notebook": "Jupyter"}
+
 
 def xml_escape(text: str) -> str:
     """Escapes special XML characters in string to prevent breaking SVG structure."""
@@ -583,6 +589,7 @@ class TopReposDashboardGenerator(M3SVGGenerator):
             legend_rects = []
             if total_size > 0:
                 legend_x = 16.0
+                legend_end = 16 + bar_width
                 shown = [
                     edge for edge in langs if edge["size"] / total_size * 100 >= 1
                 ][:3]
@@ -590,14 +597,26 @@ class TopReposDashboardGenerator(M3SVGGenerator):
                     color = edge["node"]["color"] or FALLBACK_COLOR
                     pct = (edge["size"] / total_size) * 100
                     raw_lang_name = edge["node"]["name"]
-                    if len(raw_lang_name) > 10:
-                        raw_lang_name = raw_lang_name[:8] + "…"
+                    raw_lang_name = LANGUAGE_ALIASES.get(raw_lang_name, raw_lang_name)
+                    # Labels flow left to right. When a label would run past
+                    # the bar, drop the decimal, then shorten the name, and
+                    # stop when even a short stub cannot fit.
+                    max_chars = int((legend_end - legend_x - 12) / LABEL_CHAR_WIDTH)
+                    pct_text = f" {pct:.1f}%"
+                    if len(raw_lang_name) + len(pct_text) > max_chars:
+                        pct_text = f" {pct:.0f}%"
+                    name_chars = max_chars - len(pct_text)
+                    if len(raw_lang_name) > name_chars:
+                        if name_chars < 4:
+                            break
+                        raw_lang_name = raw_lang_name[: name_chars - 1] + "…"
                     lang_name = xml_escape(raw_lang_name)
                     legend_rects.append(
-                        f'      <circle cx="{legend_x + 4}" cy="72" r="4" fill="{color}"{self._swatch_stroke(color)} />\n'
-                        f'      <text x="{legend_x + 12}" y="76" class="m3-label-medium">{lang_name} {pct:.1f}%</text>'
+                        f'      <circle cx="{legend_x + 4:.1f}" cy="72" r="4" fill="{color}"{self._swatch_stroke(color)} />\n'
+                        f'      <text x="{legend_x + 12:.1f}" y="76" class="m3-label-medium">{lang_name}{pct_text}</text>'
                     )
-                    legend_x += 112
+                    label_width = (len(raw_lang_name) + len(pct_text)) * LABEL_CHAR_WIDTH
+                    legend_x += max(112, 12 + label_width + 12)
             else:
                 legend_rects.append(
                     '      <text x="16" y="76" class="m3-label-medium">No language data</text>'
