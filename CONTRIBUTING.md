@@ -26,7 +26,7 @@ This repository features an automated workflow that updates profile stats cards 
 
 - **Total Stars**: The total number of stargazers across all of the user's public repositories.
 - **Contributions**: The total number of GitHub contributions made in the last 365 days, sourced from the contribution calendar.
-- **Code Changes**: All-time additions and deletions attributed to the user on the default branches of public, owned, non-fork repositories, sourced from GitHub contributor statistics. GitHub reports zero additions and deletions for repositories with 10,000 or more commits.
+- **Code Changes**: All-time additions and deletions attributed to the user on the default branches of public, owned, non-fork repositories, plus the organization repositories listed in `EXTRA_CODE_REPOS` (`BioVisionLab/BioCosmos`), sourced from GitHub contributor statistics. GitHub reports zero additions and deletions for repositories with 10,000 or more commits.
 - **Merged PRs**: The total number of Pull Requests the user has created or contributed to.
 - **Code Reviews**: The total number of Pull Request reviews submitted by the user.
 - **Issues**: The total number of issues opened by the user.

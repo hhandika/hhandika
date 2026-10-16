@@ -25,6 +25,12 @@ TOP_REPOS: List[Tuple[str, str]] = [
     ("mammaldiversity", "mdd_app"),
 ]
 
+# Public repositories owned by organizations whose code changes by the user
+# count toward the totals alongside the user's own repositories
+EXTRA_CODE_REPOS: List[str] = [
+    "BioVisionLab/BioCosmos",
+]
+
 
 def main() -> None:
     """Main function orchestration."""
@@ -71,7 +77,11 @@ def main() -> None:
 
     languages = processor.parse_languages(repos_nodes)
     print("Fetching attributed code additions and deletions...")
-    code_changes = fetcher.fetch_code_changes(username, repos_nodes)
+    owned = {repo.get("nameWithOwner") for repo in repos_nodes}
+    code_repos = repos_nodes + [
+        {"nameWithOwner": name} for name in EXTRA_CODE_REPOS if name not in owned
+    ]
+    code_changes = fetcher.fetch_code_changes(username, code_repos)
     additions = code_changes["totals"]["additions"]
     deletions = code_changes["totals"]["deletions"]
     formatted_code_changes = (
