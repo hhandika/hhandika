@@ -242,7 +242,7 @@
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">BioVisionLab/BioCosmos</text>
     <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 4 · updated 1d ago</text>
-    <text x="16" y="42" class="m3-body-small">No description provided.</text>
+    <text x="16" y="42" class="m3-body-small">Computer vision and LLM for biodiversity explorat…</text>
   <clipPath id="repo-bar-clip-5">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
   </clipPath>
@@ -256,7 +256,7 @@
       <circle cx="20.0" cy="72" r="4" fill="#3572A5" />
       <text x="28.0" y="76" class="m3-label-medium">Python 46.3%</text>
       <circle cx="132.0" cy="72" r="4" fill="#DA5B0B" />
-      <text x="140.0" y="76" class="m3-label-medium">Jupyter … 29.3%</text>
-      <circle cx="244.0" cy="72" r="4" fill="#3178c6" />
-      <text x="252.0" y="76" class="m3-label-medium">TypeScript 23.7%</text>
+      <text x="140.0" y="76" class="m3-label-medium">Jupyter 29.3%</text>
+      <circle cx="249.6" cy="72" r="4" fill="#3178c6" />
+      <text x="257.6" y="76" class="m3-label-medium">TypeScript 24%</text>
   </g></svg>

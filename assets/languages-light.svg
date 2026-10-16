@@ -134,11 +134,11 @@
   </clipPath>
   <g clip-path="url(#lang-bar-clip)">
     <rect x="24" y="84" width="352.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="24.00" y="84" width="198.72" height="12" fill="#dea584" />
-      <rect x="224.72" y="84" width="60.74" height="12" fill="#00B4AB" />
-      <rect x="287.46" y="84" width="26.78" height="12" fill="#ff5a03" />
-      <rect x="316.24" y="84" width="17.82" height="12" fill="#3572A5" />
-      <rect x="336.06" y="84" width="8.65" height="12" fill="#89e051" />
+      <rect x="24.00" y="84" width="198.68" height="12" fill="#dea584" />
+      <rect x="224.68" y="84" width="60.73" height="12" fill="#00B4AB" />
+      <rect x="287.41" y="84" width="26.77" height="12" fill="#ff5a03" />
+      <rect x="316.18" y="84" width="17.89" height="12" fill="#3572A5" />
+      <rect x="336.07" y="84" width="8.65" height="12" fill="#89e051" />
       <rect x="346.71" y="84" width="7.25" height="12" fill="#3178c6" />
       <rect x="355.96" y="84" width="20.04" height="12" fill="#8e918f" />
   </g>
@@ -160,7 +160,7 @@
   <g transform="translate(212, 144)">
     <circle cx="6" cy="6" r="5.5" fill="#3572A5" />
     <text x="20" y="11" class="m3-body-medium">Python</text>
-    <text x="164" y="11" text-anchor="end" class="m3-label-medium">5.6%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">5.7%</text>
   </g>
   <g transform="translate(24, 172)">
     <circle cx="6" cy="6" r="5.5" fill="#89e051" stroke="var(--md-sys-color-outline)" stroke-width="1" />
