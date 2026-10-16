@@ -23,6 +23,7 @@ TOP_REPOS: List[Tuple[str, str]] = [
     ("hhandika", "segui"),
     ("hhandika", "ullar"),
     ("mammaldiversity", "mdd_app"),
+    ("BioVisionLab", "BioCosmos"),
 ]
 
 # Public repositories owned by organizations whose code changes by the user
