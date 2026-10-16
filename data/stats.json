@@ -129,9 +129,9 @@
         "name_with_owner": "hhandika/gbfast"
       },
       {
-        "additions": 96050,
-        "commits": 445,
-        "deletions": 61968,
+        "additions": 96489,
+        "commits": 448,
+        "deletions": 62073,
         "name_with_owner": "hhandika/hhandika-com"
       },
       {
@@ -471,9 +471,9 @@
         "name_with_owner": "hhandika/mathness"
       },
       {
-        "additions": 5972,
-        "commits": 146,
-        "deletions": 1986,
+        "additions": 5984,
+        "commits": 147,
+        "deletions": 1988,
         "name_with_owner": "hhandika/hhandika"
       },
       {
@@ -493,17 +493,23 @@
         "commits": 162,
         "deletions": 1366,
         "name_with_owner": "hhandika/clicov"
+      },
+      {
+        "additions": 158074,
+        "commits": 587,
+        "deletions": 79858,
+        "name_with_owner": "BioVisionLab/BioCosmos"
       }
     ],
-    "repositories_counted": 82,
+    "repositories_counted": 83,
     "repositories_failed": 0,
-    "repositories_total": 82,
+    "repositories_total": 83,
     "source": "github_contributor_statistics",
     "status": "complete",
     "totals": {
-      "additions": 1149984,
-      "commits": 7025,
-      "deletions": 542829
+      "additions": 1308509,
+      "commits": 7616,
+      "deletions": 622794
     }
   },
   "featured_repositories": [
@@ -753,13 +759,13 @@
       "name_with_owner": "mammaldiversity/mdd_app"
     }
   ],
-  "generated_at": "2026-10-16T13:53:33.021135+00:00",
+  "generated_at": "2026-10-16T18:42:07.478303+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
-        "bytes": 444635,
+        "bytes": 452240,
         "color": "#ff5a03",
-        "percentage": 7.99
+        "percentage": 8.11
       },
       "Batchfile": {
         "bytes": 7285,
@@ -779,7 +785,7 @@
       "Dart": {
         "bytes": 994614,
         "color": "#00B4AB",
-        "percentage": 17.88
+        "percentage": 17.84
       },
       "Go": {
         "bytes": 2249,
@@ -794,7 +800,7 @@
       "JavaScript": {
         "bytes": 42632,
         "color": "#f1e05a",
-        "percentage": 0.77
+        "percentage": 0.76
       },
       "Julia": {
         "bytes": 480,
@@ -822,9 +828,9 @@
         "percentage": 0.05
       },
       "Python": {
-        "bytes": 313744,
+        "bytes": 314133,
         "color": "#3572A5",
-        "percentage": 5.64
+        "percentage": 5.63
       },
       "R": {
         "bytes": 18594,
@@ -844,7 +850,7 @@
       "Rust": {
         "bytes": 3182057,
         "color": "#dea584",
-        "percentage": 57.19
+        "percentage": 57.06
       },
       "Shell": {
         "bytes": 168794,
@@ -857,17 +863,17 @@
         "percentage": 0.29
       },
       "TypeScript": {
-        "bytes": 142490,
+        "bytes": 146629,
         "color": "#3178c6",
-        "percentage": 2.56
+        "percentage": 2.63
       }
     },
-    "total": 5564077,
+    "total": 5576210,
     "unit": "bytes"
   },
   "overview": {
-    "code_additions": 1149984,
-    "code_deletions": 542829,
+    "code_additions": 1308509,
+    "code_deletions": 622794,
     "contribution_calendar": [
       {
         "count": 5,
@@ -2346,11 +2352,11 @@
         "date": "2026-10-15"
       },
       {
-        "count": 0,
+        "count": 6,
         "date": "2026-10-16"
       }
     ],
-    "formatted_code_changes": "+1.1M (-542.8k)",
+    "formatted_code_changes": "+1.3M (-622.8k)",
     "hourly_events_et": [
       2,
       0,
@@ -2362,32 +2368,32 @@
       0,
       0,
       1,
-      6,
+      7,
       14,
       9,
       21,
       4,
       12,
       4,
-      0,
+      2,
       0,
       2,
       9,
       0,
       3,
-      7
+      4
     ],
     "peak_day": "Saturday (19%)",
     "peak_hours": "Afternoon",
-    "streak_days": 48,
-    "total_contributions": 3702,
+    "streak_days": 49,
+    "total_contributions": 3708,
     "total_issues": 44,
     "total_pull_requests": 125,
     "total_repositories": 82,
     "total_reviews": 34,
     "total_stars": 49,
     "weekday_contributions": {
-      "Fri": 453,
+      "Fri": 459,
       "Mon": 489,
       "Sat": 687,
       "Sun": 456,
