@@ -129,9 +129,9 @@
         "name_with_owner": "hhandika/gbfast"
       },
       {
-        "additions": 96794,
-        "commits": 456,
-        "deletions": 62277,
+        "additions": 97478,
+        "commits": 459,
+        "deletions": 62441,
         "name_with_owner": "hhandika/hhandika-com"
       },
       {
@@ -231,9 +231,9 @@
         "name_with_owner": "hhandika/segul-ffi"
       },
       {
-        "additions": 4315,
-        "commits": 53,
-        "deletions": 546,
+        "additions": 6141,
+        "commits": 55,
+        "deletions": 1323,
         "name_with_owner": "hhandika/pysegul"
       },
       {
@@ -507,9 +507,9 @@
     "source": "github_contributor_statistics",
     "status": "complete",
     "totals": {
-      "additions": 1308842,
-      "commits": 7627,
-      "deletions": 623003
+      "additions": 1311352,
+      "commits": 7632,
+      "deletions": 623944
     }
   },
   "featured_repositories": [
@@ -814,13 +814,13 @@
       "name_with_owner": "BioVisionLab/BioCosmos"
     }
   ],
-  "generated_at": "2026-10-17T03:02:34.388088+00:00",
+  "generated_at": "2026-10-18T03:05:07.422144+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
-        "bytes": 456245,
+        "bytes": 455767,
         "color": "#ff5a03",
-        "percentage": 8.17
+        "percentage": 8.09
       },
       "Batchfile": {
         "bytes": 7285,
@@ -830,17 +830,17 @@
       "C": {
         "bytes": 46880,
         "color": "#555555",
-        "percentage": 0.84
+        "percentage": 0.83
       },
       "C++": {
         "bytes": 131529,
         "color": "#f34b7d",
-        "percentage": 2.36
+        "percentage": 2.33
       },
       "Dart": {
         "bytes": 994614,
         "color": "#00B4AB",
-        "percentage": 17.82
+        "percentage": 17.65
       },
       "Go": {
         "bytes": 2249,
@@ -853,7 +853,7 @@
         "percentage": 0.0
       },
       "JavaScript": {
-        "bytes": 42632,
+        "bytes": 42721,
         "color": "#f1e05a",
         "percentage": 0.76
       },
@@ -870,7 +870,7 @@
       "MDX": {
         "bytes": 19421,
         "color": "#fcb32c",
-        "percentage": 0.35
+        "percentage": 0.34
       },
       "Objective-C": {
         "bytes": 38,
@@ -883,9 +883,9 @@
         "percentage": 0.05
       },
       "Python": {
-        "bytes": 315368,
+        "bytes": 322552,
         "color": "#3572A5",
-        "percentage": 5.65
+        "percentage": 5.73
       },
       "R": {
         "bytes": 18594,
@@ -900,17 +900,17 @@
       "Ruby": {
         "bytes": 29440,
         "color": "#701516",
-        "percentage": 0.53
+        "percentage": 0.52
       },
       "Rust": {
-        "bytes": 3182057,
+        "bytes": 3214470,
         "color": "#dea584",
-        "percentage": 57.01
+        "percentage": 57.06
       },
       "Shell": {
         "bytes": 168794,
         "color": "#89e051",
-        "percentage": 3.02
+        "percentage": 3.0
       },
       "Swift": {
         "bytes": 16122,
@@ -918,46 +918,18 @@
         "percentage": 0.29
       },
       "TypeScript": {
-        "bytes": 146629,
+        "bytes": 159937,
         "color": "#3178c6",
-        "percentage": 2.63
+        "percentage": 2.84
       }
     },
-    "total": 5581450,
+    "total": 5633966,
     "unit": "bytes"
   },
   "overview": {
-    "code_additions": 1308842,
-    "code_deletions": 623003,
+    "code_additions": 1311352,
+    "code_deletions": 623944,
     "contribution_calendar": [
-      {
-        "count": 5,
-        "date": "2025-10-12"
-      },
-      {
-        "count": 9,
-        "date": "2025-10-13"
-      },
-      {
-        "count": 5,
-        "date": "2025-10-14"
-      },
-      {
-        "count": 26,
-        "date": "2025-10-15"
-      },
-      {
-        "count": 26,
-        "date": "2025-10-16"
-      },
-      {
-        "count": 6,
-        "date": "2025-10-17"
-      },
-      {
-        "count": 2,
-        "date": "2025-10-18"
-      },
       {
         "count": 18,
         "date": "2025-10-19"
@@ -2411,11 +2383,15 @@
         "date": "2026-10-16"
       },
       {
-        "count": 0,
+        "count": 5,
         "date": "2026-10-17"
+      },
+      {
+        "count": 0,
+        "date": "2026-10-18"
       }
     ],
-    "formatted_code_changes": "+1.3M (-623.0k)",
+    "formatted_code_changes": "+1.3M (-623.9k)",
     "hourly_events_et": [
       2,
       0,
@@ -2426,39 +2402,39 @@
       0,
       0,
       0,
-      1,
+      2,
+      8,
+      11,
       7,
-      14,
-      9,
-      21,
+      20,
+      6,
+      10,
       4,
-      12,
-      4,
-      2,
+      6,
       0,
       2,
-      9,
+      7,
       0,
-      3,
-      4
+      6,
+      2
     ],
-    "peak_day": "Saturday (18%)",
+    "peak_day": "Saturday (19%)",
     "peak_hours": "Afternoon",
-    "streak_days": 49,
-    "total_contributions": 3721,
+    "streak_days": 50,
+    "total_contributions": 3726,
     "total_issues": 44,
     "total_pull_requests": 125,
     "total_repositories": 82,
     "total_reviews": 34,
     "total_stars": 49,
     "weekday_contributions": {
-      "Fri": 472,
-      "Mon": 489,
-      "Sat": 687,
-      "Sun": 456,
-      "Thu": 539,
-      "Tue": 518,
-      "Wed": 560
+      "Fri": 466,
+      "Mon": 480,
+      "Sat": 690,
+      "Sun": 451,
+      "Thu": 513,
+      "Tue": 513,
+      "Wed": 534
     }
   },
   "profile": {
