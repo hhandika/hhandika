@@ -134,47 +134,47 @@
   </clipPath>
   <g clip-path="url(#lang-bar-clip)">
     <rect x="24" y="84" width="352.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="24.00" y="84" width="203.71" height="12" fill="#dea584" />
-      <rect x="229.71" y="84" width="58.04" height="12" fill="#00B4AB" />
-      <rect x="289.76" y="84" width="25.51" height="12" fill="#ff5a03" />
-      <rect x="317.27" y="84" width="17.70" height="12" fill="#3572A5" />
-      <rect x="336.97" y="84" width="8.19" height="12" fill="#89e051" />
-      <rect x="347.16" y="84" width="7.65" height="12" fill="#3178c6" />
-      <rect x="356.81" y="84" width="19.19" height="12" fill="#8e918f" />
+      <rect x="24.00" y="84" width="194.69" height="12" fill="#dea584" />
+      <rect x="220.69" y="84" width="55.41" height="12" fill="#00B4AB" />
+      <rect x="278.09" y="84" width="28.90" height="12" fill="#ff5a03" />
+      <rect x="308.99" y="84" width="21.17" height="12" fill="#3572A5" />
+      <rect x="332.17" y="84" width="13.57" height="12" fill="#3178c6" />
+      <rect x="347.73" y="84" width="7.74" height="12" fill="#89e051" />
+      <rect x="357.48" y="84" width="18.52" height="12" fill="#8e918f" />
   </g>
   <g transform="translate(24, 116)">
     <circle cx="6" cy="6" r="5.5" fill="#dea584" />
     <text x="20" y="11" class="m3-body-medium">Rust</text>
-    <text x="164" y="11" text-anchor="end" class="m3-label-medium">58.4%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">55.9%</text>
   </g>
   <g transform="translate(212, 116)">
     <circle cx="6" cy="6" r="5.5" fill="#00B4AB" />
     <text x="20" y="11" class="m3-body-medium">Dart</text>
-    <text x="164" y="11" text-anchor="end" class="m3-label-medium">17.1%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">16.3%</text>
   </g>
   <g transform="translate(24, 144)">
     <circle cx="6" cy="6" r="5.5" fill="#ff5a03" />
     <text x="20" y="11" class="m3-body-medium">Astro</text>
-    <text x="164" y="11" text-anchor="end" class="m3-label-medium">7.8%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">8.8%</text>
   </g>
   <g transform="translate(212, 144)">
     <circle cx="6" cy="6" r="5.5" fill="#3572A5" />
     <text x="20" y="11" class="m3-body-medium">Python</text>
-    <text x="164" y="11" text-anchor="end" class="m3-label-medium">5.6%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">6.6%</text>
   </g>
   <g transform="translate(24, 172)">
-    <circle cx="6" cy="6" r="5.5" fill="#89e051" />
-    <text x="20" y="11" class="m3-body-medium">Shell</text>
-    <text x="164" y="11" text-anchor="end" class="m3-label-medium">2.9%</text>
-  </g>
-  <g transform="translate(212, 172)">
     <circle cx="6" cy="6" r="5.5" fill="#3178c6" />
     <text x="20" y="11" class="m3-body-medium">TypeScript</text>
-    <text x="164" y="11" text-anchor="end" class="m3-label-medium">2.7%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">4.4%</text>
+  </g>
+  <g transform="translate(212, 172)">
+    <circle cx="6" cy="6" r="5.5" fill="#89e051" />
+    <text x="20" y="11" class="m3-body-medium">Shell</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">2.8%</text>
   </g>
   <g transform="translate(24, 200)">
     <circle cx="6" cy="6" r="5.5" fill="#8e918f" />
     <text x="20" y="11" class="m3-body-medium">Other</text>
-    <text x="164" y="11" text-anchor="end" class="m3-label-medium">5.5%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">5.3%</text>
   </g>
 </svg>
