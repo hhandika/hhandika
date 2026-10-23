@@ -10,6 +10,11 @@ FALLBACK_COLOR = "#8e918f"
 # Approximate advance of one m3-label-medium character (12px, 0.5px tracking)
 LABEL_CHAR_WIDTH = 7.2
 
+# Conservative advances for repo card headers; generous so wider fallback
+# fonts on mobile do not push the title into the right-aligned meta text
+TITLE_CHAR_WIDTH = 9.4  # m3-title-medium (16px, weight 500)
+META_CHAR_WIDTH = 7.0  # m3-body-small (12px, 0.4px tracking)
+
 # Shorter legend names for languages whose full name crowds the repo cards
 LANGUAGE_ALIASES = {"Jupyter Notebook": "Jupyter"}
 
@@ -567,8 +572,6 @@ class TopReposDashboardGenerator(M3SVGGenerator):
             owner = repo["owner"]["login"]
             name = repo["name"]
             full_name = f"{owner}/{name}"
-            if len(full_name) > 26:
-                full_name = full_name[:24] + "…"
 
             desc = repo.get("description") or "No description provided."
             if len(desc) > 52:
@@ -581,6 +584,13 @@ class TopReposDashboardGenerator(M3SVGGenerator):
             if age:
                 meta_parts.append(f"updated {age}")
             meta = " · ".join(meta_parts)
+
+            # Keep the tail of "owner/name" so the repo name stays visible,
+            # trimming the owner with a leading ellipsis when space runs out
+            title_space = self.COLUMN_WIDTH - 32 - len(meta) * META_CHAR_WIDTH - 16
+            max_title_chars = int(title_space / TITLE_CHAR_WIDTH)
+            if len(full_name) > max_title_chars:
+                full_name = "…" + full_name[-(max_title_chars - 1) :]
 
             bar_width = self.COLUMN_WIDTH - 32
             langs = repo.get("languages", {}).get("edges", [])

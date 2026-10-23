@@ -382,6 +382,27 @@ def test_generate_top_repos_svg():
     )
 
 
+def test_top_repos_long_name_keeps_repo_name():
+    repo = {
+        "name": "mdd_app",
+        "owner": {"login": "mammaldiversity"},
+        "description": "App",
+        "stargazerCount": 2,
+        "pushedAt": "2026-09-30T08:00:00Z",
+        "languages": {"edges": []},
+    }
+    svg = TopReposDashboardGenerator(
+        top_repos=[("mammaldiversity", "mdd_app")],
+        repos_data=[repo],
+        now=datetime(2026, 10, 15, 12, tzinfo=timezone.utc),
+    ).generate()
+
+    # The owner is trimmed with a leading ellipsis so the repo name survives
+    assert 'class="m3-title-medium">…' in svg
+    assert 'mdd_app</text>' in svg
+    assert "mammaldiversity/mdd_app" not in svg
+
+
 def test_update_readme():
     initial_content = """# My Profile
 Hello there!
