@@ -134,18 +134,18 @@
   </clipPath>
   <g clip-path="url(#lang-bar-clip)">
     <rect x="24" y="84" width="352.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="24.00" y="84" width="183.00" height="12" fill="#dea584" />
-      <rect x="209.00" y="84" width="68.50" height="12" fill="#00B4AB" />
-      <rect x="279.50" y="84" width="26.43" height="12" fill="#ff5a03" />
-      <rect x="307.93" y="84" width="22.86" height="12" fill="#3572A5" />
-      <rect x="332.79" y="84" width="13.09" height="12" fill="#3178c6" />
-      <rect x="347.89" y="84" width="7.14" height="12" fill="#89e051" />
-      <rect x="357.03" y="84" width="18.97" height="12" fill="#8e918f" />
+      <rect x="24.00" y="84" width="182.66" height="12" fill="#dea584" />
+      <rect x="208.66" y="84" width="68.37" height="12" fill="#00B4AB" />
+      <rect x="279.03" y="84" width="26.38" height="12" fill="#ff5a03" />
+      <rect x="307.41" y="84" width="23.46" height="12" fill="#3572A5" />
+      <rect x="332.87" y="84" width="13.06" height="12" fill="#3178c6" />
+      <rect x="347.94" y="84" width="7.13" height="12" fill="#89e051" />
+      <rect x="357.06" y="84" width="18.94" height="12" fill="#8e918f" />
   </g>
   <g transform="translate(24, 116)">
     <circle cx="6" cy="6" r="5.5" fill="#dea584" stroke="var(--md-sys-color-outline)" stroke-width="1" />
     <text x="20" y="11" class="m3-body-medium">Rust</text>
-    <text x="164" y="11" text-anchor="end" class="m3-label-medium">52.6%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">52.5%</text>
   </g>
   <g transform="translate(212, 116)">
     <circle cx="6" cy="6" r="5.5" fill="#00B4AB" />
@@ -160,7 +160,7 @@
   <g transform="translate(212, 144)">
     <circle cx="6" cy="6" r="5.5" fill="#3572A5" />
     <text x="20" y="11" class="m3-body-medium">Python</text>
-    <text x="164" y="11" text-anchor="end" class="m3-label-medium">7.1%</text>
+    <text x="164" y="11" text-anchor="end" class="m3-label-medium">7.2%</text>
   </g>
   <g transform="translate(24, 172)">
     <circle cx="6" cy="6" r="5.5" fill="#3178c6" />

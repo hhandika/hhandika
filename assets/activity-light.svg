@@ -131,30 +131,30 @@
   <text x="24" y="56" class="m3-body-small">Contributions by weekday (past year) • Recent events by hour (ET)</text>
   <text x="24" y="88" class="m3-title-small">By weekday</text>
   <text x="376" y="88" text-anchor="end" class="m3-label-medium">Peak: Saturday (19%)</text>
-  <rect x="24.00" y="129.09" width="36.00" height="36.91" rx="2" fill="var(--md-sys-color-primary)" />
-  <text x="42.00" y="123.09" text-anchor="middle" class="m3-body-small">13%</text>
+  <rect x="24.00" y="129.01" width="36.00" height="36.99" rx="2" fill="var(--md-sys-color-primary)" />
+  <text x="42.00" y="123.01" text-anchor="middle" class="m3-body-small">13%</text>
   <text x="42.00" y="184" text-anchor="middle" class="m3-label-medium">Mon</text>
-  <rect x="76.67" y="126.33" width="36.00" height="39.67" rx="2" fill="var(--md-sys-color-primary)" />
-  <text x="94.67" y="120.33" text-anchor="middle" class="m3-body-small">14%</text>
+  <rect x="76.67" y="126.18" width="36.00" height="39.82" rx="2" fill="var(--md-sys-color-primary)" />
+  <text x="94.67" y="120.18" text-anchor="middle" class="m3-body-small">14%</text>
   <text x="94.67" y="184" text-anchor="middle" class="m3-label-medium">Tue</text>
-  <rect x="129.33" y="125.13" width="36.00" height="40.87" rx="2" fill="var(--md-sys-color-primary)" />
-  <text x="147.33" y="119.13" text-anchor="middle" class="m3-body-small">15%</text>
+  <rect x="129.33" y="125.64" width="36.00" height="40.36" rx="2" fill="var(--md-sys-color-primary)" />
+  <text x="147.33" y="119.64" text-anchor="middle" class="m3-body-small">15%</text>
   <text x="147.33" y="184" text-anchor="middle" class="m3-label-medium">Wed</text>
-  <rect x="182.00" y="127.37" width="36.00" height="38.63" rx="2" fill="var(--md-sys-color-primary)" />
-  <text x="200.00" y="121.37" text-anchor="middle" class="m3-body-small">14%</text>
+  <rect x="182.00" y="128.09" width="36.00" height="37.91" rx="2" fill="var(--md-sys-color-primary)" />
+  <text x="200.00" y="122.09" text-anchor="middle" class="m3-body-small">14%</text>
   <text x="200.00" y="184" text-anchor="middle" class="m3-label-medium">Thu</text>
-  <rect x="234.67" y="130.74" width="36.00" height="35.26" rx="2" fill="var(--md-sys-color-primary)" />
-  <text x="252.67" y="124.74" text-anchor="middle" class="m3-body-small">13%</text>
+  <rect x="234.67" y="131.61" width="36.00" height="34.39" rx="2" fill="var(--md-sys-color-primary)" />
+  <text x="252.67" y="125.61" text-anchor="middle" class="m3-body-small">12%</text>
   <text x="252.67" y="184" text-anchor="middle" class="m3-label-medium">Fri</text>
   <rect x="287.33" y="114.00" width="36.00" height="52.00" rx="2" fill="var(--md-sys-color-tertiary)" />
   <text x="305.33" y="108.00" text-anchor="middle" class="m3-body-small">19%</text>
   <text x="305.33" y="184" text-anchor="middle" class="m3-label-medium">Sat</text>
-  <rect x="340.00" y="130.14" width="36.00" height="35.86" rx="2" fill="var(--md-sys-color-primary)" />
-  <text x="358.00" y="124.14" text-anchor="middle" class="m3-body-small">13%</text>
+  <rect x="340.00" y="130.62" width="36.00" height="35.38" rx="2" fill="var(--md-sys-color-primary)" />
+  <text x="358.00" y="124.62" text-anchor="middle" class="m3-body-small">13%</text>
   <text x="358.00" y="184" text-anchor="middle" class="m3-label-medium">Sun</text>
   <text x="440" y="88" class="m3-title-small">By hour (ET)</text>
   <text x="792" y="88" text-anchor="end" class="m3-label-medium">Peak: Evening</text>
-  <rect x="440.00" y="146.00" width="11.67" height="20.00" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="440.00" y="144.33" width="11.67" height="21.67" rx="2" fill="var(--md-sys-color-primary)" />
   <rect x="454.67" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
   <rect x="469.33" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
   <rect x="484.00" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
@@ -162,22 +162,22 @@
   <rect x="513.33" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
   <rect x="528.00" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
   <rect x="542.67" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
-  <rect x="557.33" y="158.00" width="11.67" height="8.00" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="572.00" y="158.00" width="11.67" height="8.00" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="586.67" y="154.00" width="11.67" height="12.00" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="601.33" y="154.00" width="11.67" height="12.00" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="616.00" y="146.00" width="11.67" height="20.00" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="630.67" y="146.00" width="11.67" height="20.00" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="645.33" y="134.00" width="11.67" height="32.00" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="557.33" y="157.33" width="11.67" height="8.67" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="572.00" y="161.67" width="11.67" height="4.33" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="586.67" y="144.33" width="11.67" height="21.67" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="601.33" y="157.33" width="11.67" height="8.67" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="616.00" y="144.33" width="11.67" height="21.67" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="630.67" y="140.00" width="11.67" height="26.00" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="645.33" y="131.33" width="11.67" height="34.67" rx="2" fill="var(--md-sys-color-primary)" />
   <rect x="660.00" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
-  <rect x="674.67" y="150.00" width="11.67" height="16.00" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="689.33" y="122.00" width="11.67" height="44.00" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="704.00" y="142.00" width="11.67" height="24.00" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="718.67" y="150.00" width="11.67" height="16.00" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="733.33" y="146.00" width="11.67" height="20.00" rx="2" fill="var(--md-sys-color-tertiary)" />
-  <rect x="748.00" y="138.00" width="11.67" height="28.00" rx="2" fill="var(--md-sys-color-tertiary)" />
-  <rect x="762.67" y="114.00" width="11.67" height="52.00" rx="2" fill="var(--md-sys-color-tertiary)" />
-  <rect x="777.33" y="134.00" width="11.67" height="32.00" rx="2" fill="var(--md-sys-color-tertiary)" />
+  <rect x="674.67" y="140.00" width="11.67" height="26.00" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="689.33" y="114.00" width="11.67" height="52.00" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="704.00" y="140.00" width="11.67" height="26.00" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="718.67" y="153.00" width="11.67" height="13.00" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="733.33" y="148.67" width="11.67" height="17.33" rx="2" fill="var(--md-sys-color-tertiary)" />
+  <rect x="748.00" y="127.00" width="11.67" height="39.00" rx="2" fill="var(--md-sys-color-tertiary)" />
+  <rect x="762.67" y="122.67" width="11.67" height="43.33" rx="2" fill="var(--md-sys-color-tertiary)" />
+  <rect x="777.33" y="135.67" width="11.67" height="30.33" rx="2" fill="var(--md-sys-color-tertiary)" />
   <text x="440.00" y="184" class="m3-label-medium">12 AM</text>
   <text x="528.00" y="184" class="m3-label-medium">6 AM</text>
   <text x="616.00" y="184" class="m3-label-medium">12 PM</text>

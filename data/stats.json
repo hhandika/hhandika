@@ -39,9 +39,9 @@
         "name_with_owner": "hhandika/stats-from-scratch"
       },
       {
-        "additions": 5438,
-        "commits": 68,
-        "deletions": 1814,
+        "additions": 5816,
+        "commits": 70,
+        "deletions": 1850,
         "name_with_owner": "hhandika/mil-kit"
       },
       {
@@ -513,9 +513,9 @@
     "source": "github_contributor_statistics",
     "status": "complete",
     "totals": {
-      "additions": 1435446,
-      "commits": 7689,
-      "deletions": 664544
+      "additions": 1435824,
+      "commits": 7691,
+      "deletions": 664580
     }
   },
   "featured_repositories": [
@@ -826,13 +826,13 @@
       "name_with_owner": "BioVisionLab/BioCosmos"
     }
   ],
-  "generated_at": "2026-10-24T03:20:41.024406+00:00",
+  "generated_at": "2026-10-25T03:15:39.119410+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
         "bytes": 525058,
         "color": "#ff5a03",
-        "percentage": 8.08
+        "percentage": 8.06
       },
       "Batchfile": {
         "bytes": 7285,
@@ -847,12 +847,12 @@
       "C++": {
         "bytes": 157150,
         "color": "#f34b7d",
-        "percentage": 2.42
+        "percentage": 2.41
       },
       "Dart": {
         "bytes": 1301752,
         "color": "#00B4AB",
-        "percentage": 20.03
+        "percentage": 19.99
       },
       "Go": {
         "bytes": 2249,
@@ -867,7 +867,7 @@
       "JavaScript": {
         "bytes": 45833,
         "color": "#f1e05a",
-        "percentage": 0.71
+        "percentage": 0.7
       },
       "Julia": {
         "bytes": 480,
@@ -895,9 +895,9 @@
         "percentage": 0.04
       },
       "Python": {
-        "bytes": 459148,
+        "bytes": 471008,
         "color": "#3572A5",
-        "percentage": 7.06
+        "percentage": 7.23
       },
       "R": {
         "bytes": 18594,
@@ -917,12 +917,12 @@
       "Rust": {
         "bytes": 3416140,
         "color": "#dea584",
-        "percentage": 52.56
+        "percentage": 52.46
       },
       "Shell": {
         "bytes": 168811,
         "color": "#89e051",
-        "percentage": 2.6
+        "percentage": 2.59
       },
       "Swift": {
         "bytes": 18407,
@@ -932,44 +932,16 @@
       "TypeScript": {
         "bytes": 278675,
         "color": "#3178c6",
-        "percentage": 4.29
+        "percentage": 4.28
       }
     },
-    "total": 6499922,
+    "total": 6511782,
     "unit": "bytes"
   },
   "overview": {
-    "code_additions": 1435446,
-    "code_deletions": 664544,
+    "code_additions": 1435824,
+    "code_deletions": 664580,
     "contribution_calendar": [
-      {
-        "count": 18,
-        "date": "2025-10-19"
-      },
-      {
-        "count": 11,
-        "date": "2025-10-20"
-      },
-      {
-        "count": 12,
-        "date": "2025-10-21"
-      },
-      {
-        "count": 20,
-        "date": "2025-10-22"
-      },
-      {
-        "count": 22,
-        "date": "2025-10-23"
-      },
-      {
-        "count": 26,
-        "date": "2025-10-24"
-      },
-      {
-        "count": 33,
-        "date": "2025-10-25"
-      },
       {
         "count": 9,
         "date": "2025-10-26"
@@ -2407,7 +2379,7 @@
         "date": "2026-10-19"
       },
       {
-        "count": 18,
+        "count": 19,
         "date": "2026-10-20"
       },
       {
@@ -2419,15 +2391,19 @@
         "date": "2026-10-22"
       },
       {
-        "count": 2,
+        "count": 5,
         "date": "2026-10-23"
       },
       {
-        "count": 0,
+        "count": 16,
         "date": "2026-10-24"
+      },
+      {
+        "count": 0,
+        "date": "2026-10-25"
       }
     ],
-    "formatted_code_changes": "+1.4M (-664.5k)",
+    "formatted_code_changes": "+1.4M (-664.6k)",
     "hourly_events_et": [
       5,
       0,
@@ -2438,39 +2414,39 @@
       0,
       0,
       2,
+      1,
+      5,
       2,
-      3,
-      3,
       5,
-      5,
+      6,
       8,
       0,
-      4,
-      11,
       6,
+      12,
+      6,
+      3,
       4,
-      5,
-      7,
-      13,
-      8
+      9,
+      10,
+      7
     ],
     "peak_day": "Saturday (19%)",
     "peak_hours": "Evening",
-    "streak_days": 56,
-    "total_contributions": 3737,
+    "streak_days": 57,
+    "total_contributions": 3757,
     "total_issues": 40,
-    "total_pull_requests": 128,
+    "total_pull_requests": 129,
     "total_repositories": 83,
     "total_reviews": 36,
     "total_stars": 49,
     "weekday_contributions": {
-      "Fri": 472,
-      "Mon": 494,
-      "Sat": 696,
-      "Sun": 480,
-      "Thu": 517,
-      "Tue": 531,
-      "Wed": 547
+      "Fri": 449,
+      "Mon": 483,
+      "Sat": 679,
+      "Sun": 462,
+      "Thu": 495,
+      "Tue": 520,
+      "Wed": 527
     }
   },
   "profile": {
