@@ -524,58 +524,58 @@
       "description": "A cross-platform (mobile and desktop) digital catalog app for natural history collections",
       "languages": [
         {
-          "bytes": 9557204,
+          "bytes": 13468002,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 93.78
+          "percentage": 95.46
         },
         {
           "bytes": 341038,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 3.35
+          "percentage": 2.42
         },
         {
-          "bytes": 217046,
+          "bytes": 224415,
           "color": "#ecdebe",
           "name": "Roff",
-          "percentage": 2.13
+          "percentage": 1.59
         },
         {
-          "bytes": 27198,
+          "bytes": 26973,
           "color": "#f34b7d",
           "name": "C++",
-          "percentage": 0.27
+          "percentage": 0.19
         },
         {
-          "bytes": 20578,
+          "bytes": 19921,
           "color": "#DA3434",
           "name": "CMake",
-          "percentage": 0.2
+          "percentage": 0.14
         },
         {
           "bytes": 15542,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 0.15
+          "percentage": 0.11
         },
         {
           "bytes": 5717,
           "color": "#89e051",
           "name": "Shell",
-          "percentage": 0.06
+          "percentage": 0.04
         },
         {
-          "bytes": 3454,
+          "bytes": 3317,
           "color": "#F05138",
           "name": "Swift",
-          "percentage": 0.03
+          "percentage": 0.02
         },
         {
           "bytes": 1704,
           "color": "#012456",
           "name": "PowerShell",
-          "percentage": 0.02
+          "percentage": 0.01
         },
         {
           "bytes": 1488,
@@ -708,64 +708,64 @@
       "description": "An app for viewing mammal diversity database",
       "languages": [
         {
-          "bytes": 765077,
+          "bytes": 888938,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 85.16
+          "percentage": 76.1
         },
         {
-          "bytes": 60304,
+          "bytes": 133097,
+          "color": "#e34c26",
+          "name": "HTML",
+          "percentage": 11.39
+        },
+        {
+          "bytes": 73856,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 6.71
+          "percentage": 6.32
         },
         {
-          "bytes": 26430,
+          "bytes": 26205,
           "color": "#f34b7d",
           "name": "C++",
-          "percentage": 2.94
+          "percentage": 2.24
         },
         {
-          "bytes": 20239,
+          "bytes": 19810,
           "color": "#DA3434",
           "name": "CMake",
-          "percentage": 2.25
+          "percentage": 1.7
         },
         {
           "bytes": 15414,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 1.72
+          "percentage": 1.32
         },
         {
           "bytes": 3958,
           "color": "#012456",
           "name": "PowerShell",
-          "percentage": 0.44
+          "percentage": 0.34
         },
         {
           "bytes": 2783,
           "color": "#89e051",
           "name": "Shell",
-          "percentage": 0.31
+          "percentage": 0.24
         },
         {
-          "bytes": 2699,
+          "bytes": 2562,
           "color": "#F05138",
           "name": "Swift",
-          "percentage": 0.3
+          "percentage": 0.22
         },
         {
           "bytes": 1488,
           "color": "#555555",
           "name": "C",
-          "percentage": 0.17
-        },
-        {
-          "bytes": 38,
-          "color": "#438eff",
-          "name": "Objective-C",
-          "percentage": 0.0
+          "percentage": 0.13
         }
       ],
       "name_with_owner": "mammaldiversity/mdd_app"
@@ -826,7 +826,7 @@
       "name_with_owner": "BioVisionLab/BioCosmos"
     }
   ],
-  "generated_at": "2026-10-25T03:15:39.119410+00:00",
+  "generated_at": "2026-10-26T03:16:56.539130+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
@@ -2083,7 +2083,7 @@
         "date": "2026-08-06"
       },
       {
-        "count": 17,
+        "count": 20,
         "date": "2026-08-07"
       },
       {
@@ -2383,70 +2383,74 @@
         "date": "2026-10-20"
       },
       {
-        "count": 13,
+        "count": 26,
         "date": "2026-10-21"
       },
       {
-        "count": 4,
+        "count": 12,
         "date": "2026-10-22"
       },
       {
-        "count": 5,
+        "count": 6,
         "date": "2026-10-23"
       },
       {
-        "count": 16,
+        "count": 48,
         "date": "2026-10-24"
       },
       {
-        "count": 0,
+        "count": 31,
         "date": "2026-10-25"
+      },
+      {
+        "count": 0,
+        "date": "2026-10-26"
       }
     ],
     "formatted_code_changes": "+1.4M (-664.6k)",
     "hourly_events_et": [
-      5,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      2,
-      1,
-      5,
-      2,
-      5,
-      6,
-      8,
-      0,
-      6,
-      12,
-      6,
+      7,
       3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      3,
+      0,
+      3,
+      3,
+      6,
+      1,
       4,
-      9,
-      10,
-      7
+      11,
+      5,
+      3,
+      1,
+      7,
+      11,
+      20
     ],
     "peak_day": "Saturday (19%)",
     "peak_hours": "Evening",
-    "streak_days": 57,
-    "total_contributions": 3757,
+    "streak_days": 58,
+    "total_contributions": 3703,
     "total_issues": 40,
-    "total_pull_requests": 129,
+    "total_pull_requests": 130,
     "total_repositories": 83,
-    "total_reviews": 36,
+    "total_reviews": 35,
     "total_stars": 49,
     "weekday_contributions": {
-      "Fri": 449,
+      "Fri": 453,
       "Mon": 483,
-      "Sat": 679,
-      "Sun": 462,
-      "Thu": 495,
+      "Sat": 711,
+      "Sun": 493,
+      "Thu": 503,
       "Tue": 520,
-      "Wed": 527
+      "Wed": 540
     }
   },
   "profile": {
