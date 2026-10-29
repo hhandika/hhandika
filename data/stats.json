@@ -27,9 +27,9 @@
         "name_with_owner": "hhandika/resume"
       },
       {
-        "additions": 249565,
-        "commits": 1042,
-        "deletions": 127927,
+        "additions": 249728,
+        "commits": 1046,
+        "deletions": 128078,
         "name_with_owner": "hhandika/segui"
       },
       {
@@ -93,15 +93,15 @@
         "name_with_owner": "hhandika/journal-unlocker"
       },
       {
-        "additions": 4514,
-        "commits": 14,
-        "deletions": 365,
+        "additions": 6976,
+        "commits": 15,
+        "deletions": 380,
         "name_with_owner": "hhandika/appstore-mockup"
       },
       {
-        "additions": 67004,
-        "commits": 13,
-        "deletions": 15635,
+        "additions": 67018,
+        "commits": 14,
+        "deletions": 15651,
         "name_with_owner": "hhandika/ghost-phylogeny-indonesia"
       },
       {
@@ -513,9 +513,9 @@
     "source": "github_contributor_statistics",
     "status": "complete",
     "totals": {
-      "additions": 1502716,
-      "commits": 7736,
-      "deletions": 705767
+      "additions": 1505355,
+      "commits": 7742,
+      "deletions": 705949
     }
   },
   "featured_repositories": [
@@ -616,7 +616,7 @@
       "description": "A GUI version of the SEGUL phylogenomic tool",
       "languages": [
         {
-          "bytes": 1500756,
+          "bytes": 1500672,
           "color": "#00B4AB",
           "name": "Dart",
           "percentage": 57.24
@@ -708,40 +708,40 @@
       "description": "An app for viewing mammal diversity database",
       "languages": [
         {
-          "bytes": 1025885,
+          "bytes": 1048420,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 78.48
+          "percentage": 78.85
         },
         {
           "bytes": 133097,
           "color": "#e34c26",
           "name": "HTML",
-          "percentage": 10.18
+          "percentage": 10.01
         },
         {
           "bytes": 73856,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 5.65
+          "percentage": 5.55
         },
         {
           "bytes": 26205,
           "color": "#f34b7d",
           "name": "C++",
-          "percentage": 2.0
+          "percentage": 1.97
         },
         {
-          "bytes": 19810,
+          "bytes": 19811,
           "color": "#DA3434",
           "name": "CMake",
-          "percentage": 1.52
+          "percentage": 1.49
         },
         {
           "bytes": 17502,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 1.34
+          "percentage": 1.32
         },
         {
           "bytes": 3958,
@@ -759,7 +759,7 @@
           "bytes": 2562,
           "color": "#F05138",
           "name": "Swift",
-          "percentage": 0.2
+          "percentage": 0.19
         },
         {
           "bytes": 1488,
@@ -826,7 +826,7 @@
       "name_with_owner": "BioVisionLab/BioCosmos"
     }
   ],
-  "generated_at": "2026-10-28T04:02:41.279387+00:00",
+  "generated_at": "2026-10-29T04:26:45.753325+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
@@ -850,7 +850,7 @@
         "percentage": 1.98
       },
       "Dart": {
-        "bytes": 2154359,
+        "bytes": 2154275,
         "color": "#00B4AB",
         "percentage": 27.08
       },
@@ -895,7 +895,7 @@
         "percentage": 0.03
       },
       "Python": {
-        "bytes": 492513,
+        "bytes": 492789,
         "color": "#3572A5",
         "percentage": 6.19
       },
@@ -940,12 +940,12 @@
         "percentage": 3.58
       }
     },
-    "total": 7954680,
+    "total": 7954872,
     "unit": "bytes"
   },
   "overview": {
-    "code_additions": 1502716,
-    "code_deletions": 705767,
+    "code_additions": 1505355,
+    "code_deletions": 705949,
     "contribution_calendar": [
       {
         "count": 9,
@@ -2416,11 +2416,15 @@
         "date": "2026-10-27"
       },
       {
-        "count": 0,
+        "count": 27,
         "date": "2026-10-28"
+      },
+      {
+        "count": 0,
+        "date": "2026-10-29"
       }
     ],
-    "formatted_code_changes": "+1.5M (-705.8k)",
+    "formatted_code_changes": "+1.5M (-705.9k)",
     "hourly_events_et": [
       8,
       3,
@@ -2430,29 +2434,29 @@
       0,
       0,
       0,
-      2,
+      1,
       0,
       3,
       0,
       2,
       3,
-      2,
+      0,
       1,
       4,
+      10,
+      3,
       9,
-      3,
-      3,
       0,
-      9,
-      12,
-      28
+      6,
+      11,
+      33
     ],
     "peak_day": "Saturday (19%)",
     "peak_hours": "Evening",
-    "streak_days": 60,
-    "total_contributions": 3779,
+    "streak_days": 61,
+    "total_contributions": 3806,
     "total_issues": 40,
-    "total_pull_requests": 130,
+    "total_pull_requests": 131,
     "total_repositories": 83,
     "total_reviews": 37,
     "total_stars": 49,
@@ -2463,7 +2467,7 @@
       "Sun": 504,
       "Thu": 506,
       "Tue": 546,
-      "Wed": 542
+      "Wed": 569
     }
   },
   "profile": {

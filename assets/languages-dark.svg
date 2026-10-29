@@ -136,10 +136,10 @@
     <rect x="24" y="84" width="352.0" height="12" fill="var(--md-sys-color-surface-variant)" />
       <rect x="24.00" y="84" width="160.75" height="12" fill="#dea584" />
       <rect x="186.75" y="84" width="93.33" height="12" fill="#00B4AB" />
-      <rect x="282.09" y="84" width="29.43" height="12" fill="#ff5a03" />
-      <rect x="313.51" y="84" width="19.79" height="12" fill="#3572A5" />
+      <rect x="282.08" y="84" width="29.43" height="12" fill="#ff5a03" />
+      <rect x="313.50" y="84" width="19.81" height="12" fill="#3572A5" />
       <rect x="335.31" y="84" width="10.62" height="12" fill="#3178c6" />
-      <rect x="347.92" y="84" width="5.14" height="12" fill="#89e051" />
+      <rect x="347.93" y="84" width="5.14" height="12" fill="#89e051" />
       <rect x="355.06" y="84" width="20.94" height="12" fill="#8e918f" />
   </g>
   <g transform="translate(24, 116)">
