@@ -27,9 +27,9 @@
         "name_with_owner": "hhandika/resume"
       },
       {
-        "additions": 257656,
-        "commits": 1069,
-        "deletions": 134272,
+        "additions": 275448,
+        "commits": 1083,
+        "deletions": 140386,
         "name_with_owner": "hhandika/segui"
       },
       {
@@ -483,9 +483,9 @@
         "name_with_owner": "hhandika/mathness"
       },
       {
-        "additions": 6049,
-        "commits": 151,
-        "deletions": 1999,
+        "additions": 6050,
+        "commits": 152,
+        "deletions": 2000,
         "name_with_owner": "hhandika/hhandika"
       },
       {
@@ -519,9 +519,9 @@
     "source": "github_contributor_statistics",
     "status": "complete",
     "totals": {
-      "additions": 1532656,
-      "commits": 7786,
-      "deletions": 715409
+      "additions": 1550449,
+      "commits": 7801,
+      "deletions": 721524
     }
   },
   "featured_repositories": [
@@ -622,64 +622,64 @@
       "description": "A GUI version of the SEGUL phylogenomic tool",
       "languages": [
         {
-          "bytes": 1505556,
+          "bytes": 1797041,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 54.04
+          "percentage": 56.22
         },
         {
-          "bytes": 389999,
+          "bytes": 489659,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 14.0
+          "percentage": 15.32
         },
         {
-          "bytes": 282566,
+          "bytes": 300524,
           "color": "#ecdebe",
           "name": "Roff",
-          "percentage": 10.14
+          "percentage": 9.4
         },
         {
           "bytes": 268683,
           "color": "#e34c26",
           "name": "HTML",
-          "percentage": 9.64
+          "percentage": 8.41
         },
         {
-          "bytes": 211241,
+          "bytes": 212330,
           "color": "#ff5a03",
           "name": "Astro",
-          "percentage": 7.58
+          "percentage": 6.64
         },
         {
           "bytes": 40774,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 1.46
+          "percentage": 1.28
         },
         {
           "bytes": 27118,
           "color": "#3178c6",
           "name": "TypeScript",
-          "percentage": 0.97
+          "percentage": 0.85
         },
         {
           "bytes": 26856,
           "color": "#f34b7d",
           "name": "C++",
-          "percentage": 0.96
+          "percentage": 0.84
         },
         {
           "bytes": 20107,
           "color": "#DA3434",
           "name": "CMake",
-          "percentage": 0.72
+          "percentage": 0.63
         },
         {
-          "bytes": 12956,
+          "bytes": 13324,
           "color": "#f1e05a",
           "name": "JavaScript",
-          "percentage": 0.47
+          "percentage": 0.42
         }
       ],
       "name_with_owner": "hhandika/segui"
@@ -832,33 +832,33 @@
       "name_with_owner": "BioVisionLab/BioCosmos"
     }
   ],
-  "generated_at": "2026-11-02T04:30:32.606735+00:00",
+  "generated_at": "2026-11-02T22:53:35.803682+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
-        "bytes": 742290,
+        "bytes": 743379,
         "color": "#ff5a03",
-        "percentage": 9.04
+        "percentage": 8.63
       },
       "Batchfile": {
         "bytes": 7285,
         "color": "#C1F12E",
-        "percentage": 0.09
+        "percentage": 0.08
       },
       "C": {
         "bytes": 48368,
         "color": "#555555",
-        "percentage": 0.59
+        "percentage": 0.56
       },
       "C++": {
         "bytes": 157554,
         "color": "#f34b7d",
-        "percentage": 1.92
+        "percentage": 1.83
       },
       "Dart": {
-        "bytes": 2174055,
+        "bytes": 2465540,
         "color": "#00B4AB",
-        "percentage": 26.49
+        "percentage": 28.61
       },
       "Go": {
         "bytes": 2249,
@@ -871,9 +871,9 @@
         "percentage": 0.0
       },
       "JavaScript": {
-        "bytes": 58787,
+        "bytes": 59155,
         "color": "#f1e05a",
-        "percentage": 0.72
+        "percentage": 0.69
       },
       "Julia": {
         "bytes": 480,
@@ -883,7 +883,7 @@
       "Jupyter Notebook": {
         "bytes": 32688,
         "color": "#DA5B0B",
-        "percentage": 0.4
+        "percentage": 0.38
       },
       "Kotlin": {
         "bytes": 121,
@@ -908,12 +908,12 @@
       "Python": {
         "bytes": 524227,
         "color": "#3572A5",
-        "percentage": 6.39
+        "percentage": 6.08
       },
       "R": {
         "bytes": 18594,
         "color": "#198CE7",
-        "percentage": 0.23
+        "percentage": 0.22
       },
       "RenderScript": {
         "bytes": 3,
@@ -921,42 +921,42 @@
         "percentage": 0.0
       },
       "Roff": {
-        "bytes": 282566,
+        "bytes": 300524,
         "color": "#ecdebe",
-        "percentage": 3.44
+        "percentage": 3.49
       },
       "Ruby": {
         "bytes": 22705,
         "color": "#701516",
-        "percentage": 0.28
+        "percentage": 0.26
       },
       "Rust": {
-        "bytes": 3655984,
+        "bytes": 3755644,
         "color": "#dea584",
-        "percentage": 44.55
+        "percentage": 43.58
       },
       "Shell": {
         "bytes": 161274,
         "color": "#89e051",
-        "percentage": 1.97
+        "percentage": 1.87
       },
       "Swift": {
         "bytes": 18407,
         "color": "#F05138",
-        "percentage": 0.22
+        "percentage": 0.21
       },
       "TypeScript": {
         "bytes": 293013,
         "color": "#3178c6",
-        "percentage": 3.57
+        "percentage": 3.4
       }
     },
-    "total": 8206745,
+    "total": 8617305,
     "unit": "bytes"
   },
   "overview": {
-    "code_additions": 1532656,
-    "code_deletions": 715409,
+    "code_additions": 1550449,
+    "code_deletions": 721524,
     "contribution_calendar": [
       {
         "count": 0,
@@ -2415,15 +2415,15 @@
         "date": "2026-10-31"
       },
       {
-        "count": 5,
+        "count": 19,
         "date": "2026-11-01"
       },
       {
-        "count": 0,
+        "count": 1,
         "date": "2026-11-02"
       }
     ],
-    "formatted_code_changes": "+1.5M (-715.4k)",
+    "formatted_code_changes": "+1.6M (-721.5k)",
     "hourly_events_et": [
       2,
       0,
@@ -2435,25 +2435,25 @@
       0,
       0,
       2,
-      0,
+      1,
       5,
       5,
-      7,
-      5,
-      0,
-      4,
-      3,
-      7,
-      9,
       8,
+      6,
+      0,
       4,
-      14,
-      20
+      4,
+      8,
+      9,
+      9,
+      5,
+      17,
+      11
     ],
     "peak_day": "Saturday (20%)",
     "peak_hours": "Evening",
-    "streak_days": 65,
-    "total_contributions": 3844,
+    "streak_days": 66,
+    "total_contributions": 3859,
     "total_issues": 40,
     "total_pull_requests": 134,
     "total_repositories": 84,
@@ -2461,9 +2461,9 @@
     "total_stars": 49,
     "weekday_contributions": {
       "Fri": 472,
-      "Mon": 488,
+      "Mon": 489,
       "Sat": 756,
-      "Sun": 500,
+      "Sun": 514,
       "Thu": 516,
       "Tue": 542,
       "Wed": 570
