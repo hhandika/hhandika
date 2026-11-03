@@ -28,5 +28,5 @@ For more insights into my work and adventures, visit [my website](https://hhandi
   </picture>
 </p>
 <p align="left"><sub>*Code changes are partial; omitted repositories are listed in <a href="data/stats.json">data/stats.json</a>.</sub></p>
-<p align="left"><sub>Stats reflect public repositories only (84 of 85 repositories counted). Updates daily • Latest update: November 03, 2026</sub></p>
+<p align="left"><sub>Stats reflect public repositories only (101 of 103 repositories counted). Updates daily • Latest update: November 03, 2026</sub></p>
 <!-- END_SECTION:github-stats -->
