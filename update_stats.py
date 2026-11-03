@@ -30,6 +30,24 @@ TOP_REPOS: List[Tuple[str, str]] = [
 # count toward the totals alongside the user's own repositories
 EXTRA_CODE_REPOS: List[str] = [
     "BioVisionLab/BioCosmos",
+    "nahpu/nahpu",
+    "nahpu/nahpu-docs",
+    "nahpu/nahpu_api",
+    "nahpu/.github",
+    "nahpu/lsumz-mammal-scripts",
+    "nahpu/nahpu-icon-generator",
+    "nahpu/milu",
+    "nahpu/kanchil",
+    "nahpu/nahpu-ai",
+    "nahpu/nahpu-taxonomy",
+    "nahpu/np-docs",
+    "nahpu/nahpu-maps",
+    "nahpu/nahpu-dev",
+    "mammaldiversity/mammaldiversity-org",
+    "mammaldiversity/mdd_app",
+    "mammaldiversity/mdd_api",
+    "mammaldiversity/mammaldiversity.github.io",
+    "mammaldiversity/asm-mil",
 ]
 
 
