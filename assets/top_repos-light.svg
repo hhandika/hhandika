@@ -132,7 +132,7 @@
   <g transform="translate(24, 76)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">nahpu/nahpu</text>
-    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 17 · updated 6d ago</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 17 · updated 7d ago</text>
     <text x="16" y="42" class="m3-body-small">A cross-platform (mobile and desktop) digital cat…</text>
   <clipPath id="repo-bar-clip-0">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
@@ -154,7 +154,7 @@
   <g transform="translate(416, 76)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">hhandika/segul</text>
-    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 27 · updated today</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 27 · updated 1d ago</text>
     <text x="16" y="42" class="m3-body-small">An ultrafast and memory efficient tool for phylog…</text>
   <clipPath id="repo-bar-clip-1">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
@@ -172,35 +172,35 @@
   <g transform="translate(24, 176)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">hhandika/segui</text>
-    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 2 · updated 2d ago</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 2 · updated today</text>
     <text x="16" y="42" class="m3-body-small">A GUI version of the SEGUL phylogenomic tool</text>
   <clipPath id="repo-bar-clip-2">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
   </clipPath>
   <g clip-path="url(#repo-bar-clip-2)">
     <rect x="16" y="50" width="344" height="6" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="16.00" y="50" width="191.40" height="6" fill="#00B4AB" />
-      <rect x="209.40" y="50" width="50.70" height="6" fill="#dea584" />
-      <rect x="262.10" y="50" width="30.34" height="6" fill="#ecdebe" />
-      <rect x="294.44" y="50" width="26.92" height="6" fill="#e34c26" />
-      <rect x="323.35" y="50" width="20.85" height="6" fill="#ff5a03" />
-      <rect x="346.21" y="50" width="2.39" height="6" fill="#3572A5" />
-      <rect x="350.59" y="50" width="0.92" height="6" fill="#3178c6" />
-      <rect x="353.51" y="50" width="0.89" height="6" fill="#f34b7d" />
-      <rect x="356.40" y="50" width="0.50" height="6" fill="#DA3434" />
-      <rect x="358.57" y="50" width="1.43" height="6" fill="#f1e05a" />
+      <rect x="16.00" y="50" width="192.51" height="6" fill="#00B4AB" />
+      <rect x="210.51" y="50" width="52.47" height="6" fill="#dea584" />
+      <rect x="264.98" y="50" width="29.79" height="6" fill="#ecdebe" />
+      <rect x="296.77" y="50" width="25.89" height="6" fill="#e34c26" />
+      <rect x="324.66" y="50" width="20.04" height="6" fill="#ff5a03" />
+      <rect x="346.70" y="50" width="2.23" height="6" fill="#3572A5" />
+      <rect x="350.93" y="50" width="0.81" height="6" fill="#3178c6" />
+      <rect x="353.74" y="50" width="0.79" height="6" fill="#f34b7d" />
+      <rect x="356.53" y="50" width="0.50" height="6" fill="#DA3434" />
+      <rect x="358.62" y="50" width="1.38" height="6" fill="#f1e05a" />
   </g>
       <circle cx="20.0" cy="72" r="4" fill="#00B4AB" />
-      <text x="28.0" y="76" class="m3-label-medium">Dart 56.2%</text>
+      <text x="28.0" y="76" class="m3-label-medium">Dart 56.5%</text>
       <circle cx="132.0" cy="72" r="4" fill="#dea584" stroke="var(--md-sys-color-outline)" stroke-width="1" />
-      <text x="140.0" y="76" class="m3-label-medium">Rust 15.3%</text>
+      <text x="140.0" y="76" class="m3-label-medium">Rust 15.8%</text>
       <circle cx="244.0" cy="72" r="4" fill="#ecdebe" stroke="var(--md-sys-color-outline)" stroke-width="1" />
-      <text x="252.0" y="76" class="m3-label-medium">Roff 9.4%</text>
+      <text x="252.0" y="76" class="m3-label-medium">Roff 9.2%</text>
   </g>
   <g transform="translate(416, 176)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">hhandika/ullar</text>
-    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 3 · updated 19d ago</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 3 · updated 20d ago</text>
     <text x="16" y="42" class="m3-body-small">A lightweight phylo and population genomic pipeli…</text>
   <clipPath id="repo-bar-clip-3">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
@@ -215,7 +215,7 @@
   <g transform="translate(24, 276)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">…aldiversity/mdd_app</text>
-    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 2 · updated 1d ago</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 2 · updated 2d ago</text>
     <text x="16" y="42" class="m3-body-small">An app for viewing mammal diversity database</text>
   <clipPath id="repo-bar-clip-4">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
@@ -249,15 +249,15 @@
   </clipPath>
   <g clip-path="url(#repo-bar-clip-5)">
     <rect x="16" y="50" width="344" height="6" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="16.00" y="50" width="166.44" height="6" fill="#DA5B0B" />
-      <rect x="184.44" y="50" width="113.36" height="6" fill="#3572A5" />
-      <rect x="299.80" y="50" width="56.55" height="6" fill="#3178c6" />
+      <rect x="16.00" y="50" width="166.32" height="6" fill="#DA5B0B" />
+      <rect x="184.32" y="50" width="113.51" height="6" fill="#3572A5" />
+      <rect x="299.83" y="50" width="56.52" height="6" fill="#3178c6" />
       <rect x="358.35" y="50" width="1.38" height="6" fill="#663399" />
   </g>
       <circle cx="20.0" cy="72" r="4" fill="#DA5B0B" />
-      <text x="28.0" y="76" class="m3-label-medium">Jupyter 49.0%</text>
+      <text x="28.0" y="76" class="m3-label-medium">Jupyter 48.9%</text>
       <circle cx="137.6" cy="72" r="4" fill="#3572A5" />
-      <text x="145.6" y="76" class="m3-label-medium">Python 33.5%</text>
+      <text x="145.6" y="76" class="m3-label-medium">Python 33.6%</text>
       <circle cx="249.6" cy="72" r="4" fill="#3178c6" />
       <text x="257.6" y="76" class="m3-label-medium">TypeScript 17%</text>
   </g></svg>

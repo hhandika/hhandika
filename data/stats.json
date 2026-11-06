@@ -27,9 +27,9 @@
         "name_with_owner": "hhandika/resume"
       },
       {
-        "additions": 275448,
-        "commits": 1083,
-        "deletions": 140386,
+        "additions": 278895,
+        "commits": 1087,
+        "deletions": 140658,
         "name_with_owner": "hhandika/segui"
       },
       {
@@ -507,9 +507,9 @@
         "name_with_owner": "hhandika/clicov"
       },
       {
-        "additions": 174691,
-        "commits": 607,
-        "deletions": 88144,
+        "additions": 174835,
+        "commits": 608,
+        "deletions": 88180,
         "name_with_owner": "BioVisionLab/BioCosmos"
       },
       {
@@ -627,9 +627,9 @@
     "source": "github_contributor_statistics",
     "status": "complete",
     "totals": {
-      "additions": 3490085,
-      "commits": 12849,
-      "deletions": 1814350
+      "additions": 3493676,
+      "commits": 12854,
+      "deletions": 1814658
     }
   },
   "featured_repositories": [
@@ -730,64 +730,64 @@
       "description": "A GUI version of the SEGUL phylogenomic tool",
       "languages": [
         {
-          "bytes": 1797041,
+          "bytes": 1873971,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 56.22
+          "percentage": 56.54
         },
         {
-          "bytes": 489659,
+          "bytes": 524778,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 15.32
+          "percentage": 15.83
         },
         {
-          "bytes": 300524,
+          "bytes": 306305,
           "color": "#ecdebe",
           "name": "Roff",
-          "percentage": 9.4
+          "percentage": 9.24
         },
         {
           "bytes": 268683,
           "color": "#e34c26",
           "name": "HTML",
-          "percentage": 8.41
+          "percentage": 8.11
         },
         {
-          "bytes": 212330,
+          "bytes": 212344,
           "color": "#ff5a03",
           "name": "Astro",
-          "percentage": 6.64
+          "percentage": 6.41
         },
         {
           "bytes": 40774,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 1.28
+          "percentage": 1.23
         },
         {
-          "bytes": 27118,
+          "bytes": 27108,
           "color": "#3178c6",
           "name": "TypeScript",
-          "percentage": 0.85
+          "percentage": 0.82
         },
         {
           "bytes": 26856,
           "color": "#f34b7d",
           "name": "C++",
-          "percentage": 0.84
+          "percentage": 0.81
         },
         {
           "bytes": 20107,
           "color": "#DA3434",
           "name": "CMake",
-          "percentage": 0.63
+          "percentage": 0.61
         },
         {
           "bytes": 13324,
           "color": "#f1e05a",
           "name": "JavaScript",
-          "percentage": 0.42
+          "percentage": 0.4
         }
       ],
       "name_with_owner": "hhandika/segui"
@@ -892,19 +892,19 @@
           "bytes": 2851657,
           "color": "#DA5B0B",
           "name": "Jupyter Notebook",
-          "percentage": 48.96
+          "percentage": 48.93
         },
         {
-          "bytes": 1953120,
+          "bytes": 1956976,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 33.54
+          "percentage": 33.58
         },
         {
-          "bytes": 991304,
+          "bytes": 991436,
           "color": "#3178c6",
           "name": "TypeScript",
-          "percentage": 17.02
+          "percentage": 17.01
         },
         {
           "bytes": 23428,
@@ -940,13 +940,13 @@
       "name_with_owner": "BioVisionLab/BioCosmos"
     }
   ],
-  "generated_at": "2026-11-05T05:11:15.516745+00:00",
+  "generated_at": "2026-11-06T05:11:06.827369+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
-        "bytes": 743379,
+        "bytes": 743393,
         "color": "#ff5a03",
-        "percentage": 8.63
+        "percentage": 8.51
       },
       "Batchfile": {
         "bytes": 7285,
@@ -956,17 +956,17 @@
       "C": {
         "bytes": 48368,
         "color": "#555555",
-        "percentage": 0.56
+        "percentage": 0.55
       },
       "C++": {
         "bytes": 157554,
         "color": "#f34b7d",
-        "percentage": 1.83
+        "percentage": 1.8
       },
       "Dart": {
-        "bytes": 2465540,
+        "bytes": 2542470,
         "color": "#00B4AB",
-        "percentage": 28.61
+        "percentage": 29.1
       },
       "Go": {
         "bytes": 2249,
@@ -981,7 +981,7 @@
       "JavaScript": {
         "bytes": 59155,
         "color": "#f1e05a",
-        "percentage": 0.69
+        "percentage": 0.68
       },
       "Julia": {
         "bytes": 480,
@@ -991,7 +991,7 @@
       "Jupyter Notebook": {
         "bytes": 32688,
         "color": "#DA5B0B",
-        "percentage": 0.38
+        "percentage": 0.37
       },
       "Kotlin": {
         "bytes": 121,
@@ -1016,12 +1016,12 @@
       "Python": {
         "bytes": 524724,
         "color": "#3572A5",
-        "percentage": 6.09
+        "percentage": 6.01
       },
       "R": {
         "bytes": 18594,
         "color": "#198CE7",
-        "percentage": 0.22
+        "percentage": 0.21
       },
       "RenderScript": {
         "bytes": 3,
@@ -1029,9 +1029,9 @@
         "percentage": 0.0
       },
       "Roff": {
-        "bytes": 300524,
+        "bytes": 306305,
         "color": "#ecdebe",
-        "percentage": 3.49
+        "percentage": 3.51
       },
       "Ruby": {
         "bytes": 22705,
@@ -1039,14 +1039,14 @@
         "percentage": 0.26
       },
       "Rust": {
-        "bytes": 3755644,
+        "bytes": 3790763,
         "color": "#dea584",
-        "percentage": 43.58
+        "percentage": 43.39
       },
       "Shell": {
         "bytes": 161274,
         "color": "#89e051",
-        "percentage": 1.87
+        "percentage": 1.85
       },
       "Swift": {
         "bytes": 18407,
@@ -1054,17 +1054,17 @@
         "percentage": 0.21
       },
       "TypeScript": {
-        "bytes": 293013,
+        "bytes": 293003,
         "color": "#3178c6",
-        "percentage": 3.4
+        "percentage": 3.35
       }
     },
-    "total": 8617802,
+    "total": 8735636,
     "unit": "bytes"
   },
   "overview": {
-    "code_additions": 3490085,
-    "code_deletions": 1814350,
+    "code_additions": 3493676,
+    "code_deletions": 1814658,
     "contribution_calendar": [
       {
         "count": 0,
@@ -2527,7 +2527,7 @@
         "date": "2026-11-01"
       },
       {
-        "count": 4,
+        "count": 9,
         "date": "2026-11-02"
       },
       {
@@ -2539,8 +2539,12 @@
         "date": "2026-11-04"
       },
       {
-        "count": 0,
+        "count": 3,
         "date": "2026-11-05"
+      },
+      {
+        "count": 0,
+        "date": "2026-11-06"
       }
     ],
     "formatted_code_changes": "+3.5M (-1.8M)",
@@ -2557,34 +2561,34 @@
       2,
       2,
       11,
-      1,
-      9,
-      7,
       0,
-      5,
-      7,
       10,
       7,
-      11,
-      5,
-      17,
+      1,
+      4,
+      7,
+      10,
+      6,
+      14,
+      6,
+      14,
       2
     ],
     "peak_day": "Saturday (19%)",
     "peak_hours": "Evening",
-    "streak_days": 68,
-    "total_contributions": 3882,
+    "streak_days": 69,
+    "total_contributions": 3890,
     "total_issues": 40,
-    "total_pull_requests": 139,
+    "total_pull_requests": 140,
     "total_repositories": 84,
     "total_reviews": 38,
     "total_stars": 49,
     "weekday_contributions": {
       "Fri": 472,
-      "Mon": 492,
+      "Mon": 497,
       "Sat": 756,
       "Sun": 515,
-      "Thu": 516,
+      "Thu": 519,
       "Tue": 552,
       "Wed": 579
     }
