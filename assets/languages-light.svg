@@ -134,13 +134,13 @@
   </clipPath>
   <g clip-path="url(#lang-bar-clip)">
     <rect x="24" y="84" width="352.0" height="12" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="24.00" y="84" width="150.75" height="12" fill="#dea584" />
-      <rect x="176.75" y="84" width="100.45" height="12" fill="#00B4AB" />
-      <rect x="279.20" y="84" width="27.95" height="12" fill="#ff5a03" />
-      <rect x="309.15" y="84" width="19.14" height="12" fill="#3572A5" />
-      <rect x="330.29" y="84" width="10.34" height="12" fill="#ecdebe" />
-      <rect x="342.64" y="84" width="9.81" height="12" fill="#3178c6" />
-      <rect x="354.44" y="84" width="21.56" height="12" fill="#8e918f" />
+      <rect x="24.00" y="84" width="150.70" height="12" fill="#dea584" />
+      <rect x="176.70" y="84" width="100.42" height="12" fill="#00B4AB" />
+      <rect x="279.12" y="84" width="28.05" height="12" fill="#ff5a03" />
+      <rect x="309.17" y="84" width="19.14" height="12" fill="#3572A5" />
+      <rect x="330.31" y="84" width="10.34" height="12" fill="#ecdebe" />
+      <rect x="342.65" y="84" width="9.80" height="12" fill="#3178c6" />
+      <rect x="354.45" y="84" width="21.55" height="12" fill="#8e918f" />
   </g>
   <g transform="translate(24, 116)">
     <circle cx="6" cy="6" r="5.5" fill="#dea584" stroke="var(--md-sys-color-outline)" stroke-width="1" />
