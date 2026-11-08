@@ -27,9 +27,9 @@
         "name_with_owner": "hhandika/resume"
       },
       {
-        "additions": 278895,
-        "commits": 1087,
-        "deletions": 140658,
+        "additions": 279528,
+        "commits": 1090,
+        "deletions": 141228,
         "name_with_owner": "hhandika/segui"
       },
       {
@@ -37,6 +37,12 @@
         "commits": 204,
         "deletions": 3471,
         "name_with_owner": "hhandika/stats-from-scratch"
+      },
+      {
+        "additions": 68700,
+        "commits": 19,
+        "deletions": 15698,
+        "name_with_owner": "hhandika/ghost-phylogeny-indonesia"
       },
       {
         "additions": 5816,
@@ -105,12 +111,6 @@
         "name_with_owner": "hhandika/appstore-mockup"
       },
       {
-        "additions": 68700,
-        "commits": 19,
-        "deletions": 15698,
-        "name_with_owner": "hhandika/ghost-phylogeny-indonesia"
-      },
-      {
         "additions": 352,
         "commits": 2,
         "deletions": 1,
@@ -141,9 +141,9 @@
         "name_with_owner": "hhandika/gbfast"
       },
       {
-        "additions": 97969,
-        "commits": 467,
-        "deletions": 62956,
+        "additions": 98077,
+        "commits": 472,
+        "deletions": 63370,
         "name_with_owner": "hhandika/hhandika-com"
       },
       {
@@ -513,21 +513,21 @@
         "name_with_owner": "BioVisionLab/BioCosmos"
       },
       {
-        "additions": 1175145,
-        "commits": 2704,
-        "deletions": 570725,
+        "additions": 1199687,
+        "commits": 2715,
+        "deletions": 579074,
         "name_with_owner": "nahpu/nahpu"
       },
       {
-        "additions": 97097,
-        "commits": 260,
-        "deletions": 51128,
+        "additions": 97526,
+        "commits": 262,
+        "deletions": 51635,
         "name_with_owner": "nahpu/nahpu-docs"
       },
       {
-        "additions": 23820,
-        "commits": 146,
-        "deletions": 3688,
+        "additions": 24099,
+        "commits": 148,
+        "deletions": 3877,
         "name_with_owner": "nahpu/nahpu_api"
       },
       {
@@ -627,9 +627,9 @@
     "source": "github_contributor_statistics",
     "status": "complete",
     "totals": {
-      "additions": 3493952,
-      "commits": 12860,
-      "deletions": 1814865
+      "additions": 3519943,
+      "commits": 12883,
+      "deletions": 1824894
     }
   },
   "featured_repositories": [
@@ -638,22 +638,22 @@
       "description": "A cross-platform (mobile and desktop) digital catalog app for natural history collections",
       "languages": [
         {
-          "bytes": 13534038,
+          "bytes": 13798171,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 95.48
+          "percentage": 95.54
         },
         {
-          "bytes": 341038,
+          "bytes": 342039,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 2.41
+          "percentage": 2.37
         },
         {
-          "bytes": 224415,
+          "bytes": 226740,
           "color": "#ecdebe",
           "name": "Roff",
-          "percentage": 1.58
+          "percentage": 1.57
         },
         {
           "bytes": 26973,
@@ -730,64 +730,64 @@
       "description": "A GUI version of the SEGUL phylogenomic tool",
       "languages": [
         {
-          "bytes": 1873971,
+          "bytes": 1886812,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 56.54
+          "percentage": 56.68
         },
         {
           "bytes": 524778,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 15.83
+          "percentage": 15.76
         },
         {
-          "bytes": 306305,
+          "bytes": 306540,
           "color": "#ecdebe",
           "name": "Roff",
-          "percentage": 9.24
+          "percentage": 9.21
         },
         {
           "bytes": 268683,
           "color": "#e34c26",
           "name": "HTML",
-          "percentage": 8.11
+          "percentage": 8.07
         },
         {
-          "bytes": 212344,
+          "bytes": 214149,
           "color": "#ff5a03",
           "name": "Astro",
-          "percentage": 6.41
+          "percentage": 6.43
         },
         {
-          "bytes": 40774,
+          "bytes": 39767,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 1.23
+          "percentage": 1.19
+        },
+        {
+          "bytes": 27240,
+          "color": "#f34b7d",
+          "name": "C++",
+          "percentage": 0.82
         },
         {
           "bytes": 27108,
           "color": "#3178c6",
           "name": "TypeScript",
-          "percentage": 0.82
-        },
-        {
-          "bytes": 26856,
-          "color": "#f34b7d",
-          "name": "C++",
           "percentage": 0.81
         },
         {
           "bytes": 20107,
           "color": "#DA3434",
           "name": "CMake",
-          "percentage": 0.61
+          "percentage": 0.6
         },
         {
-          "bytes": 13324,
-          "color": "#f1e05a",
-          "name": "JavaScript",
-          "percentage": 0.4
+          "bytes": 13782,
+          "color": "#F05138",
+          "name": "Swift",
+          "percentage": 0.41
         }
       ],
       "name_with_owner": "hhandika/segui"
@@ -940,13 +940,13 @@
       "name_with_owner": "BioVisionLab/BioCosmos"
     }
   ],
-  "generated_at": "2026-11-07T04:43:04.329419+00:00",
+  "generated_at": "2026-11-08T04:30:56.424813+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
-        "bytes": 746050,
+        "bytes": 738645,
         "color": "#ff5a03",
-        "percentage": 8.54
+        "percentage": 8.45
       },
       "Batchfile": {
         "bytes": 7285,
@@ -959,14 +959,14 @@
         "percentage": 0.55
       },
       "C++": {
-        "bytes": 157554,
+        "bytes": 157938,
         "color": "#f34b7d",
-        "percentage": 1.8
+        "percentage": 1.81
       },
       "Dart": {
-        "bytes": 2542470,
+        "bytes": 2555311,
         "color": "#00B4AB",
-        "percentage": 29.1
+        "percentage": 29.23
       },
       "Go": {
         "bytes": 2249,
@@ -979,9 +979,9 @@
         "percentage": 0.0
       },
       "JavaScript": {
-        "bytes": 59155,
+        "bytes": 45831,
         "color": "#f1e05a",
-        "percentage": 0.68
+        "percentage": 0.52
       },
       "Julia": {
         "bytes": 480,
@@ -1014,9 +1014,9 @@
         "percentage": 0.03
       },
       "Python": {
-        "bytes": 524724,
+        "bytes": 523717,
         "color": "#3572A5",
-        "percentage": 6.0
+        "percentage": 5.99
       },
       "R": {
         "bytes": 18594,
@@ -1029,7 +1029,7 @@
         "percentage": 0.0
       },
       "Roff": {
-        "bytes": 306305,
+        "bytes": 306540,
         "color": "#ecdebe",
         "percentage": 3.51
       },
@@ -1041,59 +1041,31 @@
       "Rust": {
         "bytes": 3790763,
         "color": "#dea584",
-        "percentage": 43.38
+        "percentage": 43.36
       },
       "Shell": {
         "bytes": 161274,
         "color": "#89e051",
-        "percentage": 1.85
+        "percentage": 1.84
       },
       "Swift": {
-        "bytes": 18407,
+        "bytes": 32189,
         "color": "#F05138",
-        "percentage": 0.21
+        "percentage": 0.37
       },
       "TypeScript": {
-        "bytes": 293003,
+        "bytes": 292743,
         "color": "#3178c6",
         "percentage": 3.35
       }
     },
-    "total": 8738293,
+    "total": 8743539,
     "unit": "bytes"
   },
   "overview": {
-    "code_additions": 3493952,
-    "code_deletions": 1814865,
+    "code_additions": 3519943,
+    "code_deletions": 1824894,
     "contribution_calendar": [
-      {
-        "count": 0,
-        "date": "2025-11-02"
-      },
-      {
-        "count": 6,
-        "date": "2025-11-03"
-      },
-      {
-        "count": 10,
-        "date": "2025-11-04"
-      },
-      {
-        "count": 10,
-        "date": "2025-11-05"
-      },
-      {
-        "count": 18,
-        "date": "2025-11-06"
-      },
-      {
-        "count": 11,
-        "date": "2025-11-07"
-      },
-      {
-        "count": 0,
-        "date": "2025-11-08"
-      },
       {
         "count": 0,
         "date": "2025-11-09"
@@ -2547,14 +2519,18 @@
         "date": "2026-11-06"
       },
       {
-        "count": 0,
+        "count": 23,
         "date": "2026-11-07"
+      },
+      {
+        "count": 0,
+        "date": "2026-11-08"
       }
     ],
     "formatted_code_changes": "+3.5M (-1.8M)",
     "hourly_events_et": [
       0,
-      0,
+      2,
       0,
       0,
       0,
@@ -2564,37 +2540,37 @@
       0,
       2,
       2,
-      11,
+      13,
       0,
       11,
       7,
-      2,
       3,
-      7,
-      8,
+      3,
       6,
-      15,
+      8,
+      5,
+      12,
       6,
       15,
       2
     ],
-    "peak_day": "Saturday (19%)",
+    "peak_day": "Saturday (20%)",
     "peak_hours": "Evening",
-    "streak_days": 70,
-    "total_contributions": 3897,
+    "streak_days": 71,
+    "total_contributions": 3920,
     "total_issues": 40,
     "total_pull_requests": 140,
     "total_repositories": 84,
     "total_reviews": 39,
-    "total_stars": 49,
+    "total_stars": 50,
     "weekday_contributions": {
-      "Fri": 479,
-      "Mon": 497,
-      "Sat": 756,
+      "Fri": 468,
+      "Mon": 491,
+      "Sat": 779,
       "Sun": 515,
-      "Thu": 519,
-      "Tue": 552,
-      "Wed": 579
+      "Thu": 501,
+      "Tue": 542,
+      "Wed": 569
     }
   },
   "profile": {
