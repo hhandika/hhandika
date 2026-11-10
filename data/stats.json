@@ -3,9 +3,9 @@
     "failures": [],
     "repositories": [
       {
-        "additions": 139459,
-        "commits": 1690,
-        "deletions": 90732,
+        "additions": 157618,
+        "commits": 1709,
+        "deletions": 92180,
         "name_with_owner": "hhandika/segul"
       },
       {
@@ -15,9 +15,9 @@
         "name_with_owner": "hhandika/ullar"
       },
       {
-        "additions": 279528,
-        "commits": 1090,
-        "deletions": 141228,
+        "additions": 285046,
+        "commits": 1110,
+        "deletions": 144864,
         "name_with_owner": "hhandika/segui"
       },
       {
@@ -147,9 +147,9 @@
         "name_with_owner": "hhandika/gbfast"
       },
       {
-        "additions": 98088,
-        "commits": 473,
-        "deletions": 63375,
+        "additions": 98102,
+        "commits": 475,
+        "deletions": 63380,
         "name_with_owner": "hhandika/hhandika-com"
       },
       {
@@ -514,14 +514,14 @@
       },
       {
         "additions": 1199853,
-        "commits": 2719,
-        "deletions": 579229,
+        "commits": 2720,
+        "deletions": 579237,
         "name_with_owner": "nahpu/nahpu"
       },
       {
-        "additions": 97526,
-        "commits": 262,
-        "deletions": 51635,
+        "additions": 98536,
+        "commits": 264,
+        "deletions": 51676,
         "name_with_owner": "nahpu/nahpu-docs"
       },
       {
@@ -627,9 +627,9 @@
     "source": "github_contributor_statistics",
     "status": "complete",
     "totals": {
-      "additions": 3520120,
-      "commits": 12888,
-      "deletions": 1825054
+      "additions": 3544821,
+      "commits": 12932,
+      "deletions": 1830192
     }
   },
   "featured_repositories": [
@@ -705,22 +705,22 @@
       "description": "An ultrafast and memory efficient tool for phylogenomics",
       "languages": [
         {
-          "bytes": 728044,
+          "bytes": 1253405,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 92.99
+          "percentage": 95.81
         },
         {
           "bytes": 54344,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 6.94
+          "percentage": 4.15
         },
         {
           "bytes": 508,
           "color": "#89e051",
           "name": "Shell",
-          "percentage": 0.06
+          "percentage": 0.04
         }
       ],
       "name_with_owner": "hhandika/segul"
@@ -730,64 +730,64 @@
       "description": "A GUI version of the SEGUL phylogenomic tool",
       "languages": [
         {
-          "bytes": 1886812,
+          "bytes": 1992480,
           "color": "#00B4AB",
           "name": "Dart",
-          "percentage": 56.68
+          "percentage": 57.89
         },
         {
-          "bytes": 524778,
+          "bytes": 525018,
           "color": "#dea584",
           "name": "Rust",
-          "percentage": 15.76
+          "percentage": 15.25
         },
         {
-          "bytes": 306540,
+          "bytes": 310574,
           "color": "#ecdebe",
           "name": "Roff",
-          "percentage": 9.21
+          "percentage": 9.02
         },
         {
           "bytes": 268683,
           "color": "#e34c26",
           "name": "HTML",
-          "percentage": 8.07
+          "percentage": 7.81
         },
         {
-          "bytes": 214149,
+          "bytes": 214651,
           "color": "#ff5a03",
           "name": "Astro",
-          "percentage": 6.43
+          "percentage": 6.24
         },
         {
           "bytes": 39767,
           "color": "#3572A5",
           "name": "Python",
-          "percentage": 1.19
+          "percentage": 1.16
+        },
+        {
+          "bytes": 29547,
+          "color": "#3178c6",
+          "name": "TypeScript",
+          "percentage": 0.86
         },
         {
           "bytes": 27240,
           "color": "#f34b7d",
           "name": "C++",
-          "percentage": 0.82
-        },
-        {
-          "bytes": 27108,
-          "color": "#3178c6",
-          "name": "TypeScript",
-          "percentage": 0.81
+          "percentage": 0.79
         },
         {
           "bytes": 20107,
           "color": "#DA3434",
           "name": "CMake",
-          "percentage": 0.6
+          "percentage": 0.58
         },
         {
           "bytes": 13782,
           "color": "#F05138",
           "name": "Swift",
-          "percentage": 0.41
+          "percentage": 0.4
         }
       ],
       "name_with_owner": "hhandika/segui"
@@ -940,13 +940,13 @@
       "name_with_owner": "BioVisionLab/BioCosmos"
     }
   ],
-  "generated_at": "2026-11-09T04:43:22.876801+00:00",
+  "generated_at": "2026-11-10T06:01:07.704440+00:00",
   "language_statistics": {
     "languages": {
       "Astro": {
-        "bytes": 738920,
+        "bytes": 739786,
         "color": "#ff5a03",
-        "percentage": 8.45
+        "percentage": 7.88
       },
       "Batchfile": {
         "bytes": 7285,
@@ -956,22 +956,22 @@
       "C": {
         "bytes": 48368,
         "color": "#555555",
-        "percentage": 0.55
+        "percentage": 0.52
       },
       "C++": {
         "bytes": 157938,
         "color": "#f34b7d",
-        "percentage": 1.81
+        "percentage": 1.68
       },
       "Dart": {
-        "bytes": 2555311,
+        "bytes": 2660979,
         "color": "#00B4AB",
-        "percentage": 29.22
+        "percentage": 28.36
       },
       "Go": {
         "bytes": 2249,
         "color": "#00ADD8",
-        "percentage": 0.03
+        "percentage": 0.02
       },
       "Java": {
         "bytes": 172,
@@ -981,7 +981,7 @@
       "JavaScript": {
         "bytes": 45831,
         "color": "#f1e05a",
-        "percentage": 0.52
+        "percentage": 0.49
       },
       "Julia": {
         "bytes": 480,
@@ -991,7 +991,7 @@
       "Jupyter Notebook": {
         "bytes": 32688,
         "color": "#DA5B0B",
-        "percentage": 0.37
+        "percentage": 0.35
       },
       "Kotlin": {
         "bytes": 121,
@@ -1001,7 +1001,7 @@
       "MDX": {
         "bytes": 3108,
         "color": "#fcb32c",
-        "percentage": 0.04
+        "percentage": 0.03
       },
       "Objective-C": {
         "bytes": 38,
@@ -1016,12 +1016,12 @@
       "Python": {
         "bytes": 523717,
         "color": "#3572A5",
-        "percentage": 5.99
+        "percentage": 5.58
       },
       "R": {
         "bytes": 18594,
         "color": "#198CE7",
-        "percentage": 0.21
+        "percentage": 0.2
       },
       "RenderScript": {
         "bytes": 3,
@@ -1029,42 +1029,42 @@
         "percentage": 0.0
       },
       "Roff": {
-        "bytes": 306540,
+        "bytes": 310574,
         "color": "#ecdebe",
-        "percentage": 3.51
+        "percentage": 3.31
       },
       "Ruby": {
         "bytes": 22705,
         "color": "#701516",
-        "percentage": 0.26
+        "percentage": 0.24
       },
       "Rust": {
-        "bytes": 3790763,
+        "bytes": 4316364,
         "color": "#dea584",
-        "percentage": 43.35
+        "percentage": 46.0
       },
       "Shell": {
         "bytes": 161274,
         "color": "#89e051",
-        "percentage": 1.84
+        "percentage": 1.72
       },
       "Swift": {
         "bytes": 32189,
         "color": "#F05138",
-        "percentage": 0.37
+        "percentage": 0.34
       },
       "TypeScript": {
-        "bytes": 292842,
+        "bytes": 295281,
         "color": "#3178c6",
-        "percentage": 3.35
+        "percentage": 3.15
       }
     },
-    "total": 8743913,
+    "total": 9382521,
     "unit": "bytes"
   },
   "overview": {
-    "code_additions": 3520120,
-    "code_deletions": 1825054,
+    "code_additions": 3544821,
+    "code_deletions": 1830192,
     "contribution_calendar": [
       {
         "count": 0,
@@ -2451,7 +2451,7 @@
         "date": "2026-10-20"
       },
       {
-        "count": 28,
+        "count": 30,
         "date": "2026-10-21"
       },
       {
@@ -2467,7 +2467,7 @@
         "date": "2026-10-24"
       },
       {
-        "count": 35,
+        "count": 38,
         "date": "2026-10-25"
       },
       {
@@ -2479,7 +2479,7 @@
         "date": "2026-10-27"
       },
       {
-        "count": 28,
+        "count": 29,
         "date": "2026-10-28"
       },
       {
@@ -2491,15 +2491,15 @@
         "date": "2026-10-30"
       },
       {
-        "count": 21,
+        "count": 24,
         "date": "2026-10-31"
       },
       {
-        "count": 20,
+        "count": 26,
         "date": "2026-11-01"
       },
       {
-        "count": 9,
+        "count": 11,
         "date": "2026-11-02"
       },
       {
@@ -2507,7 +2507,7 @@
         "date": "2026-11-03"
       },
       {
-        "count": 9,
+        "count": 11,
         "date": "2026-11-04"
       },
       {
@@ -2519,21 +2519,25 @@
         "date": "2026-11-06"
       },
       {
-        "count": 23,
+        "count": 33,
         "date": "2026-11-07"
       },
       {
-        "count": 5,
+        "count": 11,
         "date": "2026-11-08"
       },
       {
-        "count": 0,
+        "count": 15,
         "date": "2026-11-09"
+      },
+      {
+        "count": 0,
+        "date": "2026-11-10"
       }
     ],
     "formatted_code_changes": "+3.5M (-1.8M)",
     "hourly_events_et": [
-      2,
+      3,
       3,
       0,
       0,
@@ -2544,24 +2548,24 @@
       0,
       0,
       2,
-      14,
+      16,
       0,
-      7,
-      11,
+      6,
+      12,
       3,
       2,
       7,
-      8,
+      7,
       5,
       7,
       5,
-      15,
-      6
+      12,
+      8
     ],
     "peak_day": "Saturday (20%)",
     "peak_hours": "Evening",
-    "streak_days": 72,
-    "total_contributions": 3870,
+    "streak_days": 73,
+    "total_contributions": 3920,
     "total_issues": 37,
     "total_pull_requests": 140,
     "total_repositories": 84,
@@ -2569,12 +2573,12 @@
     "total_stars": 53,
     "weekday_contributions": {
       "Fri": 468,
-      "Mon": 491,
-      "Sat": 779,
-      "Sun": 520,
+      "Mon": 508,
+      "Sat": 792,
+      "Sun": 535,
       "Thu": 501,
       "Tue": 542,
-      "Wed": 569
+      "Wed": 574
     }
   },
   "profile": {
