@@ -132,7 +132,7 @@
   <g transform="translate(24, 76)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">nahpu/nahpu</text>
-    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 17 · updated 1d ago</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 17 · updated 2d ago</text>
     <text x="16" y="42" class="m3-body-small">A cross-platform (mobile and desktop) digital cat…</text>
   <clipPath id="repo-bar-clip-0">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
@@ -154,7 +154,7 @@
   <g transform="translate(416, 76)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">hhandika/segul</text>
-    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 28 · updated 1d ago</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 28 · updated today</text>
     <text x="16" y="42" class="m3-body-small">An ultrafast and memory efficient tool for phylog…</text>
   <clipPath id="repo-bar-clip-1">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
@@ -179,28 +179,28 @@
   </clipPath>
   <g clip-path="url(#repo-bar-clip-2)">
     <rect x="16" y="50" width="344" height="6" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="16.00" y="50" width="197.34" height="6" fill="#00B4AB" />
-      <rect x="215.34" y="50" width="50.34" height="6" fill="#dea584" />
-      <rect x="267.68" y="50" width="29.13" height="6" fill="#ecdebe" />
-      <rect x="298.81" y="50" width="24.78" height="6" fill="#e34c26" />
-      <rect x="325.59" y="50" width="19.40" height="6" fill="#ff5a03" />
-      <rect x="346.99" y="50" width="1.96" height="6" fill="#3572A5" />
-      <rect x="350.96" y="50" width="0.95" height="6" fill="#3178c6" />
-      <rect x="353.91" y="50" width="0.72" height="6" fill="#f34b7d" />
-      <rect x="356.62" y="50" width="0.50" height="6" fill="#DA3434" />
-      <rect x="358.63" y="50" width="1.37" height="6" fill="#F05138" />
+      <rect x="16.00" y="50" width="197.16" height="6" fill="#00B4AB" />
+      <rect x="215.16" y="50" width="50.94" height="6" fill="#dea584" />
+      <rect x="268.11" y="50" width="28.77" height="6" fill="#ecdebe" />
+      <rect x="298.88" y="50" width="24.47" height="6" fill="#e34c26" />
+      <rect x="325.35" y="50" width="19.15" height="6" fill="#ff5a03" />
+      <rect x="346.50" y="50" width="1.92" height="6" fill="#3572A5" />
+      <rect x="350.42" y="50" width="0.92" height="6" fill="#3178c6" />
+      <rect x="353.33" y="50" width="0.68" height="6" fill="#f34b7d" />
+      <rect x="356.02" y="50" width="0.50" height="6" fill="#F05138" />
+      <rect x="358.02" y="50" width="1.98" height="6" fill="#DA3434" />
   </g>
       <circle cx="20.0" cy="72" r="4" fill="#00B4AB" />
       <text x="28.0" y="76" class="m3-label-medium">Dart 57.9%</text>
       <circle cx="132.0" cy="72" r="4" fill="#dea584" stroke="var(--md-sys-color-outline)" stroke-width="1" />
-      <text x="140.0" y="76" class="m3-label-medium">Rust 15.2%</text>
+      <text x="140.0" y="76" class="m3-label-medium">Rust 15.4%</text>
       <circle cx="244.0" cy="72" r="4" fill="#ecdebe" stroke="var(--md-sys-color-outline)" stroke-width="1" />
-      <text x="252.0" y="76" class="m3-label-medium">Roff 9.0%</text>
+      <text x="252.0" y="76" class="m3-label-medium">Roff 8.9%</text>
   </g>
   <g transform="translate(416, 176)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">hhandika/ullar</text>
-    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 3 · updated 25d ago</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 3 · updated 26d ago</text>
     <text x="16" y="42" class="m3-body-small">A lightweight phylo and population genomic pipeli…</text>
   <clipPath id="repo-bar-clip-3">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
@@ -215,7 +215,7 @@
   <g transform="translate(24, 276)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">…aldiversity/mdd_app</text>
-    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 2 · updated 7d ago</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 2 · updated 8d ago</text>
     <text x="16" y="42" class="m3-body-small">An app for viewing mammal diversity database</text>
   <clipPath id="repo-bar-clip-4">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
@@ -242,7 +242,7 @@
   <g transform="translate(416, 276)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">…VisionLab/BioCosmos</text>
-    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 4 · updated 5d ago</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 4 · updated 6d ago</text>
     <text x="16" y="42" class="m3-body-small">Computer vision and LLM for biodiversity explorat…</text>
   <clipPath id="repo-bar-clip-5">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
