@@ -180,23 +180,23 @@
   </clipPath>
   <g clip-path="url(#repo-bar-clip-2)">
     <rect x="16" y="50" width="344" height="6" fill="var(--md-sys-color-surface-variant)" />
-      <rect x="16.00" y="50" width="200.02" height="6" fill="#00B4AB" />
-      <rect x="218.02" y="50" width="54.00" height="6" fill="#dea584" />
-      <rect x="274.02" y="50" width="35.63" height="6" fill="#ecdebe" />
-      <rect x="311.65" y="50" width="19.53" height="6" fill="#ff5a03" />
-      <rect x="333.19" y="50" width="11.09" height="6" fill="#e34c26" />
-      <rect x="346.28" y="50" width="1.91" height="6" fill="#3572A5" />
-      <rect x="350.19" y="50" width="1.15" height="6" fill="#3178c6" />
-      <rect x="353.34" y="50" width="0.68" height="6" fill="#f34b7d" />
-      <rect x="356.02" y="50" width="0.50" height="6" fill="#F05138" />
-      <rect x="358.02" y="50" width="1.98" height="6" fill="#DA3434" />
+      <rect x="16.00" y="50" width="196.78" height="6" fill="#00B4AB" />
+      <rect x="214.78" y="50" width="52.98" height="6" fill="#dea584" />
+      <rect x="269.76" y="50" width="40.72" height="6" fill="#ecdebe" />
+      <rect x="312.48" y="50" width="19.05" height="6" fill="#ff5a03" />
+      <rect x="333.53" y="50" width="10.85" height="6" fill="#e34c26" />
+      <rect x="346.38" y="50" width="1.98" height="6" fill="#3572A5" />
+      <rect x="350.36" y="50" width="1.10" height="6" fill="#3178c6" />
+      <rect x="353.46" y="50" width="0.63" height="6" fill="#f34b7d" />
+      <rect x="356.09" y="50" width="0.50" height="6" fill="#F05138" />
+      <rect x="358.06" y="50" width="1.94" height="6" fill="#DA3434" />
   </g>
       <circle cx="20.0" cy="72" r="4" fill="#00B4AB" />
-      <text x="28.0" y="76" class="m3-label-medium">Dart 58.7%</text>
+      <text x="28.0" y="76" class="m3-label-medium">Dart 57.8%</text>
       <circle cx="132.0" cy="72" r="4" fill="#dea584" stroke="var(--md-sys-color-outline)" stroke-width="1" />
-      <text x="140.0" y="76" class="m3-label-medium">Rust 16.3%</text>
+      <text x="140.0" y="76" class="m3-label-medium">Rust 16.0%</text>
       <circle cx="244.0" cy="72" r="4" fill="#ecdebe" stroke="var(--md-sys-color-outline)" stroke-width="1" />
-      <text x="252.0" y="76" class="m3-label-medium">Roff 10.9%</text>
+      <text x="252.0" y="76" class="m3-label-medium">Roff 12.4%</text>
   </g>
   <g transform="translate(416, 176)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
@@ -216,7 +216,7 @@
   <g transform="translate(24, 276)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">…ldiversity/mdd_app</text>
-    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 2 · updated 13d ago</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 2 · updated 14d ago</text>
     <text x="16" y="42" class="m3-body-small">An app for viewing mammal diversity database</text>
   <clipPath id="repo-bar-clip-4">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
@@ -243,7 +243,7 @@
   <g transform="translate(416, 276)">
     <rect x="0" y="0" width="376" height="88" class="m3-card-medium" />
     <text x="16" y="24" class="m3-title-medium">…VisionLab/BioCosmos</text>
-    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 4 · updated 1d ago</text>
+    <text x="360" y="24" text-anchor="end" class="m3-body-small">★ 4 · updated 2d ago</text>
     <text x="16" y="42" class="m3-body-small">Computer vision and LLM for biodiversity explorat…</text>
   <clipPath id="repo-bar-clip-5">
     <rect x="16" y="50" width="344" height="6" rx="1.5" />
