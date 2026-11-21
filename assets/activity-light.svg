@@ -143,8 +143,8 @@
   <rect x="182.00" y="131.72" width="36.00" height="34.28" rx="2" fill="var(--md-sys-color-primary)" />
   <text x="200.00" y="125.72" text-anchor="middle" class="m3-body-small">13%</text>
   <text x="200.00" y="184" text-anchor="middle" class="m3-label-medium">Thu</text>
-  <rect x="234.67" y="135.49" width="36.00" height="30.51" rx="2" fill="var(--md-sys-color-primary)" />
-  <text x="252.67" y="129.49" text-anchor="middle" class="m3-body-small">12%</text>
+  <rect x="234.67" y="134.45" width="36.00" height="31.55" rx="2" fill="var(--md-sys-color-primary)" />
+  <text x="252.67" y="128.45" text-anchor="middle" class="m3-body-small">12%</text>
   <text x="252.67" y="184" text-anchor="middle" class="m3-label-medium">Fri</text>
   <rect x="287.33" y="114.00" width="36.00" height="52.00" rx="2" fill="var(--md-sys-color-tertiary)" />
   <text x="305.33" y="108.00" text-anchor="middle" class="m3-body-small">20%</text>
@@ -154,7 +154,7 @@
   <text x="358.00" y="184" text-anchor="middle" class="m3-label-medium">Sun</text>
   <text x="440" y="88" class="m3-title-small">By hour (ET)</text>
   <text x="792" y="88" text-anchor="end" class="m3-label-medium">Peak: Afternoon</text>
-  <rect x="440.00" y="161.05" width="11.67" height="4.95" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="440.00" y="163.00" width="11.67" height="3.00" rx="2" fill="var(--md-sys-color-primary)" />
   <rect x="454.67" y="163.00" width="11.67" height="3.00" rx="2" fill="var(--md-sys-color-primary)" />
   <rect x="469.33" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
   <rect x="484.00" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
@@ -164,20 +164,20 @@
   <rect x="542.67" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
   <rect x="557.33" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
   <rect x="572.00" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
-  <rect x="586.67" y="156.10" width="11.67" height="9.90" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="601.33" y="161.05" width="11.67" height="4.95" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="616.00" y="146.19" width="11.67" height="19.81" rx="2" fill="var(--md-sys-color-tertiary)" />
-  <rect x="630.67" y="158.57" width="11.67" height="7.43" rx="2" fill="var(--md-sys-color-tertiary)" />
+  <rect x="586.67" y="164" width="11.67" height="2" fill="var(--md-sys-color-surface-variant)" />
+  <rect x="601.33" y="161.27" width="11.67" height="4.73" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="616.00" y="147.09" width="11.67" height="18.91" rx="2" fill="var(--md-sys-color-tertiary)" />
+  <rect x="630.67" y="156.55" width="11.67" height="9.45" rx="2" fill="var(--md-sys-color-tertiary)" />
   <rect x="645.33" y="114.00" width="11.67" height="52.00" rx="2" fill="var(--md-sys-color-tertiary)" />
-  <rect x="660.00" y="133.81" width="11.67" height="32.19" rx="2" fill="var(--md-sys-color-tertiary)" />
-  <rect x="674.67" y="138.76" width="11.67" height="27.24" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="689.33" y="156.10" width="11.67" height="9.90" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="704.00" y="161.05" width="11.67" height="4.95" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="718.67" y="156.10" width="11.67" height="9.90" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="733.33" y="161.05" width="11.67" height="4.95" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="748.00" y="146.19" width="11.67" height="19.81" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="762.67" y="146.19" width="11.67" height="19.81" rx="2" fill="var(--md-sys-color-primary)" />
-  <rect x="777.33" y="151.14" width="11.67" height="14.86" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="660.00" y="135.27" width="11.67" height="30.73" rx="2" fill="var(--md-sys-color-tertiary)" />
+  <rect x="674.67" y="137.64" width="11.67" height="28.36" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="689.33" y="156.55" width="11.67" height="9.45" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="704.00" y="161.27" width="11.67" height="4.73" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="718.67" y="156.55" width="11.67" height="9.45" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="733.33" y="158.91" width="11.67" height="7.09" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="748.00" y="144.73" width="11.67" height="21.27" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="762.67" y="147.09" width="11.67" height="18.91" rx="2" fill="var(--md-sys-color-primary)" />
+  <rect x="777.33" y="151.82" width="11.67" height="14.18" rx="2" fill="var(--md-sys-color-primary)" />
   <text x="440.00" y="184" class="m3-label-medium">12 AM</text>
   <text x="528.00" y="184" class="m3-label-medium">6 AM</text>
   <text x="616.00" y="184" class="m3-label-medium">12 PM</text>
